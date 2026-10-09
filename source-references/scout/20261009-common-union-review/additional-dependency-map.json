@@ -1,0 +1,256 @@
+{
+  "schema": "source-review-dependency-addendum-v1",
+  "actor": "Scout",
+  "status": "REVIEW_ONLY_NOT_COMPLETED_NOT_INSTALLED",
+  "context": "Strict offline queue discovered 31 additional existing repository Python dependencies outside the earlier 689-member review ZIP. Published base source provides these paths; no new implementation is delivered here. Preserve historical source_identity algorithms and receipts. Full before/after repair inventories must also cover fundamentals, options, signals and technicals, including added files, while the repair edit whitelist may remain narrow.",
+  "files": [
+    {
+      "path": "fundamentals/__init__.py",
+      "live_sha256": "7c38d1c6b6508babb6c87ff729e744f10ef71ee256a45f0a37e6b64167797d54",
+      "union_sha256": "7c38d1c6b6508babb6c87ff729e744f10ef71ee256a45f0a37e6b64167797d54",
+      "composition_sha256": "7c38d1c6b6508babb6c87ff729e744f10ef71ee256a45f0a37e6b64167797d54",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "fundamentals/calculation.py",
+      "live_sha256": "bd9bfc737d3241f425f49dc7683ff96a357e76d2fcf2a756b9adb737c0541df0",
+      "union_sha256": "bd9bfc737d3241f425f49dc7683ff96a357e76d2fcf2a756b9adb737c0541df0",
+      "composition_sha256": "bd9bfc737d3241f425f49dc7683ff96a357e76d2fcf2a756b9adb737c0541df0",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "fundamentals/join.py",
+      "live_sha256": "19bda9d78a16eb80ca1c00d296c48f37d69e0b5369ef46fed979d6b9adc350f4",
+      "union_sha256": "19bda9d78a16eb80ca1c00d296c48f37d69e0b5369ef46fed979d6b9adc350f4",
+      "composition_sha256": "19bda9d78a16eb80ca1c00d296c48f37d69e0b5369ef46fed979d6b9adc350f4",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "fundamentals/main.py",
+      "live_sha256": "073821e7749a1702940d516da5a339647250ebb5139015c66b612849c794519c",
+      "union_sha256": "073821e7749a1702940d516da5a339647250ebb5139015c66b612849c794519c",
+      "composition_sha256": "073821e7749a1702940d516da5a339647250ebb5139015c66b612849c794519c",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "fundamentals/parquet_io.py",
+      "live_sha256": "081efb3b9feb05ab8dce59c854fc9e33d01c600e87f03c7d9ae935374de3c9d3",
+      "union_sha256": "081efb3b9feb05ab8dce59c854fc9e33d01c600e87f03c7d9ae935374de3c9d3",
+      "composition_sha256": "081efb3b9feb05ab8dce59c854fc9e33d01c600e87f03c7d9ae935374de3c9d3",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "fundamentals/point_in_time.py",
+      "live_sha256": "e38057bd356b611c02f54000c9f7b9c5fc5ef11a049981aa07b0d345dca3adcc",
+      "union_sha256": "e38057bd356b611c02f54000c9f7b9c5fc5ef11a049981aa07b0d345dca3adcc",
+      "composition_sha256": "e38057bd356b611c02f54000c9f7b9c5fc5ef11a049981aa07b0d345dca3adcc",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/__init__.py",
+      "live_sha256": "85bef36df202d0803713dacbefb6b28c858952d0db2a889f77803448880c0cfb",
+      "union_sha256": "85bef36df202d0803713dacbefb6b28c858952d0db2a889f77803448880c0cfb",
+      "composition_sha256": "85bef36df202d0803713dacbefb6b28c858952d0db2a889f77803448880c0cfb",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/databento_live.py",
+      "live_sha256": "527eebc6940e1569a7a3f4bf87b6628336f652c9cfef4ccccf99f468ede1e76d",
+      "union_sha256": "527eebc6940e1569a7a3f4bf87b6628336f652c9cfef4ccccf99f468ede1e76d",
+      "composition_sha256": "527eebc6940e1569a7a3f4bf87b6628336f652c9cfef4ccccf99f468ede1e76d",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/features.py",
+      "live_sha256": "6ad3ce1f6b4675554c3c63c47ad2360430e2a7af32f41b44d6be5216a61d9795",
+      "union_sha256": "6ad3ce1f6b4675554c3c63c47ad2360430e2a7af32f41b44d6be5216a61d9795",
+      "composition_sha256": "6ad3ce1f6b4675554c3c63c47ad2360430e2a7af32f41b44d6be5216a61d9795",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/pending_capture.py",
+      "live_sha256": "c450658d23e4735c619251416ebdfca20e0299265f7a2888deecb7a4864ded0d",
+      "union_sha256": "c450658d23e4735c619251416ebdfca20e0299265f7a2888deecb7a4864ded0d",
+      "composition_sha256": "c450658d23e4735c619251416ebdfca20e0299265f7a2888deecb7a4864ded0d",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/providers.py",
+      "live_sha256": "5ac6e6edb997f1a604100c3106093feb8070ebd2cb822a84f7c34df994f52ad3",
+      "union_sha256": "5ac6e6edb997f1a604100c3106093feb8070ebd2cb822a84f7c34df994f52ad3",
+      "composition_sha256": "5ac6e6edb997f1a604100c3106093feb8070ebd2cb822a84f7c34df994f52ad3",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/publication.py",
+      "live_sha256": "6e147ccd51600277bd5b72a87e602952d3a341b5cddf67907ccfc93f7fe46d56",
+      "union_sha256": "6e147ccd51600277bd5b72a87e602952d3a341b5cddf67907ccfc93f7fe46d56",
+      "composition_sha256": "6e147ccd51600277bd5b72a87e602952d3a341b5cddf67907ccfc93f7fe46d56",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "options/snapshot.py",
+      "live_sha256": "db61d9bc13ea67c3217fb9b1cb147d48d1e39e74226033c76a6e39e0f83479b5",
+      "union_sha256": "db61d9bc13ea67c3217fb9b1cb147d48d1e39e74226033c76a6e39e0f83479b5",
+      "composition_sha256": "db61d9bc13ea67c3217fb9b1cb147d48d1e39e74226033c76a6e39e0f83479b5",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/__init__.py",
+      "live_sha256": "abe2ba42f1c9840993346ed9e5aed91c3f3ddcb576985bd2ad584aace314a98e",
+      "union_sha256": "abe2ba42f1c9840993346ed9e5aed91c3f3ddcb576985bd2ad584aace314a98e",
+      "composition_sha256": "abe2ba42f1c9840993346ed9e5aed91c3f3ddcb576985bd2ad584aace314a98e",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/calculation.py",
+      "live_sha256": "87fc464eff18de90e8774cb13473d7bafd9a1f8fc4d5d32429262d90b342656e",
+      "union_sha256": "87fc464eff18de90e8774cb13473d7bafd9a1f8fc4d5d32429262d90b342656e",
+      "composition_sha256": "87fc464eff18de90e8774cb13473d7bafd9a1f8fc4d5d32429262d90b342656e",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/consensus.py",
+      "live_sha256": "eb04baea217d212ef1bcc7ab341212aec8d0eaf996ddb8196faf074b004940f2",
+      "union_sha256": "eb04baea217d212ef1bcc7ab341212aec8d0eaf996ddb8196faf074b004940f2",
+      "composition_sha256": "eb04baea217d212ef1bcc7ab341212aec8d0eaf996ddb8196faf074b004940f2",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/fundamental_context.py",
+      "live_sha256": "eaf5cdd2071be3627d01fce470d5eecdb77a55c14716539712712a67ea6865a2",
+      "union_sha256": "eaf5cdd2071be3627d01fce470d5eecdb77a55c14716539712712a67ea6865a2",
+      "composition_sha256": "eaf5cdd2071be3627d01fce470d5eecdb77a55c14716539712712a67ea6865a2",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/main.py",
+      "live_sha256": "9d244418148e4e8f2b8e54d7d9b1ca7462d3de39e3f8dab366b38c550641dc16",
+      "union_sha256": "9d244418148e4e8f2b8e54d7d9b1ca7462d3de39e3f8dab366b38c550641dc16",
+      "composition_sha256": "9d244418148e4e8f2b8e54d7d9b1ca7462d3de39e3f8dab366b38c550641dc16",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/parquet_io.py",
+      "live_sha256": "273be5f456e59528d5285411f3a989de754effcc4f0fdf0b39b92a5c845a3257",
+      "union_sha256": "273be5f456e59528d5285411f3a989de754effcc4f0fdf0b39b92a5c845a3257",
+      "composition_sha256": "273be5f456e59528d5285411f3a989de754effcc4f0fdf0b39b92a5c845a3257",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "signals/technical_lifecycle.py",
+      "live_sha256": "1b6ad7873524baab8954abacfe1fcf833aab7ce81eac1d7f4ca7f33cc137d938",
+      "union_sha256": "1b6ad7873524baab8954abacfe1fcf833aab7ce81eac1d7f4ca7f33cc137d938",
+      "composition_sha256": "1b6ad7873524baab8954abacfe1fcf833aab7ce81eac1d7f4ca7f33cc137d938",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/__init__.py",
+      "live_sha256": "37c3478c2fdae918d5c461d374f621eb41b1e7da88a87f9322465a2b062f0c1a",
+      "union_sha256": "37c3478c2fdae918d5c461d374f621eb41b1e7da88a87f9322465a2b062f0c1a",
+      "composition_sha256": "37c3478c2fdae918d5c461d374f621eb41b1e7da88a87f9322465a2b062f0c1a",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/calculations/__init__.py",
+      "live_sha256": "c175d278fb0f8a970562e8f0c13996341d03aebabad77b7c8edbe211477f782c",
+      "union_sha256": "c175d278fb0f8a970562e8f0c13996341d03aebabad77b7c8edbe211477f782c",
+      "composition_sha256": "c175d278fb0f8a970562e8f0c13996341d03aebabad77b7c8edbe211477f782c",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/calculations/bar_shape.py",
+      "live_sha256": "c1947e689fee7dfdde277d2d6da001a64a7b9360e88c34d11f7e81c9dfe61c43",
+      "union_sha256": "c1947e689fee7dfdde277d2d6da001a64a7b9360e88c34d11f7e81c9dfe61c43",
+      "composition_sha256": "c1947e689fee7dfdde277d2d6da001a64a7b9360e88c34d11f7e81c9dfe61c43",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/calculations/breakout_pressure.py",
+      "live_sha256": "2fd6a81a0ea610d4a95758b4eacb19f944a35aaa550b5ecc684d90351bc3082c",
+      "union_sha256": "2fd6a81a0ea610d4a95758b4eacb19f944a35aaa550b5ecc684d90351bc3082c",
+      "composition_sha256": "2fd6a81a0ea610d4a95758b4eacb19f944a35aaa550b5ecc684d90351bc3082c",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/calculations/market_regime.py",
+      "live_sha256": "7aff1fb28a04cd075612cdd47a9448a9f237c18b97157769dea6ae0d6e2a0ae9",
+      "union_sha256": "7aff1fb28a04cd075612cdd47a9448a9f237c18b97157769dea6ae0d6e2a0ae9",
+      "composition_sha256": "7aff1fb28a04cd075612cdd47a9448a9f237c18b97157769dea6ae0d6e2a0ae9",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/calculations/session_aware_breakout.py",
+      "live_sha256": "387e7efda73ff720705819e54f1d0708363a2a8e93acafe82fd4e2211aa3a231",
+      "union_sha256": "387e7efda73ff720705819e54f1d0708363a2a8e93acafe82fd4e2211aa3a231",
+      "composition_sha256": "387e7efda73ff720705819e54f1d0708363a2a8e93acafe82fd4e2211aa3a231",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/calculations/weekly_context.py",
+      "live_sha256": "dad7f6c806cfc98949b2425c6bc63337ddeec1dfc43674a388801a3137d51d54",
+      "union_sha256": "dad7f6c806cfc98949b2425c6bc63337ddeec1dfc43674a388801a3137d51d54",
+      "composition_sha256": "dad7f6c806cfc98949b2425c6bc63337ddeec1dfc43674a388801a3137d51d54",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/hyperliquid_features.py",
+      "live_sha256": "6e05a8b4810765dcbcf86192a645d539622c510a41ae7589874c7beebb57d6de",
+      "union_sha256": "6e05a8b4810765dcbcf86192a645d539622c510a41ae7589874c7beebb57d6de",
+      "composition_sha256": "6e05a8b4810765dcbcf86192a645d539622c510a41ae7589874c7beebb57d6de",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/main.py",
+      "live_sha256": "51f51610928621b27733bd43e98d12b0c90b1c443b25def424f6d7b88f78e707",
+      "union_sha256": "51f51610928621b27733bd43e98d12b0c90b1c443b25def424f6d7b88f78e707",
+      "composition_sha256": "51f51610928621b27733bd43e98d12b0c90b1c443b25def424f6d7b88f78e707",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/parquet_io.py",
+      "live_sha256": "ee53dea5813e760ee12f23ced1347071b9622107dedd72bd28e5a76b70a73807",
+      "union_sha256": "ee53dea5813e760ee12f23ced1347071b9622107dedd72bd28e5a76b70a73807",
+      "composition_sha256": "ee53dea5813e760ee12f23ced1347071b9622107dedd72bd28e5a76b70a73807",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    },
+    {
+      "path": "technicals/split_adjustments.py",
+      "live_sha256": "a71e2d0e4433118b07d473fd702df5e6e8e713b5d287120823991bf54ecb8ade",
+      "union_sha256": "a71e2d0e4433118b07d473fd702df5e6e8e713b5d287120823991bf54ecb8ade",
+      "composition_sha256": "a71e2d0e4433118b07d473fd702df5e6e8e713b5d287120823991bf54ecb8ade",
+      "union_live_ast_equal": true,
+      "composition_live_ast_equal": true
+    }
+  ]
+}
