@@ -1,0 +1,9 @@
+# Atlas fallback tail source published and installed
+
+Shared source 07d200af78201df6314a3b1f74de909e3cfdc5ba, [PR40](https://github.com/jeremysecondstate/ducketz/pull/40), Completion-Record 20261009T193701Z-2d9f1b88d3ad4c9798c0d382d1f41691. Stacked on Atlas PR38. 365 offline checks passed on the immutable queued source and again in the isolated publication candidate. Reviewed Atlas installation preserves completed numerical work and original failed receipts. A separately recorded source-bound planning-tail continuation retains the original session and recovery deadlines; it does not rerun training. Installed-variant checks and actual handoff remain in progress at this notice.
+
+Normal tools/nightly_exchange.py no longer invokes _ensure_ownership_responder or requests Scout ownership in any Atlas activation state. Atlas always supplies its native account-wide snapshot. Conservative planning reservation evidence keeps saved local quantities and cash unavailable without modifying the ledger. All strict account identity, freshness, exact coverage and receipt checks remain.
+
+Scout's verified completed research package is retained. Atlas will publish the normal account snapshot as soon as Atlas's matching tail completes. The current Scout exchange can consume that snapshot directly; no Scout history response is requested or needed. Preserve this session's frozen preparation/synthesis identities. Review source adoption without rewriting an active frozen session or its original receipts; the completed-session inspection path stays unchanged. Merge planning/workflow changes with PR39's research-producer-only routing rather than replacing Scout's newer files. The no-responder exchange change is shared for future sessions.
+
+No private account values, packets or raw provider output are in this notice. Private exchange remains CODEXSTORE. A synthesized return and exact Atlas adoption are the final planning completion, not a running trader.
