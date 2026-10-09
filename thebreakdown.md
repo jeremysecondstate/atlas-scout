@@ -1,5 +1,15 @@
 # ducketz Schwab portfolio management system breakdown
 
+## Current implementation work — October 9, 2026
+
+Jeremy has authorized complete responsibility tasks, normal nightly execution, bounded failure recovery and the documented missed-night fallback on each PC. The [coordination operating rules](coordination/README.md), [ownership record](messages/atlas/2026-10-09-nightly-responsibility-ownership.md), and [Operations board](https://github.com/users/jeremysecondstate/projects/1) carry the current work. These rules supersede historical report-only, Scout-history and post-handover cutover requirements.
+
+Atlas owns shared dispatcher/recovery changes; Scout owns its seven local responsibility tasks and compatible installation review. The verified local coordination checkout is `C:/atlas-scout` on both machines; Scout confirmed its actual project context in [its interface response](messages/scout/2026-10-09-nightly-responsibility-interface.md). Native task IDs, private profiles and task memories remain local. [Issue #1](https://github.com/jeremysecondstate/atlas-scout/issues/1) tracks shared dispatch/recovery, [#2](https://github.com/jeremysecondstate/atlas-scout/issues/2) Atlas task/readiness, [#3](https://github.com/jeremysecondstate/atlas-scout/issues/3) Scout task/compatibility and [#4](https://github.com/jeremysecondstate/atlas-scout/issues/4) Atlas trader fixtures. Final installed task inventory and checks will be recorded after native readback; the [candidate interface](messages/atlas/2026-10-09-dispatcher-interface-proposal.md) is not yet a verified installed release.
+
+The ordinary kickoff remains **21:05 America/Los_Angeles**. Actual prerequisite receipts advance one authoritative action-date pipeline through catch-up → Stats → model review/training/predictions → local Gameplan → Scout synthesis/Atlas handover → combined display. Distinct task identities do not launch competing full pipelines. Repo reconciliation remains independent and Hyperliquid receives priority intake. Healthy running work stays running; completed outputs and terminal sessions are reused. The existing 03:00 and 03:35 notifications remain; neither is a startup prohibition.
+
+Jeremy subsequently reported manually starting Atlas's active trader. Earlier stopped-worker statements below and in dated messages remain historical evidence, not standing instructions to stop or restart it. The tasks inspect status without disturbing the worker. The October 9 13:23 handover is complete; tonight's separate intended trading session must be selected from the configured exchange calendar and verified separately.
+
 ## Late-start fallback route — added October 9, 2026
 
 **Status: verified end to end for the October 9 recovery at 13:23 Pacific.** Scout returned the synthesized Gameplan and combined Stats, Atlas adopted the exact result and receipt (`HANDOFF_VERIFIED_LOCAL`), and the read-only manual-start check returned `EXECUTION_SETUP_READY` with `manual_start_ready=true` and no blockers. The ordinary 9:05pm Pacific nightly workflow remains the primary route. This fallback handles a genuinely missed nightly launch, such as after an outage or unavailable usage. A failed or interrupted run resumes its existing dated work instead of starting another run. This preparation fallback is separate from the trader's overdue-order catch-up described later.
@@ -96,9 +106,9 @@ Both PCs will remain running with their desktop apps open.
 
 **LOG is legacy and reference-only:** Loops Overnight Gameplan and its old scheduled-task definitions are historical references for understanding the prior system. Do not run, reactivate, repurpose or use the legacy LOG schedule as the new workflow's launcher. The replacement gets its own task identity and the stage order defined below. Preserve old definitions for reference; an existing active legacy LOG schedule must be paused to prevent duplicate operation. Reuse suitable tested code where appropriate, but do not inherit old task instructions merely because that code was once called by LOG.
 
-### Current rollout status — October 7, 2026
+### Historical rollout status — October 7, 2026
 
-This status supersedes earlier rollout statements retained as history below. A published PR, a local installation, an enabled task and a successful production run are separate facts.
+This was the October 7 checkpoint and is superseded by the current October 9 operating rules and exact completion evidence above. A published PR, a local installation, an enabled task and a successful production run are separate facts.
 
 | Item | Current evidence / status |
 | --- | --- |
@@ -184,7 +194,7 @@ Hyperliquid operations are in development, and should match 1:1 without any barr
 
 Use the legacy Loops Overnight Gameplan/'LOG' only as a reference for building a new workflow with smaller responsibilities, implemented on both PCs according to their operating roles. Create distinct replacement task identities rather than reusing LOG. Gameplan Stats is now a separate stage before model adjustment/training and Gameplan creation.
 
-### Responsibility and model-use breakdown (updated October 7, 2026)
+### Responsibility and model-use breakdown (updated October 9, 2026)
 
 These responsibilities define the updated sequence below. Model effort depends on the work actually performed: routine command execution can be light, while diagnosing results and changing models requires stronger reasoning. The Scout implementation uses a lightweight native launcher and readiness task, with one stronger Codex CLI review after Stats completes. The initial local launcher/readiness selection is gpt-6-luna/low, and the bounded model review uses gpt-6-astra/high. Package exchange, capital allocation and receipt verification are deterministic code; stronger reasoning remains appropriate for reviewing exceptions or proposing a separately reviewed change.
 
@@ -194,10 +204,10 @@ These responsibilities define the updated sequence below. Model effort depends o
 | GAMEPLAN STATS | Both PCs, after data catch-up | Code scores previously saved predictions using the newest completed outcomes and existing UI metric definitions; Codex reviews completeness and anomalies. |
 | MODEL REVIEW, TRAINING & PREDICTING | Both PCs, after Gameplan Stats | Stronger reasoning for reviewing the newest completed Gameplan Stats and making justified parameter, feature, calibration or architecture adjustments; lighter supervision of established training and prediction runs. |
 | GAMEPLAN | Both PCs, after training and predictions | Create and review the next trading session's local plan from the accepted predictions. |
-| GAMEPLAN SYNTHESIS | Scout; Atlas validates receipt | Code selects exact packages, calculates quantities against one account-wide budget and verifies acceptance; use stronger reasoning for exceptions that require review. |
-| DUCKETZ DISPLAY | Both PCs | Light verification that the correct accepted Gameplan and Gameplan Stats versions are displayed. |
+| GAMEPLAN SYNTHESIS | Scout synthesizes; Atlas delivers, validates and adopts | Scout code selects exact packages and calculates quantities against Atlas's one account-wide budget. Atlas adopts Scout's exact Gameplan, Stats and receipt; Atlas does not run numerical synthesis. |
+| DUCKETZ DISPLAY | Both PCs | Verify exact local Gameplan/Stats before research export, then the accepted combined Gameplan/Stats after synthesis/handover. |
 | REPO RECONCILIATION | Both PCs, independently of the nightly pipeline | Review shared changes at field/behavior level; resolve meaningful conflicts. Give Hyperliquid development priority intake. |
-| TRADER REP | Atlas | Check active-trader readiness/status and automatically reconcile overdue trade intentions when Jeremy starts the active trader late; code calculates net quantities and prevents duplicate submission. |
+| TRADER REP | Atlas only | Check actual readiness/status and verify the existing worker reconciles overdue intentions when Jeremy starts it late, using current evidence, net quantities and duplicate protection. The task never submits orders or controls the trader. |
 
 The order below supersedes the original hourly schedule and combined Gameplan/Stats stage. The 9:05pm kickoff remains the initial target. Later operating stages start when their prerequisites complete, rather than assuming completion from the clock. A local coordinator owns this sequence, saved stage receipts, locks and recovery. The native launcher does not wait inside a chat for numerical jobs to finish.
 
@@ -227,15 +237,15 @@ The order below supersedes the original hourly schedule and combined Gameplan/St
 **Bounded private exchange; code calculates quantities and verifies the shared budget**
 5. Gameplan/Gameplan Stats Synthesis ("CODEXSTORE GAMEPLAN SYNTHESIS"):
     - Each PC exports its verified current-session Gameplan and Stats packages through `CODEXSTORE/ducketz-nightly-exchange/v1`. Missing or partly synced peer inputs remain pending.
-    - After both preparations are present, a `PREPARING` account uses a fresh request/response: Scout reads its own eleven-symbol ownership ledger, Atlas reads its own partition, and Atlas validates both against one fresh account-wide observation. Saved holdings keep their original reconciliation timestamp; the new ledger-read timestamp is separate. Both producer observations must remain within 60 seconds, and unknown, changed or unresolved ownership blocks planning.
-    - Scout's hidden ownership responder has a separate local lock and a saved six-minute loop deadline. Atlas waits at most 50 seconds for the exact response before leaving the wake pending without a broker read. Repeated responses keep their original bytes and timestamp. The loop deadline cannot forcibly interrupt stalled filesystem I/O; response expiry is rechecked before publication.
-    - After a separately authorized `ACTIVE` cutover, Atlas retains the existing native 22-symbol snapshot route. Neither route changes execution authority. Scout synthesizes only with a fresh account snapshot and freezes the exact selected inputs.
+    - After both preparations are present, Atlas supplies one fresh account-wide budget snapshot covering the bound 22-symbol execution universe, including current holdings, working orders and reservations. Preserve original account/symbol/horizon/allocation/order/fill identities and evidence; missing records do not establish zero holdings.
+    - Scout performs synthesis from both frozen research packages against that single Atlas snapshot. Scout has no broker/account snapshot, execution-ledger, ownership-responder or migration prerequisite. The superseded ownership-challenge design remains in the October 7 Git history, not as a standing operating step.
+    - Freeze the exact selected inputs and receipts. Recover partial publication/adoption through the same durable selection. A completed terminal session never captures another snapshot or replays handover.
     - Scout publishes the combined result and both owners' original package pairs. Atlas verifies the plan, Stats and its own original snapshot publication before adopting; it returns exact acceptance evidence. Jeremy still manually starts the trader.
 
 **After the combined results are accepted**
 **Light verification**
 6. Ducketz UI/App Display ("DUCKETZ DISPLAY"):
-    - Use the synthesized Gameplan and Gameplan Stats and display it on the ducketz UI/app in the 'Gameplan' tab and 'Gameplan Stats' tab.
+    - Before export, verify the exact saved local research Gameplan and Stats. After synthesis or handover, verify the ordinary readers select the accepted combined Gameplan and Stats for the intended action date. Do not demand a combined publication before Scout has synthesized it.
 
 **Separate workflow; 1:25am PDT/PST remains an initial routine-review target**
 **Middleweight review; stronger reasoning for meaningful conflicts**
@@ -245,7 +255,7 @@ The order below supersedes the original hourly schedule and combined Gameplan/St
 **Starting at 3:55am PDT/PST**
 **Light status review; deterministic catch-up calculations**
 8. Trader Representative ("TRADER REP"):
-    - Determines whether Jeremy has turned on the active trader on Atlas. If he starts it an hour or two late, automatically catch up the outstanding net trade intentions, accounting for offsetting buys/sells, starting inventory, actual fills and outstanding orders. Do not discard an instruction solely because its scheduled time passed. Jeremy still manually starts the active trader; the PC itself remains on. Catch-up must respond to the actual trader start, not rely only on a one-time 3:55am check.
+    - Determine actual readiness and whether Jeremy has turned on Atlas's active trader. Verify that the normal worker catches up outstanding net intentions, accounting for offsetting buys/sells, starting inventory, actual fills and outstanding orders. A scheduled timestamp alone is not an expiry. Continue covering manual starts after the initial 03:55 check. The task never starts, stops or restarts the trader, changes its controls, or submits/cancels/replaces orders.
 
 ### Confirmed refinements and implementation notes
 
@@ -261,7 +271,7 @@ The order below supersedes the original hourly schedule and combined Gameplan/St
 
 **Late-start catch-up:** Jeremy's example is a 4am AAPL buy of one share followed by a 5am sell of one or two shares, with the active trader started at 5:15am. The new source offsets opposing overdue quantities within each symbol and inventory-owning horizon. Buy one then sell one can cancel; buy one then sell two leaves a net sale of one when starting holdings support it. Plan-related fills and open orders reduce outstanding quantities, cancelled residuals can retry, and unrelated manual activity is not treated as a plan fill. A missed timestamp alone is not an expiry rule. This applies to accepted combined plans and verified complete local direction ledgers; separate horizon inventory ownership and the manual trader start remain in place.
 
-**Before the first 22-symbol trader start:** Jeremy must separately authorize the reviewed Atlas execution cutover, including any required one-time private native-ledger migration procedure. Today's authorization covers sanitized planning packets and excludes database transfer; the fresh ownership observations do not replace migration evidence. Atlas must verify the producer execution fence, native union reconciliation and installed ledger, then bind the local cutover receipt before moving from `PREPARING` to `ACTIVE`. Keep manual trader startup after that verified transition. A configuration toggle or a successful combined UI display does not satisfy these prerequisites.
+**Handover completes planning:** exact Scout synthesis and Atlas adoption completed on October 9, and Jeremy later reported starting the trader manually. Do not add a Scout-history export, migration, cutover, duplicate broker preflight or additional approval ceremony. Existing account/order reconciliation belongs to Atlas's normal worker. The superseded October 7 first-start requirements remain in Git history as historical evidence.
 
 **Transport and private data:** preserve the installed Git coordination history, pinned Drive signals, existing queues, identities and receipts for source and sanitized status notices. The nightly operating data uses a deliberately separate, explicitly authorized private synchronized folder at `CODEXSTORE/ducketz-nightly-exchange/v1`; it is not a replacement or fallback for the Git notice channel. Do not publish private exchange packets, configurations or account state to Git/GitHub.
 
@@ -269,9 +279,9 @@ Jeremy explicitly authorized this private packet to carry cash, equity, inventor
 
 Each wake is bounded. Packet selections bind the action date, completed Stats session, actor, account scope, exact owner lists, byte count and hashes. Preparation, joint and acceptance selections are immutable. Atlas may refresh an unconsumed snapshot before a joint result is selected; a frozen or partially adopted synthesis retains its original snapshot and completion identity. Atlas saves its own local capture proof before publishing, so an Atlas-named shared packet or receive cache cannot establish that Atlas captured it. A snapshot must be no more than 900 seconds old at first synthesis; a frozen attempt that expires before first adoption remains pending for explicit review. A prepared package is not peer receipt, and receipt verification does not activate trading. Actual source installation, configuration and schedule status are listed above.
 
-### Replacement implementation and native task identities
+### Historical October 7 replacement task inventory
 
-The shared implementation/runbook is `docs/development/nightly-workflow.md` in ducketz, with a portable example configuration in `coordination/nightly-workflow.example.json`. Machine paths, native IDs, profiles and task memory remain local.
+The shared implementation/runbook is `docs/development/nightly-workflow.md` in ducketz, with a portable example configuration in `coordination/nightly-workflow.example.json`. Machine paths, native IDs, profiles and task memory remain local. The table below records the earlier rollout, not the final October 9 eight/seven-responsibility inventory. Its 15-minute Scout priority interval is historical; the current request requires five-minute priority coverage.
 
 | New Scout task | Schedule / role | Rollout state |
 | --- | --- | --- |
