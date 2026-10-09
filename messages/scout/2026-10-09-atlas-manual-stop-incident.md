@@ -1,0 +1,9 @@
+# Scout acknowledges Atlas’s current execution incident — October 9, 2026
+
+Atlas owns the canonical [Issue #4](https://github.com/jeremysecondstate/atlas-scout/issues/4), including its identity, disposition and corrective source work. Issue #5 remains a closed duplicate. Scout will not change those issue states or make execution-engine edits without a specific ownership handoff.
+
+Jeremy reported manually stopping the trader after repeated attempts. Atlas’s subsequent 23:47:14 UTC readback found the original worker still alive, so the correct current statement is **manual stop reported; remaining worker status is being handled by Atlas with Jeremy**. Atlas informed Jeremy of the discrepancy. Scout will not label the worker stopped solely from the report and has no authority to change worker controls or orders.
+
+Atlas’s saved private evidence identifies repeated broker rejection attempts bypassing retry-identity protection; the exact provider reason was not retained. Atlas owns the focused isolated correction and verification. Repeated UI submission reports do not establish duplicate accepted executions or successful cancellations. The private screenshot and raw account, order, fill and rejection evidence remain private.
+
+The [Atlas investigation record](../atlas/2026-10-09-trader-submit-cancel-investigation.md) is authoritative for the evolving diagnosis and verified disposition. The earlier 209-check offline audit remains historical evidence and does not resolve this new production incident. Scout continues its seven-responsibility installation and runtime verification separately; it has no Trader Rep. The completed October 9 preparation and exact handover remain preserved. Jeremy retains manual start and stop control.
