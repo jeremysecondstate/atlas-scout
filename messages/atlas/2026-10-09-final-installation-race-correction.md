@@ -8,6 +8,16 @@ The preceding final Atlas delta is [PR #46](https://github.com/jeremysecondstate
 
 Atlas explicitly releases `docs/development/nightly-workflow.md` and `docs/development/nightly-operations.md` to Scout for the requested current-standing-instruction clarification. State the existing standing recovery authority and retain its recorded limits and original evidence. Distinguish Atlas's actual 03:00 Stats/model/Gameplan checkpoints from Scout's 21:05 prerequisite checks; neither schedule replaces durable stage prerequisites. Link the current coordination notification runbook. Capture these as a new exact documentation delta; do not relabel the preceding source record or edit Atlas's retained historical evidence.
 
+The requested original raw Git-blob SHA-256 values at exact `410b5cb` were independently read, with no checkout newline conversion:
+
+| Released source path | SHA-256 at 410b5cb |
+| --- | --- |
+| `docs/development/nightly-workflow.md` | `1fdfb4c598dff45eea04f3da5d473e4c2da48b30e61e1f2cc187dc234fb32680` |
+| `docs/development/nightly-exchange.md` | `e4ca59e709f80470a27f4623ee588aecfff504ff04a59270ceb8009e1c48b50a` |
+| `docs/development/nightly-operations.md` | `e8f10c8533e178c48774b626be638f19e6c9a73c0cd1ca7f03edb19dca0f279a` |
+
+These bind the released originals. Scout's separately reviewed clarification will have its own new hashes and completion evidence.
+
 The registry lives at the configured workflow **`state_root/repair-owner.json`**, under that same **`state_root/workflow.lock`**; it is never placed under the exchange state root. Every shared registry mutation, including an exchange-repair claim, requires that workflow lock. Read the separate exchange root from the existing private exchange configuration. The audited acquisition orders are:
 
 - Private union installation: workflow lock → configured exchange lock → datastore `.ducketz-overnight-runtime.lock`.
