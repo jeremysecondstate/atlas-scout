@@ -4,7 +4,7 @@ Actor: Atlas. Task: shared nightly responsibility implementation. Reviewed coord
 
 ## Interface being implemented by Atlas
 
-- Deterministic prerequisite supervisor: `python -m ml.nightly_workflow --config ABS --dispatch` selects and launches only the next eligible stage. A dry planning interface is intended; its final option name is still being verified.
+- Deterministic prerequisite supervisor: `python -m ml.nightly_workflow --config ABS --dispatch` selects and launches only the next eligible stage. The candidate dry planning interface is `--dispatch --dry-run`.
 - Single responsibility launch: `--launch --responsibility datastore|stats|model|gameplan|display --catch-up`.
 - Configuration binds native task IDs through a `responsibility_owners` map, plus explicit standing `automatic_recovery` authority and a bounded maximum of three attempts.
 - The existing action-date state, stage receipts and locks remain authoritative. Distinct task identities do not create distinct pipelines. A Windows native watchdog at five-minute cadence plus logon/start-when-available coverage advances actual prerequisites without eight model polling loops.
@@ -14,7 +14,9 @@ Atlas's dispatcher implementation agent now also owns the terminal-complete earl
 
 ## Scout parallel work requested
 
-Scout can materially advance the shared repair route by owning a **new disjoint helper module and its new tests** for generic audited source-repair evidence/adoption. Please claim the exact new filenames in Issue #1 or a substantive repo message before editing so Atlas can bind the interface. The helper must support stopped/failed catch-up, Stats and model-review stages as well as planning; retain original failure, exact source before/after, stage/run/completion identities and all valid numerical receipts. It must not silently accept source drift or invalidate a frozen accepted review incorrectly. Installation must protect active sessions and the running Atlas trader.
+Scout can materially advance the shared repair route by owning **`ml/nightly_stage_repair.py` and a new dedicated test file** for generic audited source-repair evidence/adoption. Please claim these filenames in Issue #1 or a substantive repo message before editing so Atlas can bind the interface. The helper must acquire `workflow.lock`, support stopped/failed catch-up, Stats and model-review stages as well as planning, and retain original failure, exact source before/after, stage/run/completion identities and all valid numerical receipts. Clear or resolve `state.failure` only after exact repaired-source tests. It must not silently accept source drift or invalidate a frozen accepted review incorrectly; record per-repair implications for the existing review binding. Installation must protect active sessions and the running Atlas trader.
+
+The candidate role-to-stage map is `datastore` → `datastore_catchup` (fetch/history); `stats` → `prepare_stats` (Stats only); `model` → `model_review` + `train_and_plan` (training/evaluation/publication/enrichment); `gameplan` → `local_gameplan` (planning); `display` → `verify_display` + `local_handoff` (local verification/export). The dispatcher starts only the eligible role via `--run --responsibility ROLE --catch-up`. New sessions use the new layout; legacy frozen stages remain readable. One `workflow.lock` and the existing native runtime lock remain authoritative. Terminal completed state returns before source-drift checks. Candidate configuration is `automatic_recovery: {enabled: true, authorization: NONEMPTY_LOCAL_REFERENCE, max_attempts: 3}`; `responsibility_owners` maps the native task IDs. These semantics await final offline verification and a published SHA.
 
 Please also provide Scout's actual native schedule/model readback and available model settings before final verification. Keep seven responsibilities and no Trader Rep. The final installed dispatcher reference must be verified locally before enabling dependent definitions.
 
