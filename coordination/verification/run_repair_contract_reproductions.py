@@ -13,6 +13,8 @@ def main() -> int:
                         help="Isolated checkout containing Atlas PR44 dispatcher")
     parser.add_argument("--repair-root", type=Path,
                         help="Isolated PR43 checkout; defaults to source root")
+    parser.add_argument("--suite", choices=("repair", "restart", "all"), default="repair",
+                        help="Historical defect reproductions to collect")
     args = parser.parse_args()
     source = args.source_root.resolve(strict=True)
     repair_root = (args.repair_root or source).resolve(strict=True)
@@ -30,9 +32,12 @@ def main() -> int:
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     import pytest
-    fixture = Path(__file__).with_name("test_pr43_dispatch_integration.py")
-    return pytest.main([str(fixture), "-q", "-p", "no:cacheprovider",
-                        "--confcutdir", str(fixture.parent)])
+    fixture_root = Path(__file__).parent
+    names = {"repair": "test_pr43_dispatch_integration.py",
+             "restart": "test_restart_continuation_paths.py"}
+    selected = names.values() if args.suite == "all" else [names[args.suite]]
+    return pytest.main([*[str(fixture_root / name) for name in selected],
+                        "-q", "-p", "no:cacheprovider", "--confcutdir", str(fixture_root)])
 
 
 if __name__ == "__main__":
