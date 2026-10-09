@@ -28,6 +28,40 @@ Atlas's implemented recovery interface is `ml.nightly_workflow --launch --recove
 | Full recovery and handover | Not complete at the 12:04pm Pacific checkpoint. Today's original deadline was 04:00 and its fixed recovery cutoff was noon; neither was extended. Do not describe this fallback as operational end to end until an actual recovered Gameplan is handed back to Atlas. |
 
 The existing preparation, synthesis/handoff and source-reconciliation tasks retain their schedules and identities. Atlas's tasks check the connected `atlas-scout` folder/GitHub repository for substantive coordination. Private financial packets remain in `CODEXSTORE/ducketz-nightly-exchange/v1`. Atlas's existing Ducketz decision logs, Gameplan review artifacts and native holdings ledger provide local history references; projected Gameplan quantities and market-outcome Stats must not be mistaken for actual fills.
+### Scout recovery interface and verified checkpoint
+
+**Current operating rule, confirmed directly by Jeremy:** Scout prepares the Gameplan and Gameplan Stats for Scout's 11 symbols; Atlas does the same for Atlas's 11. Scout synthesizes both Gameplans against one fresh Atlas account-wide view of cash, holdings and order reservations, then hands the synthesized Gameplan back to Atlas. Atlas is the sole executor for all 22 symbols. Delivery and loading of that exact synthesized Gameplan completes planning. Jeremy manually starts Atlas's trader. No further planning approval or Scout ownership-history gate follows handover.
+
+Scout does not execute trades. Its local research preparation must not require a Scout broker/account snapshot, execution ledger, ownership response, order/fill history or migration. Preserve the existing application logs and saved prediction outcomes underlying Gameplan Stats and Gameplan; use those for historical evaluation. Do not infer zero holdings from missing Scout execution records. Actual account and order reconciliation belongs to Atlas.
+
+**Historical wording below is superseded where it requires Scout execution history, the Scout ownership responder, or an additional cutover approval after handover.** The October 7 status table records what was believed and installed then; it is not evidence that the corrected workflow has completed a production handover.
+
+#### Scout missed-night / late-start preparation route
+
+This route covers a missed kickoff, exhausted usage, power outage, interruption or an otherwise late start. It is distinct from the existing trader's catch-up of overdue trade intentions after Jeremy manually starts trading.
+
+1. At the ordinary 21:05 Pacific kickoff, run preparation for the intended session. A daytime completion or an older `latest.json` must never be interpreted as completion of the upcoming nightly session.
+2. The existing Scout preparation task also has a 04:05 Pacific fallback. Read `ml.nightly_workflow --config scratch/nightly-workflow/config.json --status --catch-up` for the intended action date, including its exact active native report, log, owner liveness and completed receipts. A healthy live owner keeps running; do not launch a duplicate.
+3. If that intended session is missing or an eligible failed worker has exited, run `ml.nightly_workflow --config scratch/nightly-workflow/config.json --check`, then one authorized `--launch --catch-up --recovery-reason "Operator-authorized missed nightly preparation"`. Use the existing task and locks. Diagnose deterministic failures before retrying; do not repeatedly relaunch unchanged failures.
+4. Catch-up selects the newest completed exchange session and its next action date. Before the normal deadline it retains the normal deadline. After it, the first request creates one immutable recovery record with the real request time, original 04:00 Pacific deadline and a fixed expiry capped at seven hours after the request or 17:00 Pacific on the action date, whichever is earlier. Retries retain that expiry and all usable completed work.
+5. Preserve real acquisition/publication timestamps. Training inputs retain the original information cutoff. A plan produced late is explicitly identified as late; publication after 04:00 is not by itself future market information or proof that the wrong session was selected.
+6. Resume from the eligible failed stage. If a reviewed source correction is required, preserve the original failure and establish an explicit new source binding before resuming. A planning-only repair can retain completed Stats, review, generation, evaluation, forecasts and enrichment instead of training them again.
+7. Continue the same private exchange and Scout synthesis once both exact preparation packages are ready. Use Atlas's account state for the combined budget. Deliver/load the synthesized result on Atlas; planning is then complete. Legacy LOG remains paused and trader startup remains manual.
+
+#### Scout implementation checkpoint — October 9, 2026, 19:05 UTC / 12:05 Pacific
+
+The fallback is **partly exercised in production, not yet verified end to end**. The October 9 action-date recovery selected October 8 as its completed source session. The saved request was 14:49:40 UTC / 07:49:40 Pacific; its unchanged expiry is 21:49:40 UTC / 14:49:40 Pacific. Stats and model review completed; generation, evaluation and publication completed, including 264 forecasts at 18:50:18 UTC; enrichment completed at 18:51:36 UTC. The final local planning stage failed at 18:51:49 UTC on a validator that treated late publication as future information. A synthesized handover has not yet been established by this checkpoint.
+
+| Component | Evidence and actual state |
+| --- | --- |
+| Missed-launch selection, fixed recovery evidence and native-stage propagation | Implemented and used in today's recovery; published source `197dea8e461a35118d4c03272f2913ef73191893`. |
+| Archive acquisition time versus original information cutoff | [PR #33](https://github.com/jeremysecondstate/ducketz/pull/33), source `d53d2007f8665e866c15cc37c608df3323bb9082`, Completion-Record `20261009T182830Z-bafca648331d458bab9a029c5849fd43`. Installed on Scout; recovery then reached forecast publication and enrichment. 143 offline checks passed for the reviewed source and isolated candidate. |
+| Retain completed numerical work during a planning-only source repair | [PR #36](https://github.com/jeremysecondstate/ducketz/pull/36), source `3c567ef96519dbbc9870648b750363574b6845c4`, Completion-Record `20261009T184441Z-6932052c48984e14be3c066f57ac06bd`. Published and tested (150 passed); not yet installed at this checkpoint. |
+| Accept truthful late publication under the existing recovery record | [PR #37](https://github.com/jeremysecondstate/ducketz/pull/37), source `6be0d1ef71201133c351a7ed0825b95456c8a9e5`, Completion-Record `20261009T185159Z-65356abaaccc448197ff44f058c30871`. Published and tested (410 passed, one Windows symlink privilege skip); a read-only check accepted all 264 saved forecasts unchanged. Not yet installed at this checkpoint. |
+| Remove Scout's erroneous local account/ownership dependency | Correction in progress; targeted research-role and workflow tests passed (42). This is not yet a published, installed or production-complete change. |
+| Scheduled instructions | Scout's five existing preparation, readiness, synthesis, priority and paused legacy tasks now contain the corrected roles and completion rule. Schedules and activation states were preserved, including 21:05 / 04:05 preparation and paused LOG. Atlas separately reported updating its preparation, handoff and priority tasks. |
+
+Later checkpoints must distinguish publication, local installation, completed preparation and actual synthesized handover. Keep exact private evidence, account values and packets out of this repository.
 
 ## This is a breakdown of our systems on both PCs (pc-new is named "Scout" and pc-original is named "Atlas").
 
