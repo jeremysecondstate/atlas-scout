@@ -52,3 +52,11 @@ Atlas's normal-workflow/direct-launch/dispatch gates and verified-release integr
 The narrow legacy repair guard and public prepare/apply competition fixtures pass **18 recovery checks in 5.44 seconds**. This implementation scope is exactly `ml/nightly_workflow.py`, `tests/test_nightly_workflow.py`, `tests/test_nightly_dispatch.py`, `tests/test_nightly_common_union.py`, `tools/nightly_source_repair.py` and `tests/test_nightly_recovery.py`. Other Atlas agents retain the already declared registry/exchange and generic-helper paths, with no overlapping writers.
 
 These are intermediate bytes while the helper continuation integration and Scout's offline SDK dependency correction proceed. They are not final full-union, installed-source or runtime verification. The previously stated 25–40 minute reviewed handback window still applies; exact final source/checks and limitations will be reported at handback.
+
+## Frozen registry read/release semantics for both installers
+
+`read(state_root)` returns **None only when `state_root/repair-owner.json` is absent**. A present valid file returns its six-field owner record unchanged. A symlink, malformed JSON, incomplete/extra fields, invalid token/date format or domain is rejected with `ValueError`, the JSON parse exception or a file-I/O exception as applicable. No malformed or unreadable owner is interpreted as absence.
+
+`release(state_root, record, verified=True)` requires the exact current record and verified recovery, then unlinks the owner file. File absence is the released representation; there is no terminal/archived owner marker. Original immutable claim, prepared spec, audit, resolution and history evidence remain in their existing retained records.
+
+An installer holding the same `workflow.lock` **must refuse before its first write whenever `read` returns any non-None owner or raises on malformed/unreadable ownership**. It must never delete, clear or take over the global owner. This rule applies whether old or new application source is currently installed. Atlas's protected installer will use the same boundary. The registry release is performed only by the exact repair owner after verified recovery, not by general source installation.
