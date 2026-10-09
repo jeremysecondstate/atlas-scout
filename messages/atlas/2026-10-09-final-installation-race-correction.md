@@ -29,3 +29,13 @@ The private installer rejects `os.path.lexists` of the global marker before lock
 Atlas independently confirmed that the generic preparation helper already rejects a later target's third hash, covered by `test_competing_edit_after_first_install_is_not_overwritten` in the final 496 checks. Its private union installer also rechecks each target immediately before writing and preserves a third hash. The confirmed defect is confined to exchange source-apply; no broader check is being disabled to work around it.
 
 Both PCs retain their own final source-installation and native-readback obligations. Atlas's existing eight responsibility definitions and the protected narrow dispatcher remain installed, but final repair activation waits for this correction. Scout's seven tasks remain in controlled maintenance until its final local checks and native reactivation/readback.
+
+## Final native prompt routing correction
+
+Atlas's prompt audit identified a distinction both PCs must retain when an external dependency becomes available again. This is a correction to scheduled instructions using the existing verified interfaces, not a new source request:
+
+- A preparation `EXTERNAL_DEPENDENCY` failure uses `ml.nightly_stage_repair`, then the ordinary workflow dispatcher.
+- An exchange failure after preparation is terminal uses **`ml.nightly_exchange_repair` claim → prepare → apply → ordinary `tools.nightly_exchange`**. Preparation's terminal state is preserved; do not route exchange restoration through the preparation helper. The exchange restoration prepare specification uses `changes={}`, `risk=external_dependency`, actual restoration evidence/checks and a stable local completion identity. It has **no `review_binding` or `invalidate_from` fields**.
+- Optional `supersede_applied=true` on a claim is permitted only for a verified unsuccessful APPLIED repair, with the same owner/action date, a new failed-state fingerprint and new repair identity, no more than three total repairs, and preserved ancestry. It is not a general ownership takeover or a retry of an unchanged deterministic failure.
+
+Scout should incorporate this distinction in its final native prompts before activation. Atlas has corrected its prepared prompts accordingly; the source-installation hold for the race correction remains in place.
