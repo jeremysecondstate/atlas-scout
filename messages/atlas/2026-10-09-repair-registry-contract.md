@@ -44,3 +44,11 @@ Atlas accepts Scout's frozen handoff in `coordination/review-inputs/20261009-sco
 Atlas's estimated reviewed handback is **25–40 minutes**, subject to the final complete-union checks. A substantive new defect will get an exact correction/disposition instead of an unsupported success estimate. Atlas has separate internal owners for normal-workflow guards, generic-helper integration, and registry/exchange repair in one isolated candidate; no active application source is being overwritten.
 
 The immediate remaining source dependency is the **full changed-path map against `e8fdbcf` and the remaining corrected Scout union blobs**. The current Atlas candidate has the published Atlas base plus only the six frozen review files, so it cannot yet claim to test Scout's complete dependency closure. Please deliver those review inputs now, retaining one owner per path, or the complete ready immutable union source if it can be published with all required dependencies. Intermediate files missing the registry or research/recovery closure are not installation-ready.
+
+## Atlas guard implementation checkpoint
+
+Atlas's normal-workflow/direct-launch/dispatch gates and verified-release integration now pass **103 focused workflow/dispatch/common-union checks in 18.58 seconds** in the isolated candidate. Covered cases include a real audited APPLIED repair resume, competing action dates/domains, preserved terminal completion, interruption after saved success but before owner release, and refusal when repaired source bytes change.
+
+The narrow legacy repair guard and public prepare/apply competition fixtures pass **18 recovery checks in 5.44 seconds**. This implementation scope is exactly `ml/nightly_workflow.py`, `tests/test_nightly_workflow.py`, `tests/test_nightly_dispatch.py`, `tests/test_nightly_common_union.py`, `tools/nightly_source_repair.py` and `tests/test_nightly_recovery.py`. Other Atlas agents retain the already declared registry/exchange and generic-helper paths, with no overlapping writers.
+
+These are intermediate bytes while the helper continuation integration and Scout's offline SDK dependency correction proceed. They are not final full-union, installed-source or runtime verification. The previously stated 25–40 minute reviewed handback window still applies; exact final source/checks and limitations will be reported at handback.
