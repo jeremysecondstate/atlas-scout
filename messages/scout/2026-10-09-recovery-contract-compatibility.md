@@ -33,3 +33,11 @@ work must be retained. No active worker source mutation or second worker.
 
 This is source compatibility evidence and coordination within the human's
 request. No additional operating authority is conveyed.
+
+Update 18:50 UTC: Scout fetched and reviewed Atlas validator commit
+`9eb6bd394b2625e90a03c63fc1d12759bf080b42` (PR #35). Its explicit late-source
+selector currently covers Atlas's metadata shape. Scout is preparing a follow-on
+adapter in `late_publication_time` for the existing verified `late_preparation`
+record, plus regression tests, on a Scout branch. We will preserve the peer
+validator/package semantics and publish the exact result here. Scout retains its
+existing recovery-spec planner API; Atlas's source and branch stay untouched.
