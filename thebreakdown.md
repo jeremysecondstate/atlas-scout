@@ -234,7 +234,7 @@ These responsibilities define the updated sequence below. Model effort depends o
 | REPO RECONCILIATION | Both PCs, independently of the nightly pipeline | Review shared changes at field/behavior level; resolve meaningful conflicts. Give Hyperliquid development priority intake. |
 | TRADER REP | Atlas only | Check actual readiness/status and verify the existing worker reconciles overdue intentions when Jeremy starts it late, using current evidence, net quantities and duplicate protection. The task never submits orders or controls the trader. |
 
-The order below supersedes the original hourly schedule and combined Gameplan/Stats stage. The 9:05pm kickoff remains the initial target. Later operating stages start when their prerequisites complete, rather than assuming completion from the clock. A local coordinator owns this sequence, saved stage receipts, locks and recovery. The native launcher does not wait inside a chat for numerical jobs to finish.
+The order below supersedes the original hourly schedule and combined Gameplan/Stats stage. The established kickoff is 9:05pm Pacific. Later operating stages start when their prerequisites complete, rather than assuming completion from the clock. A local coordinator owns this sequence, saved stage receipts, locks and recovery. The native launcher does not wait inside a chat for numerical jobs to finish.
 
 **Starting at 9:05pm PDT/PST**
 **Light routine supervision; stronger reasoning for exceptions**
@@ -254,7 +254,7 @@ The order below supersedes the original hourly schedule and combined Gameplan/St
     - with fresh/current/up-to-date DATASTORE data, models train/eval/print predictions.
 
 **After TRAINING & PREDICTING completes**
-**Middleweight review; stronger reasoning for exceptions**
+**Light supervision; stronger reasoning for exceptions**
 4. Gameplan ("GAMEPLAN"):
     - create the next trading session's local Gameplan from the accepted predictions. Gameplan Stats was already completed before training.
 
@@ -272,12 +272,12 @@ The order below supersedes the original hourly schedule and combined Gameplan/St
 6. Ducketz UI/App Display ("DUCKETZ DISPLAY"):
     - Before export, verify the exact saved local research Gameplan and Stats. After synthesis or handover, verify the ordinary readers select the accepted combined Gameplan and Stats for the intended action date. Do not demand a combined publication before Scout has synthesized it.
 
-**Separate workflow; 1:25am PDT/PST remains an initial routine-review target**
-**Middleweight review; stronger reasoning for meaningful conflicts**
+**Independent five-minute source intake**
+**Light supervision; stronger reasoning for meaningful conflicts**
 7. Ducketz Projects Reconciled ("REPO RECONCILIATION"):
     - via CODEXSTORE and/or GitHub, Atlas and Scout publish reviewed completed changes using the existing source procedures. They adopt common changes and preserve documented local fields and symbol overlays through granular review. Both projects need to be on the same page for seamless interchangeability. Hyperliquid development receives priority intake rather than waiting for this time.
 
-**Starting at 3:55am PDT/PST**
+**Atlas at :25 and :55 each hour from 03:00 through 17:59 Pacific**
 **Light status review; deterministic catch-up calculations**
 8. Trader Representative ("TRADER REP"):
     - Determine actual readiness and whether Jeremy has turned on Atlas's active trader. Verify that the normal worker catches up outstanding net intentions, accounting for offsetting buys/sells, starting inventory, actual fills and outstanding orders. A scheduled timestamp alone is not an expiry. Continue covering manual starts after the initial 03:55 check. The task never starts, stops or restarts the trader, changes its controls, or submits/cancels/replaces orders.
@@ -290,7 +290,7 @@ The order below supersedes the original hourly schedule and combined Gameplan/St
 
 **Implemented feedback ordering on Scout:** `ml/gameplan_actuals_review.py` now supports standalone completed-session Stats without waiting for the successor plan. The replacement coordinator invokes the existing numerical runtime with Stats-first ordering, stops after Stats, obtains the stronger review, then starts training with the exact reviewed proposal. The existing UI metrics and saved forecast targets feed the diagnostics. Legacy receipt/stage ordering remains readable for historical runs.
 
-**Research versus execution:** each PC researches its own 11 symbols, while Atlas's active trader accepts the combined 22-symbol plan. Scout's new source separates the accepted execution universe from research selection, with explicit source/account/session/actor bindings. Scout can display the combined plan without gaining execution authority. Atlas's PR #15 account-control implementation and PR #16 readiness changes have now been reviewed; the current local adoption evidence is recorded in the dated status table above. Account cutover, execution bindings and manual trader startup remain separate from source adoption and exchange readiness.
+**Research versus execution:** each PC researches its own 11 symbols, while Atlas's active trader accepts the combined 22-symbol plan. Shared source separates the accepted execution universe from research selection, with explicit source/account/session/actor bindings. Scout can display the combined plan without gaining execution authority. The earlier PR #15/#16 rollout is retained in the dated historical table. Current planning is complete once Atlas has adopted Scout's exact combined result; Jeremy controls manual trader startup, and no additional cutover step follows handover.
 
 **Portfolio synthesis:** one account-wide capital budget is a central purpose of synthesis. Combine both plans with existing holdings, working orders and reservations so the two symbol groups do not each allocate the same funds. Scout produces the combined plan; Atlas remains the live execution owner.
 
