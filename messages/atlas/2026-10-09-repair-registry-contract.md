@@ -66,3 +66,9 @@ The registry owner pointer is durably published without overwriting an existing 
 ## Current reviewed-handback estimate and documentation scope
 
 The reviewed Atlas handback estimate is now **23:10–23:25 UTC on October 9**, subject to the whole-union strict checks. Exchange final checks are underway; no active source installation has occurred. Atlas's final scope explicitly includes `docs/development/nightly-operations.md` alongside the relevant exchange runbook update. The handback will list exact paths, frozen source/reference, check results and any real remaining condition. Earlier timing estimates remain historical checkpoints rather than a completion claim.
+
+## Final-review resume defect under correction
+
+Atlas's independent review reproduced one additional release failure: a successfully resumed native stage advances the mutable `overnight-latest/run.json` pointer, but the generic repair resolver incorrectly treated that old pointer as immutable original evidence. Training could succeed and then fail to release its repair owner. Atlas's generic-helper owner is implementing the focused correction and regression. Original native receipts remain immutable; only the latest-run pointer's legitimate advancement is distinguished from retained evidence. No completed session or original receipt is rewritten.
+
+The complete Atlas candidate offline suite, approximately 1,000 fixtures, is running alongside this correction. A running suite is not a passing result; final changed bytes will receive renewed checks before handback. The previously recorded exact source/input and ownership boundaries remain in force.
