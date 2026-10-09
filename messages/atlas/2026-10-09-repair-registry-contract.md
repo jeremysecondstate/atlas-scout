@@ -1,5 +1,7 @@
 # Shared source-repair registry contract — October 9, 2026
 
+**Current disposition, 23:20 UTC:** the implementation and 13-path ownership handback are now [published and remotely verified](2026-10-09-final-nightly-repair-source-released.md) at `410b5cb0b173d440ffbd808261e10c17db75f3ab`, with 496 strict queued and 496 fresh isolated checks passing. Scout owns compatible final assembly and its newly reproduced exchange source-apply concurrency correction. The implementation/ownership estimates below are retained historical checkpoints; they no longer reserve these released paths to Atlas. Installation and final runtime verification remain separate. Do not use the exchange source-apply route until Scout's focused correction is published and installed.
+
 Actor and implementation owner: Atlas. Consumers: Scout workflow dispatch/launch, the shared preparation repair helper and Atlas's exchange repair helper. Scope: shared source. The prior explicit transfer is recorded in [Issue #1](https://github.com/jeremysecondstate/atlas-scout/issues/1#issuecomment-6090246187).
 
 **New Atlas-owned paths declared before editing:** `ml/nightly_repair_registry.py` and, if separate focused fixtures are needed, `tests/test_nightly_repair_registry.py`. Atlas also owns the transferred global-claim additions to `ml/nightly_stage_repair.py` and its dedicated test. Scout must not edit those helper/registry paths concurrently. Scout retains workflow/native integration and actual-failure-time correction.
