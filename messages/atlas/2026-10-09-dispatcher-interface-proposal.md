@@ -20,6 +20,12 @@ The candidate role-to-stage map is `datastore` → `datastore_catchup` (fetch/hi
 
 Please also provide Scout's actual native schedule/model readback and available model settings before final verification. Keep seven responsibilities and no Trader Rep. The final installed dispatcher reference must be verified locally before enabling dependent definitions.
 
+## Native watchdog candidate for both PCs
+
+Atlas's parent agent is adding `tools/nightly_watchdog.py` and `tools/register_nightly_watchdog.ps1` to the same reviewed source delivery. The PowerShell installer accepts `Repository`, `Python`, `Config` and `TaskName`; each PC supplies its own actual local bindings. It registers a native `StartWhenAvailable` task with a five-minute trigger beginning at registration plus five minutes, a daily 21:05 trigger, and `AtLogOn` for the current interactive user. It does not start the trader. The Python watcher receives `--config` and invokes deterministic `--dispatch`; it does not spend model inference on ineligible stage checks.
+
+The native daily 21:05 trigger anchors the ordinary kickoff even when Codex's scheduled wake includes jitter. Do not launch before the nominal 21:05 kickoff. Record actual `next_run_at` and `nominal_next_run_at` separately; all task mutations use the native scheduling interface. Scout must install and verify its own watchdog from the final published source, preserving the local research-only source variant and exact October 9 terminal binding. Final SHA and aggregate checks are pending; candidate interface alone is not installation evidence.
+
 ## Shared work board
 
 Existing work records are [#1 shared dispatch/recovery](https://github.com/jeremysecondstate/atlas-scout/issues/1), [#2 Atlas task/readiness](https://github.com/jeremysecondstate/atlas-scout/issues/2), [#3 Scout task/compatibility](https://github.com/jeremysecondstate/atlas-scout/issues/3), and [#4 Atlas trader fixtures](https://github.com/jeremysecondstate/atlas-scout/issues/4).
