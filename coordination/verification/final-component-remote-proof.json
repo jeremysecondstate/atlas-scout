@@ -1,0 +1,110 @@
+{
+  "observed_at_utc": "2026-10-09T23:37:12.8059556Z",
+  "actor": "Atlas coordination",
+  "repository": "https://github.com/jeremysecondstate/ducketz",
+  "branch": "refs/heads/codex/scout/20261009T232631Z-86e85015abb740128ce8ce8a4be3c773",
+  "remote_sha": "fe60d55d62b2802716cb5c9af6342480499b910e",
+  "commit_sha": "fe60d55d62b2802716cb5c9af6342480499b910e",
+  "parents": [
+    "003b9d9a57effd5c3b7d73e37139612efc7bb965"
+  ],
+  "verification": "Independent remote branch readback plus GitHub commit metadata; no local Ducketz Git fetch performed",
+  "files": [
+    {
+      "filename": "docs/development/nightly-exchange.md",
+      "status": "modified",
+      "additions": 72,
+      "deletions": 0
+    },
+    {
+      "filename": "docs/development/nightly-operations.md",
+      "status": "modified",
+      "additions": 238,
+      "deletions": 153
+    },
+    {
+      "filename": "docs/development/nightly-workflow.md",
+      "status": "modified",
+      "additions": 16,
+      "deletions": 4
+    },
+    {
+      "filename": "ml/nightly_exchange_repair.py",
+      "status": "added",
+      "additions": 707,
+      "deletions": 0
+    },
+    {
+      "filename": "ml/nightly_repair_registry.py",
+      "status": "added",
+      "additions": 194,
+      "deletions": 0
+    },
+    {
+      "filename": "ml/nightly_stage_repair.py",
+      "status": "modified",
+      "additions": 280,
+      "deletions": 16
+    },
+    {
+      "filename": "ml/nightly_workflow.py",
+      "status": "modified",
+      "additions": 66,
+      "deletions": 13
+    },
+    {
+      "filename": "tests/test_nightly_common_union.py",
+      "status": "modified",
+      "additions": 119,
+      "deletions": 0
+    },
+    {
+      "filename": "tests/test_nightly_exchange.py",
+      "status": "modified",
+      "additions": 116,
+      "deletions": 10
+    },
+    {
+      "filename": "tests/test_nightly_exchange_repair.py",
+      "status": "added",
+      "additions": 537,
+      "deletions": 0
+    },
+    {
+      "filename": "tests/test_nightly_notifications.py",
+      "status": "added",
+      "additions": 199,
+      "deletions": 0
+    },
+    {
+      "filename": "tests/test_nightly_recovery.py",
+      "status": "modified",
+      "additions": 35,
+      "deletions": 0
+    },
+    {
+      "filename": "tests/test_nightly_stage_repair.py",
+      "status": "modified",
+      "additions": 340,
+      "deletions": 5
+    },
+    {
+      "filename": "tools/nightly_exchange.py",
+      "status": "modified",
+      "additions": 52,
+      "deletions": 9
+    },
+    {
+      "filename": "tools/nightly_notifications.py",
+      "status": "added",
+      "additions": 230,
+      "deletions": 0
+    },
+    {
+      "filename": "tools/nightly_source_repair.py",
+      "status": "modified",
+      "additions": 3,
+      "deletions": 0
+    }
+  ]
+}
