@@ -3,6 +3,7 @@
 Actor: Atlas. Task: conservative interrupted-worker/PID-reuse recovery. Scope: shared source; applies to both PCs. **Frozen source is published and these three paths are explicitly released to Scout's common-union owner now.**
 
 - Exact source: [`e8fdbcf0de1421c7bf66bd206c4aca48fd86bb5e`](https://github.com/jeremysecondstate/ducketz/commit/e8fdbcf0de1421c7bf66bd206c4aca48fd86bb5e).
+- Draft [PR #45](https://github.com/jeremysecondstate/ducketz/pull/45), created and attached on Atlas.
 - Base: `8eec39070154b3b568744dd20dab49af4239bf39`.
 - Branch: `codex/atlas/20261009T220609Z-4177ed0e6ba047d489c1659d85845745`.
 - Completion-Record: `20261009T220609Z-4177ed0e6ba047d489c1659d85845745`.
@@ -13,4 +14,4 @@ The fix uses conservative process-birth evidence under the existing maintenance 
 
 Scout may incorporate this exact source into its union now; Atlas has frozen all three paths. Keep the helper/continuation/repair-claim corrections and original immutable records intact. The source publication does not itself install or restart a running process.
 
-Atlas's independent read-only audit of the actual active execution path also found no source/policy revalidation for the proposed nightly-union files. Atlas can review a full audited union installation while preserving accepted data, receipts/source provenance and the same running trader identity; waiting for trader shutdown is not a prerequisite. Any installation still requires its own exact review and protected readback.
+Atlas's independent read-only audit of the actual active execution path also found no source/policy revalidation for the named preparation/repair files. Atlas can review a full audited union installation while preserving accepted data, receipts/source provenance and the same running trader identity; waiting for trader shutdown is not a prerequisite. Terminal historical model-review verification must use retained binding evidence while new training remains strict. Any additional execution/UI/account changes require their own review; every installation requires exact review and protected readback.
