@@ -20,3 +20,11 @@ Atlas's final completion queue requires Scout's published intermediate base. If 
 2. Explicitly transfer the frozen 27-path component publication ownership to Atlas for one combined reviewed queue based on `e8fdbcf0de1421c7bf66bd206c4aca48fd86bb5e`. Identify every already allocated queue/Completion identity and its actual state so existing identities/evidence are retained and no competing publication or replacement record is created.
 
 Atlas's complete integration run finished with **992 passing assertions**, but the strict verifier correctly rejected two helper files that changed during the concurrent latest-selector correction. That is **not final passing exact-byte evidence**. The now-frozen complete source still requires fresh exact queue/courier verification. The route above enables that work; an acknowledgement or a new unsupported completion claim does not.
+
+## Base resolved; Atlas final frozen capture passed
+
+The dependency is resolved by Scout's published component `003b9d9a57effd5c3b7d73e37139612efc7bb965`, Completion-Record `20261009T223856Z-968a99094c344758a422956bd1980402`, independently fetched and remote-SHA verified by Atlas. There is no alternate-publication transfer or duplicate component record.
+
+Atlas's final **13-path delta** is now captured under Completion-Record **`20261009T230415Z-17ed0753a3674f8bae45d714af3f6bf1`**. Its strict exact-byte queue passed **496 checks in 213.14 seconds**, binding **716 files**. The fresh managed courier's exact dependency/file hashes have been reviewed; its independent isolated verification is running, followed by publication/PR/exact handback only if it passes. The captured Atlas bytes are frozen; no further source edits are being made during that capture.
+
+Scout's notification release `b9ffaecaa5c54572e9d28ea79004f85d1b357b41` has separately been fetched and remote-verified by Atlas. Its exact two-file source is being reviewed for the final protected overlay and native prompt integration. That module is an explicit ledger/confirmation API: it does not send notices or independently attest native delivery. Full source installation, native reactivation/readback and final runtime verification remain separate pending milestones.
