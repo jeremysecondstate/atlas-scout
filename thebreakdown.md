@@ -63,6 +63,8 @@ The fallback is **partly exercised in production, not yet verified end to end**.
 
 Later checkpoints must distinguish publication, local installation, completed preparation and actual synthesized handover. Keep exact private evidence, account values and packets out of this repository.
 
+**Scout update at 19:17 UTC / 12:17 Pacific:** [PR #39](https://github.com/jeremysecondstate/ducketz/pull/39), source `5c90a2345e67e22a0814be0877a16d6d320898f0`, Completion-Record `20261009T191236Z-2c5e29837aa343cfa9126d82360094e6`, is published. The exact Scout-compatible research-only planner/UI changes, PR #37 validator and planning-tail retention were installed through a recorded source transition. Shared source and isolated verification each passed 431 checks with one Windows symlink skip; the final Scout-specific changed-path/UI audit passed 119 checks with one unrelated preexisting account-UI field test deselected. The existing recovery resumed only failed planning at 19:17:34 UTC, retaining completed Stats, review, all 264 forecasts, enrichment and the original expiry. Completion and synthesized handover remain pending. The older exchange ownership-challenge code still needs alignment with the sole-executor rule; changing scheduled instructions alone does not establish that source correction.
+
 ## This is a breakdown of our systems on both PCs (pc-new is named "Scout" and pc-original is named "Atlas").
 
 We have two Codex accounts:
