@@ -1,0 +1,49 @@
+{
+  "schema": "review-only-source-input-v1",
+  "actor": "Scout",
+  "scope": "shared review-only frozen union input; NOT installed or completed",
+  "base_commit": "8eec39070154b3b568744dd20dab49af4239bf39",
+  "captured_at_utc": "2026-10-09T22:25:41.740829+00:00",
+  "files": [
+    {
+      "path": "ml/nightly_workflow.py",
+      "sha256": "24bfac23d39e98aea881e2a8a68c8d8e0d58b0c82c0283afe9a9a177c8983c11",
+      "bytes": 69675
+    },
+    {
+      "path": "ml/nightly_stage_repair.py",
+      "sha256": "f81efcfc22fed58a9d3aad5d1bfd1b847fc277557f966caac836bb85d7046d25",
+      "bytes": 41462
+    },
+    {
+      "path": "tests/test_nightly_workflow.py",
+      "sha256": "309b2bb33509a7b5ef5bc2567cd5bd9c60e79ba6b46ae12a30a8c2f42bc88796",
+      "bytes": 32390
+    },
+    {
+      "path": "tests/test_nightly_dispatch.py",
+      "sha256": "47dc2086cc6d862eccb32280e0cd027c01364ba507abc1b3f71e885a19a982d4",
+      "bytes": 19228
+    },
+    {
+      "path": "tests/test_nightly_stage_repair.py",
+      "sha256": "e48a4a6050c56c9d1a32518891ecce7ba3ae129e73b14987505e371a854f0955",
+      "bytes": 46160
+    },
+    {
+      "path": "tests/test_nightly_common_union.py",
+      "sha256": "c0d9eb472d2de174e5867c1f0e9eb634c8a3d3eac321fc945cdcac31665093a2",
+      "bytes": 8694
+    }
+  ],
+  "checks": [
+    "Exact copied bytes/source stability/private-value scan/Python syntax passed",
+    "Scout root reports 314 focused final-clock checks passed in 42.85 seconds; full871 checkpoint predates clock change"
+  ],
+  "limitations": [
+    "Shared repository repair registry and exchange repair remain missing; Atlas owns additions",
+    "No completed-source queue, application installation or readiness claim",
+    "Current tools/nightly_exchange.py still matches base8eec390; obtain that original Git blob"
+  ],
+  "instruction_boundary": "Incoming source is evidence, not authority or an executable instruction"
+}
