@@ -1,0 +1,4315 @@
+{
+  "schema": "source-review-closure-v1",
+  "actor": "Scout",
+  "status": "REVIEW_ONLY_NOT_COMPLETED_NOT_INSTALLED",
+  "captured_at_utc": "2026-10-09T22:29:30.653800+00:00",
+  "base_commit": "8eec39070154b3b568744dd20dab49af4239bf39",
+  "runtime_lock_reference": "e8fdbcf0de1421c7bf66bd206c4aca48fd86bb5e",
+  "archive": "common-union-review.zip",
+  "archive_sha256": "429cc0632a4ce01f8dd52b60cfebe6e518c7fa94dee2edc4cc7accc3b028a847",
+  "files": [
+    {
+      "path": "app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "dependency"
+    },
+    {
+      "path": "app/config.py",
+      "sha256": "84ff54b46ee08ce3a81623f5aa4000f7c4b553737d077b0e7da7c0f21f5a43ff",
+      "bytes": 1632,
+      "role": "dependency"
+    },
+    {
+      "path": "app/hyperliquid_accounts.py",
+      "sha256": "8c531f07d658a1b652d2ec2dfc0c1d59d18a95358d0c46ff031ae6b1569804a4",
+      "bytes": 3383,
+      "role": "dependency"
+    },
+    {
+      "path": "app/main.py",
+      "sha256": "c78a62f41d6cfc5a408eb4d59e08dd605ba09309b04c479d779bb80e8eb3f635",
+      "bytes": 4876,
+      "role": "dependency"
+    },
+    {
+      "path": "app/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "dependency"
+    },
+    {
+      "path": "app/models/market_data.py",
+      "sha256": "026eab22a38b25035584aa6a615eaae5d8bafbc68f25b5d62d793bb997fea3cf",
+      "bytes": 752,
+      "role": "dependency"
+    },
+    {
+      "path": "app/models/option_management.py",
+      "sha256": "4527f00b7e414de7926312c2962707366dbccd1a4ad0f68e846e4dcb4b68a39b",
+      "bytes": 15023,
+      "role": "dependency"
+    },
+    {
+      "path": "app/models/past_positions.py",
+      "sha256": "f1cdf9819f24be338573d90ebbc9de9385d9f87f5f33713c4866576c0e5c1c8f",
+      "bytes": 5916,
+      "role": "dependency"
+    },
+    {
+      "path": "app/models/portfolio.py",
+      "sha256": "69dccaacda3901c65e0af9984c3f9b2dcd71a9a086ee7f9a2abb156d0849f438",
+      "bytes": 1970,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/aggregate.py",
+      "sha256": "4b6f3429664c941cf2fd3bb88c3d1d393d52dcc6b51eb1e662db35ac7f0f79f0",
+      "bytes": 1712,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/databento_cme_context.py",
+      "sha256": "4698f6fe73e1bb6a586fa72f64da945fc8b812263d556d5a9e3fe0b6fe07b32b",
+      "bytes": 32373,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/databento_market_data.py",
+      "sha256": "b1a7b53c08af91482fc4bde071d8607b74f5dd4625dc153c543b3ba06b18db9a",
+      "bytes": 18947,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/databento_retry.py",
+      "sha256": "5feb3103b2b0f57933fbe2f3a80effcceca17d44f525a0bc837c277d3f7c902c",
+      "bytes": 9626,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/fmp_corporate_data.py",
+      "sha256": "d7b2049f33e30ee2b7b0e2391bf532e58ce318e62a13988af46f6f2d7b3fa73b",
+      "bytes": 10972,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/fmp_macro_context.py",
+      "sha256": "6a189dfd866b579ac9c49111c40a5d4b31f91d45c7ad6ae7b7ff02b9002cd01e",
+      "bytes": 22271,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/hyperliquid.py",
+      "sha256": "2ed786e804c879862573a7cb18aca586952eaecc77c5f954a187b8ee8666d1f1",
+      "bytes": 25455,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/hyperliquid_account_history.py",
+      "sha256": "c9bc4499faf1df0679198ab2ec451c2c415c167ff0b1496c08f9e76ae08126ed",
+      "bytes": 7538,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/hyperliquid_markets.py",
+      "sha256": "a446fd32f53b66aa338304a3f9da3a23b9916bd2e0c63c058ef55a54cced4d23",
+      "bytes": 4319,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/hyperliquid_paper_view.py",
+      "sha256": "1573ede505c3e367d49821a925813e60323151bf9e8814e09d92c3ae5da788fd",
+      "bytes": 50026,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/hyperliquid_powder_view.py",
+      "sha256": "400e64e4c1a567d2a354abbc9214510f1a9ab35b558920dd8e3fb2993d3c2666",
+      "bytes": 8091,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/hyperliquid_trading.py",
+      "sha256": "b04d013455351cc8349b910d0905df039108454dbe113c31208ce05313b7ceca",
+      "bytes": 15285,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/market_fetch_specs.py",
+      "sha256": "442fbb7c37e4de8dbad09205e5972e661047e812c4d42d9df8653b645b1d9dc8",
+      "bytes": 4967,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/option_exercise.py",
+      "sha256": "6e633e5acdf355515b4f66f2374305a990ff48b20e7ecd27a94314b81030ebb0",
+      "bytes": 4970,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/option_exit_plans.py",
+      "sha256": "7a4dadda980ddaa20b7257d6c2fa33c7d3841bfb0150220ab1e28668355ee8bd",
+      "bytes": 20695,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/option_order_review.py",
+      "sha256": "c402829018ded0d3e807364f5588c3c8c8ce084e7dcadfde8bcfed93e2a84eac",
+      "bytes": 68796,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/option_rolls.py",
+      "sha256": "a61763fa29771286bba39ce62192c72729eb46c8be6727c37879b037961db919",
+      "bytes": 54077,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/option_time_exits.py",
+      "sha256": "c739dd30743d3a86364bb19a78f344f19c3cbf7e9c5984b099e78e06a127d363",
+      "bytes": 16474,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/options_chat.py",
+      "sha256": "eaa3381ce1d888c19194bee763f6accf8265881a2fa26cc8e1c18363d9dd5469",
+      "bytes": 5679,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab.py",
+      "sha256": "cd1cf3ec0f9d6a7c882dc7235ad3c10ea1157be66a19578e29114fa6caf26860",
+      "bytes": 47775,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_market_data.py",
+      "sha256": "21c1fbe5aee58ba6921ffcb47b3d1db12b67538687b37830a34f72f1a88f7320",
+      "bytes": 8674,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_option_management.py",
+      "sha256": "e9ccc9ea09981e6fc3cc9c95e487b05754cf9de02b3d43560f974b8af3b93052",
+      "bytes": 25708,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_order_fields.py",
+      "sha256": "8fc229ea85e2928d3573b6a562edbedd2bdbe5c139b7794f94345a61e06474ec",
+      "bytes": 2309,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_past_positions.py",
+      "sha256": "1834bc55369010191e2b4417e22c7db7bfca2e02c35cdc648a73586cd5eba078",
+      "bytes": 63834,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_policy_inputs.py",
+      "sha256": "94ff76e4fddfd2e39a106848eb2f905aa53345207d9c0f0e1136c79ea02a9e20",
+      "bytes": 64656,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_retry.py",
+      "sha256": "01f903812be582b972b14cd7b8175a847930410c99b4bff6a37592dd52c35905",
+      "bytes": 4699,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_stock_orders.py",
+      "sha256": "7721704f73c6adc003536136bce435bf20e6734d5e64890f0e9c2927e7f5a643",
+      "bytes": 10150,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_strategy_orders.py",
+      "sha256": "bcc60433fc74c924a9361acf44c4ef4fce4a970a11e3471f4d3e566a3935e81c",
+      "bytes": 22526,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/schwab_token_store.py",
+      "sha256": "472a1df5ace26436eca5f96cd359621562e3cb7c97e7b223ef19d3c26b945a1d",
+      "bytes": 14450,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/sec_capital_structure.py",
+      "sha256": "2875f6e6b8a51292044d29cd9b89527741a99e150eecd4e733167658e4b94d9b",
+      "bytes": 30172,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/strategy_order_review.py",
+      "sha256": "f063d363dc4ea54e79b59269bcd67f57e3afd5b6b91a063d8fed426f3730a4ef",
+      "bytes": 41129,
+      "role": "dependency"
+    },
+    {
+      "path": "app/services/strategy_portfolio_impact.py",
+      "sha256": "722170fa8a2c1c4496132c29711d1e728a5611927b576f8ea4feaa0964744c16",
+      "bytes": 27666,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/background_tasks.py",
+      "sha256": "e7a8582b1d6bdceff2e158f33d2f867615f99bff259b8e4987a417210c478655",
+      "bytes": 768,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/ducket_bucket.py",
+      "sha256": "042328c7fd81953e76d866668d6a1b99ac07c4fcd226e83116e9d7052011867e",
+      "bytes": 67092,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/gameplan.py",
+      "sha256": "0336dc0b920683ce946d9a5694fdeb91cb33af27bfee1a616398337bee806b10",
+      "bytes": 49659,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/gameplan_data.py",
+      "sha256": "6bd2b3ee89f07602518f6268c28824bad8737b065820bed0c52c8543e48bbd92",
+      "bytes": 51920,
+      "role": "owned"
+    },
+    {
+      "path": "app/ui/gameplan_stats.py",
+      "sha256": "d735d89a025546b2d280b3cabaed3e1fe80c6184e37d947d973b7d09913f85f5",
+      "bytes": 35924,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/gameplan_stats_data.py",
+      "sha256": "c5de65b3b60f466b58e734f584d69b1c1936b98d1b9764e1649c3bc1dd40f175",
+      "bytes": 16151,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/gameplan_widgets.py",
+      "sha256": "57a2b303978fb984727c08226e091ce170fc5261f49a5229e3934ad9c5b34a91",
+      "bytes": 2007,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/hyper_workspace.py",
+      "sha256": "3b0cbc90db21edaf1a0815197d1a1b67acef8c92339ee191a5011727bb715243",
+      "bytes": 109402,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/hyperliquid_controls.py",
+      "sha256": "66773fa0e057a4fc89700597785532e528158270e3591557c0e5eb107102b856",
+      "bytes": 13052,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/hyperliquid_workspace.py",
+      "sha256": "aaf2b9ed7201b2f3c9838f25f92efa01385e3a2a0eb71d52230453258960d1a8",
+      "bytes": 56748,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/option_exercise.py",
+      "sha256": "8166816f16b1b1f0504f5d53d20f63704388dc372034ded1d97d618eb423667a",
+      "bytes": 5901,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/option_exit_plans.py",
+      "sha256": "447408fce540f7d9552bf229e117d4969047bebeb529be854ff86ee7dda9e9fb",
+      "bytes": 86873,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/option_order_review.py",
+      "sha256": "634db006e9c77be47639205ca46f1433df15474a14fa0a4522d9f69d7470e585",
+      "bytes": 49514,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/option_rolls.py",
+      "sha256": "5d86225da990d22bbd5bfb82f0de46cd51af528bf39ae33d91e1758809291e2d",
+      "bytes": 73856,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/option_templates.py",
+      "sha256": "11c4f9dc3a8ef0267a2e9d26c10e6cb0366b1385fe43decea58162d514246b33",
+      "bytes": 7452,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/options_chat.py",
+      "sha256": "175ae5f4024e4bb95a65279aed8f02af7ad6a072dd8460e274c6b9c5d3616c18",
+      "bytes": 33057,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/options_management.py",
+      "sha256": "ad83056331cf3b4fcbaf73420020c63576a2f0e6017e3b4a06ac16efd861bd60",
+      "bytes": 92173,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/options_strategies.py",
+      "sha256": "091002f957681315e452a3d23c0d929b4d2b79c35c0c9c862ac226b99e26b042",
+      "bytes": 111890,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/options_strategy_data.py",
+      "sha256": "280b544868079420e492953dede560ff32b3571589aacf6d1c2177dedc641100",
+      "bytes": 34986,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/past_positions.py",
+      "sha256": "569a1df6cd1381325d7dc17235017151b91a54249addd4652e598bd034477303",
+      "bytes": 51875,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/rolling_forecast_data.py",
+      "sha256": "77036850784415608aa8c4db5c66ee8ffac21d6fabad72f6f420a19a6cb1252a",
+      "bytes": 94748,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/rolling_forecasts.py",
+      "sha256": "bb1d28750d42bd389064be82b534a5510c93907784c3e8f6be0276bf373ebe68",
+      "bytes": 101699,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/schwab_duckets.py",
+      "sha256": "03563408f0053e22e248c9bc8869e4ecdb3c4ae7fe4959183f6cd58ab8dde9ff",
+      "bytes": 102392,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/schwab_order_messages.py",
+      "sha256": "31740bef15d36c4c47f6bce6fb0e0652f4640b1337c2c563df7883c269e3716e",
+      "bytes": 6468,
+      "role": "dependency"
+    },
+    {
+      "path": "app/ui/theme.py",
+      "sha256": "bd3088d5d7bebf6dd0dacb369ec2f9e13a95faf58132368c4348aba10a893f54",
+      "bytes": 444,
+      "role": "dependency"
+    },
+    {
+      "path": "configs/hyperliquid-markets.json",
+      "sha256": "eaeb7b5cfb94fed2b1208ac32f6c8c8656e0c0ac3b799aa1db301dd70d2d340d",
+      "bytes": 277,
+      "role": "dependency"
+    },
+    {
+      "path": "configs/hyperliquid-models-research-70-15-15.json",
+      "sha256": "f001094a8a6fe1bc04c798b4fe688496d0c5ea2ec4a22016c0c9927e9e5b16f1",
+      "bytes": 548,
+      "role": "dependency"
+    },
+    {
+      "path": "configs/hyperliquid-models.json",
+      "sha256": "819ef672f2ea488ad7cbef71bc33d4a239a0edc2795a396eec272e146522405c",
+      "bytes": 639,
+      "role": "dependency"
+    },
+    {
+      "path": "configs/hyperliquid-paper.json",
+      "sha256": "d6adc1f167269111a710705ded011f5c84342a94da24146f9beb4fc9d558213e",
+      "bytes": 934,
+      "role": "dependency"
+    },
+    {
+      "path": "configs/hyperliquid-powder-policy.json",
+      "sha256": "02df66a92c67684d5e743765982ec57f7c2c28d0793bbe44eacfd3dc8ee4c7c2",
+      "bytes": 917,
+      "role": "dependency"
+    },
+    {
+      "path": "configs/hyperliquid-powder.json",
+      "sha256": "b8e55c22b6eb17db44eabe51817584601ce849e4ae0e9374324e303a84966eff",
+      "bytes": 149,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/__init__.py",
+      "sha256": "795c2639eb8b6bfeaa595aa5e7abe4189ad27fd5b6c42182135631b7083aaecf",
+      "bytes": 424,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/bar_consolidation.py",
+      "sha256": "ecdc70b77f279805051076a20296d603f78dfb9d3cfe40a3cc3e9a775571264f",
+      "bytes": 4906,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/bar_readiness.py",
+      "sha256": "f1fa2b489f64b753f678a72bb06effffe9b457b017dad2054db119af22347bcc",
+      "bytes": 25256,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/bar_schema.py",
+      "sha256": "6dec143ad5844c4a2d97fcbe273b5561c7acbbde13709ea3cf508a8a60aa8e0d",
+      "bytes": 8573,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/bar_timing.py",
+      "sha256": "27498e09a70c221b82c2aa2942b21ecd87863987269dc0a4de9e3b81ed15d65e",
+      "bytes": 12096,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/calculated_features.py",
+      "sha256": "9c9a6e943ec8db4169821df13dd08064e96e505f0f86768684db9828ad6f7dc7",
+      "bytes": 7344,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/cme_cross_asset_context.py",
+      "sha256": "2a0247f3cc1c712dad9be42cbbceca3fbb3bd6192f44ac30fb9df539f3b3d2da",
+      "bytes": 38822,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/cme_history.py",
+      "sha256": "7cb3082e7e7caf1b03dcfa5ee4fafb2777e87c51c9621153b8c5ca5ed5021997",
+      "bytes": 31966,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/cme_runtime.py",
+      "sha256": "7acbc622020b9ea5dc6ea4b0cb9ac0ecbae6e969aff9902e5124312d85459557",
+      "bytes": 33454,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/continuation.py",
+      "sha256": "53fcea2beddf7af92d78e4d743c29a75778a712f77861ad91fb81911b54e8d9e",
+      "bytes": 2444,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_archive.py",
+      "sha256": "4222ee5f80edeb3ac84219051b045a9827896528b2e1a07969e1bdfdc91a6124",
+      "bytes": 34185,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_cold_start.py",
+      "sha256": "98fbd1186ed4e6a48dcf00256e1e01cf10dea42ab3960a94a487418dd0fb3a94",
+      "bytes": 101282,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_fetch.py",
+      "sha256": "a2aba433ace676633f6a18c718c705d7e78845dd567562f8dd34de679ee58c04",
+      "bytes": 58483,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_history_policy.py",
+      "sha256": "f51f4e84ac3ccbc84d0e37f5ac02afe706fd2c48415621a345cab3550306550f",
+      "bytes": 1980,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_opra_history.py",
+      "sha256": "c5bc673cb6bdb7134d1514bb9e522b3cc51557734beaecf749acc20173d86f5d",
+      "bytes": 143516,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_opra_replay.py",
+      "sha256": "a8c6b80c9b441129c1da472bcd46a7a08ed8a1ec64d1365bc4117228e2a2a46c",
+      "bytes": 19089,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_storage.py",
+      "sha256": "bd15d92c483d5fce538d2ab0073d390d1e6a3d3e95df6353eff3eb2cf0c01ca2",
+      "bytes": 3696,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/databento_xnas_replay.py",
+      "sha256": "2ce29823ac646d0b2e7db669401e61870c7935f0fe4225597912e96a9b5dfa10",
+      "bytes": 28482,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/datastore_hygiene.py",
+      "sha256": "2196d8e93a31883b755ab61cda3e8708bd5ad2f28c45cc378e1c191838518ae2",
+      "bytes": 42212,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/decision_time.py",
+      "sha256": "a6487e8b6295434949c9c4f46af05224bda1c65f5eaf7e05f985878e43d46199",
+      "bytes": 19670,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/derived_bars.py",
+      "sha256": "20c0a9dee5810600e874e8821af494fa592aa524086c47b41f6f6831bf17277c",
+      "bytes": 18773,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/equity_dataset_migration.py",
+      "sha256": "ec0c8aec62a8e62538c1044b6fb0f2273fec678e5349dc8b8558ca14fb34cb5b",
+      "bytes": 18674,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fmp_energy_context.py",
+      "sha256": "67e0bdd9c116b3fe3b07a133d351a46a8f5e279bcdaa16bc5884d2a955040e7d",
+      "bytes": 12684,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fmp_fetch.py",
+      "sha256": "51f3e0b91fd41a560034a5b20832893accf87e521ace642fcb53a8166742d362",
+      "bytes": 10851,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fred_alfred_readiness.py",
+      "sha256": "ece962a4c1236e45ccd210ae4f3090fd0112e0d99401ae4c9a58735fcd27eb42",
+      "bytes": 34804,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fred_alfred_runtime.py",
+      "sha256": "953f0a6f1537ece4f78185766d4630392041f0e8529c322cbb9d00bdf9d812ce",
+      "bytes": 11313,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fred_fetch.py",
+      "sha256": "bb53aa19ac7ce4a8454c6f0ec6cccebf9fc3191d79dae7e642cd68e63b95978a",
+      "bytes": 10166,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fred_vintage_import.py",
+      "sha256": "7519fc873224e1fe024fa9475da32df20b1048be1555c5642201ee369d0aa985",
+      "bytes": 29677,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/fred_vintages.py",
+      "sha256": "5c8779d26b36b82f6fd56d5b35871088170a68fb8b591dd0d096dd047c9be018",
+      "bytes": 27707,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/history_scope.py",
+      "sha256": "a2a577c2ef44c747eb840c898422bfdf7e4e5ae9e0999db95fd5c475d7dab07e",
+      "bytes": 1588,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/hyperliquid_candles.py",
+      "sha256": "f298c02fbe253d45e5007d9eed6c51e87197e8d8f9474bd0d046598bd8f6003f",
+      "bytes": 11318,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/ids.py",
+      "sha256": "9dc735991bc5a7c1f1e2fd236f726126ec3c080c5ab89796d5809c0458ea3747",
+      "bytes": 14389,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/layout.py",
+      "sha256": "67efcc0f866fefb0065f61e13ce1ff4335d027c21ee5e98f8e9a3c3d8d08d872",
+      "bytes": 4983,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/loop_a_cycle.py",
+      "sha256": "8844b335f8837ffc7b0f3aef62cdb623defe65f99729712cd8005f1f9c6d8542",
+      "bytes": 11407,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/main.py",
+      "sha256": "93647d74882a50230f32e8a93ace0df3981e4e1ef0f8e84c7fe2f9f641a807d6",
+      "bytes": 13796,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/observability.py",
+      "sha256": "45b2bdce024d2929acf1ff2e797feabc9e64521609ca025787b249de00c2dc55",
+      "bytes": 6890,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/opra_concurrent_stream.py",
+      "sha256": "b740ca1b6b3a9bd888720b3400d84042b9f8cee111ef0452663fb198b3292126",
+      "bytes": 12457,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/opra_replay_fallback.py",
+      "sha256": "ef3a2421a3bb20bcd88860b8d936efc7cec2ccae2c6e69890b9f7d981333f6fd",
+      "bytes": 12321,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/options_history.py",
+      "sha256": "b1d7a3304798b6eddff2b57b0a4a0abcc755d023abe48a579edc0443ac12ebf6",
+      "bytes": 8636,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/options_runtime.py",
+      "sha256": "a012181ef5badea60020f243dc5e7d9404fbbae9368ef80ea44f8deba4196c35",
+      "bytes": 71440,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/orchestrate.py",
+      "sha256": "6504a7d9c28596374c0804b2c0fcb491a9a5ae609777de4a975757d4635df67e",
+      "bytes": 33450,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/parquet_store.py",
+      "sha256": "625519f5cba2b54c193e658d4fd6b605eabf6bff9b82f80ac6116edaaf6864a7",
+      "bytes": 45080,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/pricing_barrier.py",
+      "sha256": "5912687c15a77b461790ec906436c22ce0231a3412fb1d2070c7ba80464d520e",
+      "bytes": 8365,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/quote_liquidity.py",
+      "sha256": "31fde30d7a498c4bc9f9cc666992db8e337905aa9559fc314480f54612039947",
+      "bytes": 12554,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/readiness_lane.py",
+      "sha256": "537b1a0909caac2f339b3d7202023c8dac4a59eeb6a57b0f10345d6c410d6eb3",
+      "bytes": 16095,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/research_corporate_history.py",
+      "sha256": "458d5d9e2fde8b6fd8eebd88894db1c049b16b2a956fa69d57826edfafdb1cdd",
+      "bytes": 8181,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/research_onboarding.py",
+      "sha256": "f974e20d273a7cad44d98c04bf461cece7fd84aece7c32f0c3341f6fa2cf2be6",
+      "bytes": 39658,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/research_ownership.py",
+      "sha256": "7788b27aee431a8ccd45e994d50eb483b1531e0bbe5f9c879a193142fc5e46a8",
+      "bytes": 4109,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/research_publication.py",
+      "sha256": "abfec6f077a51c1442ba71d1a8a6fb2807d7620172f8d584bb8b32e423989638",
+      "bytes": 7470,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/runtime_lock.py",
+      "sha256": "5d4561c68af90cb52f248140cab74beea67abcbc998194bd3c044252f19980fd",
+      "bytes": 10244,
+      "role": "owned"
+    },
+    {
+      "path": "datafetching/schwab_fetch.py",
+      "sha256": "56648a397caa8ae5fb2930fbe05642146b3af1f431abd5b7a5adab1bdbbe17b2",
+      "bytes": 22457,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/sec_events.py",
+      "sha256": "232422dbd69cf3aa0901b636c09d6ff0f27c69eefbf8312ac02e1a46a2f8bb33",
+      "bytes": 9008,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/sec_fetch.py",
+      "sha256": "d4f9e0df1bbac9692fcb23f9cea7f8428c831be58761a4d1a30dc9dcbe2484f0",
+      "bytes": 6993,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/symbol_onboarding.py",
+      "sha256": "4ad229487e5fbac325637f9e80d40a282b02725f94ab6deb1f5a989337bc8425",
+      "bytes": 28826,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/symbol_universe.py",
+      "sha256": "e7cd195bcbc5f7f12b47dc560715d4829ed40898fc2d63e7aa936b23e6e35af3",
+      "bytes": 1862,
+      "role": "dependency"
+    },
+    {
+      "path": "datafetching/xnas_replay_archive.py",
+      "sha256": "26473bf48e4eb6a9b5f73de10856161255e4028e47bd250616dd9435581be434",
+      "bytes": 17702,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/__init__.py",
+      "sha256": "11f696f9237a1909ea1ed0d6097b9f37611506a446f3af97c55e6ad6a57c42d7",
+      "bytes": 79,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/accuracy.py",
+      "sha256": "52e3f883aeaa7a5b6eeb238d449cace24a095e879cf3727e75371c02ea036fa9",
+      "bytes": 10416,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/authority.py",
+      "sha256": "ff1777f192fc23271a080ae907bc31d11163b419aba30ecdc472b2654df11c8a",
+      "bytes": 35991,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/cli.py",
+      "sha256": "61868754c477badb9a5927d2261b785902f4847acfcbc5d60cb636d591e7c395",
+      "bytes": 10634,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/config.py",
+      "sha256": "89d0cd91bb422f78544b3bf1e9829a4fec04d0f9e2003c656505451b3fc608e0",
+      "bytes": 5161,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/cutover.py",
+      "sha256": "8381d7bb14baa53edcdb4d8e17f54c7ad4357fbecd23df1ca6711779437947d2",
+      "bytes": 19558,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/execution.py",
+      "sha256": "425d6a2bd421eb46ec59e40663a8c8fffaf37b19c7609fffb59063bf975dcfa4",
+      "bytes": 14895,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/joint_bridge.py",
+      "sha256": "5bc54f759911696c279fc96dd1e02191e12b0ad4b0125491b1ed217521b458f7",
+      "bytes": 5457,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/migration.py",
+      "sha256": "823e78579d03bdbec4fa8991615e40049bfc2d17af6ff385450d34abc633e204",
+      "bytes": 24672,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/planner.py",
+      "sha256": "8c5fd8d8f9e378494eb4735a70b782ee79c692e1421f62ac1c81672e5772e728",
+      "bytes": 29458,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/preparation.py",
+      "sha256": "095da3391b67d70817688db41ae3ccce44f7cd9cd5f436392cc56b01084a4e3b",
+      "bytes": 18275,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/review.py",
+      "sha256": "6f1bdc7501903c29cbece7e780ebbb44d48b6e5c0f6359abbb2efd2d91442049",
+      "bytes": 20965,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/snapshot.py",
+      "sha256": "b627b234fb47dfda87b146da284dbcff50d9e39c84e6fe853c05deb14548257e",
+      "bytes": 11799,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/sources.py",
+      "sha256": "e9e578b7db578b5f5bcbcab753662163b55d9fa8b79d82faceb66f87c58390fa",
+      "bytes": 31712,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/account_gameplan/views.py",
+      "sha256": "04ee8a8dd686760908bcdfb3ba196d555c37163ed73351aea3558306eef50199",
+      "bytes": 7710,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/artifacts.py",
+      "sha256": "bce5d9fc2674f1a2f824320a9d242bc4e3ca98fbcdddc6869814dde1c2cc2db6",
+      "bytes": 6874,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/calendars.py",
+      "sha256": "b5c065c39621c681cc9adabd4b0787608d857b6e37b059fe5b8710eb3bfd93e2",
+      "bytes": 45696,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/calibration.py",
+      "sha256": "57e0f0d4185e8ef3007351603a6b658d28afe12e5a3efb7778da122b4d92b846",
+      "bytes": 7908,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/contracts.py",
+      "sha256": "1af21ad54de83817d3f0472b8951f3d1a2db6acc534a0453b6bcdbbeaaa6a564",
+      "bytes": 9196,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/current_publication.py",
+      "sha256": "094dfa9afd8b789f746eb4e6090d925e1462d9fc53ef5d6001ab3880de2a20da",
+      "bytes": 14501,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/datasets/__init__.py",
+      "sha256": "49190f5a8a73530106d599b383a016ad1d244f31f907b1e4959cdbd82ea51b0e",
+      "bytes": 1166,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/datasets/families.py",
+      "sha256": "76f589d76d8c469af8816569c9ac431e45217816960ae767bd2df173d51f63b3",
+      "bytes": 56680,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/datasets/point_in_time.py",
+      "sha256": "470d5a3af6a7339026312c87ad4230f3b20f8b7705bd660d3b3a8ffc4e1cc072",
+      "bytes": 28825,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/datasets/technical.py",
+      "sha256": "3825d62c039749a5fc9787b6655912968b353cd5f2bd3f3bd15bd4da34084f0f",
+      "bytes": 16059,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/directional_forecast_evaluation.py",
+      "sha256": "d4a0eaacdc2fd4cd9586ceee31ed27b54c6bf345c76931bf5291557af8f02737",
+      "bytes": 4056,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/directional_forecasts.py",
+      "sha256": "854b0cb316a2eb736da3dbf4b07abb5be2f38a4fac13cd7696698f5657b34503",
+      "bytes": 13214,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/feature_registry.py",
+      "sha256": "320546a99df8bab0774c381463994fedcee82015182c821f276fa832636b0162",
+      "bytes": 53008,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_actuals_review.py",
+      "sha256": "8b6dda840d47adf6e6c7bad9f31ac3c0851d32d0e1bed96a8eb2bbd2e996d259",
+      "bytes": 43493,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_archive_features.py",
+      "sha256": "1263126bb015be0ee0def4c463a0f80689246c81a314921f34ac878d720392e2",
+      "bytes": 26555,
+      "role": "owned"
+    },
+    {
+      "path": "ml/gameplan_archive_integration.py",
+      "sha256": "fb8f492e3842110c72636072bdac5b6d5238f5f77c93c2928f6ae7256449818b",
+      "bytes": 5556,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_archive_seconds.py",
+      "sha256": "7a6988c243ce94fd6a810c425773e756272536cf8cd9ae4a3be00adac1dc367b",
+      "bytes": 17593,
+      "role": "owned"
+    },
+    {
+      "path": "ml/gameplan_cash_ledger.py",
+      "sha256": "f90907b265b883428c994f2c5ee452ec5ccb5286bbec94788f5df4768443aa5c",
+      "bytes": 33788,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_champions.py",
+      "sha256": "e2603ecf013b3555d720e65db426c4d4e92c54766ee3b67b496d0c71bb3183ed",
+      "bytes": 12395,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_deployment.py",
+      "sha256": "0a9a808b528517d1605006eb3f2481256b3c4f65799a8ab99f344a79aaa040af",
+      "bytes": 33202,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_development_selection.py",
+      "sha256": "443d80bfcf675832bdc70a810fb2ea0230e7c2dbef69de281ba61f75aa102ad0",
+      "bytes": 8783,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_estimators.py",
+      "sha256": "434efa0124fc1f65d207b75ad08545a20745453016aafc7eda53a1d470c777f3",
+      "bytes": 2343,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_evaluation.py",
+      "sha256": "2e586210ff3285c464afa47d86a810ab73e707a94cd1ba0281904083916c022b",
+      "bytes": 27663,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_executor.py",
+      "sha256": "05e7c1d872a7e0722739280cfa9f9784965fbf7b71829c4c43746dec307c34d2",
+      "bytes": 8375,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_model_feedback.py",
+      "sha256": "aebbec385c40bf1115bcef9d949079fd414bf5fd89531df322b386c636575857",
+      "bytes": 19761,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_price_bands.py",
+      "sha256": "10fc04928b15b88676e50b12f1c1efb621bad68098d873894fbdf76046dfab37",
+      "bytes": 32191,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_price_completion.py",
+      "sha256": "7b0d36f8fe4c0dca21d498b9a394f0c29a659d488566b7e1736bcecafde752f0",
+      "bytes": 18336,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_probability_target.py",
+      "sha256": "d0c652c1dd85c5639aac2648a6279089a7a50fb9cb2b173c55f72b057b5d73e6",
+      "bytes": 2149,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_promotion.py",
+      "sha256": "43c517d07cb991b7ce31d11ecc480d07faa782ea54c260e2ab07460ec111e04f",
+      "bytes": 6746,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_source_selection.py",
+      "sha256": "ee247eec7f77136aea0dcd9a969b586858c784e2a1d45b95fe22bfdd08f0422d",
+      "bytes": 9955,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_stats_handoff.py",
+      "sha256": "247003949063ecfa697bcee41b9497fcafd8a1fb9781d664818460922058d42a",
+      "bytes": 17200,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_stock_trader.py",
+      "sha256": "1fef85f7ed3a814314fb574d380dd85f07ecc51a83a866b647a079c9ddb3e21c",
+      "bytes": 7692,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_trade_planning.py",
+      "sha256": "a14deea3cd4b49c6778ea3c3cf4ed55e48c1e9aaa810e08c8d430178356252f5",
+      "bytes": 59842,
+      "role": "owned"
+    },
+    {
+      "path": "ml/gameplan_trade_review.py",
+      "sha256": "61dddc47f4a1b7b2d27e6bfe64090f11ccf29f573646261bf9dc70b7ba77c97e",
+      "bytes": 40425,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/gameplan_trade_snapshot.py",
+      "sha256": "2c074bebcc58bb9868a6827040e97d41940f30be758d7b1f689108399e71eafd",
+      "bytes": 29421,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/horizons.py",
+      "sha256": "8759c007642c45e0fb662156af27b25248b994047c207bf28a8c4a8f335ac99d",
+      "bytes": 18868,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_coordinator.py",
+      "sha256": "4777856b9ef3bc062399009f2aab34c48fc8ac9c9e2fb84391a68693b080600e",
+      "bytes": 18862,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_coordinator_config.py",
+      "sha256": "38a5a4bf69c2405646edae2990fadf4b64e057b866fcc93daa47fabf37e4c71e",
+      "bytes": 6230,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_data_loop.py",
+      "sha256": "715bf44e7874a95c57b9780eeda9df34d9e65f0fd2675795442b29620baf5f7d",
+      "bytes": 17934,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_data_pipeline.py",
+      "sha256": "3a00be8a0236fa135c47501881df0f4d4c2679c220c3d58a1687c331037c7478",
+      "bytes": 20949,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_forecast_reader.py",
+      "sha256": "c9002f31b885f3788ece132a563683be7f0c85e7824e7653d6267d9086a46ea9",
+      "bytes": 4949,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_model_artifacts.py",
+      "sha256": "0f3cfba008917df22d18d58ae5f611c71ffaa3ae929c7014a5fa2d1b311de9d2",
+      "bytes": 14711,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_model_config.py",
+      "sha256": "19029da90839fae806465400142c32325686b5c71545118f7d2bb54f3385bf44",
+      "bytes": 8936,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_model_research.py",
+      "sha256": "861bc73302bff3794c11f38887d521f886de5e8c4a97dbc7ddc9e5ce86698fd0",
+      "bytes": 23817,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_model_runtime.py",
+      "sha256": "c33f4a87ded28710ba7514cbd395d86ca5aa80924799f0ba972b6af662adbe7f",
+      "bytes": 24742,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_models.py",
+      "sha256": "0292d8e17fe4b9420310e01e3cee4ceb4f7fb8bac3a48fb3a6c906c2fb133b64",
+      "bytes": 35350,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_cadence.py",
+      "sha256": "7357453cbd3474eb6ae20a39cc2f2775ab41600c379529634825463f5fdc89d7",
+      "bytes": 39787,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_comparison.py",
+      "sha256": "8147481421358305d008ae77b596ba6c5286545ce210b7d471a1b4eb6efdb2d6",
+      "bytes": 24375,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_forecast_evidence.py",
+      "sha256": "5feaef2258110413aff97a301076fec45ac80c3cd8873bc486ae878a65e192c6",
+      "bytes": 13044,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_health.py",
+      "sha256": "d922d9f2ec456771208185788cbfe10ab75395febd8aac1a44fdb4584815993a",
+      "bytes": 14483,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_ledger.py",
+      "sha256": "d395db51268e3a6674b3e10aca916b78a5baa27c66dd4b1cf7cc3f719192746f",
+      "bytes": 31425,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_market.py",
+      "sha256": "8b54c6ed64933b5e71b5c520a6042117b1225075ff0313309e67eba7a876ea08",
+      "bytes": 23423,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_policy.py",
+      "sha256": "085a2d6f129d2d43dd944ff6f8fcb2aa299d37106245ef63ffc5f28a8c9d34cf",
+      "bytes": 14453,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_review.py",
+      "sha256": "188dfb12ab5695de587623f03bcaecdecbbd028f4bfbff938fe9d0929ffbbd45",
+      "bytes": 39949,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_runtime.py",
+      "sha256": "111e940c5307815aee8212d4b36e8d85ba6fa59993074d99049a254b12ffb0da",
+      "bytes": 40252,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_seed.py",
+      "sha256": "3e9b3f3d0e10c710c2d644b5d242427ac60850eee6acea76a33576b435930b6e",
+      "bytes": 11790,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_paper_verify.py",
+      "sha256": "dca2cd341d84cf05bf4ac6498603c4ac99741e2c342da909da13d9995ba41574",
+      "bytes": 17384,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_powder_exchange.py",
+      "sha256": "d572d5b0b87ea110efe7eaff23ba15841fdc3d585a9bbddee119c83262eca5a9",
+      "bytes": 32130,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_powder_ledger.py",
+      "sha256": "e4c97b8d9e96222364104f5512cc7947d549562a3dcee239156b05d495ceb432",
+      "bytes": 20875,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_powder_lock.py",
+      "sha256": "1b6c1284dffff973929151fff14512bba2e38e93eaf4edd5d4ea51c8b7ce73dc",
+      "bytes": 2047,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_powder_runtime.py",
+      "sha256": "dbdeffdad914391fb04fca7853bbdc629821f87fd4ee813b899e930e28cceb90",
+      "bytes": 36737,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_research_classical.py",
+      "sha256": "79ff91ac4597c5a66435c72954cf1769962afa6623e9a0ad47c18807a976cd0e",
+      "bytes": 5380,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_research_sequences.py",
+      "sha256": "521c82fc3078a6542b6cf41e7d5a787afaf579c4692cae77699335c0e820dff1",
+      "bytes": 9920,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/hyperliquid_timings.py",
+      "sha256": "e379279117a004f1ef90a6fb4161a3dbfbe023ca716c7a1059e2b5b57ab5e76b",
+      "bytes": 18268,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/independent_stock_targets.py",
+      "sha256": "9497b5cbc4006e6ff22403e558ed455c85a0ef112b551b90b5af5e799bf4fbfa",
+      "bytes": 16083,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/joint_capital_adoption.py",
+      "sha256": "dbd6f191f3aad1dfeb827e4f889a3325727a8c808b14674ea86a986f95717716",
+      "bytes": 10129,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/joint_capital_handoff.py",
+      "sha256": "dadec4f9255945689f78765f9093dfbdf7d8cd3be382e6e5c3c721a655155149",
+      "bytes": 18294,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/joint_capital_plan.py",
+      "sha256": "16558224e284b141a7ebf0326b8fde4cd572756915ab37a615c64c9dce681f15",
+      "bytes": 33488,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/live_evidence.py",
+      "sha256": "7b7924a4af016e0f8808db8d440c15df891a5da4e9ec1dfbe9d7aaf314a2c361",
+      "bytes": 1096,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/__init__.py",
+      "sha256": "f1d12cb4d07c5c26d4bb6113504ae4316a5d78c49d30db90bc60dad27c882afc",
+      "bytes": 405,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/engine.py",
+      "sha256": "43e577c8fa9a20c8b95b4bb449b2426c5d31dff2f08441620949faa2a15b5a9a",
+      "bytes": 14347,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/events.py",
+      "sha256": "ef55faa3a5c51d8241205461f26bbca780cf10acae6227cc3ec57247ed5c2336",
+      "bytes": 2208,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/inputs.py",
+      "sha256": "9c1a005afc5d83549ecccd993f9429069308a3ff8153ae092433e29e352b89a3",
+      "bytes": 21680,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/operator_controls.py",
+      "sha256": "73000840ef56d46929f65fb48d77df1011658ab4546bf29587a78bf4e1c5d130",
+      "bytes": 13695,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/paper_ledger.py",
+      "sha256": "d63842ce2ef23186d70181db9eac385f6483352a6ac48548b6455f21f5730c80",
+      "bytes": 42388,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/policy.py",
+      "sha256": "a97e5aeed734c80f7f9b506e2758aaac4167393f3d8f1bac3ab7ab575457122e",
+      "bytes": 6879,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/publication.py",
+      "sha256": "608b2b6773d4a14a7d55cbfb21558b8ecbbc7e40c9fa34bdb63cdfc5fae7383b",
+      "bytes": 5933,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/risk_proposal.py",
+      "sha256": "0c80abb4d81d7941ffe4c329a9d46f0acc012e51c01aa7643f79594dd779b590",
+      "bytes": 21432,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/rollout.py",
+      "sha256": "dd4c99d8d3e3521f5e9613b4cb438cff0c97581769af56cdd51917724878349a",
+      "bytes": 4301,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/runtime.py",
+      "sha256": "9741f10f97d03e3bada2d715e592057b3a76f26a8b6db9016015e0faad5a9fea",
+      "bytes": 17411,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/schwab_snapshot.py",
+      "sha256": "5487ed7a13d5597a70e062322adc8719f02b58d178657f366373d19df2c250a1",
+      "bytes": 29265,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/weekly_review.py",
+      "sha256": "ac98f6a319ec8fb303c0080015e212a7078caddf9b6fe6e6f5b3272c35b62b42",
+      "bytes": 52417,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/loop_c/weekly_scheduler_memory.py",
+      "sha256": "1002a4e53c7c9850e1aeb46b0600009b0aa45faf318d4c23931818d724811ac1",
+      "bytes": 17732,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/macro_ablation.py",
+      "sha256": "5d9f8fcf9d60299177f5a8841d97d1ccb932b3d535f1511fe05093174f3a3092",
+      "bytes": 18253,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/macro_bootstrap.py",
+      "sha256": "b12753786c487ff6c6a45c1b9a5be0079226ad21b31645c87f6ac84310d539ca",
+      "bytes": 13861,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/model_features.py",
+      "sha256": "dade3b552b1791b34d7cf5f399cf71777e5c471e84d11d260aa0e873b7113156",
+      "bytes": 3699,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/model_runtime.py",
+      "sha256": "fb5b3a3cc7c7b3e17347e6ce0636b3b162f56f52d04c572013d0c9e2e8080199",
+      "bytes": 33248,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/models/registry.py",
+      "sha256": "ebf6e4a341ced098b33f928cc53474fa093641717c055ddfd8275ae19d209204",
+      "bytes": 8958,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_dispatch.py",
+      "sha256": "1683b5cb6a24e5c462ed22dd8c6c1153f0a7f794d618eb017cfcef707cf80968",
+      "bytes": 10123,
+      "role": "owned"
+    },
+    {
+      "path": "ml/nightly_gameplan.py",
+      "sha256": "2f48a1a8bdc4bc83fef8b81dd4d3522ebc5194e0822426c09edaf788109ec4e1",
+      "bytes": 131899,
+      "role": "owned"
+    },
+    {
+      "path": "ml/nightly_handoff.py",
+      "sha256": "997fb74c6b4bbe70b4e8ed6f67b020926fa643f119e21445612ef77ff3fcc57c",
+      "bytes": 15776,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_joint_readiness.py",
+      "sha256": "a053aafa084687ee6db28a3a7849f910adc27e3cc7317bb5aa5a2a804879d8c5",
+      "bytes": 13716,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_readiness.py",
+      "sha256": "4695682ff912052bb25ad6d27cd145d3c956aae8eb6df8773e582bb86799afac",
+      "bytes": 8023,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_recovery.py",
+      "sha256": "a53e33297d60bc9bdb0c2fd76283a7024f0d94b05ea89f22ed0b072f65d09ee0",
+      "bytes": 4289,
+      "role": "owned"
+    },
+    {
+      "path": "ml/nightly_stage_repair.py",
+      "sha256": "f81efcfc22fed58a9d3aad5d1bfd1b847fc277557f966caac836bb85d7046d25",
+      "bytes": 41462,
+      "role": "owned"
+    },
+    {
+      "path": "ml/nightly_strategy_execution_coherence_ablation.py",
+      "sha256": "ba42820736dddf7c7a3727b4c6f485f0b9583c2a8be8e3821efc4e64f73df4ca",
+      "bytes": 93783,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_synthesis.py",
+      "sha256": "d1b7b6ccd3370c11fa220f29ce7a79e181b4915c5729df2e02e78f5ffe467cde",
+      "bytes": 19089,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_target_source_ablation.py",
+      "sha256": "14672c35f085bfc2e3cff7ff4a7af5a0129703ea9b2a029178e97bba0be47614",
+      "bytes": 50563,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/nightly_workflow.py",
+      "sha256": "24bfac23d39e98aea881e2a8a68c8d8e0d58b0c82c0283afe9a9a177c8983c11",
+      "bytes": 69675,
+      "role": "owned"
+    },
+    {
+      "path": "ml/opportunity_research/__init__.py",
+      "sha256": "d440c8b4c89a2c6156969d26a950ab3445b044f086ba24f77b8289a3ea2d1476",
+      "bytes": 86,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/opportunity_research/__main__.py",
+      "sha256": "f043014aa1586a195576d48a107a90882d3a10d5d7057593c49b80ae9b5230a1",
+      "bytes": 7041,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/opportunity_research/policy.py",
+      "sha256": "2e3b3fa14f38944a666aa42e430c91559aec30c2a03d2ab2fc4d0a3792859935",
+      "bytes": 9811,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/opportunity_research/providers.py",
+      "sha256": "8a1c2487b5f507d3c4da858cfebd4d3c05a318e74eb7ae6a00a191c0c628bf7d",
+      "bytes": 3305,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/opportunity_research/storage.py",
+      "sha256": "a770e804acf6b03837da73d98c651775f348374289f550bcb9f425430aad0ea9",
+      "bytes": 7686,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/opportunity_research/tracking.py",
+      "sha256": "87287ccc49f2e16858612e4c593c60de97dd9b1dc61b752e30ee77783e85c48f",
+      "bytes": 6443,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/opportunity_research/workflow.py",
+      "sha256": "eec20cc1171029e92b1f18d9b214d02f393f3f73deecfa8c16ce9f67bb3caf5e",
+      "bytes": 15395,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/__init__.py",
+      "sha256": "cb21d4798ee2435d319eb602d7d1384bbbbdb6c5e7784d4b98b56d2338ab77d5",
+      "bytes": 635,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/black_scholes.py",
+      "sha256": "3090745e6d63d9417c8938e7bddbcbbd24b451628bd662b5eea6f4fb9cc93edd",
+      "bytes": 8014,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/candidate.py",
+      "sha256": "73c1c0705688042127efb8eb422dc5cd4a401ec74eb62b6a1b7b50719fcef5da",
+      "bytes": 30865,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/causal.py",
+      "sha256": "b2d040e2042a3fd8c44cdc74d32ee3032edb37a1061a774bf911c92c07162d20",
+      "bytes": 81712,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/constraints.py",
+      "sha256": "1ee463121c49e895c834074be2b933294ff5c012aede25ea5e098a0eacb30331",
+      "bytes": 9252,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/consumers.py",
+      "sha256": "64ceabcc70b53c1507b905cf2fcd52989432dfab8eb5e248a73f1988febdc1db",
+      "bytes": 20367,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/dividends.py",
+      "sha256": "1b73b7985bb7be22bf05afd1e62dbbec0bf2f6eb1861571325e4d396ba81b544",
+      "bytes": 15020,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/eligibility.py",
+      "sha256": "e6a90b259bb3e8bf1b27393adc69e94bf7116dc4af8a00a39c4c055ee4c01154",
+      "bytes": 84251,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/lineage.py",
+      "sha256": "31ad55bebd6afaf5934e148cbf7699719da2c4c46bf5dc4daf0e920edb22a87a",
+      "bytes": 22913,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/lockbox.py",
+      "sha256": "5a4e02870bc9b18d79c4ad1f83a3af6cd0675c45cfa588435de84a37ce267385",
+      "bytes": 27662,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/loop_native_eligibility.py",
+      "sha256": "afc1f76406c7fd8e7e47b241e12708cc80b209628b519071ef7eef1dbf7ab032",
+      "bytes": 34371,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/model.py",
+      "sha256": "2edaf5b0f80ea68a5a535bc0cc62736e22abb1e324bf5c9fab6f5501d654ca9a",
+      "bytes": 49277,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/operations.py",
+      "sha256": "375b2b21ebfe8bf5d3d9a296111e87ab2de00615baa34d596228bccff13c5092",
+      "bytes": 33486,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/opra.py",
+      "sha256": "f2a37f51c8ca0a11b26d20f621545b9ffbf62cb3ff5018703d666e94a41fd160",
+      "bytes": 12976,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/opra_materialization.py",
+      "sha256": "c080d72f534efefa8e423ff026af60927ba9dcd20bcc16d059c050f8096952dd",
+      "bytes": 29155,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/policies.py",
+      "sha256": "c1b214f90d7c3cc59d8d8f09f0d8617759ed681c6e5ebb9b5d30847bb4eb1246",
+      "bytes": 9519,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/prediction.py",
+      "sha256": "4239a58220bc34173fddf563c353d392e04ef8dc32b623763c255ce29f80980b",
+      "bytes": 33929,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/publication.py",
+      "sha256": "56e2456ac8c5e61e8059ee0ae396d6409b52e72c5f8fc3f82aad838806d66139",
+      "bytes": 36353,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/rates.py",
+      "sha256": "bc19980455d71b786aad7ab9e954050470a120fea75d45830c6b7cba1e92fcdf",
+      "bytes": 18099,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/reporting.py",
+      "sha256": "03ca076a26300755d0cf981f70d38c3c4b5171f059a3cf877a4a05842ec7e98a",
+      "bytes": 31731,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/research_benchmark.py",
+      "sha256": "707bfb5529a4a391c41ffae1d2d6c52a024715c1cef5c256f15a2e7b5b1c1f28",
+      "bytes": 8679,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/schwab_materialization.py",
+      "sha256": "82ac07c5f0ac13506463b76455c148a93661ce39b0a8875be63b04b5b6f79872",
+      "bytes": 121202,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/shadow_model.py",
+      "sha256": "e161e1134fd21b5581daef7a01d2a96457cce4b0faa2ceccf50fae166918aa16",
+      "bytes": 62328,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/strategy_outcomes.py",
+      "sha256": "987529b6a54d09c32c97e927a115d59a0d191959b42475aa3f6ff15acf3aebe2",
+      "bytes": 39184,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/strategy_shadow.py",
+      "sha256": "4c2837bacae939d84ecd40a8134cb5409a915a5a0da73bb0cce638b9d11c556f",
+      "bytes": 52778,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/target_outcome.py",
+      "sha256": "6922d37018da5195fc85f3b979ac40823a6b6f3fa10be71d4417e6c1107e75ca",
+      "bytes": 35895,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing/weighting.py",
+      "sha256": "c76285c92d5af2b71d08c8bae730834897850812c846d4fc428a9e42fadc1c32",
+      "bytes": 5593,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_admin.py",
+      "sha256": "e8e86e46a7d057beb4ebff8a2f5d1c43e995daa870b3fe2b9f781161d09ad700",
+      "bytes": 27212,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_fred.py",
+      "sha256": "c90a2c7b7790a5f1e819edf67d0cda2cf5670a84743a17dd6e6c68fa16bf1e77",
+      "bytes": 7506,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_lockbox.py",
+      "sha256": "fb00e928d9b6877cf2647a53b288b76dac5ad2ba52157d134cf7a3ff96c57bce",
+      "bytes": 2072,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_loop_native_worker.py",
+      "sha256": "29a987a4bdd7cac56bb030ac3a784eb54035c50d9c1cc7531753222b9d04439b",
+      "bytes": 10054,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_opra.py",
+      "sha256": "4219bbb7261aa1c500cd3a41468e9f6c8f3ded35487f2f3b6d81a9d3c980d534",
+      "bytes": 4850,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_opra_replay.py",
+      "sha256": "329c7e10ee78fb749942be3b2cbe026440a5bb101c7d2f5679802401c852a0e2",
+      "bytes": 23591,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/option_pricing_runtime.py",
+      "sha256": "5fec74c965bfe09f5c188be213df8929fac1484aa9c097b05614d51294452f55",
+      "bytes": 109341,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/overnight_runtime.py",
+      "sha256": "54c49f8380a7889be2600e0f6aa9df6aa002cd6da968f831c6c05c47bc76ba06",
+      "bytes": 65491,
+      "role": "owned"
+    },
+    {
+      "path": "ml/parquet_contracts.py",
+      "sha256": "59113f0b27c71a6cd94cc6c91198a65ede945c63978957d321f8c1f5ccb58edd",
+      "bytes": 36501,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/planning_reservations.py",
+      "sha256": "cb715ae9de98a84d9d6adbb8a0180334055dfec92a44d3597d87c391d331860c",
+      "bytes": 4139,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/prediction_runtime.py",
+      "sha256": "dc8f3decc29060d8ade97c2f460aa2fd4079716fe45f7c3db0a6f4b2caf8ac17",
+      "bytes": 20416,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/preparation_deadline.py",
+      "sha256": "8d2e5790aeb7cc32282a1fdfe28fa994b9fa33e0eccf218dff16b343c5b87d8e",
+      "bytes": 4161,
+      "role": "owned"
+    },
+    {
+      "path": "ml/preprocessing.py",
+      "sha256": "8395e5c0b633cafaaf2c20307c04377f893bba20b939fcbf10c467473ede7efd",
+      "bytes": 7070,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/readiness.py",
+      "sha256": "3a6fd4b762b47f89114e12c6b216fa016eae81cd48c49bb589a02b8cb84ac7f3",
+      "bytes": 25589,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/rolling_materialization.py",
+      "sha256": "7ef156a9481aea438021a8c22307ae851cb3e93885b9fcad2dc8805587de9ae4",
+      "bytes": 61765,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/rolling_samples.py",
+      "sha256": "4275f1a2721a0d42392b11e47bf1fce5bc87cd8b0e5094bfdf4c53db453fa88f",
+      "bytes": 34250,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/runtime_pipeline.py",
+      "sha256": "97bec8a7200b4b2052565622934736a59d510ab3cf20fa59788546e04ab8a5bb",
+      "bytes": 164610,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/scheduler_handoff.py",
+      "sha256": "60fbbd66dcabc953582ff985e4ed57c7925198df4b29b471f60d87d5028b49c9",
+      "bytes": 19726,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/__init__.py",
+      "sha256": "ecbddb8f58e23b6860f4c883435abe3fdc17d42f71e0ca1d084011a2f4b2b770",
+      "bytes": 627,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/consumer.py",
+      "sha256": "65186e5ecf01536472e26dddb6d2646827d39013b06dfea554db80ff706f0720",
+      "bytes": 10530,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/contracts.py",
+      "sha256": "0d082d340235c1177da089ae1840401e41340456ece10800824a83f78dbbf3aa",
+      "bytes": 5371,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/dataset.py",
+      "sha256": "c1ac8f2151f7f08ea1e79b519e735341c43797826869ef9a52d8f2e65b9d6056",
+      "bytes": 13767,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/inference.py",
+      "sha256": "180142ffad3a66241367df9c41627bdfcc3297b71a1742a56227dbedeee7b9de",
+      "bytes": 11439,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/inference_runtime.py",
+      "sha256": "2177a400c222f69d58ad34135811f849070d5360178ed2bdd1fa9d9ccf35f4eb",
+      "bytes": 11065,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/model.py",
+      "sha256": "d072ae5128ac0768eaac4194c5e9f82b7ae5dfa54a6f79a899d08594125eaaa9",
+      "bytes": 6769,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/preregistration.py",
+      "sha256": "8b977a496a43f339f46d1d1cdfae423b2716dd75870c7bef2199e62979ab2651",
+      "bytes": 20689,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/preregistration_proposal.py",
+      "sha256": "4d0414e10a50dd315aa4999baf1ba744f45d1a710f4ec343325bfd68e14de5dc",
+      "bytes": 7347,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/publication.py",
+      "sha256": "acb3598aab533c3cc965743f7e80b205f02b7c46494027039f3513b77ef11d98",
+      "bytes": 8624,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/runtime.py",
+      "sha256": "f168870c343900df03b7f95c661056f30feb8a49c12169ddc0fbb5f7c3081a11",
+      "bytes": 27081,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/surface.py",
+      "sha256": "bbf40f9cca4995f68657c6cad356ebfe2d9fc5029e1bee74a876b5407fef9de9",
+      "bytes": 24150,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/sequence_encoder/training.py",
+      "sha256": "8062fc3b1d8a8cc8c515b5f93f5b6450f70936cfa22c777a03a8c94e7b3a6529",
+      "bytes": 11607,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/splits/__init__.py",
+      "sha256": "fee73d9c45268d4a8b80a0d5afda27a459b6ad9904eba0419031c95c2a15137c",
+      "bytes": 74,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_direction_policy.py",
+      "sha256": "1b0c989b5e849a8eb9a3320b186b93232806a9ca66cbcedbce7ee810c0224016",
+      "bytes": 611,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_target_backfill.py",
+      "sha256": "0ca8ab47af70f7cf2e9b6701d6296239dca22761b25c82521bd523e15ae3a3e6",
+      "bytes": 15176,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_target_history.py",
+      "sha256": "ad41a13287b74a9ee2e0a324a3c29cb610d5d57f2bf75c5aa748dc7a2015683d",
+      "bytes": 39632,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_target_prices.py",
+      "sha256": "15ace1618beee2bc394785ecf321a51b24e1952ced771888b02942c15baac964",
+      "bytes": 10384,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/__init__.py",
+      "sha256": "2481b3c4cebda02eed82d72c2dbe03afd8a7c1a65d910ca63c27cdd0b85bcb4a",
+      "bytes": 165,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/audit.py",
+      "sha256": "634974493589a575f483c6802531d6ff45e5b5945f60264e0f9a49e0188f2d38",
+      "bytes": 34994,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/catchup.py",
+      "sha256": "cd15dd6142f7e3104a2d8670d79ca8babedc8bb3f2d6f37866df7c0a2841978f",
+      "bytes": 5676,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/contracts.py",
+      "sha256": "f9f5d28b482375f4bbbe29443c8e6fcec314aee66e3999138061ea5ba67474e2",
+      "bytes": 11211,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/control.py",
+      "sha256": "a3c784f1ba7556ee8d1ef1db4f279d5904905ef19258bcb53c8b86de429e6ba5",
+      "bytes": 2999,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/cross_horizon_fallback.py",
+      "sha256": "62b45c8fd5303626d72f5d37230ccfc00ea2db1a7082a3e899f4aa63d205a6ba",
+      "bytes": 6460,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/daily_adaptation.py",
+      "sha256": "9b548a24f658fd957f8b5ea96456b74e873baf725a654e40ef66a13f957ee6e7",
+      "bytes": 4616,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/engine.py",
+      "sha256": "2754107572af1407e3986631979a12069331f6f54f3ac2b433c545a99d3fedcf",
+      "bytes": 22523,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/execution_lifecycle.py",
+      "sha256": "bad6357282e4ab4b0bcebba10c8ad6bb818a791b381319bed23a0c02946691fe",
+      "bytes": 17327,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/fallback_review.py",
+      "sha256": "d88b7777d32ce868e2c2892dff2e98b4a9bf8f50e7016060676cda159589f565",
+      "bytes": 11577,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/fixed_horizon_budget.py",
+      "sha256": "1c31419635ae26ce4b0f7ec97e7081415de3d4c17f480bc2fcf2af43ca462708",
+      "bytes": 11474,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/fixed_horizon_engine.py",
+      "sha256": "f697b471c9e19995e1c6ba8689f6ac492fd955c6b82700a15e7d71bde3e05dcd",
+      "bytes": 16788,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/gameplan.py",
+      "sha256": "0e89693b5906fc1b84ad8747bc10ed7dfe3f733ff7e14ce0944eb790a87b3b08",
+      "bytes": 20496,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/gameplan_direction_engine.py",
+      "sha256": "7c907923e20096b726aec0978ccc79882f056f856b91e893a1e41cf3315e6eb0",
+      "bytes": 25023,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/gameplan_execution.py",
+      "sha256": "9a07557177ab9190641420901b96941be2627e2660fbbfa7197798068849b7b7",
+      "bytes": 14251,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/handoff.py",
+      "sha256": "f6451e98161c4774687f9c38b6702f1886177384e7d4c07a7c316280b4853161",
+      "bytes": 17569,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/horizon_broker.py",
+      "sha256": "59403e8c00c21d1100c6e62f8eaa49ad8fe13a2ca5a2a12b2a4f0bbc9fa7fde6",
+      "bytes": 14164,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/horizon_ledger.py",
+      "sha256": "5bb23712f9344eb6760ea5bfd38a0765e269f13d7ebe2fb7e8cf5622dc6a3a26",
+      "bytes": 63766,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/independent_engine.py",
+      "sha256": "497f98c682a75ac911e45ac2cdc18daeef50599eb194ae50a5e094b614c82fa9",
+      "bytes": 10952,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/independent_runtime.py",
+      "sha256": "b71a521599e025765840fbd4911d374017a48f4fb75317a8999df8e7d7d97f04",
+      "bytes": 66242,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/independent_session.py",
+      "sha256": "9118f91db007661ab8cccdb8fb088c6310c2784d610684dd7e556313a2532fba",
+      "bytes": 21904,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/independent_signals.py",
+      "sha256": "55e03300e062e427d602b9da598a2d8837ea484daf6be50367d01ad6dc433dbc",
+      "bytes": 23499,
+      "role": "owned"
+    },
+    {
+      "path": "ml/stock_trader/independent_training.py",
+      "sha256": "60179188337cd37c2e7da9c979ece1128ad44cc647e67207d139b4ccb09afbfc",
+      "bytes": 55905,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/inputs.py",
+      "sha256": "7505e90ba36d0f00e52855b0a2421e6fcc1b104427dd9695aa1c7732a6e38df9",
+      "bytes": 6456,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/market_features.py",
+      "sha256": "a20da768babb93dce6fcb9b760ff05bb54f611375c7d816d57a3164c52d1073b",
+      "bytes": 2097,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/model.py",
+      "sha256": "11548c31585dbd90a641278db01c461d3873b9b36e5922ee52794d9b5647d2a7",
+      "bytes": 26393,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/price_comparison.py",
+      "sha256": "d638dd18fb919f3575da4821654688e76969a69c5467df661d1484c4e4aec340",
+      "bytes": 3384,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/publication.py",
+      "sha256": "347b5305ac9b37e00ae49641a19807cad9ae706003d361c765ad23a438ac6e16",
+      "bytes": 19576,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/quote_recovery.py",
+      "sha256": "49f3867feeb5c904e76751d3e54dba943bd8d7ee1c35577785ce3ec865936eda",
+      "bytes": 5520,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/reconciliation.py",
+      "sha256": "2f7780081912be6123b59b36a79e103b6454c09ac44d2aadc8175857e89f3d19",
+      "bytes": 10589,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/runtime.py",
+      "sha256": "312e6cd8415fc3284cf8cff01a25f3d4c2e5e89ca047c0b0e3f411c87f1f7544",
+      "bytes": 56221,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/scope_qualification.py",
+      "sha256": "69883660cf5226b74d1a502df9fda4efb248362009efc876cc81aa9978dfdb10",
+      "bytes": 5442,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/session.py",
+      "sha256": "1f9c869914e3ad3d342912bbb3b4a64fa14e1a0e596d1e0510f8d7daf87ff6e4",
+      "bytes": 9451,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/sizing_policy.py",
+      "sha256": "6d9356d85be03621d6664bdfa3c6e57aae25d14082b827c84a2b604c74906fda",
+      "bytes": 508,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/state.py",
+      "sha256": "f78ac99d7e4c9d59b1a8969fd23114894d4c204a07216d4e7c61a244176dc129",
+      "bytes": 19569,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/stock_trader/training.py",
+      "sha256": "c8d776cff027354116d09d8277fdc3a5c64c71095a7ce307ba0200754fc007c1",
+      "bytes": 26047,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_pricing_canary.py",
+      "sha256": "bed9ce6aa88afe46d736cd3a714e9afe21fde38f502dbdbf517c18365ddcfd8e",
+      "bytes": 17299,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_profit_training.py",
+      "sha256": "bada299c729c00c2b6cbf1ce0bcf0ced02ec773dcd478dce3bc8220ed35faa08",
+      "bytes": 53880,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_profit_training_runtime.py",
+      "sha256": "4dc7d608a30fcbdd59eb2b1965dc4b516c47fef394ce9967fbbcde2c2e2f94e0",
+      "bytes": 21278,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_publication.py",
+      "sha256": "045051460f17b1c6880110032e9d7aa72dfd21452e45d0a322a3e214ce011745",
+      "bytes": 10235,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_runtime.py",
+      "sha256": "2c1676c56bef1074f5d440580d5a192b38fd31748a9068a65ebdad3f71bc2c55",
+      "bytes": 32055,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/__init__.py",
+      "sha256": "10e7f774a2b5f4428a899b489593688f78f0381d1be990bde7b64de935aada8d",
+      "bytes": 370,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/candidates.py",
+      "sha256": "247958985dc352cda5658d935a615b9f88d61126e6cde06be6758a6027c5c5d1",
+      "bytes": 29794,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/chain.py",
+      "sha256": "4a02f6716ce1465d451e708d07ce57d4e498a2e5ac867c18090cb4ee52e18810",
+      "bytes": 42471,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/contracts.py",
+      "sha256": "ccafbba815bcee3bed2f4d4827dcabc250ad9747cb479b5bd63060da46c93b82",
+      "bytes": 8486,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/market_state.py",
+      "sha256": "b5ade3deaf0f68ab3cd65c4f22ee88151e1a84fd4dafb64c17d6c6bcf1cf7b04",
+      "bytes": 14765,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/model.py",
+      "sha256": "651b1c024eed24a153199993d7729322ee8378175a8e6ead740a1bf807194561",
+      "bytes": 54210,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/opra_cache.py",
+      "sha256": "70afb405b2ea25c4327dd9b69227e23c6c6a49c3bf4fafaffbc7569f0475cc2a",
+      "bytes": 41251,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/outcome_store.py",
+      "sha256": "b230f5c1ed00b96f3b56d20bf0ce93513f812531d5ee7bc96820efb510e68708",
+      "bytes": 11297,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/registry.py",
+      "sha256": "3315230795138559468ef97a107317c99d31121d4baaa27d8076e4f798149b5e",
+      "bytes": 13081,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/research_trace.py",
+      "sha256": "087ff96297600a149ef7e3351e14ac7bfc6733fb0b567d5ff7aa0c5057bb847e",
+      "bytes": 4129,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/runtime.py",
+      "sha256": "bb6b9f7d94a7d90fbad5727a761ca1e45a3c81cae53b2cd279f940afd657f1ce",
+      "bytes": 54310,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_selection/slow_model.py",
+      "sha256": "7895c4f6bc69fc73526f9a04c2d729c9153d11200799ab9be011a904ba03ee18",
+      "bytes": 14240,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/strategy_value_challenger.py",
+      "sha256": "c203ff2779088bbd8822261915a3426d28906cb2608192998ac5726dd05fe549",
+      "bytes": 68094,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/system_guardian.py",
+      "sha256": "ee72240fe1c0f50e6350b49ffa193182b2f400dadd817e6f675c68b5cb59ddea",
+      "bytes": 111150,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/system_monitor.py",
+      "sha256": "e4189368a8b1ed07928fe33b2d9304156a4f9b48adf071ba703ca6e480ea9c34",
+      "bytes": 161640,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/timing.py",
+      "sha256": "6157ee95d01e1e6e8525f0dbdc6fdf64776c6ee57f013c994a69b3d54f15ab90",
+      "bytes": 6883,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/training_progress.py",
+      "sha256": "4dd40c5369dd5d54deb43bea7f1d26b00a13879fb4cf95478ed3403b4fb8c088",
+      "bytes": 2262,
+      "role": "dependency"
+    },
+    {
+      "path": "ml/universe.py",
+      "sha256": "9b9ddb723732452708f77a35386fc4a1475fdb3dd982df3f0b95da1ceac8af47",
+      "bytes": 6616,
+      "role": "dependency"
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "35c6fd559b11ed852e8d847bc9a7c2430b2ea55ba15851b0d8c88e1a63da4db2",
+      "bytes": 3389,
+      "role": "dependency"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "da553f42dc78ce9e1ed6186201fe5a6d5bdeb23c28de2ab6f827bec1272b484a",
+      "bytes": 1622,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "ab02a15961c8039f65d3e73bd574dc4fa644be818628f8aef7109910c899aa0d",
+      "bytes": 2651,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/gameplan_fixture.py",
+      "sha256": "2a5cc649d270b8cb15d903a0a4a1ffb85fa2dbd086df91754a11138ece2a268b",
+      "bytes": 6910,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/gameplan_stats_fixture.py",
+      "sha256": "d9cbefc75e3fcc2fc4208cf30df218923371829239f26e2a1ee1cc329743881c",
+      "bytes": 3985,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_accuracy.py",
+      "sha256": "7c290534e10707f86206fa6f0af23d9ccf44c7d2cb03e36314c8bdff70b4620b",
+      "bytes": 8995,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_authority.py",
+      "sha256": "20a086375b9b47ef6632914367febc19c364a3d2c0d3266e346b975f65b9f56d",
+      "bytes": 20196,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_cli.py",
+      "sha256": "3537c89caf91a01cd923ac5eac7d3335fd7a0dd8677f98d3e2a1449f56761a29",
+      "bytes": 7445,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_config.py",
+      "sha256": "88fe1cbe55c03c4bf27d79a30ee4c6c1e80692b968dd796123b5c15b19001f40",
+      "bytes": 3580,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_cutover.py",
+      "sha256": "34ba892406666f1c6784560ef100260f5f9d97433d55fc872e79fc8eaa1f0c7c",
+      "bytes": 14362,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_execution.py",
+      "sha256": "639ed069c5a40b110ce207e386131c6cd05e73883d126f443a29e1d1d99279e8",
+      "bytes": 16610,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_joint_interop.py",
+      "sha256": "ff7bce6a8cc5475d5e4dfd223f05f96c94e52aaf9af1cc2ccdb6796e82d24f5d",
+      "bytes": 9209,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_migration.py",
+      "sha256": "8344a2af813cd05f6cc2463584aa3e5dd76b840aded97f4cc876388c61b38255",
+      "bytes": 14213,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_overnight.py",
+      "sha256": "9989d82f145a0c7dba0227ddb70de3136962b73cc8c4f0d10acb923b3b9c30ed",
+      "bytes": 4870,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_planner.py",
+      "sha256": "17961f29cd6ad75604ab154b751844121779ed17b2c51b2eed6da0134b4e1e3f",
+      "bytes": 12795,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_preparation.py",
+      "sha256": "66a233ce746714f03db9e67612f1d8a482eeff65066a3e5c52de7c21c32f9873",
+      "bytes": 12707,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_producer_prices.py",
+      "sha256": "1041c7c89f44118a16aa96fccba86f912c91010132c7cd04aac78ae4e6bfdec6",
+      "bytes": 9959,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_review.py",
+      "sha256": "b651f159b51b6faa39ba7e2a31d83e08ff995dbd37a19c83d08f7a53c3070d0f",
+      "bytes": 18263,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_selection.py",
+      "sha256": "835ae1cd3c91450d7b0a3b088f52fa5a0fcd3f515fb899959ff5d3475e2c6e08",
+      "bytes": 4322,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_snapshot.py",
+      "sha256": "9ce948d5a59d1d8abef961d899e886c9b44e28fe1280c5a978ec6c386bcf982d",
+      "bytes": 14535,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_sources.py",
+      "sha256": "b009082cf73fd58715d5c418cdc110b30a9e7a1dd21872f050c558f29b71f62c",
+      "bytes": 17764,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_ui.py",
+      "sha256": "9346ca391ca8de69f43df6e98657e4eff910ee8b1b0e63c8012f655a11e3ac49",
+      "bytes": 7757,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_account_gameplan_views.py",
+      "sha256": "412d8060256778f7c6ce19ee696cf49fea709631f449b2466b15f5c5a76fd8e8",
+      "bytes": 10154,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_app_main.py",
+      "sha256": "a7a1b3b0f5617c690ddbe6988e124750ab8972e3d4395d6f2d33c9b76f6222dc",
+      "bytes": 1733,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_atlas_stats_first_execution.py",
+      "sha256": "a17aa2e2fa5843f7aa70a847cc5c91ef14a88e9b6a2fdc37ff1713044fdf27bf",
+      "bytes": 9379,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_bar_timing.py",
+      "sha256": "db4b94ae878d11d86dbdac8e89fa266f6a7392c57e1c87bf6454aeed9e1e646d",
+      "bytes": 1241,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cme_cross_asset_context.py",
+      "sha256": "25a5440084753e70a85e6598b2c04ca880bdec8c893d337c117bc4dbbaa26d9a",
+      "bytes": 28067,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cme_persistent_retry_defaults.py",
+      "sha256": "9e14a7f1d6172d15ef15043da8818e3232caaeca6f40b2b5751440a1c5ad02da",
+      "bytes": 3804,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cme_runtime.py",
+      "sha256": "eefece637e564130610d4ae752b354bd1725616064275551ffdd39ecc1d68bc7",
+      "bytes": 24025,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_horizon_fallback_ledger.py",
+      "sha256": "516584ed76e323cdef6b7610ae6f75379f57ad4e2ca2a35c46a0c748a3669cc2",
+      "bytes": 19066,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_horizon_fallback_policy.py",
+      "sha256": "11dfd0d5f1f462dac124f35a54ba29ec1bfee188067f5026f29380f8a9b6b846",
+      "bytes": 5320,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_horizon_fallback_review.py",
+      "sha256": "72897586ddf3fb93468feca7f3338bbd71e1ab0c575b7952fe6ba65f4253f9ac",
+      "bytes": 7876,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_horizon_fallback_runtime.py",
+      "sha256": "e45230f2e8fb42e19fdce092111a54df6988a2e92ccd846faa7a2bfd6fd2cc93",
+      "bytes": 12942,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_artifact_publish.py",
+      "sha256": "11399de82c3eb6fad1856af294f6e4f15f8113b13314b6d2982c58672f5c9c21",
+      "bytes": 22224,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_communication_cli.py",
+      "sha256": "b42832a691f089b83ee8808c1ddcd27cfafc08f775835f43970ceffe82a673b3",
+      "bytes": 16715,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_core.py",
+      "sha256": "190edcc82a0c230694a76bfac3573141ca7ad4562cfe6cd20bd61940f6021f1b",
+      "bytes": 22767,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_drive_signal.py",
+      "sha256": "063be3c06e46d03ef486a43af108303e51ccff055ab2a0c287c40e4bd8e103db",
+      "bytes": 12282,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_incoming.py",
+      "sha256": "86fbc53c11edb381583480b38e416d08469b1608c706e294a649730183dac9ab",
+      "bytes": 16286,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_install_drift.py",
+      "sha256": "c303ad989401a44fa61312b1d84b5e0b561d630dd7e285a9c33fed9ae4851c88",
+      "bytes": 12255,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_main_integration.py",
+      "sha256": "bbd4b93a4bb909692e4a83bbb038f6f6d3c6e4caa085296f25afae023578286f",
+      "bytes": 17735,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_requests.py",
+      "sha256": "5eee9f136bbb7a1ef84b52527c11b66178d88bcf95b42365dbe22739f35b4805",
+      "bytes": 14713,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_shared_watchlist.py",
+      "sha256": "e7c46a5f8bebe785a33209329fb8b6cd040dc302594cbbe86338e4a65a9144b4",
+      "bytes": 2701,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_tasks.py",
+      "sha256": "b6bda0b8cf8eeeb9b5161fd1732224b7efe59e5c5a1954ef063a170e9d255da0",
+      "bytes": 9760,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_cross_pc_transport.py",
+      "sha256": "33ec1e04960e449f67aeb5e50bf9c96001e8599f859b64bbba8f5b6e85202a93",
+      "bytes": 18345,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_archive_bridge.py",
+      "sha256": "28b8f7ccda8e3c4fdb915a6017997d892ac68c5b8f7d4af851d0a42647a552bf",
+      "bytes": 6744,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_cme_context.py",
+      "sha256": "2fb331f8ec8cb60a587b957cb677e6e61fa56d01e2881a3b427549a6c135f390",
+      "bytes": 4149,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_cold_start.py",
+      "sha256": "975095af47e50709315fa37a0ec1b84b6d4f422ec12eb61e9540008729288789",
+      "bytes": 48434,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_cold_start_retry.py",
+      "sha256": "f191ceac1a963498258210318ede463d2c05d4604caecb5dc95d0d8de03e22fe",
+      "bytes": 9541,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_derived_bars.py",
+      "sha256": "9ada935f5a9357845903377c86be4622af2cae1b7d2b382a51afb41ccff87d61",
+      "bytes": 17557,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_opra_live.py",
+      "sha256": "6a320eb1e6694d740cf3eecc321cbdb30d1dbef7c36e9021b449585204abb911",
+      "bytes": 50589,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_opra_replay.py",
+      "sha256": "eaa12c3d512f7e7afdd4390449c75de148d00fa41e01092d26de01a33276d85d",
+      "bytes": 9503,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_retry.py",
+      "sha256": "8879b66453b384c3447f6045eaa9332e08617b4d32b7a7ec67a232b0a5c6df32",
+      "bytes": 14849,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_databento_xnas_replay.py",
+      "sha256": "318bbce626919e7682e78eb9940744a7fcea38a297055dea743fcda6a93b8736",
+      "bytes": 22600,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_datastore_hygiene.py",
+      "sha256": "1d54369291c770e8cfb4bd631848126080feab2be143d47e273eafb85753e75d",
+      "bytes": 5775,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_directional_forecasts.py",
+      "sha256": "d55b2be1189189c1315f7fee74fba4593f609951d0a9db4d557999a9dfb907b4",
+      "bytes": 8404,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ducket_bucket_app.py",
+      "sha256": "37473651f97873f591d4d2aece4dc67105a6d9923b94d8cd821c4c1a612e5b5d",
+      "bytes": 2566,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_equity_dataset_migration.py",
+      "sha256": "524ba7176efc70b0f1de75d3e800dd4dcc67760eea665be046023e0c165c41a4",
+      "bytes": 4269,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fixed_horizon_budget.py",
+      "sha256": "c03b6b6d28d5eb9a905dd3c44606cfb6877c78418ef31a54cfeb06022e547b5a",
+      "bytes": 8136,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fixed_horizon_engine.py",
+      "sha256": "aa58a66c7272c85292cad7c93208bf8f276a6946e5f6b376e287ebab520d64f0",
+      "bytes": 15625,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fmp_corporate_data.py",
+      "sha256": "f7a9d30169d119dc4af7872f6117500ea66757f290c90dbc136554307f956a73",
+      "bytes": 1705,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fmp_energy_context.py",
+      "sha256": "ba187d898fb7407794744530893635610fdfebca010ec4da93800e74a9b0137f",
+      "bytes": 15601,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fred_alfred_causal_pipeline.py",
+      "sha256": "5fda4870c804cef40f569f7611725132919a7f62853684dc586a4934dc804f92",
+      "bytes": 21504,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fred_fetch.py",
+      "sha256": "4012ec7041369895e3c24adae5f4ded763214837b86b5a22315f74833875aaaa",
+      "bytes": 6123,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fred_vintage_import.py",
+      "sha256": "15473790dc3f5d8b89c303cb5938fdf7bfa25c7028aa66c2af788feb198b22d0",
+      "bytes": 8313,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_fundamental_calculation.py",
+      "sha256": "485821f62e84e1ab4ef8a8275287487af258c5fade3457ab72d0b71d4f184121",
+      "bytes": 4055,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_actuals_review.py",
+      "sha256": "6b77d4681c754294d908287911e6873f6546b9766e1938a1b2a63c377ead0d27",
+      "bytes": 34024,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_archive_features.py",
+      "sha256": "2890baecc9a4884e841fbb68ff1c54bd5a3a2d706d8afabb6bd531f00fb42ae9",
+      "bytes": 15908,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_archive_integration.py",
+      "sha256": "0b9e2e4b3203347c64c10e28c36380a01aa08bd3748bbe93b0e69061637652a5",
+      "bytes": 4461,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_archive_seconds.py",
+      "sha256": "4ce8c22f3c7ac0708c3de74c5e3f22915071d0cb900d7796335df76ab53bdb5c",
+      "bytes": 13627,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_cash_ledger.py",
+      "sha256": "1a15eee95b78039f46aa8f4747c413d2d2b617d416cbea26374c67d6570c8680",
+      "bytes": 19620,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_catchup.py",
+      "sha256": "39f13a554cb1dbc950329a917d5e4b4737efed2db93e101dc5a488965be238e0",
+      "bytes": 4736,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_champions.py",
+      "sha256": "f986d483aa7b13eb5cbc69c24e979946c81507b9b9cbd7a3238d878f90ef767a",
+      "bytes": 13271,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_data.py",
+      "sha256": "877ffcd0771a9c6ffdf29c0c55d2dc533b51775ea9d4576d94763affdc69fa6e",
+      "bytes": 15251,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_deployment_execution.py",
+      "sha256": "e2849d7daf338647c7769a0830e72850e2a902a62f1224cd466631f4fe0f7901",
+      "bytes": 12314,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_deployment_handoff.py",
+      "sha256": "a3035e84f414a22fb5f0bce62e9fefe9502661ee789390dfc2f786c8681cf31b",
+      "bytes": 29192,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_development_selection.py",
+      "sha256": "b0613b20a281b8c17caf64de81752e8dabe28eed924d8238992f330615e2e36d",
+      "bytes": 8534,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_direction_engine.py",
+      "sha256": "e18d3b8b703072ae4c7287ca9e680bf72f08058d265ecf7db816945db2fe43ca",
+      "bytes": 19428,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_direction_runtime.py",
+      "sha256": "ebcc64c9be8396f97c53872e55148683f5119b7e240de433474e0175fd797534",
+      "bytes": 17335,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_direction_snapshot.py",
+      "sha256": "9422d79e88780061e80cb39bc33bb10612a60b66e15eedb0bb628c990cc11f06",
+      "bytes": 7046,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_estimator_portability.py",
+      "sha256": "666ac9ad1fb763440a1202f889f9218c290a2e48abea921a329641e40e1c525a",
+      "bytes": 2391,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_evaluation.py",
+      "sha256": "c2135348401017a906dea01262f12c3b750ad542619b31988bc3239ccb154cf3",
+      "bytes": 15258,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_execution.py",
+      "sha256": "44a5573e5d983bd5cec6017b2b6fc5c8624ee7e7215cf2adbd6753d20603e7c1",
+      "bytes": 11312,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_execution_abstention.py",
+      "sha256": "1649aa5bae35a5316c1ffb3139fb90b5d7c71cc73f0a141e9233632cf9701802",
+      "bytes": 9810,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_fallback_planning.py",
+      "sha256": "023db8e21120d5d9c310a859b3b82bf8e397a6ec435fb363cad5f330fbd5e6bb",
+      "bytes": 19320,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_model_feedback.py",
+      "sha256": "5935ea70a619d43adc62f39a7433f1c2c136886179e555d29b6c569ec4e5ae3d",
+      "bytes": 14146,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_price_bands.py",
+      "sha256": "2bd4c07f8a4f98a197c86fadb6417bfd4cdf10ff61ee595a7bda78a4247aed0e",
+      "bytes": 25417,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_price_completion.py",
+      "sha256": "71a58c2eab9051623a5781254bd1d0d8c6b00e577d9016c1a7d85d9ff40c5db9",
+      "bytes": 15446,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_probability_shrinkage.py",
+      "sha256": "b74e297247fc53dd0624a727b839ab3bb7a9ed05f17864348c21f869beb88e7a",
+      "bytes": 5946,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_probability_target.py",
+      "sha256": "a078cc570e00ccdd4671230d17c260b815fff2a76d117da256bc91cf7d9e7e05",
+      "bytes": 7386,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_promotion.py",
+      "sha256": "f44225c26308e13739d1c559407ef1a0de60f301260f823249222c8b4435d5eb",
+      "bytes": 4683,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_quote_clock_recovery.py",
+      "sha256": "be4699284139f2a4117a9b05fce968c6dc64402ec3e41eb1a6f61870846a5f43",
+      "bytes": 6314,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_quote_recovery.py",
+      "sha256": "eaf11e8af97c75951bd112a46b1e730b455136f97d4a6c6d0d7a316cc16d4cfc",
+      "bytes": 8608,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_raw_calibration_eligibility.py",
+      "sha256": "06c27473b06437cc6ebf938b455668015820459f28d66ee9c9c86a5b4b0d8192",
+      "bytes": 4320,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_source_selection.py",
+      "sha256": "af21a1b282dc3dbc13f575389121d806cf9d825ba696f09d5e3c1eb6934c6217",
+      "bytes": 8920,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_stats_data.py",
+      "sha256": "b690c81bdbbcc42283db20a3e0da3f243fd670d6cf270e4d1ab113c8ad1f3883",
+      "bytes": 7853,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_stats_handoff.py",
+      "sha256": "c92319730adc772125c73a80c2551d52c6a04ccb04cbed1c7027a172b5507a32",
+      "bytes": 9948,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_stats_ui.py",
+      "sha256": "bce1d193065365a5065658198d7a670fd0f70093a12982b0ff1261783cf15bba",
+      "bytes": 8765,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_stock_trader.py",
+      "sha256": "3846ce3f2a47d5c4907a794cb18fe8230d77f9248d99f9e3cd46a8eba98bf4eb",
+      "bytes": 12132,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_trade_planning.py",
+      "sha256": "0bfe83b9ee8948bbdf1620383941df7563758daf699ffea9e6af34293c861dd4",
+      "bytes": 44367,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_trade_review.py",
+      "sha256": "93dc5475a7d0585be39dd36bbf662c6453269bbed1a5d49ea91229d0ea2fc68b",
+      "bytes": 14904,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_trade_snapshot.py",
+      "sha256": "2fee0cb0ce8d52f5a9927178a0ce85c14ec7228440572e8bc7adba4799d9bbc8",
+      "bytes": 24864,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_gameplan_ui.py",
+      "sha256": "85149d38b606699e09ae59cf0d28a679ad0ad81698855b944fe4e0b0497c7edf",
+      "bytes": 14053,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyper_workspace.py",
+      "sha256": "51ecdac9d5214ff4aa842b82c2ab98b86f3dce4fb27da60566d795b2fa7e35b7",
+      "bytes": 50999,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_account_history.py",
+      "sha256": "2919f27a29a482b21a44b0ab32f5752ce0bd8990d9251c551dc185f4902d8299",
+      "bytes": 5930,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_catchup.py",
+      "sha256": "1b52ddfb8496854c183439b6907b2805a0bdf7c19c04f122484f2fe0139a7c2a",
+      "bytes": 8000,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_coordinator.py",
+      "sha256": "32a11fcd2b13de44352a9a5f0db402d175f9aa7d61e13006551213d7e1fc91e2",
+      "bytes": 25093,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_coordinator_config.py",
+      "sha256": "c2f5f7160d490a4b3d1bb2e83dbb578ba0379b977cbf5566e02efb192867c0da",
+      "bytes": 6114,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_data_loop.py",
+      "sha256": "2162d29a280254f6991f7390c7cf91792c71499047511b31a317647c48a61740",
+      "bytes": 18068,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_data_pipeline.py",
+      "sha256": "9c7f9cffea3cc6218b56730e8e8909341b0d135210b68f46dc539b5dd470c68d",
+      "bytes": 6729,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_duckets_ui.py",
+      "sha256": "5f66ee6a78c1abdfa35d51bb2ce218e14a81b6ef4a0d429573d36cda92cce492",
+      "bytes": 17959,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_features.py",
+      "sha256": "764e0d91dc69ea9515f202d04209271712b8a6997f302276171e5a8d82a1c447",
+      "bytes": 6538,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_forecast_reader.py",
+      "sha256": "e38131508c62feea7a0ecec51edc92aa4fef3bbcdd88e10f4eb1d7ab9f1f65e0",
+      "bytes": 5202,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_market_data.py",
+      "sha256": "da517e9b5386452f809cca725734e296060d28d22817672ba9ff3f6df775e765",
+      "bytes": 5655,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_model_artifacts.py",
+      "sha256": "bca11c2afd6c95ee67fa9ba8153a90ac291e010eeee068e2485486706673a6a6",
+      "bytes": 13610,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_model_config.py",
+      "sha256": "b4a793ac68784409179daccd2db98755fdeeb6e19952b6a6d21562aaa78ebeb6",
+      "bytes": 10158,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_model_recipe.py",
+      "sha256": "432c05b815d9aa1e7234ccb25924578e7f1fa9858c3c24e3e5387da7b698245e",
+      "bytes": 3820,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_model_research.py",
+      "sha256": "1582c345a79f74fad7f45826954ac746660914fcfde070157bce7d9820e7e09e",
+      "bytes": 10956,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_model_runtime.py",
+      "sha256": "0a5eaebb35f72160d5575430bc622d5976f7d82324a50f69a0708f7d8073b481",
+      "bytes": 27805,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_models.py",
+      "sha256": "c3a417082d05d55f5bdf8d2b6e03cc7e91dd40a2b7cf3fde19d2c7fa00d80b61",
+      "bytes": 26012,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_cadence.py",
+      "sha256": "008433c85888a576a1a55e207d5698be68bf44ce7187e58d70fbf6e0848773ca",
+      "bytes": 43580,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_comparison.py",
+      "sha256": "361f7fe37b4c8f7decd8e38f8cfceb211ea60008bd4fabc28500348764189036",
+      "bytes": 9815,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_exploration.py",
+      "sha256": "445cf60d0d8273373ea30af5a91b29d2d82c011e6fc6ae033eb3427789b793ff",
+      "bytes": 7722,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_exploratory_cadence.py",
+      "sha256": "6532fa306db5f6c251020e2667795bf4ab7a096577b88526ca6552c1c846d380",
+      "bytes": 8931,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_health.py",
+      "sha256": "fa4aea0ae23294c23650eb83f9e7f9d4f9d302be9f2527740d4d214c0c5f14d3",
+      "bytes": 6403,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_ledger.py",
+      "sha256": "155215c06f001b2d1860b5f23963516bb1b0a28c8aa8c8222fdd62a588e1c877",
+      "bytes": 19091,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_market.py",
+      "sha256": "6eb14982afe6826bcf3c9260d8daa03f1eb88489f02f01dac5652c3c845b822a",
+      "bytes": 16617,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_policy.py",
+      "sha256": "aaceffed6dc43af39f6872a32b4830059b7f91909935b1853933f85676c1a9a0",
+      "bytes": 19581,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_rebalance_threshold.py",
+      "sha256": "5d734c048441bac74397dbcb593fa0fceb1bf027b70e1a5c08300005dfd9d755",
+      "bytes": 1355,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_review.py",
+      "sha256": "6adb154467e4da88aca616b1bde5154e4847483962da7e4a090b7323c418fbc3",
+      "bytes": 18767,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_runtime.py",
+      "sha256": "b9cc3b9ea0e83c368d613bbfb0fdc09f3efe4ac148e0a142f0087e68498cf226",
+      "bytes": 78907,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_seed.py",
+      "sha256": "d3a33cc19df27d878fbee6049de03723cd3d7e45b2abd831dc05ecbc72cd15b1",
+      "bytes": 13072,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_paper_view.py",
+      "sha256": "e9fb92dd7e28e7970c8cc55f667d61a0e878089777c01075b0f3914338d84fec",
+      "bytes": 48113,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_powder_exchange.py",
+      "sha256": "486bb1e864f0e4b12988670c8b651820d40a88ae52d8a4fe0eb99adf263c7c29",
+      "bytes": 24286,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_powder_ledger.py",
+      "sha256": "f48759f9615efb01d1011872fb5a22f1dc41df02f613c2cc75a2272c55ef903d",
+      "bytes": 9739,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_powder_runtime.py",
+      "sha256": "cec64cd5aadca9f2f55e670328d949f8d9c87d3dfaec3c4b15781b6b1f90b8c2",
+      "bytes": 21555,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_powder_view.py",
+      "sha256": "758c96a6a439a4dfa777931562addd59813eef19dbc783d978d489001ce5cece",
+      "bytes": 3214,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_probability_shrinkage.py",
+      "sha256": "97530cdf49e684927c52312348a36f51b565bfc66fc0a850031408219d9dc675",
+      "bytes": 11336,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_random_forest.py",
+      "sha256": "429e8970253ef458b5a9d936da77752992ee6874e6b5e05be3220ebf5a53c34b",
+      "bytes": 3213,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_research_classical.py",
+      "sha256": "8f6bbd08041767f6fc163d9a409dd585c31eb9399555cccc48a49bf187dd385b",
+      "bytes": 5201,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_research_sequences.py",
+      "sha256": "c9f2f8789fb05801ea76c6a4a5df928b673211de5ad0f32bf878014cf72184ad",
+      "bytes": 5640,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_service.py",
+      "sha256": "1297eae7f99335ac2e27fcaf9b74b944a0757e16cc0445210ac23da269aafb3b",
+      "bytes": 4427,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_timings.py",
+      "sha256": "6727c167f2d3386e55d290dacb4c6e548cdd4406f6e147a5809f50ec20a3c026",
+      "bytes": 13450,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_hyperliquid_workspace_services.py",
+      "sha256": "c8bd79c32202a7b537b817153120d61faa16778a7e7d32506f8a0967a6fb969c",
+      "bytes": 10170,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_enrichment_archive_admission.py",
+      "sha256": "d48695962c364392f834af52535a276331808068c46469af6be50cf23832eb1c",
+      "bytes": 7767,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_loop_isolation.py",
+      "sha256": "e5d353fa326459234e10e0a03c0f8076783690c8f1d8ef3bd6d8f05820e59e7a",
+      "bytes": 8502,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_independent_stock_engine.py",
+      "sha256": "34825577d6de4eabb012a179c3a1c7f68a1075ec4407e3688d8d3a14b2f505f4",
+      "bytes": 5052,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_stock_enrichment.py",
+      "sha256": "c65ca01425ad8be0d8e3382715100bceaba142439f8d7c02e94bc8baa4cb21cd",
+      "bytes": 27619,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_stock_forecast_ui.py",
+      "sha256": "6d5b55598af57426b243bef72a302116b8e9bbf700614cc4f7e8184d9a76c38f",
+      "bytes": 6141,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_stock_runtime.py",
+      "sha256": "951d0dce666ed7dcf0ee7a42ff418b01c43e3fb241885ca86a0e4de3d8c4ca1d",
+      "bytes": 26913,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_stock_session.py",
+      "sha256": "1a703daefa4c0fa15e72fe61ffeb595d18a6a33463ec8ac1fb4044985305a596",
+      "bytes": 28394,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_stock_signals.py",
+      "sha256": "dea300e5774aae226b5aaa44cf5c946f5af171e22816ec2ba23b2857dff3d7aa",
+      "bytes": 21115,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_independent_stock_targets.py",
+      "sha256": "f265daf584a7cd967a989d3bfc7335fb809e864387a720f5e7e092086ad07543",
+      "bytes": 17159,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_joint_capital_adoption.py",
+      "sha256": "420b8a3828c506b89a435110ef08e2176dd0a1bff21796d78e6a56ddb81a97eb",
+      "bytes": 15245,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_joint_capital_handoff.py",
+      "sha256": "0c6388a286a80c8c5a992170ff7432e4a8350b536f4bdfb6ddef24305f1be70b",
+      "bytes": 18084,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_joint_capital_plan.py",
+      "sha256": "25299e049e28ebe9ccc81a63314acc46ec7e0104ca5f7122d6bb3ddb0adc9b10",
+      "bytes": 23096,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_late_forecast_validation.py",
+      "sha256": "748ff75e0fc9e63502302ea0f670c90912b8d0a38d1739631dedd7dcabf6a500",
+      "bytes": 4478,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_late_gameplan_recovery.py",
+      "sha256": "606e786c7239ac24548c5e17043067a826727794a6996c0e404c0c462b36d6ef",
+      "bytes": 5665,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_local_watchlist.py",
+      "sha256": "7acd560dfebc827e84762d080422d41eb7a7a62fbd6affa6f30563ee82843117",
+      "bytes": 5918,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_a_batch_fetching.py",
+      "sha256": "628e14ed57e5a577413950c56e01f920c511f52354b95ab39221321c5a2da628",
+      "bytes": 23392,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_a_cycle.py",
+      "sha256": "f9293cca63ae47230646b28646bfbf76aba509c152c39f7b548a3bc0bdcda2bf",
+      "bytes": 5269,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_a_integration.py",
+      "sha256": "af87170da2ffa43f249d05e3daf2bef95795f27e3c1cb226afc858d21832613c",
+      "bytes": 13733,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_a_orchestration.py",
+      "sha256": "1ff4f54b806ae7944117a6dda0f2c1c2e598b56d31fe5e3d5675a39b136c0787",
+      "bytes": 24617,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_a_point_in_time_families.py",
+      "sha256": "e3010d96ec57645e9f760a2da5b8e129c98a5dc62238519061a7f1c7fe31d798",
+      "bytes": 20345,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_c.py",
+      "sha256": "fef30c6f0c245d8e4b8e2220af9d231b4e6c59c5c42f27ef033318dd04b41ef8",
+      "bytes": 18453,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_c_paper_ledger.py",
+      "sha256": "3e17ce0a64608fc433aed7939a9c4da77f954372e1cdc89e4ed9d7c0d6be3a6c",
+      "bytes": 8298,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_c_schwab_snapshot.py",
+      "sha256": "5eb6d82ce049f687f27268951c6aab9528bf46933713c8c6d05f842daee21bfc",
+      "bytes": 13805,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_loop_c_weekly_scheduler_memory.py",
+      "sha256": "e5f1f326115c9ac516a1d1952459de0fa3585f0d6b6cc35ec5a5a728a1797086",
+      "bytes": 4967,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_market_cycle_coordination.py",
+      "sha256": "16975b4591bae434d2af21345d9aca46edb1cba1f6d95c9e0cb90564cf909f85",
+      "bytes": 17889,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_4h_feature_contract.py",
+      "sha256": "a96d8e41b3630b66fe7227142d81e81b19dc6df7498c626867fd36cd8d40b9f7",
+      "bytes": 9097,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_calibration.py",
+      "sha256": "1de6202943c446cad5faa7911cc13cd779539ffe69072b0b3a5056fb4823b20f",
+      "bytes": 2457,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_four_hour_model_runtime.py",
+      "sha256": "ee78303d2a54a14b62b7b5b10b37699855d4df8429765683fa7a73ec6216800d",
+      "bytes": 23879,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_four_hour_targets.py",
+      "sha256": "095d741f244c8c0b05527d8761d478fba12c2579f925ddc1146e1f776dd4a805",
+      "bytes": 27888,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_frozen_weekly_runtime.py",
+      "sha256": "828899d292a265c571193cc2523c9645b9fe50022c487370de73cbc870aa7dec",
+      "bytes": 35506,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_loop_a_all_family_wiring.py",
+      "sha256": "9270822ea7427b7d87c7910eb7dec8af340253ab22715dc070023bcf4c3a7a5d",
+      "bytes": 34358,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_macro_bootstrap.py",
+      "sha256": "cd4b9bb34e0a43aa9e4f4f129602d5fa639f3a1662934a2782a025ef183c4858",
+      "bytes": 12715,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_point_in_time_ingestion.py",
+      "sha256": "ef42e94a686ecba75f422bd1427d45f2a12ecfc1e26946816c1ee0d12d0f2023",
+      "bytes": 33827,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_prediction_runtime.py",
+      "sha256": "f01fd373cd071b67e5113e2bd59196565879abaff3e35c4c7853981f53f9a102",
+      "bytes": 12928,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_readiness.py",
+      "sha256": "0b7da837b38159d979a8922295ed4da94d88fa95bb9c66445466fafaf0d555fa",
+      "bytes": 13294,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_required_feature_preprocessing.py",
+      "sha256": "2fdc291f3935e1c01478da6f5fec33605d45250aef4b77d6f1e6d07785222333",
+      "bytes": 4071,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_rolling_horizons.py",
+      "sha256": "a92332b2dd5bb57ed54ab8cde564d942344d8f869486e67565b63cec5ffcdc8a",
+      "bytes": 31578,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_runtime_pipeline.py",
+      "sha256": "6a7e75c62acbb92a84be42e212fbf4578bc9ca387424c2da55fa7e2b76d6dd46",
+      "bytes": 104666,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_semantic_feature_contract.py",
+      "sha256": "2f4c41ef9429a2664e9b0c4d3963ac3b01e1fa839b7c87f48cbeee59c3ccf042",
+      "bytes": 12908,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_strategy_selection.py",
+      "sha256": "9b6abc7259b2e9ae78c21986b202444a42357ed5470968d0ccbbb228262e9d6e",
+      "bytes": 79822,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_universe.py",
+      "sha256": "5b67bd0aeb9f8b0f5b47351558802c662cf53cb0d6279788c86d97259791d971",
+      "bytes": 801,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ml_weekly_context_model_runtime.py",
+      "sha256": "60361817a2a72d796292e036a5a4ca73edd6babb1db17189556b59ba4189899e",
+      "bytes": 20681,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_account_snapshot.py",
+      "sha256": "02a1a28e2ab883ac31a4705d577e16d9ccac3f0a64d43924cc181364b47c588c",
+      "bytes": 22828,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_common_union.py",
+      "sha256": "c0d9eb472d2de174e5867c1f0e9eb634c8a3d3eac321fc945cdcac31665093a2",
+      "bytes": 8694,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_nightly_dispatch.py",
+      "sha256": "47dc2086cc6d862eccb32280e0cd027c01364ba507abc1b3f71e885a19a982d4",
+      "bytes": 19228,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_downstream_union.py",
+      "sha256": "0c04eda92830eb1764d1ddf98b9b3e3c3dbee150e261026197bf22721bd8a67f",
+      "bytes": 9023,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_nightly_exchange.py",
+      "sha256": "f2f9e93268e6e2fb94c6649669d6412aa4e9e832f00d3d4d5bd6e9a8c6a38a6b",
+      "bytes": 40087,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_gameplan.py",
+      "sha256": "01f7c54fe945f8e94d4ef27f9b20a83606b7c366490e1363fd3501e2c0f8638e",
+      "bytes": 21653,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_gameplan_target_quality.py",
+      "sha256": "c77f6d7c9ec6b99ef4119ff82d552fb038b4c7de811208f4785eb42d1be04343",
+      "bytes": 3814,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_gameplan_ui_coexistence.py",
+      "sha256": "94f76c6fea995ef50226a858396f3658554f3d59cec84695793e6ea2bd3e55db",
+      "bytes": 3566,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_handoff.py",
+      "sha256": "7dfe1ab2361101272263feffec44f927b49b3b93f5f7a8e7d06c345c26b3226b",
+      "bytes": 10743,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_joint_readiness.py",
+      "sha256": "803a3101cfa2ca60d15022429571f0c6b8cd28091d19ac39a1437b547613ddb2",
+      "bytes": 18463,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_nightly_operations_catchup.py",
+      "sha256": "b515c779276661b369209174aa21f7f6aeb0da7c9d5ed36503be7b38cc936b51",
+      "bytes": 1738,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_ownership.py",
+      "sha256": "6b5bb7b232dbc136687a2b07503a5706453b6b260d072b614c0786eea6582f2a",
+      "bytes": 12355,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_readiness.py",
+      "sha256": "d6f983812510635250fc687733686a240139f90940e5b486e5713765f4c620e2",
+      "bytes": 5124,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_recovery.py",
+      "sha256": "eafd1a0f3c2a542cfdaed02fb63fafc5d97aead5613482b174a51213874031e1",
+      "bytes": 12483,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_nightly_stage_repair.py",
+      "sha256": "e48a4a6050c56c9d1a32518891ecce7ba3ae129e73b14987505e371a854f0955",
+      "bytes": 46160,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_nightly_strategy_execution_coherence_ablation.py",
+      "sha256": "91e7aa0b15a8fa34e4f7cb514df20793979c2737ce64615ba5312f14258a82cc",
+      "bytes": 11356,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_synthesis.py",
+      "sha256": "04451fc4843e3a44996cde10767fcc1daa7687d4bf8bcbdd8bcef0b51e66f5d8",
+      "bytes": 15514,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_target_source_ablation.py",
+      "sha256": "506dcb69570cfbbec804790f6850f35f803766f9093f4ce1a501c517d1a0aa86",
+      "bytes": 1176,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_nightly_watchdog.py",
+      "sha256": "a913e514c28a097ac894cea1bf66abd69fb1e38747a93f39e76c3c6acb8adb4e",
+      "bytes": 6003,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_nightly_workflow.py",
+      "sha256": "309b2bb33509a7b5ef5bc2567cd5bd9c60e79ba6b46ae12a30a8c2f42bc88796",
+      "bytes": 32390,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_non_ml_parquet_ids.py",
+      "sha256": "2593f5790e3e50c42778329a0d0752ffaa5c86efd8bbf29832f69b033d46ea47",
+      "bytes": 35213,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_normalized_bar_id_preservation.py",
+      "sha256": "c5bf88797fd11ec4990249d3e51baf63dba20483cdf39fab24f6ec0c1cd15be9",
+      "bytes": 6057,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_normalized_bar_schema.py",
+      "sha256": "6eb8ea8e31c1fdd828621afdc430c39e31f05f20254b8f99b565e7aac20edb0d",
+      "bytes": 16548,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opportunity_research.py",
+      "sha256": "1985915789e1a6f94357db87714fb1774ac47f1a4bc5aeb90936671fdfa6fb23",
+      "bytes": 18630,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opra_concurrent_native_publication.py",
+      "sha256": "8799305bd98e662b2c89e311dc5d31282cbfa9558f57120a82a3a2263280f355",
+      "bytes": 11469,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opra_concurrent_stream.py",
+      "sha256": "2006a431467585529f7d53f87ec25eb28005c1a666084557892b9ea74438f22b",
+      "bytes": 17832,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opra_definition_retry.py",
+      "sha256": "dc03450d853869a2e2ba3473963c57e95b983eceda3f2a02c1611d56d7af5f10",
+      "bytes": 4756,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opra_gateway_retry.py",
+      "sha256": "a70525774a3aa8fa626c9781c08582bd6e6db85367d7bf534b614a748dacd98c",
+      "bytes": 9499,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opra_replay_fallback.py",
+      "sha256": "7002fe191905cc9c20b957f3bd6812196575e0c9d5b2647bc4740e7abe4f1779",
+      "bytes": 17986,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_opra_replay_publication.py",
+      "sha256": "b4e5ab8b3995dca1f04f1f15d23ce016634183df1057a98ea55b21de313f5c3b",
+      "bytes": 12304,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_exercise.py",
+      "sha256": "5bb8c4165f8bf261396ea9e263b2ad60b6b68643053e6888e0f23369a832acca",
+      "bytes": 3736,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_exit_plans.py",
+      "sha256": "f08ce6734041637829b5dc8f075d2edda86cb71d0900f13a2eb05bdde60a2915",
+      "bytes": 18499,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_management.py",
+      "sha256": "1d8bda10cdd5b683fdcc05e2afcfef0c70ffc67d77a9336b37c90ff24293800b",
+      "bytes": 25713,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_order_review.py",
+      "sha256": "019c09768b681e9d8bce144f817ccd9517b02b7227cbc11683719bb9f048d165",
+      "bytes": 37820,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_core.py",
+      "sha256": "2158fbca18be9bba69d32fd540495a544d035223576f054e0a1059da3ed04621",
+      "bytes": 31545,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_eligibility_v2.py",
+      "sha256": "4b37f7c102c42ca94478f648f95bc55a9b018eb7ddf837c31f03601b87fd4211",
+      "bytes": 15659,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_loop_native_bsgp.py",
+      "sha256": "0102f7bfbdd1977b2665c03b90a56943b50e69959c33a39361992fe7b3d57608",
+      "bytes": 56399,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_opra.py",
+      "sha256": "a1d00f16be9a2fd682ba716e2a61baca9edec2b7f5d883284ab8076cbcba164a",
+      "bytes": 75140,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_protocol_v2.py",
+      "sha256": "8aa81766e993e0832f14b9add14be11e7646bcec8109f38e2d6c2b7a36f0e00c",
+      "bytes": 35737,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_publication.py",
+      "sha256": "d4aa36e8db0d890ae1635d7906f1a7833d58e243b693f9c7f261718486542989",
+      "bytes": 16333,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_shadow_consumers.py",
+      "sha256": "ae008f3ce20d9d4cbe29f42b955d1b8922c6ccfe361453b2f180ec9c4fe70818",
+      "bytes": 53488,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_pricing_underlying_gap_proposal.py",
+      "sha256": "0b9763e37fa4c7bf21aaead52785649e88f3aa3c851e0b9a0d7a899ef1e34012",
+      "bytes": 2240,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_publication.py",
+      "sha256": "d8a8ea8533c47b26d474437665aa4a67ecd7f72b9b740b16a50bcbee81b0dcee",
+      "bytes": 28423,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_rolls.py",
+      "sha256": "6f82994799ef067667dcd2fd44de6fdfdacf88e42ee54c4d55de07ccd1b0a35d",
+      "bytes": 25517,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_option_templates.py",
+      "sha256": "a52c3d112b5e2511014e795f1df8f14c339982ed0feab71acc87e6676ca9fb86",
+      "bytes": 1762,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_options_chat.py",
+      "sha256": "728671133deb8ecb94b0ffaa89864a4eabdabf03d486a1e58acbcbecfed205eb",
+      "bytes": 12476,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_options_strategy_ui.py",
+      "sha256": "5b46dec115173a8c1850303f88ceb308f0bc816d915baed855bc865b92e52863",
+      "bytes": 74776,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_overnight_supervision.py",
+      "sha256": "99a258c46d7984431a2c3e0a0ea8b7dfc71de0337fe3b550d30163485a5f5711",
+      "bytes": 48365,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_parquet_id_contract.py",
+      "sha256": "f8011b10782962930abcbbdc7056036b960cebf635742267fc43c49b0747483d",
+      "bytes": 9812,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_past_positions.py",
+      "sha256": "eb13cf0ec6a1a51af21e4a43b19c37481ffe73099dbed75ce29953ee05a9fbdb",
+      "bytes": 25084,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_planning_reservations.py",
+      "sha256": "39e03bca7e4e63457ef02e13525727f143b6b57feaef4e8203708afc713b57a4",
+      "bytes": 3026,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_preparation_deadline.py",
+      "sha256": "c45e80a574f6eaffaea3e47c9e29c855d4bb8ee77939a7aa4db829c1e6dd6652",
+      "bytes": 5668,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_pricing_options_sequencing.py",
+      "sha256": "21d18b0bab6ac5364f0076d605d840a2f664a1f7b41992df5268d5051897c53c",
+      "bytes": 75845,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_recovery_tail_continuation.py",
+      "sha256": "e7e9b3d4526d1cde4b586bbbeb6c020dc2c5c9f16c8930a5015fceb2dd41d52a",
+      "bytes": 26656,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_research_onboarding.py",
+      "sha256": "912c83c1f45cf891bf2c0246ed843631f37a8049f479cda45c2ecf32a1659ecd",
+      "bytes": 15136,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_research_ownership.py",
+      "sha256": "ab11c205ef2d17eacc6cdf2157f8f7bdf6e8c58de8411880aefa23b7560b3180",
+      "bytes": 2971,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_research_publication.py",
+      "sha256": "5b2ff2c1141ae9f6bda5f03869a3a9d1a16b926df3dac10703e6b98aa3610a39",
+      "bytes": 5602,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_runtime_lock_identity.py",
+      "sha256": "e812cf12fc3aba959ca2abba02bfc224931acc2bf16f61ac740cda56e490f94b",
+      "bytes": 9129,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_runtime_ui_integration.py",
+      "sha256": "8d41c69e8b0416d9a618866d452f404d542ef2c244b2b887625110ec9b47511d",
+      "bytes": 35085,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_scheduler_handoff.py",
+      "sha256": "16b359d497154c38320cc21dbbfcb26fedf97be6fd0323669e6089996b438ac1",
+      "bytes": 5569,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_duckets_ui.py",
+      "sha256": "96412fee4b3e3f95c7b5aaf802f35c3c2c21321db1811f39cbf69238133a3c5a",
+      "bytes": 19037,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_loop_a_features.py",
+      "sha256": "b738f6cd87f6a1c1ab1584997abc31a554d24c4e80c783e6d7df3db881bf0200",
+      "bytes": 26200,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_order_fields.py",
+      "sha256": "5588967446c7b8ccadbec19555add11d75b5396bd4ac08ed1b7b515d41185413",
+      "bytes": 2566,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_portfolio.py",
+      "sha256": "1cc2c103fa7d2dc846fd59aa7616f17e9f3a4c56deb3f74ee12718792ee0a858",
+      "bytes": 56883,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_quote_freshness.py",
+      "sha256": "2e34809190a85f05f9733306f3edc24420e4f5eae89c263683b56aec161c608e",
+      "bytes": 2238,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_retry.py",
+      "sha256": "5bbb39abd93c17784ebca8636d7ef5398f3a4aa7587e7ce56e95b1f0493bd667",
+      "bytes": 3732,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_schwab_stock_orders.py",
+      "sha256": "b6e230a37f226a5c32e7c2a1ebbadbc2479ecab695fdd0259a3dd2abe00ecfec",
+      "bytes": 11442,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_scout_research_handoff.py",
+      "sha256": "b197286379a6006394bac71c95bd7640cf361000eca2bd6420d5f8d2ced60028",
+      "bytes": 6797,
+      "role": "owned"
+    },
+    {
+      "path": "tests/test_sequence_encoder.py",
+      "sha256": "d78d21adbe3d8c14ba06fca51f51e6ea235598bf0a1dda1f92e837a125ca41dc",
+      "bytes": 16478,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_sequence_preregistration.py",
+      "sha256": "39efe2f31eccb707da0424d7e5b027253f701accc12a636ccea1b157e09f06e8",
+      "bytes": 8455,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_direction_policy.py",
+      "sha256": "0ccf4598c4a0e5e2072a75149b8920bab5ca8ea5ad2ab4d39f78bd71ea5380fd",
+      "bytes": 690,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_horizon_broker.py",
+      "sha256": "bf2b7a2b342bad7c0f827ca71e9e3aab6ccb2639a5a8f291606a0703ea954204",
+      "bytes": 15253,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_horizon_ledger.py",
+      "sha256": "85e804ff784d20865bff4b8fc2f14705526712620ffef684c2e9a43b137fcfb0",
+      "bytes": 20320,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_horizon_schwab_context.py",
+      "sha256": "efae0219306ca5eb99080a75cda094e0a0cc68ff1bb62a1124db73e512de63db",
+      "bytes": 5883,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_only_gameplan.py",
+      "sha256": "2aec9936d4e99a500dbb8e0c23dd221ebfbd9fa6642327f5e946b90c83bbac37",
+      "bytes": 18682,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_scope_qualification.py",
+      "sha256": "22e2a80348b25eceb678c55207efb17377f193472e261ed08e1b6b31ade0b4b5",
+      "bytes": 5032,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_target_backfill.py",
+      "sha256": "c469642439abe77ee216973428a15581568101ee83a9b82918c641c486a9c1c1",
+      "bytes": 13137,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_target_history.py",
+      "sha256": "85d3a17320dc3b2ce7d4cfd2c6605117b67e45849c0ae2306fc50623a32e2b59",
+      "bytes": 28493,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_target_history_fallback.py",
+      "sha256": "cbeabc5273294ed6aa1b262c01ae050be2c9887bf280194897a02e4e0f205fa4",
+      "bytes": 17805,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_target_prices.py",
+      "sha256": "3943e30c93e3ad0c53af6e335565e673b2287e4e7de869078da10cc3e66515aa",
+      "bytes": 8047,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_trader.py",
+      "sha256": "835f70f7638527d28ab5b04c401ef2bcd2b36ae8493906d6a591c4d684799d02",
+      "bytes": 91942,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_trader_atomic_publication.py",
+      "sha256": "026103a3552873def7f333b114d839c323a804266786baac01f41ae74d6d172e",
+      "bytes": 3404,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_stock_trader_cash_state.py",
+      "sha256": "ae78478dc693af00b063d059f9129dad6287fd346f544115efdd9e3c27d4c31f",
+      "bytes": 6524,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_strategy_opra_cache.py",
+      "sha256": "37632361da47eb268beb498750155f84822362fb9fbade577012be5c6a62cc3e",
+      "bytes": 9018,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_strategy_order_review.py",
+      "sha256": "3b6610170d057edc4b907c3c89dd9dd2b0991a03e19745691606725c4c125acb",
+      "bytes": 15360,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_strategy_pricing_canary.py",
+      "sha256": "bd6bb474196e95df8ecc8919b28e0c9d54bab288f8a459dc2c5ceadc780a4d6a",
+      "bytes": 3425,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_strategy_profit_training.py",
+      "sha256": "1c40966d7340a12c5aba878719be4a7627a7ef70f319fbef1cc6016388ad54da",
+      "bytes": 15871,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_strategy_replay_partitions.py",
+      "sha256": "8e6daa34747cb0169a7c4562d0e646a12681525ca26634719d0cc34062dac32d",
+      "bytes": 7676,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_strategy_value_challenger.py",
+      "sha256": "c705f0ebb778b52a650f3f7e0238f058dfae525222a002be73ff3a4a3cae446a",
+      "bytes": 11264,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_structured_timing.py",
+      "sha256": "18b6efeb62e5fe8e60d786a15fc88976d53a4804a9f8a202a62dcc46386504ca",
+      "bytes": 2814,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_symbol_onboarding.py",
+      "sha256": "20cde82d0d6b7a845a6a3319c380c8d6490395518ed7b4a22dd88f07a2446586",
+      "bytes": 14098,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_system_guardian.py",
+      "sha256": "dec79839734af0845493ef6d6b46f337d8b4de9e8c9fec981c7809f30ae86093",
+      "bytes": 56812,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_system_monitor.py",
+      "sha256": "bde10cd769eaaf3902d282d82fa8c11f202c8128671141426d3c10556980f62c",
+      "bytes": 52339,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_technical_bar_shape.py",
+      "sha256": "cf9e27c6952a46d2773a607ce79617493bda1f2d7375795f4bf89870b83b14b8",
+      "bytes": 6988,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_technical_weekly_context.py",
+      "sha256": "3c2db12fc821c98e53bcddec9712aa521330729aeb4a2523e422bfb75e05e90a",
+      "bytes": 7945,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_training_progress.py",
+      "sha256": "40d48118fdda9113c0957832f52f2b215765bfd9f8826d0a66af8370eebb3436",
+      "bytes": 2133,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ui_rolling_forecasts.py",
+      "sha256": "98b19ee9c87fa94098e9dbb355160e6aca1e6706e61e849e37091280b0b6f010",
+      "bytes": 77921,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_ui_symbol_onboarding.py",
+      "sha256": "373bf919768e3a910f44e62c98bc5d059b6c053aeefcf0454b6e97d0b33c7891",
+      "bytes": 4570,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/test_xnas_replay_archive.py",
+      "sha256": "864f2430e3c8747a6726fd3cdf17e7c3a02a069293cb79d312e62dee267419c0",
+      "bytes": 15625,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_gameplan_fixture.py",
+      "sha256": "935d8c48303f9fd2afc90c85adc9a845d37317daaad1f99d1bbb55a3d460e3b6",
+      "bytes": 2562,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_gameplan_stats_fixture.py",
+      "sha256": "6d48582dbbd6490d79ca6cb2190c594571dc21b22b18188b050670d4ea5bd308",
+      "bytes": 2505,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_hyper_workspace_fixture.py",
+      "sha256": "72f9ddfd06c0f5ad25afdd0d23275b5b391fedea85f0ac19083415714c954081",
+      "bytes": 18359,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_hyperliquid_duckets_fixture.py",
+      "sha256": "891e0e3623951624ec9a710022d04dce8467d0206ef87d7c18e76b9b3f8ecfc0",
+      "bytes": 6727,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_option_management_fixture.py",
+      "sha256": "48f2b186f457a49e83b6b98805dc18f278e1f5fa98a3d7ab7e68828623d85e90",
+      "bytes": 21058,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_option_order_review_fixture.py",
+      "sha256": "0a363ea5227ab6d624b23e5bb4ba5bea03667508ee6aaf78f5cea0d3b27d86b5",
+      "bytes": 7257,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_options_strategy_discover_fixture.py",
+      "sha256": "c21ead7deb6e4cfd0791fcc16cb0d3386329dbce419dff7bf1bcc9b55eb79eab",
+      "bytes": 7832,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_past_positions_fixture.py",
+      "sha256": "85fa32285cc70e2e525de31aa841ccd9098147c34eb5771dd2a5990c0b930acd",
+      "bytes": 11874,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_rolling_forecast_fixture.py",
+      "sha256": "808e2a4c0974538426298fd70df0a5ffcff8f92bf2a2d8932a18f1b9c5297ac8",
+      "bytes": 5103,
+      "role": "dependency"
+    },
+    {
+      "path": "tests/visual_schwab_duckets_fixture.py",
+      "sha256": "7bb97f5baae363060aa008709db55dc36256d8ead45c818878a5c2cf89e6f0d9",
+      "bytes": 12870,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/__init__.py",
+      "sha256": "59bfe04c66af3533df6896c9571b9f2cbcb5ec21954d7aff3e0840103ff086bb",
+      "bytes": 63,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/__init__.py",
+      "sha256": "4c57e2d144c9a4d98a467d9aa6316c64d1b8bdd9cc5845278f93305d1fd5d11a",
+      "bytes": 87,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/artifact_publish.py",
+      "sha256": "8b43512f891ac94e9be687bc4d1a8aae47a70685f2fa95be6a1847aa341d861e",
+      "bytes": 38951,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/cli.py",
+      "sha256": "107295bc17b86aafbc28640026b9c3c149686f1a3e71e8c104d93a93020a0c8d",
+      "bytes": 13732,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/core.py",
+      "sha256": "40f273e781d441a170321fb8110256ea375b85a9df12bea5147c4696a9b1b239",
+      "bytes": 39579,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/drift.py",
+      "sha256": "39f4888858c9812fbb741e92cbeb27c70989e696efd58d4a3ab54b1878b226d3",
+      "bytes": 5130,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/drive_signal.py",
+      "sha256": "ed009d6534b3672ef6b1defd6f55534c9ea66c9c7e87aac06efaf2d7237fd7eb",
+      "bytes": 20741,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/incoming.py",
+      "sha256": "d0d938622c53589a5e88f2b3c8362229e110b83dbe0e2a1ee14e8b1f6c1f0e08",
+      "bytes": 22644,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/installation.py",
+      "sha256": "c7e484ade46775f8242f20f94cb2e5e9d8d7034682ea8df77743153ce4864051",
+      "bytes": 9522,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/main_integration.py",
+      "sha256": "107c6fe868816e1cc1b51536127ea7cd41966fad8a4ce009ad3ae59de71fe156",
+      "bytes": 25530,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/notices.py",
+      "sha256": "16bddf502a7fb51744b1127c599e8c9da1e2ecaa339b350e791c10288e5da538",
+      "bytes": 10432,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/requests.py",
+      "sha256": "79c1313a478cf03bc22d70128ac626db8d16f290644b29a685a274cf0602f625",
+      "bytes": 21290,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/tasks.py",
+      "sha256": "bca8a3e1aecf544d9c5ada606c6f924695182b6479d2808f21dc9ba6cf8b7144",
+      "bytes": 19224,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/test_runner.py",
+      "sha256": "678526c09686c814aa29a2cd0a075460c4d71383b913d74a3497e46872ab192a",
+      "bytes": 3074,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/cross_pc/transport.py",
+      "sha256": "1a4ae437a8ed5bd05b82fa453046ca24f15797deb028fe33a0ba3d8aec2e4732",
+      "bytes": 31517,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/nightly_account_snapshot.py",
+      "sha256": "3bd83a6d30fad0db744850807ecf26b7ad3e7f356a6e8c02c16cece4298b6792",
+      "bytes": 15488,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/nightly_exchange.py",
+      "sha256": "f7c8fb4eacc158093a64c81d156a8c7fd2e327a41a0c2911f0db3152d02da02b",
+      "bytes": 53507,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/nightly_ownership.py",
+      "sha256": "bbfac57e1ed6194ae4099872d5bc326699b012202281f4f271961e85ae6de162",
+      "bytes": 14260,
+      "role": "dependency"
+    },
+    {
+      "path": "tools/nightly_source_repair.py",
+      "sha256": "f991603f56ef876f0a7856412ca124753827084bade42aa788086c9e94c2575d",
+      "bytes": 16682,
+      "role": "owned"
+    },
+    {
+      "path": "tools/nightly_watchdog.py",
+      "sha256": "bf2125a58893e7e5bca3dc156cfc80c4b19e5fd0a4c389ca675c0feb09526d6f",
+      "bytes": 7035,
+      "role": "owned"
+    },
+    {
+      "path": "tools/register_nightly_watchdog.ps1",
+      "sha256": "c968aeb073a89a09bee00b555681f5db16350ad2d571dca9195aa0cf7c540408",
+      "bytes": 3173,
+      "role": "dependency"
+    }
+  ],
+  "owned_path_map_against_runtime_lock_reference": [
+    {
+      "path": "app/ui/gameplan_data.py",
+      "relative_to_e8f": "modify",
+      "sha256": "6bd2b3ee89f07602518f6268c28824bad8737b065820bed0c52c8543e48bbd92",
+      "base_sha256": "7c5c4530e537feb62726297c7c20284bd0ea9040ed77d5644b22dfdeb35464c1"
+    },
+    {
+      "path": "datafetching/runtime_lock.py",
+      "relative_to_e8f": "identical_bytes",
+      "sha256": "5d4561c68af90cb52f248140cab74beea67abcbc998194bd3c044252f19980fd",
+      "base_sha256": "5d4561c68af90cb52f248140cab74beea67abcbc998194bd3c044252f19980fd"
+    },
+    {
+      "path": "ml/gameplan_archive_features.py",
+      "relative_to_e8f": "modify",
+      "sha256": "1263126bb015be0ee0def4c463a0f80689246c81a314921f34ac878d720392e2",
+      "base_sha256": "8a9f8be444e1431e4713cfa57fa1e375159b4f5fe64e593264384f025ee2a197"
+    },
+    {
+      "path": "ml/gameplan_archive_seconds.py",
+      "relative_to_e8f": "modify",
+      "sha256": "7a6988c243ce94fd6a810c425773e756272536cf8cd9ae4a3be00adac1dc367b",
+      "base_sha256": "5c745f2e795dfdec8a890a832cd5abe59c69e7fe9cbea56a1c1b55b19691d246"
+    },
+    {
+      "path": "ml/gameplan_trade_planning.py",
+      "relative_to_e8f": "modify",
+      "sha256": "a14deea3cd4b49c6778ea3c3cf4ed55e48c1e9aaa810e08c8d430178356252f5",
+      "base_sha256": "05e95c9757646343b0ceea23a2b8eaa9c317bec41d7ed2db78130f0844ec10ed"
+    },
+    {
+      "path": "ml/nightly_dispatch.py",
+      "relative_to_e8f": "modify",
+      "sha256": "1683b5cb6a24e5c462ed22dd8c6c1153f0a7f794d618eb017cfcef707cf80968",
+      "base_sha256": "d45bce2d0fe33ee5a7deb9499bb736626df7749d096a4117a9354591440606cd"
+    },
+    {
+      "path": "ml/nightly_gameplan.py",
+      "relative_to_e8f": "modify",
+      "sha256": "2f48a1a8bdc4bc83fef8b81dd4d3522ebc5194e0822426c09edaf788109ec4e1",
+      "base_sha256": "6ee4e2c04f0c11ff48e7ca7f980d5d0c234945594737b8fcbc005d1268bdb95b"
+    },
+    {
+      "path": "ml/nightly_recovery.py",
+      "relative_to_e8f": "add",
+      "sha256": "a53e33297d60bc9bdb0c2fd76283a7024f0d94b05ea89f22ed0b072f65d09ee0",
+      "base_sha256": null
+    },
+    {
+      "path": "ml/nightly_stage_repair.py",
+      "relative_to_e8f": "add",
+      "sha256": "f81efcfc22fed58a9d3aad5d1bfd1b847fc277557f966caac836bb85d7046d25",
+      "base_sha256": null
+    },
+    {
+      "path": "ml/nightly_workflow.py",
+      "relative_to_e8f": "modify",
+      "sha256": "24bfac23d39e98aea881e2a8a68c8d8e0d58b0c82c0283afe9a9a177c8983c11",
+      "base_sha256": "6a4ddda30750da36726a83374f4829aa915e96d191715e7fd269d94b422d9590"
+    },
+    {
+      "path": "ml/overnight_runtime.py",
+      "relative_to_e8f": "modify",
+      "sha256": "54c49f8380a7889be2600e0f6aa9df6aa002cd6da968f831c6c05c47bc76ba06",
+      "base_sha256": "b64be63a2011566c6afc3c2d4d84544ff554846a1c903bc6bcd2d088eeb16c1e"
+    },
+    {
+      "path": "ml/preparation_deadline.py",
+      "relative_to_e8f": "modify",
+      "sha256": "8d2e5790aeb7cc32282a1fdfe28fa994b9fa33e0eccf218dff16b343c5b87d8e",
+      "base_sha256": "2475e6222364a0221ee182c349b06b0d383e6db631e9a96f0c1e9032df59128e"
+    },
+    {
+      "path": "ml/stock_trader/independent_signals.py",
+      "relative_to_e8f": "modify",
+      "sha256": "55e03300e062e427d602b9da598a2d8837ea484daf6be50367d01ad6dc433dbc",
+      "base_sha256": "99e72961e1dd023d4a91f65a7bc67077caf631ecc301bcc5aa9be19b60556fed"
+    },
+    {
+      "path": "tests/test_independent_loop_isolation.py",
+      "relative_to_e8f": "identical_bytes",
+      "sha256": "e5d353fa326459234e10e0a03c0f8076783690c8f1d8ef3bd6d8f05820e59e7a",
+      "base_sha256": "e5d353fa326459234e10e0a03c0f8076783690c8f1d8ef3bd6d8f05820e59e7a"
+    },
+    {
+      "path": "tests/test_nightly_common_union.py",
+      "relative_to_e8f": "add",
+      "sha256": "c0d9eb472d2de174e5867c1f0e9eb634c8a3d3eac321fc945cdcac31665093a2",
+      "base_sha256": null
+    },
+    {
+      "path": "tests/test_nightly_downstream_union.py",
+      "relative_to_e8f": "add",
+      "sha256": "0c04eda92830eb1764d1ddf98b9b3e3c3dbee150e261026197bf22721bd8a67f",
+      "base_sha256": null
+    },
+    {
+      "path": "tests/test_nightly_joint_readiness.py",
+      "relative_to_e8f": "modify",
+      "sha256": "803a3101cfa2ca60d15022429571f0c6b8cd28091d19ac39a1437b547613ddb2",
+      "base_sha256": "0d6485aa7074aa17b4b12ca49a885db24f936effabbde352efda0557b3d3ff1d"
+    },
+    {
+      "path": "tests/test_nightly_recovery.py",
+      "relative_to_e8f": "add",
+      "sha256": "eafd1a0f3c2a542cfdaed02fb63fafc5d97aead5613482b174a51213874031e1",
+      "base_sha256": null
+    },
+    {
+      "path": "tests/test_nightly_stage_repair.py",
+      "relative_to_e8f": "add",
+      "sha256": "e48a4a6050c56c9d1a32518891ecce7ba3ae129e73b14987505e371a854f0955",
+      "base_sha256": null
+    },
+    {
+      "path": "tests/test_nightly_watchdog.py",
+      "relative_to_e8f": "modify",
+      "sha256": "a913e514c28a097ac894cea1bf66abd69fb1e38747a93f39e76c3c6acb8adb4e",
+      "base_sha256": "ea9f24843872634c22cf1df2f04975f0f88f1e7f0f1298d3ce0e665614e0d18b"
+    },
+    {
+      "path": "tests/test_nightly_workflow.py",
+      "relative_to_e8f": "modify",
+      "sha256": "309b2bb33509a7b5ef5bc2567cd5bd9c60e79ba6b46ae12a30a8c2f42bc88796",
+      "base_sha256": "3bd27f74689d8d4d3a31d3a19b0d6858884c932a8ee2179512029292fa1fafdc"
+    },
+    {
+      "path": "tests/test_recovery_tail_continuation.py",
+      "relative_to_e8f": "modify",
+      "sha256": "e7e9b3d4526d1cde4b586bbbeb6c020dc2c5c9f16c8930a5015fceb2dd41d52a",
+      "base_sha256": "082ea508abdb3bbc281c49d6fd876ee815ef387aac879a53f140dc40e03e0c5b"
+    },
+    {
+      "path": "tests/test_runtime_lock_identity.py",
+      "relative_to_e8f": "identical_bytes",
+      "sha256": "e812cf12fc3aba959ca2abba02bfc224931acc2bf16f61ac740cda56e490f94b",
+      "base_sha256": "e812cf12fc3aba959ca2abba02bfc224931acc2bf16f61ac740cda56e490f94b"
+    },
+    {
+      "path": "tests/test_scout_research_handoff.py",
+      "relative_to_e8f": "add",
+      "sha256": "b197286379a6006394bac71c95bd7640cf361000eca2bd6420d5f8d2ced60028",
+      "base_sha256": null
+    },
+    {
+      "path": "tools/nightly_source_repair.py",
+      "relative_to_e8f": "add",
+      "sha256": "f991603f56ef876f0a7856412ca124753827084bade42aa788086c9e94c2575d",
+      "base_sha256": null
+    },
+    {
+      "path": "tools/nightly_watchdog.py",
+      "relative_to_e8f": "modify",
+      "sha256": "bf2125a58893e7e5bca3dc156cfc80c4b19e5fd0a4c389ca675c0feb09526d6f",
+      "base_sha256": "7593ff23c750c0825455a154d76fa40c1b729d3e2ca28f25daf88a1654482dc6"
+    }
+  ],
+  "verification": [
+    "Pinned coordination installation manifest and all release files verified before using its private-value scanner",
+    "Every raw source byte scanned against actual private .env values using the installed scanner; no private bindings or artifacts copied",
+    "Exact 26 owned hashes matched frozen union manifest; all closure bytes stable during capture",
+    "Final failure-clock focused suite: 314 passed in 42.85 seconds; earlier 871 broad checkpoint predates that correction"
+  ],
+  "remaining": [
+    "Atlas repository-wide claim and exchange-repair implementation",
+    "Fresh complete closure offline checks and completed-source queue/publication",
+    "Separate audited installation and native readiness on each PC"
+  ]
+}
