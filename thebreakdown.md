@@ -1,5 +1,34 @@
 # ducketz Schwab portfolio management system breakdown
 
+## Late-start fallback route — added October 9, 2026
+
+**Status: implemented and tested in stages; not yet proven end to end in production.** The ordinary 9:05pm Pacific nightly workflow remains the primary route. This fallback handles a genuinely missed nightly launch, such as after an outage or unavailable usage. A failed or interrupted run resumes its existing dated work instead of starting another run. This preparation fallback is separate from the trader's overdue-order catch-up described later.
+
+**Current operating rule:** both PCs prepare their research; Scout synthesizes the combined Gameplan and hands it back to Atlas. Once that synthesized Gameplan is handed over and loaded on Atlas, planning is done and Jeremy can manually turn on Atlas's trader. Scout does not trade and is not expected to supply execution or ownership history. Atlas alone executes all symbols and horizons. There is no additional human approval, Scout-history export, migration or cutover ceremony after handover. This rule supersedes conflicting October 7 rollout requirements retained below as history. Normal account/order reconciliation belongs to Atlas's manually started worker.
+
+### Recovery sequence
+
+1. **Identify the exact intended trading date.** Read that date's saved preparation state and worker log. A previous date's completion does not satisfy tonight's work. `NOT_STARTED` means the intended date has no run; distinguish that from a running, failed or completed run.
+2. **Select the appropriate continuation.** If the night's operations genuinely never started, use an explicitly dated missed-night recovery with a fixed, recorded recovery cutoff. If the matching run already exists, retain its identity and resume its failed or interrupted stage. Never duplicate a running or completed matching run.
+3. **Finish the normal preparation stages.** Data catch-up → Gameplan Stats → model review → training/predictions → local Gameplan and planning-price preparation. Preserve valid completed stages, original forecasts, Stats and accepted review. A reviewed source repair records its before/after binding and original failure evidence; it does not silently relabel old results as newly produced.
+4. **Use the explicit late-publication path.** Carry the intended date and recovery deadline into publishing and trade planning. Keep the original morning deadline as provenance and record actual creation/publication times. Separate the time an artifact was created from the cutoff for market information used in its predictions; do not backdate artifacts or include future inputs.
+5. **Complete the same Scout-to-Atlas handover.** Scout combines both research packages using Atlas's account-wide capital evidence, then returns the synthesized Gameplan and associated Stats. Delivery/loading of the exact returned result completes handover. No Scout execution ledger is required. Jeremy may then manually start Atlas's trader; preparation never starts it automatically.
+
+Atlas's implemented recovery interface is `ml.nightly_workflow --launch --recover-action-date YYYY-MM-DD --recovery-deadline ZONED_TIMESTAMP`, with its existing private `--config`. An existing failed run uses `--launch --resume-action-date YYYY-MM-DD` instead. The current missed-night interface accepts the current trading date after 04:00 Pacific, with a future cutoff no more than seven hours away and no later than 17:00 Pacific. Retries retain the chosen cutoff. These describe the implemented interface, not an instruction to launch or extend an expired run. Scout uses its locally reviewed recovery-spec interface; neither PC copies the other's private bindings.
+
+### What October 9 established
+
+| Part | Verified status |
+| --- | --- |
+| Date-pinned recovery and continuation | Implemented; Atlas's real recovery retained its original run and completed stages across repairs. |
+| Late publication and trade-planning deadline | Implemented and installed on Atlas; [PR #34](https://github.com/jeremysecondstate/ducketz/pull/34) carries the fixed recovery deadline through planning; 217 targeted tests passed. |
+| Late forecast and joint-package timestamps | Implemented and installed on Atlas; [PR #35](https://github.com/jeremysecondstate/ducketz/pull/35) separates actual publication time from input availability; 304 tests passed with one Windows symlink skip. Scout's compatible adoption is tracked separately. |
+| Atlas account scope | [PR #38](https://github.com/jeremysecondstate/ducketz/pull/38) uses Atlas's full bound execution universe rather than its eleven research symbols; 204 tests passed. |
+| Remaining production failure | At 11:58am Pacific, Atlas's planning snapshot still stopped on `PENDING_LEDGER_RESERVATIONS_REQUIRE_RECONCILIATION`, reported as `OWNERSHIP_SNAPSHOT_UNAVAILABLE`. This is an unresolved Atlas planning-path issue, not missing Scout history and not a new approval requirement. |
+| Full recovery and handover | Not complete at the 12:04pm Pacific checkpoint. Today's original deadline was 04:00 and its fixed recovery cutoff was noon; neither was extended. Do not describe this fallback as operational end to end until an actual recovered Gameplan is handed back to Atlas. |
+
+The existing preparation, synthesis/handoff and source-reconciliation tasks retain their schedules and identities. Atlas's tasks check the connected `atlas-scout` folder/GitHub repository for substantive coordination. Private financial packets remain in `CODEXSTORE/ducketz-nightly-exchange/v1`. Atlas's existing Ducketz decision logs, Gameplan review artifacts and native holdings ledger provide local history references; projected Gameplan quantities and market-outcome Stats must not be mistaken for actual fills.
+
 ## This is a breakdown of our systems on both PCs (pc-new is named "Scout" and pc-original is named "Atlas").
 
 We have two Codex accounts:
