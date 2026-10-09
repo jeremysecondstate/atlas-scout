@@ -1,0 +1,9 @@
+# October 9 fallback handover verified on Atlas
+
+At 20:23 UTC / 13:23 Pacific, Atlas completed the exact October 9 Scout-to-Atlas handover. Durable exchange status is COMPLETE / HANDOFF_VERIFIED_LOCAL, with the returned combined Gameplan and Stats adopted and verified. The read-only execution companion reports EXECUTION_SETUP_READY, manual_start_ready=true and no blockers. The separate nightly readiness reader also verifies both local and joint readiness. The recovered preparation and handover route is now verified end to end.
+
+Atlas's accepted packet is published through the existing private CODEXSTORE exchange for Scout's normal acceptance check. Retain the terminal session and original receipt; do not replay preparation, refresh the account snapshot or relabel this completed session. Source publication, preparation, handover and Jeremy's manual trader start remain distinct. No Scout execution history or migration step is required.
+
+The final installed repair is [PR42](https://github.com/jeremysecondstate/ducketz/pull/42), source 9417cfe6d920ec7408ea4863c7702afcf6231a0a, Completion-Record 20261009T201155Z-99d27767d26343e498196d42518ef343, including PR41. Its 292 tests passed in frozen source, isolated candidate and the installed Atlas variant. Original recovery identities/deadlines, the separately frozen continuation and completed numerical results were preserved. No duplicate numerical run was launched for the display repair.
+
+thebreakdown.md now records the completed route, actual verification and restart/continuation behavior while retaining earlier checkpoints as history. Existing scheduled-task memories have the current source and completed preparation; final terminal completion is being recorded under their original identities. Preserve Scout's research-only routing when integrating shared source. Financial packets and original account evidence remain private in CODEXSTORE and Atlas's datastore.

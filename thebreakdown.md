@@ -2,7 +2,7 @@
 
 ## Late-start fallback route — added October 9, 2026
 
-**Status: implemented and tested in stages; not yet proven end to end in production.** The ordinary 9:05pm Pacific nightly workflow remains the primary route. This fallback handles a genuinely missed nightly launch, such as after an outage or unavailable usage. A failed or interrupted run resumes its existing dated work instead of starting another run. This preparation fallback is separate from the trader's overdue-order catch-up described later.
+**Status: verified end to end for the October 9 recovery at 13:23 Pacific.** Scout returned the synthesized Gameplan and combined Stats, Atlas adopted the exact result and receipt (`HANDOFF_VERIFIED_LOCAL`), and the read-only manual-start check returned `EXECUTION_SETUP_READY` with `manual_start_ready=true` and no blockers. The ordinary 9:05pm Pacific nightly workflow remains the primary route. This fallback handles a genuinely missed nightly launch, such as after an outage or unavailable usage. A failed or interrupted run resumes its existing dated work instead of starting another run. This preparation fallback is separate from the trader's overdue-order catch-up described later.
 
 **Current operating rule:** both PCs prepare their research; Scout synthesizes the combined Gameplan and hands it back to Atlas. Once that synthesized Gameplan is handed over and loaded on Atlas, planning is done and Jeremy can manually turn on Atlas's trader. Scout does not trade and is not expected to supply execution or ownership history. Atlas alone executes all symbols and horizons. There is no additional human approval, Scout-history export, migration or cutover ceremony after handover. This rule supersedes conflicting October 7 rollout requirements retained below as history. Normal account/order reconciliation belongs to Atlas's manually started worker.
 
@@ -16,6 +16,23 @@
 
 Atlas's implemented recovery interface is `ml.nightly_workflow --launch --recover-action-date YYYY-MM-DD --recovery-deadline ZONED_TIMESTAMP`, with its existing private `--config`. An existing failed run uses `--launch --resume-action-date YYYY-MM-DD` instead. The current missed-night interface accepts the current trading date after 04:00 Pacific, with a future cutoff no more than seven hours away and no later than 17:00 Pacific. Retries retain the chosen cutoff. These describe the implemented interface, not an instruction to launch or extend an expired run. Scout uses its locally reviewed recovery-spec interface; neither PC copies the other's private bindings.
 
+### Verified completion and retry behavior — 13:23 Pacific
+
+The actual recovered preparation, private packet exchange, Scout synthesis and Atlas adoption completed end to end. Atlas's Gameplan and Stats readers verified the returned publications for the intended action date. This establishes the late-start preparation and handover route; Jeremy controls the separate manual trader start.
+
+If a reviewed repair finishes after a recovery cutoff, the implemented planning-tail interface is `--resume-action-date YYYY-MM-DD --planning-tail-exception ABSOLUTE_RECORD` with the existing private config. It retains the original run, original morning deadline, original recovery cutoff and all completed numerical results. A separately authorized continuation has its own fixed expiration and cannot be silently replaced or extended. It is limited to the already published planning tail. Source repairs preserve the original exception through recorded before/after source evidence. Normal retries reuse completed stages, including after a worker exits between writing a native receipt and saving outer workflow status.
+
+Local preparation verifies its exact saved local Gameplan and reviewed Stats before exporting them; it no longer depends on a combined Gameplan that Scout has not synthesized yet. The ordinary application display still selects the accepted combined publication. Once the exchange is terminal `COMPLETE/HANDOFF_VERIFIED_LOCAL`, inspect and retain its original receipt; later checks do not rerun preparation, account capture or handover.
+
+| Final repair | Verified evidence |
+| --- | --- |
+| Fixed continuation, conservative planning reservations and sole Atlas account snapshot | [PR #40](https://github.com/jeremysecondstate/ducketz/pull/40); 365 frozen-source and 365 isolated checks, plus 255 installed-variant checks. |
+| Interrupted-save recovery without duplicate native planning | [PR #41](https://github.com/jeremysecondstate/ducketz/pull/41); 143 frozen-source and 143 isolated checks; included in the final installed repair. |
+| Exact local display before synthesis and audited source repair | [PR #42](https://github.com/jeremysecondstate/ducketz/pull/42), source `9417cfe6d920ec7408ea4863c7702afcf6231a0a`, Completion-Record `20261009T201155Z-99d27767d26343e498196d42518ef343`; 292 checks passed independently in frozen source, isolated candidate and installed Atlas source. |
+| Actual final handover | Scout synthesized both retained research packages against Atlas's one account snapshot. Atlas verified and adopted the exact Gameplan, Stats and receipt; both local/joint readiness and manual-start readiness passed. |
+
+The existing Atlas preparation, handoff and priority tasks retain their identities and schedules. Their saved instructions and memories retain the sole-executor rule, the completed recovery, its original records and terminal-session behavior. No Scout execution-history prerequisite follows the handover. Earlier checkpoints below remain historical evidence and are superseded by this verified completion.
+
 ### What October 9 established
 
 | Part | Verified status |
@@ -24,8 +41,8 @@ Atlas's implemented recovery interface is `ml.nightly_workflow --launch --recove
 | Late publication and trade-planning deadline | Implemented and installed on Atlas; [PR #34](https://github.com/jeremysecondstate/ducketz/pull/34) carries the fixed recovery deadline through planning; 217 targeted tests passed. |
 | Late forecast and joint-package timestamps | Implemented and installed on Atlas; [PR #35](https://github.com/jeremysecondstate/ducketz/pull/35) separates actual publication time from input availability; 304 tests passed with one Windows symlink skip. Scout's compatible adoption is tracked separately. |
 | Atlas account scope | [PR #38](https://github.com/jeremysecondstate/ducketz/pull/38) uses Atlas's full bound execution universe rather than its eleven research symbols; 204 tests passed. |
-| Remaining production failure | At 11:58am Pacific, Atlas's planning snapshot still stopped on `PENDING_LEDGER_RESERVATIONS_REQUIRE_RECONCILIATION`, reported as `OWNERSHIP_SNAPSHOT_UNAVAILABLE`. This is an unresolved Atlas planning-path issue, not missing Scout history and not a new approval requirement. |
-| Full recovery and handover | Not complete at the 12:04pm Pacific checkpoint. Today's original deadline was 04:00 and its fixed recovery cutoff was noon; neither was extended. Do not describe this fallback as operational end to end until an actual recovered Gameplan is handed back to Atlas. |
+| Historical failure, now resolved | At the 11:58am Pacific checkpoint, Atlas's planning snapshot stopped on `PENDING_LEDGER_RESERVATIONS_REQUIRE_RECONCILIATION`, reported as `OWNERSHIP_SNAPSHOT_UNAVAILABLE`. This Atlas planning-path failure was resolved before the 13:23 handover; it did not require Scout history or a new approval ceremony. |
+| Earlier recovery checkpoint, now superseded | Recovery was incomplete at the 12:04pm Pacific checkpoint. The original deadline was 04:00 and the fixed recovery cutoff was noon; both remained intact. The separately frozen continuation and final end-to-end verification are recorded above. |
 
 The existing preparation, synthesis/handoff and source-reconciliation tasks retain their schedules and identities. Atlas's tasks check the connected `atlas-scout` folder/GitHub repository for substantive coordination. Private financial packets remain in `CODEXSTORE/ducketz-nightly-exchange/v1`. Atlas's existing Ducketz decision logs, Gameplan review artifacts and native holdings ledger provide local history references; projected Gameplan quantities and market-outcome Stats must not be mistaken for actual fills.
 ### Scout recovery interface and verified checkpoint
