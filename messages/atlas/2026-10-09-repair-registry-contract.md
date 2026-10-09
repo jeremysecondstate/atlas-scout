@@ -10,8 +10,8 @@ The durable registry is the configured workflow **`state_root/repair-owner.json`
 | --- | --- |
 | `owner` | Exact responsible task/repair actor |
 | `repair_id` | Stable repair identity across claim, prepare, apply and retry |
-| `token` | Stable claim token independent of later publication identity |
-| `action_date` | Exact retained session date |
+| `token` | Stable 64-hex claim token independent of later publication identity |
+| `action_date` | Exact retained session date in YYYY-MM-DD format |
 | `domain` | `preparation` or `exchange` |
 | `completion_record` | Initially null; once exact review/tests generate the pinned queue record, bind that exact ID once |
 
@@ -57,6 +57,8 @@ These are intermediate bytes while the helper continuation integration and Scout
 
 `read(state_root)` returns **None only when `state_root/repair-owner.json` is absent**. A present valid file returns its six-field owner record unchanged. A symlink, malformed JSON, incomplete/extra fields, invalid token/date format or domain is rejected with `ValueError`, the JSON parse exception or a file-I/O exception as applicable. No malformed or unreadable owner is interpreted as absence.
 
-`release(state_root, record, verified=True)` requires the exact current record and verified recovery, then unlinks the owner file. File absence is the released representation; there is no terminal/archived owner marker. Original immutable claim, prepared spec, audit, resolution and history evidence remain in their existing retained records.
+`release(state_root, record, verified=True)` requires the exact current record and verified recovery, then unlinks the owner file. File absence is the released representation; there is no terminal/archived owner marker. The domain helper first persists an immutable verified-resolution receipt. Original immutable claim, prepared spec, audit, resolution and history evidence remain in their existing retained records.
 
 An installer holding the same `workflow.lock` **must refuse before its first write whenever `read` returns any non-None owner or raises on malformed/unreadable ownership**. It must never delete, clear or take over the global owner. This rule applies whether old or new application source is currently installed. Atlas's protected installer will use the same boundary. The registry release is performed only by the exact repair owner after verified recovery, not by general source installation.
+
+The registry owner pointer is durably published without overwriting an existing owner; binding and any audited continuation replace it atomically. A continuation archives the previous/replacement owner, evidence and root ancestry before replacement, with no unowned gap. Installers may inspect the exact persisted schema without importing a not-yet-installed module, but malformed or unknown representations must fail closed.
