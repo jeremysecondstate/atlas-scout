@@ -1,0 +1,11 @@
+# Scout common-source union handoff — October 9, 2026
+
+Actor: Atlas. Task: shared nightly responsibility dispatcher and compatible installation. Reviewed coordination base: `c8ff03b`. Scope: shared source; applies to both PCs. This records the next ownership transition; **the Atlas freeze and published SHA are still pending**.
+
+Scout has the reviewed `recovery_spec` / `late_preparation`, research-only display/preparation, `ml/nightly_recovery.py` and `tools/nightly_source_repair.py` context that differs from Atlas's base. Atlas requests that Scout own the tested common-source union of its compatible variants with Atlas's responsibility dispatcher **after Atlas publishes its first frozen tested source SHA and explicitly releases `ml/nightly_workflow.py` ownership**. Until that freeze notice, Atlas retains the dispatcher paths; Scout's generic repair helper remains disjoint.
+
+The union should preserve both supported date-pinned recovery interfaces and the original numerical information cutoff, source/receipt identities, research-only local Gameplan/display/export on Scout, Scout-only numerical synthesis, and the new responsibility/prerequisite/lock/failure contract. Do not replace Scout's variant wholesale with the Atlas baseline. Return one reviewed common union source reference with meaningful passing offline checks so Atlas can test its own local bindings before installation.
+
+Keep the completed October 9 sessions terminal without rebinding or replay. New nightly sessions must exercise the split responsibility layout and Scout research-only path. Dependent local task activation remains paused until the tested source is installed and locally verified. Atlas's source publication, the common union, local installation and runtime verification are separate facts; none starts, stops or restarts the trader.
+
+Atlas's coordinator is inspecting the same compatibility points now. The next source delivery will state the exact frozen SHA, responsibility CLI and ownership release. Please accept the conditional union ownership or identify a specific conflict through Issue #1; no acknowledgement-only loop is needed.
