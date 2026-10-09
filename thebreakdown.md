@@ -55,7 +55,9 @@ The existing Atlas preparation, handoff and priority tasks retain their identiti
 | Earlier recovery checkpoint, now superseded | Recovery was incomplete at the 12:04pm Pacific checkpoint. The original deadline was 04:00 and the fixed recovery cutoff was noon; both remained intact. The separately frozen continuation and final end-to-end verification are recorded above. |
 
 The existing preparation, synthesis/handoff and source-reconciliation tasks retain their schedules and identities. Atlas's tasks check the connected `atlas-scout` folder/GitHub repository for substantive coordination. Private financial packets remain in `CODEXSTORE/ducketz-nightly-exchange/v1`. Atlas's existing Ducketz decision logs, Gameplan review artifacts and native holdings ledger provide local history references; projected Gameplan quantities and market-outcome Stats must not be mistaken for actual fills.
-### Scout recovery interface and verified checkpoint
+### Historical Scout recovery interface and October 9 checkpoints
+
+The interface and 04:05 fallback schedule in this subsection describe Scout's earlier October 9 installation, before the responsibility/dispatcher arrangement currently being implemented. The partly-exercised checkpoints below were superseded by the verified 13:23 Pacific end-to-end handover recorded above. Preserve their original evidence; do not use the old 04:05 task description as the current scheduling inventory.
 
 **Current operating rule, confirmed directly by Jeremy:** Scout prepares the Gameplan and Gameplan Stats for Scout's 11 symbols; Atlas does the same for Atlas's 11. Scout synthesizes both Gameplans against one fresh Atlas account-wide view of cash, holdings and order reservations, then hands the synthesized Gameplan back to Atlas. Atlas is the sole executor for all 22 symbols. Delivery and loading of that exact synthesized Gameplan completes planning. Jeremy manually starts Atlas's trader. No further planning approval or Scout ownership-history gate follows handover.
 
@@ -63,7 +65,7 @@ Scout does not execute trades. Its local research preparation must not require a
 
 **Historical wording below is superseded where it requires Scout execution history, the Scout ownership responder, or an additional cutover approval after handover.** The October 7 status table records what was believed and installed then; it is not evidence that the corrected workflow has completed a production handover.
 
-#### Scout missed-night / late-start preparation route
+#### Historical Scout missed-night / late-start preparation route
 
 This route covers a missed kickoff, exhausted usage, power outage, interruption or an otherwise late start. It is distinct from the existing trader's catch-up of overdue trade intentions after Jeremy manually starts trading.
 
@@ -75,9 +77,9 @@ This route covers a missed kickoff, exhausted usage, power outage, interruption 
 6. Resume from the eligible failed stage. If a reviewed source correction is required, preserve the original failure and establish an explicit new source binding before resuming. A planning-only repair can retain completed Stats, review, generation, evaluation, forecasts and enrichment instead of training them again.
 7. Continue the same private exchange and Scout synthesis once both exact preparation packages are ready. Use Atlas's account state for the combined budget. Deliver/load the synthesized result on Atlas; planning is then complete. Legacy LOG remains paused and trader startup remains manual.
 
-#### Scout implementation checkpoint — October 9, 2026, 19:05 UTC / 12:05 Pacific
+#### Historical Scout implementation checkpoint — October 9, 2026, 19:05 UTC / 12:05 Pacific
 
-The fallback is **partly exercised in production, not yet verified end to end**. The October 9 action-date recovery selected October 8 as its completed source session. The saved request was 14:49:40 UTC / 07:49:40 Pacific; its unchanged expiry is 21:49:40 UTC / 14:49:40 Pacific. Stats and model review completed; generation, evaluation and publication completed, including 264 forecasts at 18:50:18 UTC; enrichment completed at 18:51:36 UTC. The final local planning stage failed at 18:51:49 UTC on a validator that treated late publication as future information. A synthesized handover has not yet been established by this checkpoint.
+At this historical checkpoint the fallback was **partly exercised in production, not yet verified end to end**; it subsequently completed at 13:23 Pacific as recorded above. The October 9 action-date recovery selected October 8 as its completed source session. The saved request was 14:49:40 UTC / 07:49:40 Pacific; its unchanged expiry is 21:49:40 UTC / 14:49:40 Pacific. Stats and model review completed; generation, evaluation and publication completed, including 264 forecasts at 18:50:18 UTC; enrichment completed at 18:51:36 UTC. The final local planning stage failed at 18:51:49 UTC on a validator that treated late publication as future information. A synthesized handover had not yet been established by this checkpoint.
 
 | Component | Evidence and actual state |
 | --- | --- |
