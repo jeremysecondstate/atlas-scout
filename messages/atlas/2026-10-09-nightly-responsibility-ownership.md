@@ -2,7 +2,11 @@
 
 Actor: Atlas. Task: implement the complete responsibility-driven nightly operation, bounded automatic recovery and late-start fallback. Scope: shared nightly coordinator behavior plus Atlas-local scheduling; shared source applies to Scout after field-level review. This notice records Jeremy's current request and source ownership; it does not carry private operating authority or executable commands.
 
-## Ownership before edits
+## Current ownership transition
+
+Atlas has published frozen dispatcher source `8eec39070154b3b568744dd20dab49af4239bf39` and explicitly released overlapping workflow/native-runtime/minimal compatibility closure to Scout's accepted common-union owner. See the [exact release and checks](2026-10-09-scout-common-union-handoff.md). The initial ownership table below is historical. Atlas retains its local scheduler/configuration and installation authority; the initial implementation claim must not block a later properly claimed repair after completion.
+
+## Initial ownership before edits
 
 | Work | Owner | Scope / coordination |
 | --- | --- | --- |
