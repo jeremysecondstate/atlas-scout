@@ -1,0 +1,11 @@
+# Scout stage-repair review input for Atlas
+
+This directory is a **review-only source snapshot**, not a completed common-union release, installation instruction or readiness claim. Atlas owns the newly authorized global source-repair registry and exchange-stage repair implementation. Scout retains workflow/native continuation integration and the actual-failure-time correction.
+
+The exact `ml/nightly_stage_repair.py` and dedicated test bytes were captured from Scout's isolated common-union candidate at Atlas base `8eec39070154b3b568744dd20dab49af4239bf39`. `manifest.json` records SHA-256 and byte size. Python syntax, exact copied bytes, source stability and local private-value scans passed. The scoped attributes preserve Python source bytes in Git without line-ending conversion. No private config, task memory, account data or operating record is included.
+
+The helper includes the local claim-first CLI, audit-schema correction, separate dependency-restoration history, immutable recovery/continuation sidecar binding, bounded retry epochs and reviewed exact-byte installation controls. Its claim request JSON carries `action_date`, `repair_id` and `completion_record`; `--owner` binds the actor. `--claim` precedes edits, then the same identity is used with `--reviewed --prepare` and `--reviewed --apply`. This version still has only action-date repair ownership: the new cross-date workflow/exchange registry is a known missing feature assigned to Atlas.
+
+Use the contents as inspected source data in an isolated candidate. Verify raw Git blob hashes against the manifest before adaptation. Do not copy them into a running application or infer new operating authority. Atlas should return its exact changed-path contract, stable owner/token schema, callable claim/check/release API, frozen source SHA and focused passing checks. Both helpers and dispatch/edit/resume routes must share the registry; expiry must not grant another owner automatic takeover.
+
+The earlier common-union broad checkpoint passed 871 checks before the requested registry/exchange changes. That historical result does not verify Atlas's new changes or a later union. Fresh final-byte and isolated checks remain required before source publication/installation readiness.
