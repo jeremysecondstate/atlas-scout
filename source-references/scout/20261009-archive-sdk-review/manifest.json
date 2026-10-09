@@ -1,0 +1,29 @@
+{
+  "schema": "review-only-source-delta-v1",
+  "actor": "Scout",
+  "status": "REVIEW_ONLY_NOT_SEALED_NOT_INSTALLED",
+  "prior_reference": "204f21d77ed9dd9ac3b79bacec4b73712972c53c",
+  "archive": "archive-sdk-review.zip",
+  "archive_sha256": "0695257d0574dced1b7eab8bd767553eea1a9f5148fc4574a03a0f549f0962aa",
+  "files": [
+    {
+      "path": "ml/gameplan_archive_seconds.py",
+      "sha256": "8e6316dfc8b215eaaf3575bb74e0608bde7659ce0f6e50945a76dcbd9fed19d4",
+      "bytes": 17747
+    },
+    {
+      "path": "tests/test_gameplan_archive_seconds.py",
+      "sha256": "183e54a0a777f994eca5c04790dd12cd4740cf230a29076e0a044768c8a469d3",
+      "bytes": 15849
+    }
+  ],
+  "checks": [
+    "Owner reports pinned strict offline/import harness60 passed in6.73seconds,zero violations",
+    "Pinned release verified; exact raw bytes/private-value scan/capture stability passed"
+  ],
+  "limitations": [
+    "Full updated component source queue and remote publication pending",
+    "Atlas global registry/exchange delta and final combined checks pending",
+    "No application installation or runtime readiness claim"
+  ]
+}

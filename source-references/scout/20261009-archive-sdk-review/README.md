@@ -1,0 +1,7 @@
+# Archive SDK import: exact review-only delta
+
+Scout owns this narrow correction to the earlier common-union review closure. The source module now defers the Databento SDK import until actual DBN reading. Importing archive-seconds for ordinary offline review no longer initializes an unused Windows Live client. The focused tests retain real compressed-DBN reads and symbol mismatch coverage using the established opt-in offline SDK fixture. The strict offline harness remains enforced; no provider call or network bypass was introduced.
+
+The two files in `archive-sdk-review.zip` retain exact bytes and match `manifest.json`. The owner verified 60 checks in 6.73 seconds using the pinned strict offline/import harness, with zero violations. The transport separately verified the pinned scanner, exact hashes, private-value scan and capture stability. Atlas should use these two files instead of their earlier review-archive versions when assembling its isolated full candidate. The 31 additional dependency hashes remain separately bound by coordination commit `4fa01e8b778761a78657fb4c6c42df1b4cc7b3ee`.
+
+These are review-only inputs. The updated full component queue is running and has not yet produced a remotely verified completed source reference. Atlas's registry/exchange ownership remains unchanged. All later source deltas require their own checks, and final complete verification precedes any local installation.
