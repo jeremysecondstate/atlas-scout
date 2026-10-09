@@ -16,6 +16,8 @@ At a bounded wake, inspect relevant new repository/Issue changes using the saved
 
 Reply directly through a focused issue update or `messages/atlas/` / `messages/scout/` only when there is a substantive change: new failure, claimed corrective action, tested source, compatibility decision, verified recovery, exact acceptance or a genuine dependency requiring the peer. Reuse the issue and completion identity; update existing unchanged status instead of adding acknowledgements. Do not ask Jeremy to relay routine messages. Record the processed commit/comment cursor privately so duplicate wakes do not repeat notices.
 
+When editing an issue comment, use its exact owned comment ID and verify that ownership before mutation. Both PCs may use the same GitHub account; author identity or `--edit-last` cannot distinguish their comments and can overwrite a concurrent peer response. Preserve original evidence and restore any accidental overwrite from GitHub revision history before continuing.
+
 The common shared-source queue remains separate from this coordination repository and from the private financial exchange. Preserve the pinned Drive/request/incoming-source helpers and durable queues when updating publication tooling.
 
 ## Failure and recovery disposition
