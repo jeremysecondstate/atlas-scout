@@ -1,0 +1,61 @@
+{
+  "candidate": "92a094027d97e5bdb8d868a87eff056310a5e354",
+  "completed_at_utc": "2026-10-10T09:51:42.575746+00:00",
+  "consumer_raw_sha256": {
+    "ml/nightly_exchange_repair.py": "aa3aa5ca316eab9561bb318d0b26d6e6ee6048fe6e9832cb99e178ad80154e36",
+    "ml/nightly_repair_registry.py": "8ef3d0c6635d8cb201b886ba86baebfc70db0e1af8a64f80be24a623f6f8a540",
+    "ml/nightly_workflow.py": "6acd2025f71c2184a0f54815c0f34ad009f5eabc42d3b9285f1f4ff0bb728903",
+    "tools/nightly_exchange.py": "f2ad4595aad808c7fdfdc3dc3aa056cfe5df75e9e6252e1aa304ca5314b2db1b",
+    "tools/nightly_ownership.py": "bbfac57e1ed6194ae4099872d5bc326699b012202281f4f271961e85ae6de162"
+  },
+  "fixture_protected_sha256_after": {
+    "exchange\\sessions\\2026-10-09\\binding.json": "cc43429e5367b7376aa2cc052825c31ede68d1d9b60ecdbcd4c1e6efb95967c3",
+    "exchange\\sessions\\2026-10-09\\cache\\snapshot.json": "aa28b281f0492c093e3818f6888f9832320c2530349ac713ce88103e3fae742d",
+    "exchange\\sessions\\2026-10-09\\status.json": "29c50c4f7895602b3524b9eee374b89b178590212d454a8d750e7b60ff314fb2",
+    "exchange\\sessions\\2026-10-09\\synthesis-selection.json": "cdf41769e30784800bfff9aefe24449850aaf9a7a407139146c2248f67fbf784",
+    "exchange\\sessions\\2026-10-09\\synthesis\\original-id\\state.json": "2088d6829ddf0aaa7a46355262082fd81af32e1ba9169c8584c850972ffea643",
+    "work\\runs\\2026-10-09\\state.json": "b8d92b53617ed917729ae69b466f08a7d9841da6a057bf9649be237bca7869f9"
+  },
+  "fixture_protected_sha256_before": {
+    "exchange\\sessions\\2026-10-09\\binding.json": "cc43429e5367b7376aa2cc052825c31ede68d1d9b60ecdbcd4c1e6efb95967c3",
+    "exchange\\sessions\\2026-10-09\\cache\\snapshot.json": "aa28b281f0492c093e3818f6888f9832320c2530349ac713ce88103e3fae742d",
+    "exchange\\sessions\\2026-10-09\\status.json": "29c50c4f7895602b3524b9eee374b89b178590212d454a8d750e7b60ff314fb2",
+    "exchange\\sessions\\2026-10-09\\synthesis-selection.json": "cdf41769e30784800bfff9aefe24449850aaf9a7a407139146c2248f67fbf784",
+    "exchange\\sessions\\2026-10-09\\synthesis\\original-id\\state.json": "2088d6829ddf0aaa7a46355262082fd81af32e1ba9169c8584c850972ffea643",
+    "work\\runs\\2026-10-09\\state.json": "b8d92b53617ed917729ae69b466f08a7d9841da6a057bf9649be237bca7869f9"
+  },
+  "fixture_source_sha256_after": {
+    "ml/immutable_policy.py": "5d03e9a562dee44217124fc627b1f6237ae448066500549970986d1a3acef4d5",
+    "ml/nightly_exchange_repair.py": "aa3aa5ca316eab9561bb318d0b26d6e6ee6048fe6e9832cb99e178ad80154e36",
+    "ml/nightly_handoff.py": "9a6cc7b7a48e92595072a4d514ee6c7ecf109543ce5522513d40cd5604ab37e0",
+    "ml/nightly_joint_readiness.py": "3ed3c4857574a8599ec34dd510b4a81cd9e090585c7ba056696c6ac35b815ef4",
+    "ml/nightly_repair_registry.py": "8ef3d0c6635d8cb201b886ba86baebfc70db0e1af8a64f80be24a623f6f8a540",
+    "ml/nightly_synthesis.py": "469e7b28d1142d53746e5e1a77701e5d602e09802652f3dde0e25515ebb67eba",
+    "ml/nightly_workflow.py": "6acd2025f71c2184a0f54815c0f34ad009f5eabc42d3b9285f1f4ff0bb728903",
+    "tools/nightly_account_snapshot.py": "82ee5e5a0318d9311fb00d6bed5dc0402cdedfc0720101d307f5d4ce0609d296",
+    "tools/nightly_exchange.py": "f2ad4595aad808c7fdfdc3dc3aa056cfe5df75e9e6252e1aa304ca5314b2db1b",
+    "tools/nightly_ownership.py": "bbfac57e1ed6194ae4099872d5bc326699b012202281f4f271961e85ae6de162"
+  },
+  "fixture_source_sha256_before": {
+    "ml/immutable_policy.py": "5d03e9a562dee44217124fc627b1f6237ae448066500549970986d1a3acef4d5",
+    "ml/nightly_exchange_repair.py": "aa3aa5ca316eab9561bb318d0b26d6e6ee6048fe6e9832cb99e178ad80154e36",
+    "ml/nightly_handoff.py": "9a6cc7b7a48e92595072a4d514ee6c7ecf109543ce5522513d40cd5604ab37e0",
+    "ml/nightly_joint_readiness.py": "3ed3c4857574a8599ec34dd510b4a81cd9e090585c7ba056696c6ac35b815ef4",
+    "ml/nightly_repair_registry.py": "8ef3d0c6635d8cb201b886ba86baebfc70db0e1af8a64f80be24a623f6f8a540",
+    "ml/nightly_synthesis.py": "469e7b28d1142d53746e5e1a77701e5d602e09802652f3dde0e25515ebb67eba",
+    "ml/nightly_workflow.py": "6acd2025f71c2184a0f54815c0f34ad009f5eabc42d3b9285f1f4ff0bb728903",
+    "tools/nightly_account_snapshot.py": "82ee5e5a0318d9311fb00d6bed5dc0402cdedfc0720101d307f5d4ce0609d296",
+    "tools/nightly_exchange.py": "f2ad4595aad808c7fdfdc3dc3aa056cfe5df75e9e6252e1aa304ca5314b2db1b",
+    "tools/nightly_ownership.py": "bbfac57e1ed6194ae4099872d5bc326699b012202281f4f271961e85ae6de162"
+  },
+  "old_consumer_blob_commit": "37bed6b7b0e0d4c1790b98aa5ea38a23e485795c",
+  "old_ownership_check_error": "Ownership source or operating bindings changed",
+  "old_verify_transition": {
+    "repairs": 1,
+    "verified": true
+  },
+  "result": "reproduced; initial proof verification is compatible, old ownership binding check still rejects",
+  "started_at_utc": "2026-10-10T09:51:41.976645+00:00",
+  "synthetic_only": true,
+  "transition_status": "COORDINATION_TRANSITION_APPLIED"
+}
