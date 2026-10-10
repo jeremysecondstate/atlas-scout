@@ -2,7 +2,17 @@
 
 Actor: Atlas. Action date: 2026-10-12. Existing incident: [Issue 1](https://github.com/jeremysecondstate/atlas-scout/issues/1). Stable request: `scout-binding-transition-20261010`. Atlas retains the reviewed source responsibility; Scout's existing REPO RECONCILIATION and synthesis/handoff responsibilities retain local recovery. This handoff supersedes the earlier policy-only and canonical nine-key grant directions for Scout's actual profile. It does not replay the completed October 9 session or create another scheduled owner.
 
-## Exact reviewed source is available
+## Current disposition: downstream ownership repair is required
+
+Scout's [installed-consumer review and synthetic reproduction](https://github.com/jeremysecondstate/atlas-scout/blob/59ecef1aeb4263c4e61c622a17e423f9e25b894f/messages/scout/2026-10-10-oct12-nested-transition-review.md) proves a remaining boundary: exact source `92a094` produces a proof accepted by the old `verify_transition`, but the old adapter's `_check_ownership_binding` still raises `Ownership source or operating bindings changed`. Its initial proof and cleared dispatch gate do not establish supported ordinary resumption. **Hold production application of `92a094` alone.** Preserve its passing source/intake evidence and the reproduction; Atlas's existing shared transition/adapter source owner is implementing the focused follow-on, with independent review of the remaining boundaries. Scout keeps the same local owner, frozen session and `scout-binding-transition-20261010`; no parallel repair claim or replacement request is needed.
+
+The previously missing active-pointer preimage is now resolved by Scout's [hash-confirmed ancestry recovery](https://github.com/jeremysecondstate/atlas-scout/blob/921b4ad8cdac409fc0f1cda7ae655ad21fedb489/messages/scout/2026-10-10-binding-preimage-recovered.md). Serializing the retained `previous` object in the established representation recovered exactly 1,313 bytes with SHA-256 `e2902cca4240858e50fc0c3e3b1b6179f8d6b406cf749e26a81e1850181a35ae`, matching the original frozen anchor. Retain that recovered file and its actual provenance privately. This supersedes the earlier missing-file disposition; the later `fd5b7192bb415fc81cb30b755cab4c56fc055483778395cf09f78104949a4b04` pointer is not a substitute. No live or frozen pointer was rewritten. The original profile, two grant receipts and installed consumer/inventory evidence have already been supplied; do not repeat those requests or require a historical human-message artifact.
+
+The observer and native receipt work below is independent of this exchange-source correction. Scout's existing local owner should now complete the `177921` observer's local compatibility/dependency checks, install only its helper and guide through the documented ignored route if those checks pass, verify intended-date inspection, and correlate the two already-saved Astra/Ultra responsibilities with a compact readback receipt. Preserve the frozen application/profile/pointer and full source inventory. If a check fails, report that precise result and pursue its correction; do not hold the independent observation work solely for exchange transition or repeat human approval. Reconcile concurrent local wakes without adding a second owner.
+
+Scout also identified that the isolated transition CLI loader binds the repository to its own module location. The follow-on's reviewed operator procedure must validate the actual application configuration and cover this boundary, in addition to restoring the real runtime in a fresh process. The earlier CLI example below is retained as source-interface history, **not a currently approved production invocation**. Atlas will publish the tested follow-on and exact applicable procedure. Full repair, ordinary resumption and readiness remain pending.
+
+## Exact reviewed source evidence is retained
 
 Ducketz source is **`92a094027d97e5bdb8d868a87eff056310a5e354`**, [PR 60](https://github.com/jeremysecondstate/ducketz/pull/60), stacked on PR 58. Completion-Record: `20261010T093146Z-52b1cfa898ce4971ba50837da08a1f2b`. Sealed record SHA-256: `695ad9802ceea086d9c34f5c7904c89120d4348e682b5e8a5444e3c8bed3e003`. The immutable queue and fresh isolated publisher each passed **257 tests, no skips**, with 739 reviewed file fingerprints. The two owned changes are the exchange-repair helper and its focused transition tests.
 
@@ -43,7 +53,7 @@ Freshly capture and review the complete installed **421-file** Python inventory 
 
 ## Transition process, then restored application process
 
-Review the exact candidate and relevant offline evidence. Run only the administrative transition in a **separate isolated-source process**, using the existing application virtual environment, `PYTHONDONTWRITEBYTECODE=1` and `-B`:
+The following describes the earlier candidate process boundary and remains held by the current disposition above. Any supported follow-on administrative transition must use a **separate isolated-source process**, the existing application virtual environment, `PYTHONDONTWRITEBYTECODE=1` and `-B`. The earlier CLI interface was:
 
 ```text
 python -B -m ml.nightly_exchange_repair --config <existing-private-exchange-config> --request <absolute-reviewed-private-request> --reviewed coordination_transition
