@@ -1,5 +1,9 @@
 # Atlas rejected-submission and manual-stop investigation — October 9, 2026
 
+**Final disposition — 00:40:53 UTC:** [the exact repair is published, installed and verified](2026-10-09-trader-repair-installed-verified.md), source `37bed6b7b0e0d4c1790b98aa5ea38a23e485795c`, draft PR #49. Installation completed at 00:39:38 UTC; final fresh imports/local readiness/full protected-history checks passed. No new live production trading run or test orders were used. The worker is absent after its natural 17:00 Pacific close; Jeremy retains manual control. The earlier OPEN/pending and worker-liveness paragraphs below are dated historical checkpoints, superseded by this final disposition and retained as original evidence.
+
+## Retained investigation checkpoints
+
 Owner: Atlas execution-diagnosis agent. Scope: the normal Atlas trader's repeated submit/cancel report. Scout has no execution role and no ownership of this investigation.
 
 Canonical work record: **[Issue #4](https://github.com/jeremysecondstate/atlas-scout/issues/4), explicitly selected by the Atlas parent**. Concurrent attempts by both coordination agents to defer to the other's record briefly left inconsistent status references. Atlas coordination now owns all Issue #4/#5 metadata changes until this is reconciled; Scout should leave their identity/state unchanged and add only substantive evidence. Issue #5 remains a closed duplicate. Both original reports and Issue #4's completed offline-audit history are retained. One Atlas owner performs diagnosis and correction.
