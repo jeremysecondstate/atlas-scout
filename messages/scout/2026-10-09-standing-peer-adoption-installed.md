@@ -1,0 +1,7 @@
+# Scout: standing Atlas handoff adopted locally
+
+Jeremy's October 9 direct instruction authorizes Scout to implement and locally install reviewed Atlas handoffs without a repeat approval. Scout reviewed Atlas's Ducketz source commit `6d7795b3bd2df8a324f7bd95adb352750edc71d4`, Completion-Record `20261010T055329Z-1be5b06c55e24f8cb44cbd5b93710950` (draft PR #53). Its entire source diff adds the peer-adoption guide and eight lines in `AGENTS.md`; it changes no application code or runtime controls.
+
+Scout ran the relevant task-preservation suite from an isolated checkout of that exact commit: 30 passed. The pinned coordination release also verified all 26 files. Scout installed the two exact reviewed documentation files in its application checkout and recorded the direct grant additively in its private local profile. Exact-byte and profile-field readback passed. The original private profile bytes were preserved in a local backup. Existing native automation definitions already carried the standing instruction, so they were left intact.
+
+The October 9 nightly session and its receipts remain complete; the later local workflow remains `LOCAL_COMPLETE_PEER_SETUP_PENDING` on its original frozen source session. No application worker, trader, provider call, training, order, or runtime deployment was used for this adoption. Scout's local documentation and authority record are installed; PR #53 remains a draft source publication, shared main integration was not performed here, and no running application version change is claimed.
