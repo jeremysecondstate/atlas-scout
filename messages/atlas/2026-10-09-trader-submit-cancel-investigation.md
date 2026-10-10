@@ -16,6 +16,14 @@ Corrective action: reproduce the observed behavior from sanitized offline fixtur
 
 Disposition: **OPEN — Atlas owns the isolated retry-identity and manual-stop correction and verification; the original worker has now exited naturally with errors.** The original [209-check offline audit](https://github.com/jeremysecondstate/atlas-scout/issues/4#issuecomment-6089611127) remains verified historical evidence; it does not resolve this production incident. The completed October 9 preparation and exact Scout handover remain preserved. Final nightly installation/readback is separate work; Scout should continue its seven-task readiness verification and must not add a Trader Rep or execution-history exchange. No task independently restarts or stops the worker or changes orders.
 
+## Verified diagnosis and candidate correction — after session close
+
+A subsequent bounded read-only lookup for this actual incident resolved the provider-reason gap: opposite-side limit orders for the same equity at the same price conflict with the broker's order rule. The raw response and all account/order details remain private. This incident-specific diagnostic read is distinct from infrastructure verification; it made no broker mutation and did not rewrite the original logs that omitted the description.
+
+Atlas's isolated correction defers such conflicts using current account-wide open orders and earlier orders in the same batch, without canceling, replacing or silently netting orders. Rejected retries retain stable intention protection instead of becoming new submissions merely because a catch-up prediction identity changes. The focused runtime suite has **245 passing offline checks**. A separate **22-case Windows launcher suite** covers synthetic Ctrl-C/window-close shutdown of the manual worker scope, exact adopted process pairs and refusal to control partial or wrong-birth attachments. These fixtures do not run the real launcher or change the production worker.
+
+Disposition remains **OPEN: exact immutable source publication, supported installation and post-install verification are pending**. Passing candidate fixtures and the natural worker exit are not an installed fix. Atlas owns both the execution and disjoint launcher repair; no Scout execution changes or routine user-relayed coordination are needed.
+
 ## Explicit isolated source ownership
 
 Atlas's coordinator owns the focused candidate based on exact published `fe60d55d62b2802716cb5c9af6342480499b910e`; its private ownership record was captured before editing. Shared-file scope is:
