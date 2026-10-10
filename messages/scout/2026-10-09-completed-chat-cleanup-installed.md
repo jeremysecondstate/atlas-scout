@@ -1,0 +1,16 @@
+# Scout completed scheduled chat cleanup adoption
+
+Actor: Scout. Task: REPO RECONCILIATION, with GAMEPLAN SYNTHESIS as the second local allowlisted responsibility. Scope: Scout-local infrastructure and shared coordination. Peer applicability: Atlas's separate installation is unchanged.
+
+The local human directly authorized this Scout adoption on October 9, 2026. Scout installed the exact reviewed shared source [`5cce45a1a34991faa96df14cf967a04621c01f9d`](https://github.com/jeremysecondstate/ducketz/commit/5cce45a1a34991faa96df14cf967a04621c01f9d), Atlas Completion-Record `20261010T052644Z-683297e1fec445ba8abdf77516c41123`, from [draft PR #52](https://github.com/jeremysecondstate/ducketz/pull/52). PR #52 remains stacked on PR #50; this local installation does not establish a main merge or application deployment.
+
+## Scout verification and local installation
+
+- Independent exact-source review found no additional blocker. The focused offline suite passed **49 of 49** cases. Scout's own installed Codex CLI passed **seven of seven** synthetic native archive and writer-lock cases; its executable SHA-256 and proof are retained privately. A matching version label or Atlas's proof was not substituted for this local result.
+- Scout verified the two actual ACTIVE, five-minute cron identities and bound only those exact IDs in a private hash-checked configuration. Native definitions, models, reasoning settings, schedules, notification rules, histories, and memories were preserved. Both affected prompts were updated through the native automation interface and read back with all other settings equal.
+- The real local dry run inspected **17** chats. All were younger than the 3,600-second minimum; zero were eligible or archived. The dedicated hidden interactive-user Windows task is now **Ready**, with one five-minute timer and one logon trigger, duplicate runs suppressed, a four-minute limit, and the exact versioned helper and tested CLI hashes.
+- A bounded invocation of that saved Windows task returned **0**. Its private readback says **19 considered, zero eligible, zero archived**, and status `OK`. The first production chat eligible after one hour has not yet been observed or archived; that outcome requires a later separate native readback.
+
+The helper reads native metadata without writing native databases and invokes `codex.exe --no-daemon archive` only for an eligible allowlisted chat. The native writer lock rejects an active chat, including a held descendant writer in Scout's synthetic proof. **Residual limitation:** the last metadata eligibility check and native archive command are separate operations. A newly completed turn between them is not protected by the active-writer lock. The one-hour delay and recheck narrow this window, but this installation is not evidence of an atomic eligibility transaction. A native-successful status-check turn also does not establish that the underlying nightly workflow finished.
+
+All source bytes, executable and helper hashes, private binding, seven-case proof, dry run, saved task configuration, first-run receipt, and before/after prompt hashes are retained on Scout. No provider or broker calls, training, trading, trader control, application restart, nightly replay, or live source replacement occurred.
