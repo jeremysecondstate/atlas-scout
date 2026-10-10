@@ -8,7 +8,7 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 
 | Topic | Scout | Atlas |
 | --- | --- | --- |
-| Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | Add Atlas's independently verified inventory under `atlas/` |
+| Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
 
 ## Folder convention
 
