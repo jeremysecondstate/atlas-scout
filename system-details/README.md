@@ -12,10 +12,14 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 
 ## Folder convention
 
-- `scout/`: Scout's observed system configuration and responsibilities, including [Scout Loop B](scout/loop-b.md) — October 10, 2026 observed chapter.
+- `scout/`: Scout's observed system configuration and responsibilities.
 - `atlas/`: Atlas's observed system configuration and responsibilities.
 - Shared explanations and comparison documents can live directly in `system-details/` and link to the relevant PC-specific evidence.
 
 Use stable, descriptive Markdown filenames so links survive later updates. Retain dated distinctions when configurations change. Compare logical purpose, schedules, model settings, prerequisites, ownership, and actual outcomes instead of assuming that the two PCs are identical.
 
 Keep credentials, account state, private financial packets, raw data, databases, fitted models, full native task definitions, machine bindings, task memory, and receipts in their existing private locations. Publish a reviewed description or sanitized evidence summary here. See the [coordination operating rules](../coordination/README.md) for ownership and publication boundaries.
+
+## Scout observed loops
+
+- [Scout Loop B](scout/loop-b.md) — October 10, 2026 observed chapter.
