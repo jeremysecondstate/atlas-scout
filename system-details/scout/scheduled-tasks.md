@@ -1,3 +1,43 @@
+# Scout scheduled tasks — current readback, October 11, 2026
+
+**Read-only observation:** October 11, 2026, **01:59:07 PDT / 08:59:07 UTC**. Times below use **America/Los_Angeles**. Saved definitions and read-only native scheduler rows agree. This refresh changes documentation only and preserves both October 10 observations below.
+
+Scout has **13 Ducketz native definitions: nine active and four paused**, all local project cron tasks. The five preparation/checkpoint definitions remain **daily**. Atlas's separately documented daily-to-weekday revision is not a Scout configuration change. The [Atlas comparison at its reviewed revision](https://github.com/jeremysecondstate/atlas-scout/blob/3db3ff4d6e750fd9329e14082a5cbce9a1f4c688/system-details/atlas/scheduled-tasks.md) supplies Atlas evidence only.
+
+| Scout native display name | Current Pacific nominal recurrence | Saved model / effort |
+| --- | --- | --- |
+| Scout DATASTORE CATCH-UP | Active; daily 21:05 and 04:05 fallback | `gpt-6-luna` / low |
+| Scout GAMEPLAN STATS | Active; daily 21:05 | `gpt-6-luna` / low |
+| Scout MODEL REVIEW, TRAINING & PREDICTING | Active; daily 21:05 | `gpt-6-luna` / low |
+| Scout GAMEPLAN | Active; daily 21:05 | `gpt-6-luna` / low |
+| Scout DUCKETZ DISPLAY | Active; daily 03:00 and 03:35 | `gpt-6-luna` / low |
+| Scout GAMEPLAN SYNTHESIS | Active; Monday–Friday 21:00–23:40, every 20 minutes | `gpt-6-astra` / ultra |
+| Scout GAMEPLAN SYNTHESIS after midnight | Active; Tuesday–Saturday 00:00, 00:20, 00:40 | `gpt-6-astra` / ultra |
+| Scout REPO RECONCILIATION | Active; Monday–Friday 21:00–23:40, every 20 minutes | `gpt-6-astra` / ultra |
+| Scout REPO RECONCILIATION after midnight | Active; Tuesday–Saturday 00:00, 00:20, 00:40 | `gpt-6-astra` / ultra |
+| Hyperliquid Operations Watch | Paused; retained every 30 minutes | `gpt-6-luna` / low |
+| Hyperliquid Paper Improvement | Paused; retained hourly | `gpt-6.1-sol` / medium |
+| Loops Overnight Gameplan | Paused; retained daily 21:05 | `gpt-6-astra` / ultra |
+| Loops Gameplan Weekly Review | Paused; retained Saturday 09:00 | `gpt-5.6-luna` / medium |
+
+The October 10 revision activated the two existing synthesis/reconciliation definitions and added their two after-midnight companions. Its saved verification time was **13:33:29 PDT / 20:33:29 UTC**. Fresh hashes match all four post-revision definitions; the other nine retain their pre-revision definition bytes. That revision changed eligibility, evening continuity and routine reconciliation's first eligible wake; it did not change the five daily checkpoints, retained model settings or Windows dispatcher. Both segments retain one logical owner and shared continuity. Display retains the 03:00 readiness-risk and 03:35 missed-confirmation notices.
+
+Each synthesis/reconciliation responsibility has 12 nominal wakes per operating evening, ending at 00:40 the next morning. Friday continues into Saturday; Sunday evening is excluded. **00:40 is the last scheduled wake, not a forced turn-completion deadline.** Exchange-session eligibility, the 21:05 preparation kickoff, the original 04:00 workflow deadline and bounded late-recovery rules are separate clocks. A Sunday daily checkpoint may inspect an already terminal action date; a daily recurrence is not permission to regenerate completed work.
+
+The scheduler's next-run rows still differ from several nominal checkpoint times: October 11 datastore 04:09:56, Stats 21:02:14, model review 21:06:48 and Gameplan 21:01:49. Display is due 03:00. Evening supervisors next show October 12 21:00; their companions show October 13 00:00. These are readback values, not a guarantee of exact launch or evidence of successful completion. The wall-clock window follows PST/PDT; the four DST examples in the preserved revision remain historical offline checks, not future execution evidence.
+
+Windows readback at **01:59:52 PDT** finds the same two enabled Ducketz registrations. The deterministic nightly dispatcher remains daily 21:05 plus every five minutes and logon, launched through hidden PowerShell into the existing Python watchdog/coordinator. Completed-chat cleanup remains a separate five-minute/logon Python helper. Both were Ready; their invocation limits remain three and four minutes respectively. Their last recorded invocations were 01:58:23 and 01:59:17 PDT, each with result zero and zero missed runs. Registration and a zero last result do not prove numerical completion or an archival action. Native automatic archive remains disabled on all 13 definitions; only datastore and the paused legacy overnight definition have explicit failure-only notification overrides. The historical cleanup helper's exact-five-minute eligibility limitation remains separate from the twenty-minute/windowed supervisors; the after-midnight companions are not on its allowlist.
+
+The pinned coordination manifest and all **29 declared files** still match. Its stricter installation inventory fails on pre-existing extra Python cache files, also recorded in the earlier October 11 companions. This refresh preserves that condition. The separate supervision helper and its existing reader-transition addendum are discussed in [Scout nightly verification](nightly-workflow.md#october-11-follow-up-schedules-and-existing-supervision-verification): all **54 addendum dependencies** match. A schedule revision did not cause the two application-reader changes, and Atlas's 15-dependency inventory is not Scout's denominator.
+
+Private evidence: the dated **Scout schedule and supervision report**, with native readback, revision comparison, Windows XML, exact hashes, full definitions and task bindings. The public chapter excludes native IDs, private paths, prompts, memory and receipts. Only the coordination installation verifier was invoked; no scheduled task, supervision/cleanup helper or application workflow was run, and no operating configuration or control changed.
+
+---
+
+## Preserved October 10 revision and earlier inventory
+
+The following text records the configuration and checks at their original times. Statements about the earlier pause, eleven-definition count, or original verification are historical; the current readback above governs present scheduling descriptions.
+
 # Scout scheduled-task revision — October 10, 2026
 
 **Revision recorded:** October 10, 2026, 1:35:47 p.m. PDT (2026-10-10T13:35:47-07:00)

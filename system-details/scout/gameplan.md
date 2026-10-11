@@ -107,6 +107,14 @@ Standard-library read-only checks passed **67 artifact/binding comparisons**. A 
 
 Shared bytes were reviewed to exclude exact symbol membership, native IDs, absolute operating paths, private receipt identities, credentials, balances, positions, orders/fills, financial packets, raw datasets and fitted models. Dated historical findings remain useful without exporting their private originals.
 
+## October 11 follow-up: reader source and schedule evidence
+
+A read-only follow-up began with source/native observations at **01:57–01:59 PDT / 08:57–08:59 UTC**, then reviewed and rechecked Scout's already-existing reader dependency addendum, created October 10 at **03:45 PDT / 10:45 UTC**. The Gameplan reader's current bytes match [UI/history revision `3ff1c583`](https://github.com/jeremysecondstate/ducketz/commit/3ff1c5833e3acd8d2bcd3278c90e4de8987e635e), its install record and the later supervision map. The original 40-import supervision baseline did not include this reader; the addendum's larger 54-file map does. Both changed readers and all 52 unchanged dependencies match. Detailed local reviews and their bound test evidence are present. See [the full Scout supervision explanation](nightly-workflow.md#october-11-follow-up-schedules-and-existing-supervision-verification) for original times, test scopes and the original inspection-output newline qualification.
+
+The reader change keeps accepted Gameplan history accessible when a current account publication is unavailable; current-plan selection still fails closed and invalid pointers remain errors. That source change is separate from the October 10 scheduling revision. Scout's Gameplan and other preparation checkpoints remain daily; the synthesis/reconciliation windows retain their weekday evening and following-morning segments. The [dated current schedule readback](scheduled-tasks.md) preserves these local facts and earlier observations. It supplies no evidence of a newly completed planning run.
+
+Saved verification already supported default and dated reader agreement on the retained accepted publication. Today's byte comparison does not certify code loaded in an existing process or replace the earlier historical acceptance. The completed source-digest difference, `UNRECORDED` producer generation revisions and execution boundary above remain unchanged. No helper was reinstalled, manifest resealed or terminal work replayed.
+
 ## Related references
 
 - [Scout scheduled tasks](scheduled-tasks.md)
