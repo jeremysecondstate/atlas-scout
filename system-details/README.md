@@ -10,6 +10,14 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 | --- | --- | --- |
 | Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
 
+## Loop C shared design and machine evidence
+
+| Shared explanation | Scout companion | Atlas companion |
+| --- | --- | --- |
+| [Loop C: shared observe-only design](loop-c.md) | [Scout: verified local observations and provenance correction](scout/loop-c.md) | [Atlas: dated observations and separate stock execution findings](atlas/loop-c.md) |
+
+The shared chapter is the common design reference. Machine companions have different evidence scopes; the former Scout copy of Atlas's chapter was not a Scout observation. Atlas's original chapter remains intact while its existing publication is pending. Named Loop C is separate from stock execution.
+
 ## Planned documentation
 
 The nine chapters below are **placeholders, not yet investigated or verified**. Their presence does not establish installed configuration or successful operation. Shared chapters explain common behavior; each PC's companion will provide independently verified local observations.
