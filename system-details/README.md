@@ -8,7 +8,7 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 
 | Topic | Scout | Atlas |
 | --- | --- | --- |
-| Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
+| Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 11, 2026 readback, with October 10 history retained |
 | Loop A | [Scout reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/31913a790057db85dd41f92bc6741ddc40d75dea/system-details/scout/loop-a.md) — PR #7 | [Atlas reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/bfa2ab9a002c114230ac297c49ae73768c215d40/system-details/atlas/loop-a.md) — PR #8 |
 | Loop B | [Scout reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/d42deafb1504a2eca41de3d4ab59993eb509b1b7/system-details/scout/loop-b.md) — PR #10 | [Atlas reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/8487ccdbe873d7cd307e7e3c9f4e22419f8f08c0/system-details/atlas/loop-b.md) — PR #9 |
 | Loop C | [Scout curated companion](https://github.com/jeremysecondstate/atlas-scout/blob/f648c1d9f6096b53f5c330bb045ecf85bec2a537/system-details/scout/loop-c.md) — PR #12 | [Atlas dated observations and separate stock execution](atlas/loop-c.md) — also retained in PR #11 |
@@ -28,6 +28,8 @@ The [shared Loop C design](https://github.com/jeremysecondstate/atlas-scout/blob
 The [handoff prompt](documentation-handoff-prompt.md) records the original scope and ownership; future work must preserve completed chapters and dated history. Scout's [reviewed handoff](https://github.com/jeremysecondstate/atlas-scout/blob/8b1ef9d547adbaa8ece26de585ce0ef126c70215/messages/scout/2026-10-11-documentation-review.md) records its findings and pending integration boundaries.
 
 Atlas's [dated Loop A history](atlas/atlas-loop-a-2026-10-10.md) now retains the complete portable historical chapter with private detail removed from this proposed edition. Scout's equivalent Loop B correction is in PR #13. Private originals are preserved locally; neither correction erases earlier public Git history or changes main before integration.
+
+The [Atlas scheduling/source follow-up](atlas/nightly-workflow.md#october-11-follow-up-scheduling-versus-reader-verification) separates native timing revisions from an independently documented reader dependency transition. The [Scout follow-up prompt](scout-schedule-supervision-handoff-prompt.md) requests the same independent evidence review and documentation maintenance on Scout; it does not presume matching settings or authorize operating changes.
 
 ## Folder convention
 

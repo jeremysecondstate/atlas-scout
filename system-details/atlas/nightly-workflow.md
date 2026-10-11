@@ -86,6 +86,26 @@ The installed guide still mentions five-minute native wakes; current prompts/def
 
 The bounded process scan found the UI launcher/interpreter pair born October 10 03:39:11 and no matching nightly, exchange or stock worker. It establishes neither global absence nor loaded-module hashes. Process presence and saved reader acceptance remain different evidence. [N2]
 
+## October 11 follow-up: scheduling versus reader verification
+
+The earlier **00:35:17** comparison above checked the original supervisor installation manifest only. It correctly found 13 of 15 original dependency hashes unchanged. Further read-only investigation at **01:30:03–01:31:59 PDT** found a separately retained UI installation and dependency-transition addendum that the first pass had not included. This narrows the earlier compatibility-evidence gap. [F1, F2]
+
+The two changed readers exactly match [reviewed UI source `3ff1c583`](https://github.com/jeremysecondstate/ducketz/commit/3ff1c5833e3acd8d2bcd3278c90e4de8987e635e), committed October 10 00:42:15 PDT. `app/ui/gameplan_data.py` preserves accepted historical sessions while a current combined plan is pending and explains the missing intended-date selection; it retains the guard against substituting a local projection for the shared account plan. `app/ui/gameplan_stats_data.py` exposes the saved `coverage_status` for an unscored session; it does not change forecast eligibility or scoring. These are reader changes, not recurrence changes. [F1]
+
+The addendum, recorded **October 10 03:32:44 PDT** and hash-pinned by the retained source-owner handoff, binds the unchanged original helper/manifest/guide, the exact **03:30:30 PDT** UI installation, the two changed reader dependencies and the thirteen unchanged dependencies. **All 15 current dependency hashes match that combined baseline-plus-addendum record**, and all nine installed UI files match their installation receipt. Its referenced saved **119-pass** test record/log, installation plan and installation readback also match their recorded hashes. These are checks of existing evidence, not tests rerun by this documentation task. [F2]
+
+The addendum retains an independent post-install verification summary at **October 10 03:31:16 PDT**, including loaded-reader identities, `FINAL_VERIFIED`/overall complete and agreeing default/dated reader summaries. The original detailed independent-review JSON is unavailable at its archived-worktree path and was not recovered in the bounded search; its recorded raw-file hash could not be reverified. Therefore the saved addendum documents the transition and historical verification, with that evidence-retention limit. This follow-up does not newly certify current loaded modules, rendered UI, broker state or runtime health. The original installation manifest was intentionally preserved, not rewritten. [F2]
+
+Native schedule changes are a separate history. Fresh **01:30:18 PDT** readback confirms the five preparation checkpoints now use Monday–Friday eligibility at their retained wall times, and source/handoff model tasks use the recorded twenty-minute overnight windows. The installed guide's five-minute native-task description is older wording; the Windows dispatcher still has a five-minute timer. All fifteen saved definitions and three Windows registrations match the earlier October 11 readback. See the [current scheduling clarification](scheduled-tasks.md#october-11-schedule-and-source-clarification). [F3]
+
+| Ref | Follow-up evidence and observation | Limit |
+| --- | --- | --- |
+| F1 | Original-manifest reader hashes matched retained Git blobs; current reader blobs matched `3ff1c583`; exact normalized diff inspected at 01:30:03 | Explains code content, not a schedule-edit cause or present loaded source |
+| F2 | Saved append-only transition, original supervisor, UI install/test records and current file hashes; 01:31:59 | All 15 dependency and nine installation-file comparisons match; original detailed independent-review file unavailable |
+| F3 | Native TOML/DB and Windows XML/state readback 01:30:18; historical weekday revision records/comparison 01:31:14 | Configuration and history only; no schedule or operating change |
+
+The older completed-run source aggregate and feedback-policy comparisons elsewhere in these chapters keep their original meaning. A reader dependency addendum neither rewrites historical generation provenance nor authorizes a stale feedback proposal for fresh training. It also does not establish a new trading outcome.
+
 ## Evidence index and privacy
 
 | Ref | Evidence/source | Observation and scope |

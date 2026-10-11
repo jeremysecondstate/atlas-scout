@@ -66,6 +66,12 @@ The latest review differs from today's working bytes in **one of nine** bound po
 
 The latest local preparation completed for action date **October 12**, using reviewed session **October 9**. Its retained local status remains `LOCAL_COMPLETE_PEER_SETUP_PENDING`; a separate exchange record is `COMPLETE` with joint/UI/peer verification true and execution authorization false. The accepted combined Stats selection and five pinned downstream publication files were byte-checked. This is saved planning acceptance, not a fresh rendered UI test, broker reconciliation or live worker certification. [A4]
 
+## October 11 follow-up: reader revision versus scheduling
+
+At **01:30:03–01:31:59 PDT**, exact source and saved installation/addendum evidence explained the current Stats reader revision: [reviewed UI source `3ff1c583`](https://github.com/jeremysecondstate/ducketz/commit/3ff1c5833e3acd8d2bcd3278c90e4de8987e635e) adds the saved `coverage_status` to the reader result so the display can explain an unscored session. It does not change scoring or pre-opening eligibility. The [nightly follow-up](nightly-workflow.md#october-11-follow-up-scheduling-versus-reader-verification) documents the exact supervisor dependency transition and remaining unavailable-original-review-file limit.
+
+This explains why the reader hash changed; it does not erase the earlier one-of-nine policy mismatch or make an old feedback review valid for fresh training. Separately, the five preparation checkpoints changed from daily to weekdays while retaining their wall times. [Fresh native readback](scheduled-tasks.md#october-11-schedule-and-source-clarification) at **01:30:18 PDT** confirms those settings. A schedule correction does not alter historical Stats eligibility, manufacture missing forecasts or repair an absent score.
+
 ## Evidence index, history and privacy
 
 | Ref | Evidence and observation | Scope/limit |

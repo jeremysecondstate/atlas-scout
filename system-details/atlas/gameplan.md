@@ -75,6 +75,12 @@ The installed supervision helper/manifest/guide match the three exact hashes pin
 
 A bounded process snapshot found the UI launcher/interpreter pair and no matching preparation/exchange/stock worker. It does not prove global absence or current loaded-module hashes. Saved reader acceptance and an extant UI process are separate observations. The earlier [Loop C chapter](loop-c.md) retains distinct stock-session outcomes; successful later planning is not evidence that that trading session succeeded. [G2, G4]
 
+## October 11 follow-up: explained reader transition
+
+Further read-only evidence at **01:30:03–01:31:59 PDT** narrows the earlier original-manifest comparison. Both reader files match the reviewed [October 10 UI change](https://github.com/jeremysecondstate/ducketz/commit/3ff1c5833e3acd8d2bcd3278c90e4de8987e635e): preserve accepted historical Gameplans while the current combined plan is pending, explain the pending intended date, and expose the saved Stats coverage reason. The shared-account acceptance guard remains. These application changes are separate from the later native schedule revisions.
+
+A retained dependency-transition addendum binds the original supervisor to the exact later UI installation. Current hashes match all **15** dependencies when that addendum is included; the original 13-of-15 observation remains correct against its older baseline. Referenced installation and saved 119-pass test evidence hashes match. The addendum records historical independent supervisor/reader verification, but its original detailed review file is unavailable for a fresh raw-hash comparison. The [nightly follow-up evidence register](nightly-workflow.md#october-11-follow-up-scheduling-versus-reader-verification) records original event times, checks and limits. This was evidence recovery, not a new helper execution or present-runtime certification.
+
 ## Evidence index and privacy
 
 | Ref | Evidence / observation | Limits |
