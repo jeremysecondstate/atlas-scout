@@ -369,3 +369,339 @@ Evidence directory: `C:\dev\ducketz\scratch\loop-b-documentation-20261010`. `own
 ## Published documentation outcome
 
 The sanitized chapter was published on Scout branch `codex/scout/loop-b-doc-20261010-09a7983d` at commit `d42deafb1504a2eca41de3d4ab59993eb509b1b7`. Remote SHA readback matched at 2026-10-11T04:11:45.171493+00:00 (October 10, 21:11:45 PDT). [PR #10](https://github.com/jeremysecondstate/atlas-scout/pull/10) is open, ready for review and mergeable at readback, and attached to this chat. Main remains `4691a554bf0a4473fb2638a45ff5076c56470713`; no main merge or deployment occurred. The final two-path diff preserves all earlier index content and all peer chapters. Three-way tree checks passed against Atlas Loop B and both pending Loop A chapters. Private publication proof is [publication-receipt.json](C:/dev/ducketz/scratch/loop-b-documentation-20261010/publication-receipt.json); exact readback is [pr-readback.json](C:/dev/ducketz/scratch/loop-b-documentation-20261010/pr-readback.json).
+
+---
+
+## October 11, 2026 — private DATASTORE utilization and training/test separation audit
+
+**New read-only audit, beginning October 11 at 14:21 PDT (`America/Los_Angeles`).** This section supplements the historical October 10 observations and October 11 schedule correction above; their bytes are preserved. It inspects the same accepted Loop B generation, `20261010T045339.610934Z`, whose run began **October 9 at 21:53:39 PDT** and whose publication was promoted **October 9 at 22:02:13 PDT**. At this audit the current pointer still selects that generation. Historical completion is not a claim that Loop B ran today.
+
+The key distinction is between available bars, materialized samples, completed labels, partitioned rows and fitted training rows. The earlier log's **292,900 samples** is the published sample artifact's row count; it is not the number used to fit the nine estimators. Recorded model manifests report **70,712 training rows in total across nine horizon models**. The reconstruction below matches each recorded count, training decision boundary and saved assessment identity, while retaining uncertainty about the original training identities.
+
+### Audit authority, ownership and method
+
+Scout's installed release `7bd3da6cd674d78a6aafa01e1d4ecf3fbe66384a` passed its pinned installation-manifest SHA-256 check (`e4d98044a79726ec44eb81b94997ac315af64cc500ef76d738ad0f34db471420`) and all **29** file checks. The installed contract, bootstrap, common-main procedure, peer-adoption addendum and local profile were read. The profile establishes **Scout / pc-new**, timezone `America/Los_Angeles`, checkout `C:\dev\ducketz`, and the selected watchlist **DOCU, DBX, SDGR, QBTS, PYPL, GLOB, OUST, ABCL, MRNA, RR, PDYN**. The saved local runtime report establishes datastore `C:\DATASTORE`; the accepted run selects the same eleven symbols and provider `databento`. Source-publication authority does not alter this request's private-only scope; Atlas retains live execution ownership.
+
+Before editing, [ownership.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/ownership.json) captured Ducketz HEAD `9c5b50281169f05032bb0d6d943f761447e70cab`, local atlas-scout HEAD `39740dc69a15c81a05001f2503dd889273fe6c25`, repository status, file hashes, exact owned operations and the report's original hash. Ownership is limited to appending this section and adding private evidence in `C:\dev\ducketz\scratch\loop-b-datastore-audit-20261011`. Other writers retain all existing application, report and task changes. This private chapter happens to be tracked in the local coordination checkout; its new audit is intentionally left local, without commit, queue, artifact export, notice or push. The shared-source completion queue does not receive private documentation/evidence under this explicit instruction.
+
+The audit used saved JSON manifests and selected-column Parquet reads. Pure bar-normalization and calendar helpers were used to count eligible source bars, and retained metadata was used to reconstruct membership. It did not fetch data, train, rematerialize samples, deserialize models, score sealed lockbox outcomes, trade, restart, deploy or change tasks. Fitted `model.joblib` files were streamed only for SHA-256 verification against their current local manifests.
+
+### What the receipts establish
+
+The [current pointer](C:/DATASTORE/ml/latest/run.json) selects the [accepted run manifest](C:/DATASTORE/ml/runs/20261010T045339.610934Z/manifest.json) through [publication.json](C:/DATASTORE/ml/runs/20261010T045339.610934Z/publication.json). Current receipt hash is `79a7cbe477ef88905528162b8fad23645bb736f5809b249cdeedaab1b278fbc3`; manifest hash is `a761a4d8d75bb7691b288d7ad0d562852381b462e1c2a446940f88ed288199e6`. All six immutable output files and their six compatibility copies match. All **381** saved input-file hashes also match current Scout bytes, totaling **126,472,168 bytes**; none was missing or changed during the input audit. This makes the inspected input inventory comparable to the saved generation; it does not prove every possible external producer was frozen at the run's causal cutoff.
+
+| Evidence | What is pinned or checked | Limit |
+| --- | --- | --- |
+| Current pointer → publication receipt → run manifest | Run identity, promotion timestamp, receipt and manifest SHA-256; manifest pins six output files and recorded input hashes. | Current selection is a dated observation, not a guarantee about a future pointer. |
+| Run predictions | All nine model name/version pairs identify `ml/models/<horizon>/<model_name>/20261010T045339.610934Z`. | The name/version strings do **not** cryptographically pin the model manifests in those directories. The run input/output inventory does not include those model manifests. |
+| Current model manifests | Their JSON records counts, feature contracts, partition boundaries and each `model.joblib` SHA-256; all nine fitted-file byte checks pass now. | Local internal agreement is not a transitive historical receipt pin. No model was deserialized, fitted or scored for this audit. |
+| Saved sample/prediction artifacts | Publication-pinned samples and assessment prediction identities support the reconstruction below. | There is no saved ordered training-ID list or training-membership digest. Matching counts and boundaries does not uniquely prove original training membership. |
+| Source snapshot | Current aggregate digest remains `42fa58e6a243915df082464e651af93f26a9df2654c3231a88b48f3db203cb09` across 367 Python files in `ml`, `datafetching` and `app`. | Completed workflow records `edd8831f6c9a145e811d878f014cc64afe7ef378fe9a79a20429fb38bcccaab8`; same HEAD does not mean identical working source. An original per-file source map is unavailable. |
+
+These claims are recorded in [receipt-audit.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/receipt-audit.json), [source-current-map.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/source-current-map.json) and [datastore-evidence.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-evidence.json). Source inspection: [current_publication.py:188](C:/dev/ducketz/ml/current_publication.py:188), [artifacts.py:145](C:/dev/ducketz/ml/artifacts.py:145), [runtime_pipeline.py:863](C:/dev/ducketz/ml/runtime_pipeline.py:863), [prediction model identity assignment](C:/dev/ducketz/ml/runtime_pipeline.py:2648), [model manifest construction](C:/dev/ducketz/ml/model_runtime.py:537) and [source digest scope](C:/dev/ducketz/ml/nightly_workflow.py:154).
+
+
+### Available versus usable DATASTORE history
+
+Evidence: [complete audit JSON](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-evidence.json), [4h versus 1h source-calendar audit](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-4h-calendar.json), [supplemental metadata and inventory hashes](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-supplement.json), [read-only audit script](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-audit.py), [table generator](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-tables.py).
+
+All readable instants below use Scout America/Los_Angeles (PDT/PST). Daily raw timestamps encode session labels at 00:00 UTC; their UTC calendar date is shown as a **session label**, never as a decision time. Intraday timestamps identify bar opens. Technical decision times are official/eligible bar end + 5 minutes.
+
+#### Selected operational bar history
+
+Paths follow `C:/DATASTORE/stocks/<symbol>/bars/<timeframe>/databento/normalized/`. Direct filenames are `<symbol>_source_2555d_1d_ohlcv-1d_1d.parquet`, `<symbol>_source_1825d_1h_ohlcv-1h_1h.parquet`, and `<symbol>_source_100d_1m_ohlcv-1m_1m.parquet`; the additional hourly file is `<symbol>_derived_1m_1h.parquet`. Filename request lengths do not establish delivered history. Current raw provider metadata independently reports EQUS.MINI; this metadata is supplemental and is not among the 381 saved-run hash pins.
+
+All selected normalized bars are complete in the inspected normalization path; no duplicate timestamps, invalid/incomplete bars, or exact non-session daily duplicates were removed. Full per-file paths and precise UTC/local ranges are in JSON. The two hourly files have disjoint timestamps; direct plus derived equals consolidated hourly bars.
+
+| Symbol | 1d bars | 1d session labels | 1h direct + derived | 1h bar-open range | 1m bars | 1m bar-open range |
+| --- | --- | --- | --- | --- | --- | --- |
+| DOCU | 888 | 2023-03-28–2026-10-09 | 7,026 + 679 = 7,705 | 2023-03-28 06:00 PDT – 2026-10-09 16:00 PDT | 29,010 | 2026-06-22 06:30 PDT – 2026-10-09 12:59 PDT |
+| DBX | 888 | 2023-03-28–2026-10-09 | 6,334 + 678 = 7,012 | 2023-03-28 06:00 PDT – 2026-10-09 16:00 PDT | 29,659 | 2026-06-22 06:31 PDT – 2026-10-09 12:59 PDT |
+| SDGR | 888 | 2023-03-28–2026-10-09 | 6,536 + 685 = 7,221 | 2023-03-28 06:00 PDT – 2026-10-09 16:00 PDT | 23,971 | 2026-06-22 06:32 PDT – 2026-10-09 12:59 PDT |
+| QBTS | 888 | 2023-03-28–2026-10-09 | 9,224 + 458 = 9,682 | 2023-03-28 07:00 PDT – 2026-10-09 16:00 PDT | 30,808 | 2026-06-22 01:00 PDT – 2026-10-09 12:59 PDT |
+| PYPL | 888 | 2023-03-28–2026-10-09 | 9,043 + 603 = 9,646 | 2023-03-28 05:00 PDT – 2026-10-09 16:00 PDT | 30,585 | 2026-06-22 06:20 PDT – 2026-10-09 13:02 PDT |
+| GLOB | 888 | 2023-03-28–2026-10-09 | 6,432 + 652 = 7,084 | 2023-03-28 06:00 PDT – 2026-10-09 16:00 PDT | 23,050 | 2026-06-22 06:03 PDT – 2026-10-09 12:59 PDT |
+| OUST | 888 | 2023-03-28–2026-10-09 | 7,073 + 596 = 7,669 | 2023-03-28 05:00 PDT – 2026-10-09 16:00 PDT | 26,629 | 2026-06-22 05:41 PDT – 2026-10-09 12:59 PDT |
+| ABCL | 888 | 2023-03-28–2026-10-09 | 6,796 + 566 = 7,362 | 2023-03-28 06:00 PDT – 2026-10-09 16:00 PDT | 27,857 | 2026-06-22 04:39 PDT – 2026-10-09 12:59 PDT |
+| MRNA | 888 | 2023-03-28–2026-10-09 | 8,423 + 499 = 8,922 | 2023-03-28 05:00 PDT – 2026-10-09 16:00 PDT | 30,933 | 2026-06-22 03:00 PDT – 2026-10-09 14:30 PDT |
+| RR | 725 | 2023-11-17–2026-10-09 | 7,040 + 603 = 7,643 | 2023-11-17 08:00 PST – 2026-10-09 16:00 PDT | 16,609 | 2026-06-22 05:06 PDT – 2026-10-09 12:59 PDT |
+| PDYN | 630 | 2024-04-08–2026-10-09 | 5,324 + 622 = 5,946 | 2024-04-08 06:00 PDT – 2026-10-09 16:00 PDT | 20,176 | 2026-06-22 05:29 PDT – 2026-10-09 12:59 PDT |
+
+The hourly and daily source datasets cover much more time than the minute target dataset. Source discovery reads every selected normalized file and deduplicates timestamps; materialization reads the full technical frames. No date-range or rolling lookback truncation was found in the inspected Loop B path. Feature formulas have rolling windows and point-in-time family joins have freshness limits, but those do not truncate the complete source history. `latest_per_symbol` selects prospective forecasts, not training history.
+
+
+The saved input inventory also selects Schwab quote-liquidity and option-quality snapshots; FMP point-in-time fundamentals, fundamental-direction and energy context; SEC corporate-event features; FRED/ALFRED point-in-time macro products; Databento CME context; and derived consensus lifecycle features. These are availability-joined feature products, not extra stock bar histories. Their exact paths and SHA-256 values are in the 381-entry input inventory. Selection does not imply finite training values; measured family coverage follows below.
+
+#### Technical initialization and calendar eligibility
+
+Each market-regime/breakout-pressure pair has exactly aligned keys, FULL mode, and its first emitted history_bars=50. Thus the first 49 bars are absent in both technical outputs. This does not guarantee every feature is finite: change_5 and other rolling/context columns can remain missing. Calendar attachment is a separate filter. The table immediately below reports the **1h route** continuous-source-v2 policy, which accepts full source clock hours in the 04:00–20:00 ET envelope on standard sessions, including the 09:00–10:00 ET crossing, plus eligible regular-session intervals. The **4h route** instead uses standard-extended-source-v1, documented separately below. Daily attachment validates official XNYS sessions and replaces nominal daily end with official close.
+
+| Symbol | Initialized 1h technical rows | 1h-route calendar exclusions | Eligible 1h-route source rows | First 1h decision | Eligible 1d source rows | First daily decision |
+| --- | --- | --- | --- | --- | --- | --- |
+| DOCU | 7,656 | 12 | 7,644 | 2023-04-05 12:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| DBX | 6,963 | 10 | 6,953 | 2023-04-05 13:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| SDGR | 7,172 | 12 | 7,160 | 2023-04-06 07:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| QBTS | 9,633 | 29 | 9,604 | 2023-04-06 09:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| PYPL | 9,597 | 27 | 9,570 | 2023-04-04 11:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| GLOB | 7,035 | 8 | 7,027 | 2023-04-06 07:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| OUST | 7,620 | 15 | 7,605 | 2023-04-05 13:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| ABCL | 7,313 | 9 | 7,304 | 2023-04-06 07:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| MRNA | 8,873 | 24 | 8,849 | 2023-04-05 09:05 PDT | 839 | 2023-06-07 13:05 PDT |
+| RR | 7,594 | 20 | 7,574 | 2023-11-29 10:05 PST | 676 | 2024-01-31 13:05 PST |
+| PDYN | 5,897 | 12 | 5,885 | 2024-04-16 11:05 PDT | 581 | 2024-06-17 13:05 PDT |
+
+Last eligible hourly decision for every symbol in both routes: 2026-10-09 17:05 PDT. Last daily decision: 2026-10-09 13:05 PDT. These are source decisions, not target starts, label counts, or model-training rows. Both intraday routes load the same hourly source files but apply different source-calendar eligibility policies. The named **4h route predicts 180 eligible minutes**, from the next one of four daily checkpoint starts: **07:30, 11:30, 15:30 or 19:30 Eastern**, equivalent to **04:30, 08:30, 12:30 or 16:30 Scout Pacific time**. This is the saved `next-180-eligible-equity-minutes-four-checkpoints-v4` contract. Daily features feed 1d and weekly routes.
+
+The separate selected-column calendar check below verifies **4h-route** eligibility. All additional exclusions versus 1h are 09:00–10:00 Eastern source intervals, which cross the regular-session open and are admitted only by the 1h continuous policy. The 4h route admits regular hourly intervals plus complete hours wholly inside the premarket/postmarket envelopes. These counts are still source decisions, before target-start deduplication, label maturity or partitioning.
+
+| Symbol | Eligible 1h-route rows | Eligible 4h-route rows | Additional 4h exclusions | Total 4h calendar exclusions | First 4h decision |
+| --- | --- | --- | --- | --- | --- |
+| DOCU | 7,644 | 6,771 | 873 | 885 | 2023-04-05 12:05 PDT |
+| DBX | 6,953 | 6,080 | 873 | 883 | 2023-04-05 13:05 PDT |
+| SDGR | 7,160 | 6,287 | 873 | 885 | 2023-04-06 08:05 PDT |
+| QBTS | 9,604 | 8,738 | 866 | 895 | 2023-04-06 09:05 PDT |
+| PYPL | 9,570 | 8,696 | 874 | 901 | 2023-04-04 11:05 PDT |
+| GLOB | 7,027 | 6,154 | 873 | 881 | 2023-04-06 08:05 PDT |
+| OUST | 7,605 | 6,732 | 873 | 888 | 2023-04-05 13:05 PDT |
+| ABCL | 7,304 | 6,431 | 873 | 882 | 2023-04-06 08:05 PDT |
+| MRNA | 8,849 | 7,976 | 873 | 897 | 2023-04-05 09:05 PDT |
+| RR | 7,574 | 6,894 | 680 | 700 | 2023-11-29 10:05 PST |
+| PDYN | 5,885 | 5,315 | 570 | 582 | 2024-04-16 11:05 PDT |
+
+Totals: 1h has 85,175 eligible source rows after 178 calendar exclusions; 4h has 76,074 after 9,279 exclusions. The 4h policy removes another 9,101 rows relative to 1h. Full date ranges, policies and stable saved-input hashes are retained in [datastore-4h-calendar.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-4h-calendar.json).
+
+#### Intraday label coverage and derived bars
+
+The target calendar chooses eligible constituent minutes before price lookup. Native minute OHLC is used when present; a provider-omitted minute can use only a strictly earlier close, never a future observation. Every constituent mark must exist, and the latest **observed minute bar end** must reach the target end. Therefore hourly source history before June 22, 2026 does not by itself yield completed intraday labels. A target starting before the first native minute has no causal prior mark. At the far end, the saved minute datasets reach October 9 13:00 PDT for nine symbols, PYPL 13:03 PDT and MRNA 14:31 PDT; later hourly source decisions can remain incomplete or prospective.
+
+Derived hourly bars are a distinct layer: the fetch/derivation implementation can create sparse hours inside a successfully requested provider coverage range, carrying a strictly prior close through wholly empty eligible hours; consolidation retains derived timestamps only where native bars are absent. This explains why derived hourly source bars can extend beyond the final trade minute while the Loop B minute-label coverage check still stops at the final observed minute bar end. The canonical normalized schema does not preserve per-row native-versus-carried-minute constituent counts; this audit establishes file-level provenance and reads current derivation source, without rebuilding bars or retroactively proving each historical derivation request.
+
+#### Other locally available normalized timeframes
+
+These are current file inventories, not additional Loop B source history. No separate 4h or 1w normalized bar file was found for the selected symbols. The five extra timeframes below are not pinned among this Loop B run’s normalized bar inputs. Counts and full min/max instants for all 99 normalized files are in the evidence JSON; supplemental SHA-256/read stability checks cover each file.
+
+| Symbol | 1s bars | 5m bars | 10m bars | 15m bars | 30m bars |
+| --- | --- | --- | --- | --- | --- |
+| DOCU | 22,857 | 4,851 | 2,011 | 1,143 | 397 |
+| DBX | 32,756 | 5,371 | 2,420 | 1,475 | 582 |
+| SDGR | 20,438 | 2,389 | 696 | 316 | 86 |
+| QBTS | 40,357 | 5,902 | 2,870 | 1,864 | 868 |
+| PYPL | 46,408 | 5,951 | 2,914 | 1,910 | 906 |
+| GLOB | 8,393 | 2,239 | 662 | 303 | 70 |
+| OUST | 15,252 | 3,418 | 1,170 | 593 | 165 |
+| ABCL | 23,689 | 4,003 | 1,509 | 804 | 247 |
+| MRNA | 52,267 | 5,613 | 2,601 | 1,629 | 710 |
+| RR | 5,431 | 767 | 129 | 42 | 1,038 |
+| PDYN | 6,324 | 1,355 | 310 | 122 | 18 |
+
+The seconds files begin September 21, 2026; most derived sub-hour files begin June 22, 2026, with exact symbol/timeframe exceptions and end dates retained in JSON. A larger number of stored bars is not a count of eligible labels or independent samples.
+
+#### Input hashes, separate archive route, and source references
+
+All **381/381** saved manifest input files matched their recorded SHA-256, totaling **126,472,168 recorded bytes**. None was missing or changed during the first/last hash sweep. Consequently these inspected operational inputs are byte-identical to the saved run’s input manifest. Additional raw provider metadata and unselected timeframe inventories are explicitly current supplemental observations, independently hashed; they are not retroactively pinned by the accepted run.
+
+The independent Gameplan archive branch is separate: `nightly_gameplan.py` may load verified **XNAS.ITCH** archive daily/hourly feature sources and minute targets, combine them with operational prior-session sources, build separate independent stock training groups, and exclude archive quality/split boundaries. Those archive histories do not silently expand Loop B’s EQUS.MINI normalized source/label universe. No archive model was trained or archive outcomes scored during this audit.
+
+Source references (current reviewed bytes, hashes retained in evidence):
+
+- [Full source discovery and route loading](C:/dev/ducketz/ml/rolling_materialization.py:184), [4h/1h source cache and minute target selection](C:/dev/ducketz/ml/rolling_materialization.py:224), [technical source loading](C:/dev/ducketz/ml/rolling_materialization.py:418).
+- [Normalized bar discovery](C:/dev/ducketz/technicals/parquet_io.py:115), [timestamp precedence/completion/session cleanup](C:/dev/ducketz/technicals/parquet_io.py:396), [selected-column reader](C:/dev/ducketz/datafetching/bar_schema.py:88).
+- [Technical family alignment and calendar attachment](C:/dev/ducketz/ml/datasets/technical.py:49), [market-regime initialization](C:/dev/ducketz/technicals/calculations/market_regime.py:232), [breakout-pressure initialization](C:/dev/ducketz/technicals/calculations/breakout_pressure.py:368), [intraday calendar policy](C:/dev/ducketz/ml/calendars.py:801).
+- [Minute target coverage and causal marks](C:/dev/ducketz/ml/rolling_samples.py:353), [sparse-hour derivation](C:/dev/ducketz/datafetching/derived_bars.py:80), [provider coverage metadata](C:/dev/ducketz/datafetching/databento_fetch.py:633), [native/derived consolidation](C:/dev/ducketz/datafetching/bar_consolidation.py:41).
+- [Separate archive branch](C:/dev/ducketz/ml/nightly_gameplan.py:242), [independent training groups](C:/dev/ducketz/ml/nightly_gameplan.py:299), [archive feature loader](C:/dev/ducketz/ml/gameplan_archive_features.py:245).
+
+
+### Exact partition behavior and saved-run utilization — October 11, 2026 audit
+
+These observations use Scout's accepted `20261010T045339.610934Z` generation. Counts headed **recorded** come from the JSON model manifests addressed by the saved prediction model names/versions. Those directory identities do not cryptographically pin the model manifests from the directional publication receipt. Reconstruction uses only retained sample identity/status/timestamp columns and saved prediction/evaluation metadata; it does not read, reconstruct or score the removed lockbox outcomes.
+
+The model fits one pooled cross-symbol dataset per horizon (`include_symbol=false`); the eleven symbols are not independently split. A **target-start cluster** means one distinct `target_window_start` across that horizon, regardless of symbol or decision timestamp. A **sample row** means one symbol/decision/target example. Multiple decisions can target the same start, especially intraday. A **raw bar** is an input market interval and is neither of those units. Consequently 40 clusters can contain 946 sample rows; summing nine horizons does not produce independent economic observations. Source: [partition selection](C:/dev/ducketz/ml/model_runtime.py:148), [pooled horizon loop](C:/dev/ducketz/ml/runtime_pipeline.py:439), [model specification](C:/dev/ducketz/ml/model_runtime.py:417).
+
+Partition order is chronological: all older eligible training clusters, calibration, assessment, then the newest fixed budget of eligible lockbox clusters. Training counts are minimum requirements, not a truncation rule. The comments' 4:1:1:2 describe minimum/default budgets, not a universal realized 50%/12.5%/12.5%/25% split. The lockbox is selected anew from current eligible history; it moves when eligibility changes and is not a permanently frozen set. This path makes one split and one assessment per horizon per run, with no repeated cross-validation folds. Source: [defaults](C:/dev/ducketz/ml/model_runtime.py:59), [selection](C:/dev/ducketz/ml/model_runtime.py:201), [fit/calibrate/evaluate](C:/dev/ducketz/ml/model_runtime.py:379).
+
+Only `COMPLETE` labels enter eligibility. Label construction requires positive finite target marks, complete constituent coverage when applicable, and `target_window_end + processing_delay <= materialized_at`. The accepted run's label-maturity clock is its saved run start, **October 9, 2026 21:53:39.610934 PDT**; the separate causal input cutoff is **21:16:47.480957 PDT**. These differ from publication time and from each row's decision or target timestamp. Target-start clusters with compatible prior prospective LIVE predictions are excluded from all offline partitions, across every symbol. Compatibility checks mode/status, horizon, target definition/specification, cost and the information/issuance/actionability clocks; receipt-era prior runs must be in the authoritative publication chain. Source: [maturity](C:/dev/ducketz/ml/rolling_samples.py:276), [run clocks](C:/dev/ducketz/ml/runtime_pipeline.py:318), [prior-LIVE exclusions](C:/dev/ducketz/ml/runtime_pipeline.py:486), [archive validation](C:/dev/ducketz/ml/runtime_pipeline.py:2785), [compatibility](C:/dev/ducketz/ml/runtime_pipeline.py:3309).
+
+Purging requires an earlier partition's target window to **end strictly before** the next partition's first target start. Equality is removed too. If any adjacent clusters overlap, the algorithm works backwards from the lockbox boundary, first finding enough nonoverlapping assessment clusters and then calibration clusters; training takes every remaining earlier eligible row that ends before calibration. This can create gaps. For nonoverlapping targets the fixed chronological cluster selection still checks the training/calibration boundaries. Source: [overlap detection and purging](C:/dev/ducketz/ml/model_runtime.py:204).
+
+The estimator pipeline is fitted only on the training frame: semantic transformations/caps, median imputation (preserving empty columns), 0.25%/99.75% training quantile clipping, robust scaling and missing-value indicators. Platt calibration fits its separate calibration frame; assessment supplies retrospective checks and BACKTEST forecasts. The saved policy explicitly says `fit_partition=training`; source shows pipeline fit on `partitions.train`. Source: [fit](C:/dev/ducketz/ml/model_runtime.py:473), [linear preprocessor](C:/dev/ducketz/ml/models/registry.py:169), [training-fit transformations](C:/dev/ducketz/ml/preprocessing.py:22). This audit verifies source behavior and recorded policy, without loading fitted model objects.
+
+**Recorded budgets and rows, with reconstructed training clusters**
+
+| Horizon | Minimum train clusters | Reconstructed train clusters | Cal / assessment / lockbox cluster budgets | Recorded train rows | Recorded cal rows | Recorded assessment rows | Recorded complete lockbox rows |
+| --- | ---: | ---: | --- | ---: | ---: | ---: | ---: |
+| 1h | 160 | 922 | 40 / 40 / 80 | 21,627 | 946 | 946 | 1,784 |
+| 4h | 128 | 178 | 32 / 32 / 64 | 7,284 | 1,320 | 1,320 | 2,629 |
+| 1d | 252 | 582 | 63 / 63 / 126 | 5,981 | 693 | 693 | 1,386 |
+| 1w | 252 | 578 | 63 / 63 / 126 | 5,937 | 693 | 693 | 1,386 |
+| 1w-d1 | 252 | 581 | 63 / 63 / 126 | 5,970 | 693 | 693 | 1,386 |
+| 1w-d2 | 252 | 582 | 63 / 63 / 126 | 5,981 | 693 | 693 | 1,386 |
+| 1w-d3 | 252 | 582 | 63 / 63 / 126 | 5,981 | 693 | 693 | 1,386 |
+| 1w-d4 | 252 | 582 | 63 / 63 / 126 | 5,981 | 693 | 693 | 1,386 |
+| 1w-d5 | 252 | 581 | 63 / 63 / 126 | 5,970 | 693 | 693 | 1,386 |
+
+**Reconstruction method and limits.** The published samples already lack lockbox clusters, so rerunning the partitioner on them would reserve a different tail and incorrectly move every earlier partition. This audit instead anchored each horizon to the **recorded original lockbox start**, removed COMPLETE retained rows whose target starts occur in the accepted run's saved LIVE evaluation metadata, and selected the fixed assessment/calibration budgets backwards with target-end purging. Saved evaluations join both current forecasts and prior forecasts to the redacted sample view, so their LIVE target metadata supplies an observable proxy for the historical reserved-target set. Fresh current LIVE targets are still incomplete and do not remove any COMPLETE candidates here. The resulting set matches all nine recorded training/calibration/assessment row counts, all nine maximum training **decision** timestamps, both recorded assessment **decision** endpoints, and all 7,117 saved BACKTEST natural identities `(horizon, symbol, decision_timestamp, target_window_start)`. All strict boundary checks pass.
+
+This establishes a coherent recovery of the retained membership, not an immutable list of the exact rows originally fitted. There is no saved training/calibration ID list or membership digest; saved LIVE evaluation metadata is not a separately persisted original exclusion-set receipt, and matching counts/endpoints/assessment IDs need not uniquely identify every historical training row under different unrecorded exclusions. The model manifest attachment limitation also remains. Training-feature coverage below should therefore be read as coverage on this reconciled reconstruction. The membership artifact preserves the zero-based row position and exact sample ID so the measurement can be repeated without repartitioning. Source of evaluation metadata relationship: [redaction and evaluation join](C:/dev/ducketz/ml/runtime_pipeline.py:734).
+
+**Materialization-to-publication reconciliation**
+
+Materialized counts come from the saved run manifest's per-route Pricing gate `sample_rows`, independently agreeing with the saved materialization log total. Published counts/statuses are direct selected-column Parquet observations. Reserved and boundary counts are reconstructed; all-redacted counts are materialized minus published.
+
+| Horizon | Materialized rows | Published rows | Published COMPLETE | Published incomplete | All redacted | Complete lockbox (recorded) | Reserved LIVE COMPLETE | Boundary-purged COMPLETE |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1h | 169,305 | 167,501 | 23,761 | 143,740 | 1,804 | 1,784 | 198 | 44 |
+| 4h | 76,074 | 73,445 | 10,100 | 63,345 | 2,629 | 2,629 | 176 | 0 |
+| 1d | 8,808 | 7,422 | 7,411 | 11 | 1,386 | 1,386 | 44 | 0 |
+| 1w | 8,808 | 7,422 | 7,411 | 11 | 1,386 | 1,386 | 55 | 33 |
+| 1w-d1 | 8,808 | 7,422 | 7,411 | 11 | 1,386 | 1,386 | 55 | 0 |
+| 1w-d2 | 8,808 | 7,422 | 7,400 | 22 | 1,386 | 1,386 | 33 | 0 |
+| 1w-d3 | 8,808 | 7,422 | 7,389 | 33 | 1,386 | 1,386 | 22 | 0 |
+| 1w-d4 | 8,808 | 7,422 | 7,378 | 44 | 1,386 | 1,386 | 11 | 0 |
+| 1w-d5 | 8,808 | 7,422 | 7,367 | 55 | 1,386 | 1,386 | 11 | 0 |
+
+Across these nine horizon datasets, **307,035 materialized − 14,135 redacted = 292,900 published**. Published COMPLETE rows reconcile as **85,628 = 70,712 train + 7,117 calibration + 7,117 assessment + 605 reserved LIVE + 77 boundary-purged**. The remaining **207,272** published rows have incomplete labels. For `1h`, 143,718 published incomplete rows say `complete_target_prices_unavailable` and 22 say `target_window_not_mature`; for `4h`, those counts are 63,290 and 55. Daily/weekly incomplete rows all say `target_window_not_mature` (11, 11, 11, 22, 33, 44 and 55 for `1d`, `1w`, `1w-d1` through `1w-d5`). Historical features alone therefore do not imply label or training availability.
+
+The recorded complete lockbox total is **14,115**, smaller than the **14,135** removed rows by **20**. All twenty arise in `1h`. The source removes **every row whose horizon/target start is in a selected lockbox cluster**, whereas the manifest's lockbox count was calculated over COMPLETE eligible rows only. Thus the count difference is consistent with twenty noncomplete rows sharing closed target starts; their exact identities and specific incomplete-label reason are not recoverable from the retained artifact, and this audit does not reconstruct their outcomes. [Redaction](C:/dev/ducketz/ml/runtime_pipeline.py:2461), [complete-only count](C:/dev/ducketz/ml/model_runtime.py:309).
+
+Saved predictions contain **7,117 BACKTEST + 99 LIVE = 7,216 rows**. Saved evaluations contain **7,117 BACKTEST + 429 LIVE = 7,546 rows**; the LIVE statuses comprise **330 EVALUATED + 99 PENDING**. Evaluation LIVE rows count issued forecasts, whereas the 605 reserved COMPLETE sample rows count *all* decisions/symbols sharing their excluded target starts. These denominators differ, especially with intraday fanout; the numbers are not contradictory. No sample/evaluation outcome or prediction-probability columns were loaded, and no accuracy/loss metric was recalculated for this audit.
+
+**Partition target-start ranges (Pacific local time)**
+
+All cells below describe the first/last **target starts**, not decision timestamps or target-window end timestamps. Train/calibration/assessment membership is reconstructed; lockbox endpoints are recorded. The evidence JSON includes UTC equivalents and target-window-end ranges as well.
+
+| Horizon | Train target starts | Calibration target starts | Assessment target starts | Lockbox target starts (recorded) |
+| --- | --- | --- | --- | --- |
+| 1h | 2026-06-22 04:00 PDT to 2026-09-23 14:00 PDT | 2026-09-23 16:00 PDT to 2026-09-28 13:05 PDT | 2026-09-28 15:00 PDT to 2026-10-01 12:00 PDT | 2026-10-01 13:05 PDT to 2026-10-09 13:05 PDT |
+| 4h | 2026-06-22 04:30 PDT to 2026-08-24 08:30 PDT | 2026-08-24 12:30 PDT to 2026-09-03 08:30 PDT | 2026-09-03 12:30 PDT to 2026-09-16 08:30 PDT | 2026-09-16 12:30 PDT to 2026-10-09 08:30 PDT |
+| 1d | 2023-06-08 06:30 PDT to 2025-10-02 06:30 PDT | 2025-10-03 06:30 PDT to 2026-01-02 06:30 PST | 2026-01-05 06:30 PST to 2026-04-06 06:30 PDT | 2026-04-07 06:30 PDT to 2026-10-09 06:30 PDT |
+| 1w | 2023-06-08 06:30 PDT to 2025-09-26 06:30 PDT | 2025-09-29 06:30 PDT to 2025-12-26 06:30 PST | 2026-01-02 06:30 PST to 2026-04-02 06:30 PDT | 2026-04-06 06:30 PDT to 2026-10-06 06:30 PDT |
+| 1w-d1 | 2023-06-08 06:30 PDT to 2025-10-01 06:30 PDT | 2025-10-02 06:30 PDT to 2025-12-31 06:30 PST | 2026-01-02 06:30 PST to 2026-04-02 06:30 PDT | 2026-04-06 06:30 PDT to 2026-10-06 06:30 PDT |
+| 1w-d2 | 2023-06-09 06:30 PDT to 2025-10-03 06:30 PDT | 2025-10-06 06:30 PDT to 2026-01-05 06:30 PST | 2026-01-06 06:30 PST to 2026-04-07 06:30 PDT | 2026-04-08 06:30 PDT to 2026-10-07 06:30 PDT |
+| 1w-d3 | 2023-06-12 06:30 PDT to 2025-10-06 06:30 PDT | 2025-10-07 06:30 PDT to 2026-01-06 06:30 PST | 2026-01-07 06:30 PST to 2026-04-08 06:30 PDT | 2026-04-09 06:30 PDT to 2026-10-08 06:30 PDT |
+| 1w-d4 | 2023-06-13 06:30 PDT to 2025-10-07 06:30 PDT | 2025-10-08 06:30 PDT to 2026-01-07 06:30 PST | 2026-01-08 06:30 PST to 2026-04-09 06:30 PDT | 2026-04-10 06:30 PDT to 2026-10-09 06:30 PDT |
+| 1w-d5 | 2023-06-14 06:30 PDT to 2025-10-07 06:30 PDT | 2025-10-08 06:30 PDT to 2026-01-07 06:30 PST | 2026-01-08 06:30 PST to 2026-04-09 06:30 PDT | 2026-04-10 06:30 PDT to 2026-10-08 06:30 PDT |
+
+**Partition decision-timestamp ranges (Pacific local time; reconstructed and checked against recorded endpoints where available)**
+
+| Horizon | Training decisions | Calibration decisions | Assessment decisions |
+| --- | --- | --- | --- |
+| 1h | 2026-06-22 02:05 PDT to 2026-09-23 13:05 PDT | 2026-09-23 14:05 PDT to 2026-09-28 12:05 PDT | 2026-09-28 13:05 PDT to 2026-10-01 11:05 PDT |
+| 4h | 2026-06-22 02:05 PDT to 2026-08-24 08:05 PDT | 2026-08-24 09:05 PDT to 2026-09-03 08:05 PDT | 2026-09-03 09:05 PDT to 2026-09-16 08:05 PDT |
+| 1d | 2023-06-07 13:05 PDT to 2025-10-01 13:05 PDT | 2025-10-02 13:05 PDT to 2025-12-31 13:05 PST | 2026-01-02 13:05 PST to 2026-04-02 13:05 PDT |
+| 1w | 2023-06-07 13:05 PDT to 2025-09-25 13:05 PDT | 2025-09-26 13:05 PDT to 2025-12-24 10:05 PST | 2025-12-31 13:05 PST to 2026-04-01 13:05 PDT |
+| 1w-d1 | 2023-06-07 13:05 PDT to 2025-09-30 13:05 PDT | 2025-10-01 13:05 PDT to 2025-12-30 13:05 PST | 2025-12-31 13:05 PST to 2026-04-01 13:05 PDT |
+| 1w-d2 | 2023-06-07 13:05 PDT to 2025-10-01 13:05 PDT | 2025-10-02 13:05 PDT to 2025-12-31 13:05 PST | 2026-01-02 13:05 PST to 2026-04-02 13:05 PDT |
+| 1w-d3 | 2023-06-07 13:05 PDT to 2025-10-01 13:05 PDT | 2025-10-02 13:05 PDT to 2025-12-31 13:05 PST | 2026-01-02 13:05 PST to 2026-04-02 13:05 PDT |
+| 1w-d4 | 2023-06-07 13:05 PDT to 2025-10-01 13:05 PDT | 2025-10-02 13:05 PDT to 2025-12-31 13:05 PST | 2026-01-02 13:05 PST to 2026-04-02 13:05 PDT |
+| 1w-d5 | 2023-06-07 13:05 PDT to 2025-09-30 13:05 PDT | 2025-10-01 13:05 PDT to 2025-12-30 13:05 PST | 2025-12-31 13:05 PST to 2026-04-01 13:05 PDT |
+
+**Reconstructed training contribution by symbol (sample rows)**
+
+Grouped horizon columns have identical counts, not identical rows. Each symbol contributes 86 calibration and 86 assessment rows for `1h`, 120 and 120 for `4h`, and 63 and 63 for every daily/weekly route. Per-symbol all-redacted counts are retained in JSON, but a per-symbol COMPLETE lockbox attribution for `1h` is not inferred from the pooled manifest count.
+
+| Symbol | 1h | 4h | Each of 1d / 1w-d2 / 1w-d3 / 1w-d4 | 1w | Each of 1w-d1 / 1w-d5 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| ABCL | 1,969 | 663 | 582 | 578 | 581 |
+| DBX | 1,963 | 661 | 582 | 578 | 581 |
+| DOCU | 1,963 | 661 | 582 | 578 | 581 |
+| GLOB | 1,963 | 661 | 582 | 578 | 581 |
+| MRNA | 1,971 | 664 | 582 | 578 | 581 |
+| OUST | 1,966 | 662 | 582 | 578 | 581 |
+| PDYN | 1,966 | 662 | 324 | 320 | 323 |
+| PYPL | 1,963 | 661 | 582 | 578 | 581 |
+| QBTS | 1,974 | 666 | 582 | 578 | 581 |
+| RR | 1,966 | 662 | 419 | 415 | 418 |
+| SDGR | 1,963 | 661 | 582 | 578 | 581 |
+
+**Training percentages with explicit denominators**
+
+The first denominator is the comparable row total of recorded train + calibration + assessment + COMPLETE lockbox, excluding incomplete/reserved/purged rows. The second denominator is all materialized rows of that same horizon, including incomplete labels. Neither denominator counts raw bars, independent decisions or unique economic targets.
+
+| Horizon | Training / four recorded partitions | Percent | Training / all materialized rows | Percent |
+| --- | --- | ---: | --- | ---: |
+| 1h | 21,627 / 25,303 | 85.47% | 21,627 / 169,305 | 12.77% |
+| 4h | 7,284 / 12,553 | 58.03% | 7,284 / 76,074 | 9.57% |
+| 1d | 5,981 / 8,753 | 68.33% | 5,981 / 8,808 | 67.90% |
+| 1w | 5,937 / 8,709 | 68.17% | 5,937 / 8,808 | 67.40% |
+| 1w-d1 | 5,970 / 8,742 | 68.29% | 5,970 / 8,808 | 67.78% |
+| 1w-d2 | 5,981 / 8,753 | 68.33% | 5,981 / 8,808 | 67.90% |
+| 1w-d3 | 5,981 / 8,753 | 68.33% | 5,981 / 8,808 | 67.90% |
+| 1w-d4 | 5,981 / 8,753 | 68.33% | 5,981 / 8,808 | 67.90% |
+| 1w-d5 | 5,970 / 8,742 | 68.29% | 5,970 / 8,808 | 67.78% |
+
+Private evidence: [partition-evidence.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/partition-evidence.json), [partition-membership.parquet](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/partition-membership.parquet), and [read-only audit script](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/partition-audit.py). The JSON records input SHA-256 values, sizes and modification timestamps before and after the reads; all twenty inputs remained stable. The membership Parquet SHA-256 is `d51f516d0378ca0ef4d53befd8bc9f3c360a42d2224c69eb4aa22d3b0d7b0d85`. Selected-column reads did not load return values, outcome values, probabilities or fitted objects. These metadata checks are audit evidence, not a rerun or recertification of training.
+
+
+
+### Actual training-feature coverage
+
+The saved run requested `loop-a-all-bsgp-active-v3`, mapping to active-v2 intraday and active-v3 daily/weekly feature sets. Every one of its 99 symbol/horizon Pricing gates failed; the admitted contracts are `loop-a-all-v1-1h`, `loop-a-all-v1-4h`, and `loop-a-all-v3-1d`/`-1w`. Each drops **11 `opx__` Pricing columns**. These are excluded from the estimator, which differs from admitting a column whose training values are all missing. The materialized artifact still has the union of **154 requested columns**; that union is not a per-model feature count.
+
+The table uses the **reconstructed training membership** described above. Requested lists were resolved from the inspected current registry; all nine effective registry semantic contracts and fingerprints match their saved model manifests exactly. Coverage reads retained sample feature values before semantic transformation, imputation or scaling. Nonmissing and finite counts were measured separately and agree for these inspected training values; no nonmissing infinity was found. An observed column has at least one finite value, not necessarily a value on every row.
+
+| Horizon | Reconstructed training rows | Requested → admitted columns | Columns with finite observations | Admitted columns empty throughout |
+| --- | ---: | ---: | ---: | ---: |
+| 1h | 21,627 | 80 → 69 | 28 | 41 |
+| 4h | 7,284 | 80 → 69 | 28 | 41 |
+| 1d | 5,981 | 150 → 139 | 78 | 61 |
+| 1w | 5,937 | 143 → 132 | 78 | 54 |
+| 1w-d1 | 5,970 | 143 → 132 | 78 | 54 |
+| 1w-d2 | 5,981 | 143 → 132 | 78 | 54 |
+| 1w-d3 | 5,981 | 143 → 132 | 78 | 54 |
+| 1w-d4 | 5,981 | 143 → 132 | 78 | 54 |
+| 1w-d5 | 5,970 | 143 → 132 | 78 | 54 |
+
+**Family column counts and admission.** Numbers below are admitted columns in each model contract. A dash means the family is not in that route's contract; “excluded” means requested Pricing features were explicitly quarantined. The same column counts apply to every weekly component, but each has its own reconstructed row membership.
+
+| Family / column prefix | 1h and 4h | 1d | 1w and all components | Training observation |
+| --- | ---: | ---: | ---: | --- |
+| Market regime (`mr__`) | 13 | 13 | 14 | Finite values present where admitted |
+| Breakout pressure (`bp__`) | 13 | 13 | 12 | Finite values present where admitted |
+| Bar shape (`bar__`) | 2 | 3 | 3 | Finite values present where admitted |
+| Weekly technical context (`weekly__`) | — | 3 | 3 | Finite values present where admitted |
+| Technical lifecycle (`life__`) | 5 | 5 | 5 | Selected but entirely empty wherever admitted |
+| Fundamental direction (`fdir__`) | — | 25 | 25 | Finite values present where admitted |
+| Point-in-time fundamental snapshot (`fund__`) | — | 13 | 13 | Selected but entirely empty wherever admitted |
+| Fundamental/technical lifecycle (`ftlife__`) | — | 17 | 17 | Finite values present where admitted |
+| Quote liquidity (`quote__`) | 1 | 1 | — | Selected but entirely empty wherever admitted |
+| Option quality (`opt__`) | 26 | 32 | 29 | Selected but entirely empty wherever admitted |
+| Energy context (`energy__`) | 1 | 1 | — | Selected but entirely empty wherever admitted |
+| ALFRED macro (`macro__`) | — | 4 | 4 | Finite values present where admitted |
+| SEC events (`sec__`) | — | 3 | 3 | Selected but entirely empty wherever admitted |
+| CME context (`cme__`) | 8 | 6 | 4 | Selected but entirely empty wherever admitted |
+| Option Pricing (`opx__`) | excluded | excluded | excluded | Excluded in all nine models |
+
+**Finite coverage in families with observations.** Every percentage is `finite feature cells ÷ (that horizon's reconstructed training rows × its admitted columns in that family) × 100`. The two tables above give the exact row and column denominators. This is cell coverage, not the percentage of complete sample rows. Every admitted family marked entirely empty has **0 finite and 0 nonmissing cells** over that same denominator. Full integer numerators, denominators, row-any/row-all coverage, per-column values and per-symbol breakdowns are in [feature-audit.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/feature-audit.json).
+
+| Horizon | Market regime | Breakout | Bar shape | Weekly context | Fundamental direction | Fund./tech. lifecycle | Macro |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1h | 100.0000% | 100.0000% | 75.3271% | — | — | — | — |
+| 4h | 100.0000% | 100.0000% | 71.6708% | — | — | — | — |
+| 1d | 99.9293% | 99.9293% | 99.9944% | 62.9661% | 97.7509% | 97.4006% | 100.0000% |
+| 1w | 99.9338% | 100.0000% | 99.9944% | 62.6916% | 97.7531% | 99.9564% | 100.0000% |
+| 1w-d1 | 99.9342% | 100.0000% | 99.9944% | 62.8978% | 97.7514% | 99.9566% | 100.0000% |
+| 1w-d2 | 99.9343% | 100.0000% | 99.9944% | 62.9661% | 97.7509% | 99.9567% | 100.0000% |
+| 1w-d3 | 99.9343% | 100.0000% | 99.9944% | 62.9661% | 97.7509% | 99.9567% | 100.0000% |
+| 1w-d4 | 99.9343% | 100.0000% | 99.9944% | 62.9661% | 97.7509% | 99.9567% | 100.0000% |
+| 1w-d5 | 99.9342% | 100.0000% | 99.9944% | 62.8978% | 97.7514% | 99.9566% | 100.0000% |
+
+For example, 1h bar-shape coverage is **32,582 / (21,627 × 2) = 75.3271%**; daily macro coverage is **23,924 / (5,981 × 4) = 100%**. Empty Option Quality (`opt__`) and excluded Option Pricing (`opx__`) have different admission status even though neither supplies observed training values here.
+
+The estimator and its learned preprocessing are fitted on training only. The linear pipeline converts nonfinite values to missing, uses median imputation with `keep_empty_features`, fits clipping/scaling on training and adds missing indicators for every numeric column. Empty columns remain in the contract and are handled by that policy; this audit does not claim they were dropped. Coverage before imputation cannot establish coefficients, sensitivity, predictive importance or model influence. No fitted object was opened.
+
+One separation nuance matters: **Pricing coverage/freshness admission scans the full horizon materialization before partitioning**. It checks feature nonmissingness, joined status and source target timestamps, rather than label outcomes. It is therefore broader than the training-only estimator/preprocessing fit; this audit does not describe the admission gate as training-only or as lockbox scoring.
+
+Sources: [Pricing admission](C:/dev/ducketz/ml/runtime_pipeline.py:446), [pipeline fit on training and calibration prediction](C:/dev/ducketz/ml/model_runtime.py:469), [linear preprocessing construction](C:/dev/ducketz/ml/models/registry.py:155), [training-fit policy](C:/dev/ducketz/ml/preprocessing.py:19). Private evidence: [feature-audit.json](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/feature-audit.json) and [read-only measurement script](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/feature-audit.py).
+
+### Private evidence register and final review
+
+| Evidence | Purpose |
+| --- | --- |
+| [Ownership and original state](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/ownership.json) / [original report bytes](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/report-before.md) | Reviewed bases, exact owned paths, other-writer inventory and history preservation. |
+| [Receipt audit](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/receipt-audit.json) | Current pointer, output/compatibility hashes, model-directory metadata and model byte checks; pin limitations. |
+| [DATASTORE evidence](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-evidence.json) / [supplement](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/datastore-supplement.json) | Saved-input comparison, source-bar inventory, initialization/calendar counts, all additional timeframe ranges and supplemental provider metadata. |
+| [Partition evidence](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/partition-evidence.json) / [membership](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/partition-membership.parquet) | Recorded/reconstructed separation, all-horizon counts, Pacific/UTC decision/target ranges, per-symbol contributions, assessment identity reconciliation and sample-row positions. |
+| [Feature evidence](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/feature-audit.json) | Requested/admitted ordered contracts and finite/nonmissing counts per horizon, family, column and symbol, with explicit denominators. |
+| [Final validation](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/document-validation.json) / [owned append-only diff](C:/dev/ducketz/scratch/loop-b-datastore-audit-20261011/report.diff) | Arithmetic, references, stability, report-prefix preservation and before/after file inventory. |
+
+The remaining evidence limits are substantive: original training identities/exclusion lists were not receipt-pinned; current model manifests are located but not authenticated by the directional receipt; removed lockbox rows remain sealed, preventing exact removed-row identities and some per-symbol attribution; extra provider metadata is a current supplemental observation; and the saved workflow source digest differs from today's working source. The findings establish retained data coverage, a fully reconciled membership reconstruction and measured input availability. They do not rerun training, validate predictive performance or certify runtime deployment.
