@@ -12,7 +12,7 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 
 ## Folder convention
 
-- `scout/`: Scout's observed system configuration and responsibilities.
+- `scout/`: Scout's observed system configuration and responsibilities, including [Scout Loop B](scout/loop-b.md) — October 10, 2026 observed chapter.
 - `atlas/`: Atlas's observed system configuration and responsibilities.
 - Shared explanations and comparison documents can live directly in `system-details/` and link to the relevant PC-specific evidence.
 
