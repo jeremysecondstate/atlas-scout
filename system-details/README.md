@@ -4,6 +4,10 @@ This folder is the shared reference library for Jeremy, Atlas, and Scout. It des
 
 Each PC maintains its own observed configuration under its named folder. Keep the observation date and time zone visible, distinguish intended behavior from installed state, and identify the evidence behind each claim. A shared document is a reference; it does not change either PC's configuration or establish successful runtime operation.
 
+## Atlas observed loops
+
+- [Atlas Loop C and separate stock execution](atlas/loop-c.md) - October 10, 2026 observed chapter.
+
 ## Current references
 
 | Topic | Scout | Atlas |
