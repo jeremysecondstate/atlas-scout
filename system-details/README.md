@@ -9,6 +9,7 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 | Topic | Scout | Atlas |
 | --- | --- | --- |
 | Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
+| Loop A and scheduled tasks | [Scout Loop A](scout/loop-a.md) — October 10, 2026 observed chapter | Atlas chapter to be documented on Atlas |
 
 ## Folder convention
 
