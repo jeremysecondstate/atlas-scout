@@ -9,18 +9,25 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 | Topic | Scout | Atlas |
 | --- | --- | --- |
 | Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
+| Loop A | [Scout reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/31913a790057db85dd41f92bc6741ddc40d75dea/system-details/scout/loop-a.md) — PR #7 | [Atlas reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/bfa2ab9a002c114230ac297c49ae73768c215d40/system-details/atlas/loop-a.md) — PR #8 |
+| Loop B | [Scout reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/d42deafb1504a2eca41de3d4ab59993eb509b1b7/system-details/scout/loop-b.md) — PR #10 | [Atlas reviewed chapter](https://github.com/jeremysecondstate/atlas-scout/blob/8487ccdbe873d7cd307e7e3c9f4e22419f8f08c0/system-details/atlas/loop-b.md) — PR #9 |
+| Loop C | [Scout curated companion](https://github.com/jeremysecondstate/atlas-scout/blob/f648c1d9f6096b53f5c330bb045ecf85bec2a537/system-details/scout/loop-c.md) — PR #12 | [Atlas dated observations and separate stock execution](atlas/loop-c.md) — also retained in PR #11 |
 
-## Planned documentation
+The [shared Loop C design](https://github.com/jeremysecondstate/atlas-scout/blob/f648c1d9f6096b53f5c330bb045ecf85bec2a537/system-details/loop-c.md) and Scout provenance correction belong to [PR #12](https://github.com/jeremysecondstate/atlas-scout/pull/12). Its separate curation is preserved. The pending [Scout scheduling revision](https://github.com/jeremysecondstate/atlas-scout/blob/dc60ac43b959f1a880e243feb69abfa985f5be9c/system-details/scout/scheduled-tasks.md) belongs to PR #6. Immutable links identify prepared work while these PRs remain unmerged; they do not establish local installation.
 
-The nine chapters below are **placeholders, not yet investigated or verified**. Their presence does not establish installed configuration or successful operation. Shared chapters explain common behavior; each PC's companion will provide independently verified local observations.
+## Stats, Gameplan and nightly references
+
+**October 11, 2026 review:** the three shared chapters and Atlas companions are complete in this publication. Scout independently completed its three companions in [PR #13](https://github.com/jeremysecondstate/atlas-scout/pull/13); the links below select those exact reviewed bytes rather than the older main-branch placeholders. Each companion retains its own observation times and evidence limits. Completion of documentation is not proof of current operation or successful trading.
 
 | Topic | Shared explanation (Atlas owner) | Scout evidence (Scout owner) | Atlas evidence (Atlas owner) |
 | --- | --- | --- | --- |
-| Stats and model feedback | [Shared Stats](stats-and-feedback.md) | [Scout Stats](scout/stats-and-feedback.md) | [Atlas Stats](atlas/stats-and-feedback.md) |
-| Gameplan lifecycle | [Shared Gameplan](gameplan.md) | [Scout Gameplan](scout/gameplan.md) | [Atlas Gameplan](atlas/gameplan.md) |
-| Nightly workflow and recovery | [Shared nightly workflow](nightly-workflow.md) | [Scout nightly workflow](scout/nightly-workflow.md) | [Atlas nightly workflow](atlas/nightly-workflow.md) |
+| Stats and model feedback | [Shared Stats](stats-and-feedback.md) — reviewed | [Scout Stats](https://github.com/jeremysecondstate/atlas-scout/blob/8b1ef9d547adbaa8ece26de585ce0ef126c70215/system-details/scout/stats-and-feedback.md) — reviewed PR #13 | [Atlas Stats](atlas/stats-and-feedback.md) — verified local inspection |
+| Gameplan lifecycle | [Shared Gameplan](gameplan.md) — reviewed | [Scout Gameplan](https://github.com/jeremysecondstate/atlas-scout/blob/8b1ef9d547adbaa8ece26de585ce0ef126c70215/system-details/scout/gameplan.md) — reviewed PR #13 | [Atlas Gameplan](atlas/gameplan.md) — verified local inspection |
+| Nightly workflow and recovery | [Shared nightly workflow](nightly-workflow.md) — reviewed | [Scout nightly workflow](https://github.com/jeremysecondstate/atlas-scout/blob/8b1ef9d547adbaa8ece26de585ce0ef126c70215/system-details/scout/nightly-workflow.md) — reviewed PR #13 | [Atlas nightly workflow](atlas/nightly-workflow.md) — verified local inspection |
 
-Use the [documentation handoff prompt](documentation-handoff-prompt.md) to complete the existing files on each PC. Retain these paths and update each placeholder's status only after its evidence and review are complete. Loop C curation remains a separate task; preserve its compatible index changes.
+The [handoff prompt](documentation-handoff-prompt.md) records the original scope and ownership; future work must preserve completed chapters and dated history. Scout's [reviewed handoff](https://github.com/jeremysecondstate/atlas-scout/blob/8b1ef9d547adbaa8ece26de585ce0ef126c70215/messages/scout/2026-10-11-documentation-review.md) records its findings and pending integration boundaries.
+
+Atlas's [dated Loop A history](atlas/atlas-loop-a-2026-10-10.md) now retains the complete portable historical chapter with private detail removed from this proposed edition. Scout's equivalent Loop B correction is in PR #13. Private originals are preserved locally; neither correction erases earlier public Git history or changes main before integration.
 
 ## Folder convention
 
