@@ -1,5 +1,31 @@
 # Atlas: Codex and Ducketz scheduled tasks
 
+## October 11, 2026 — loop/schedule audit at 12:46:17 PDT
+
+Fresh read-only inspection of all **15 full native definitions** and native scheduler rows agrees: **ten ACTIVE and five PAUSED**. The already-installed weekday and custom overnight revisions remain current. This audit makes no native task change. The earlier dated revisions and inventory below are preserved as history; their old daily eligibility, paused supervisors and five-minute native wording do not override this readback.
+
+| Atlas role | Current nominal Pacific schedule | Responsibility |
+| --- | --- | --- |
+| Datastore Catch-up | Monday–Friday 21:05 | Loop A plus configured history prerequisites |
+| Gameplan Stats | Monday–Friday 03:00 | Completed-session Stats; dated 03:00 readiness-risk checkpoint |
+| Model Review Training and Predictions | Monday–Friday 03:00 | Review, then Loop B and separate downstream Gameplan/enrichment stages |
+| Local Gameplan | Monday–Friday 03:00 | Planning after accepted numerical outputs |
+| Ducketz Display and Readiness | Monday–Friday 03:35 | Verification/local handoff; dated 03:35 missed-confirmation checkpoint |
+| Joint Gameplan Handoff and Priority Source Reconciliation | Each Monday–Friday 21:00–23:40 every twenty minutes; Tuesday–Saturday 00:00, 00:20, 00:40 companions | Two logical supervision responsibilities represented by four ACTIVE definitions |
+
+The five preparation roles retain Luna/low; the four night definitions retain Astra/ultra. Trader Representative remains ACTIVE with its existing Monday–Friday 03:55 and 04:05 hourly through 17:05 schedule; five unrelated definitions remain PAUSED. [The current audit report](loop-schedule-alignment-2026-10-11.md) supplies the complete inventory context and nominal-versus-assigned next-run table. Assigned launches can precede or follow a nominal slot; they neither advance the 03:00/03:35 alert gates nor establish a delivered notice.
+
+Pacific means America/Los_Angeles, with PST/PDT. Morning checkpoint eligibility is Monday–Friday; the after-midnight companions use Tuesday–Saturday and retain the preceding operating evening. Friday normally prepares Monday through the application calendar. Original action-date deadlines, fallback/recovery semantics, ownership and completed-session receipts remain intact. Atlas has no native 04:05 Datastore fallback; Scout's times are independently configured.
+
+Routine reconciliation is once per operating evening at the first eligible 21:00 wake, or a later eligible wake in that window, superseding 01:25. The Windows dispatcher still has daily 21:05, five-minute and logon triggers. Cleanup's enabled five-minute/logon registration is separate: its installed exact-five-minute native-cadence guard rejects the two allowlisted original supervisors, and neither companion is allowlisted. This is a documented coverage gap, not evidence that current chats were archived. No cleanup policy changed.
+
+See [Loop A](loop-a.md), [Loop B](loop-b.md) and [nightly workflow](nightly-workflow.md) for executable boundaries. The report records fresh offline validation and its limits; the older source, installation and runtime observations below retain their original scope. No production workflow was run for this audit.
+
+---
+
+## Preserved earlier observations
+
+
 **Latest readback:** October 11, 2026, 01:30:18 PDT; dated clarification below.
 
 **Historical inventory date:** October 10, 2026, approximately 12:00–12:10 p.m. PDT
