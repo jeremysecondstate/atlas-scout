@@ -153,7 +153,7 @@ Exact one-minute **bar readiness**, used by Pricing and Options, is a different 
 
 ## Fitting, calibration, evaluation and publication
 
-1. **Materialize and partition.** Build causal samples/labels, exclude compatible prospective LIVE target starts from offline reuse, then split chronological target clusters into training, calibration, assessment and sealed lockbox. Purge overlapping target windows across boundaries. Current defaults are train/calibration/assessment/lockbox minima of 160/40/40/80 for `1h`, 128/32/32/64 for `4h`, and 252/63/63/126 for daily/weekly. Training includes older eligible clusters beyond those minima. These are cluster requirements, not per-symbol raw row counts. [S4–S6]
+1. **Materialize and partition.** Build causal samples/labels, exclude compatible prospective LIVE target starts from offline reuse, then split chronological target clusters into training, calibration, assessment and sealed lockbox. Purge overlapping target windows across boundaries. Current defaults are a minimum training budget followed by fixed calibration/assessment/lockbox cluster budgets: 160/40/40/80 for `1h`, 128/32/32/64 for `4h`, and 252/63/63/126 for daily/weekly. Training includes older eligible clusters beyond those minima. These are cluster requirements, not per-symbol raw row counts. [S4–S6]
 2. **Fit or reuse.** Models are pooled by horizon across selected symbols, without a symbol feature. A model is reused only when its expected feature/target/cost/partition/input configuration and saved model bytes match. Otherwise fit a new generation; training needs both classes. This is compatibility reuse, not a champion-versus-challenger quality selection. [S6]
 3. **Calibrate separately.** Platt is Atlas's requested method. Calibration uses its own later partition; a single-class calibration window falls back to identity calibration with an explicit status. Nondecreasing-map constraints and the effective method are recorded. Requested Platt does not prove a useful calibrated probability. [S6]
 4. **Assess and infer.** Assessment produces BACKTEST scores and log loss, Brier, accuracy/support and baseline comparisons. Causally eligible current rows produce LIVE raw/calibrated probabilities. Mature receipt-backed LIVE targets are reconciled separately. Sealed lockbox outcomes cannot enter fitting/assessment; current dirty pipeline code removes closed-lockbox sample rows from public samples entirely, a change from the older report's redaction-only description. [S4, S6]
@@ -163,6 +163,8 @@ Exact one-minute **bar readiness**, used by Pricing and Options, is a different 
 Model directories and their compatibility pointer retain reusable fit artifacts separately from the accepted prediction-run pointer. A successful fit or model pointer advance does not prove the entire Loop B run was accepted. No automatic age/count model-retention or historical-run deletion policy was found in the traced Loop B path. Later Gameplan model promotion and champion retention belong to that separate system. [S6, S7, S9]
 
 Loop B records assessment and baseline-comparison metrics but does not require challenger superiority before saving its model or accepting a contract-valid run. Gameplan has its own promotion gate and can retain an accepted champion when a challenger fails. Similarly, the manifest verifier checks output sizes and hashes; it does not establish present provider health or revalidate every original mutable input against the run's old inventory. [S4, S6, S7, S9]
+
+The [October 11 DATASTORE utilization and train/test audit](#datastore-utilization-audit) below adds realized counts, date spans, symbol contributions and measured training-feature coverage for this saved run.
 
 ## Outputs and downstream consumers
 
@@ -408,3 +410,174 @@ Each SHA refers to original local bytes, including line endings. A clean Git cla
 Published Atlas branch `codex/atlas/loop-b-20261010-4d6ada2a`; remote SHA readback exactly matches local commit `8487ccdbe873d7cd307e7e3c9f4e22419f8f08c0`. [PR #9](https://github.com/jeremysecondstate/atlas-scout/pull/9) is OPEN and attached to this chat; no main merge or deployment performed. [Shared chapter](https://github.com/jeremysecondstate/atlas-scout/blob/8487ccdbe873d7cd307e7e3c9f4e22419f8f08c0/system-details/atlas/loop-b.md). Only the sanitized chapter and index row were committed.
 
 [Publication receipt](<C:/dev/ducketz/scratch/loop-b-documentation-20261010/publication-receipt.json>); [final offline checks](<C:/dev/ducketz/scratch/loop-b-documentation-20261010/review-verification.json>); [complete reviewed diff](<C:/dev/ducketz/scratch/loop-b-documentation-20261010/reviewed-shared.diff>). Checks passed for 42 source snapshots, 15 native definitions, 376 workflow source files, 11 frozen runtime evidence files, and preservation of 174 other-writer files. No operational tests were run. Scout's chapter remains for the separate Scout-PC chat confirmed by the user.
+
+<a id="datastore-utilization-audit"></a>
+
+## DATASTORE utilization and train/test audit — October 11, 2026 addendum
+
+**Private local addition.** This follow-up answers how much history reached Loop B's estimator, and which history was held out. It was prepared from source inspection, saved JSON metadata and selected-column/metadata reads of existing Parquet files. It did not fetch data, materialize new samples, fit or load fitted models, score sealed outcomes, run a workflow, change tasks or deploy anything. The October 10 publication receipts above remain historical; this addition has not been published.
+
+The numerical scope is the same accepted Loop B run used above: `20261010T055341.769790Z`, source session October 9 for action date October 12. The current pointer still selected that run when inspected. This is **Loop B only**; separate independent-stock Gameplan training and its archive history are outside these counts.
+
+### What “how much data” means here
+
+Loop B does not fit on everything under `C:/DATASTORE`. It chooses Atlas's eleven configured symbols, Databento and the required normalized bar timeframes, joins the registered causal feature families, builds horizon-specific samples, then selects completed labels and partitions them. The bar loader reads the selected canonical Parquet histories in full; there is no generic last-N-days sampling rule in this fitting path. The earlier 100/1,825/2,555-day figures are producer bootstrap settings, not a rolling Loop B training cutoff.
+
+Four quantities must stay separate: **stored bar rows**, **materialized decision/target sample rows**, **target-start clusters**, and **rows actually passed to estimator fitting**. One bar can contribute to many rolling features or target windows, and one underlying date can appear in several horizon models. A cluster groups every selected symbol and decision row sharing the same `target_window_start`; it is not one raw bar or necessarily one day. Accordingly, dividing fitted rows by every file or row in DATASTORE would not give a meaningful utilization percentage.
+
+### Available input history, tied to the saved run
+
+The bounded input audit inspected 44 canonical bar files and 44 market-regime/breakout-pressure technical files. **All 88 files matched the saved run's input-manifest SHA-256 values**, with stable hashes before and after reading. This supports the following saved-run input inventory, not merely an assumption about today's mutable files. Endpoints describe observed coverage, not uninterrupted completeness.
+
+| Selected input | Physical bar rows | Files | Observed date coverage | Role in Loop B |
+| --- | ---: | ---: | --- | --- |
+| Native `1m` | 494,255 | 11 | May 11–October 9, 2026 for all eleven symbols | Target prices for `1h` and `4h` labels |
+| Canonical `1h` (direct hourly and minute-derived) | 104,521 | 22 | March 28, 2023–October 9, 2026; SNDK begins February 24, 2025 | Feature history for both `1h` and `4h` |
+| Native `1d` | 9,290 | 11 | March 28, 2023–October 9, 2026; SNDK begins February 24, 2025 | Daily/weekly features and target prices |
+
+The canonical hourly total comprises 100,647 direct hourly-source rows plus 3,874 rows in minute-derived hourly files. The two technical families each contain 103,982 hourly and 8,751 daily rows. Their timestamp grids exactly match the corresponding canonical bar grids after the first 49 bars per symbol/timeframe. Those initial bars support indicator initialization but have no standalone feature row. Daily feature history therefore begins June 7, 2023, or May 5, 2025 for SNDK. The total 608,066 canonical bars are inputs at different grains, not 608,066 independent training examples.
+
+Exact per-symbol bar counts, UTC endpoints, technical initialization comparisons and checksums are retained in the [input inventory](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/datastore-analysis/source-inventory.json>) and [readable input analysis](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/datastore-analysis/findings.md>). Archive files appearing as normalized-bar lineage are provenance; Loop B does not concatenate the separate independent-Gameplan archive as additional training history.
+
+### Exact split policy
+
+The split is chronological and pooled by horizon, with one model per horizon across all selected symbols and no symbol-identity feature. Only `COMPLETE` labels enter the offline partitioner. Completion requires valid target prices/constituents and a mature label clock. Compatible prospective LIVE target starts are excluded across symbols before offline partitioning, preserving those forecasts for separate LIVE evaluation.
+
+Working backward through eligible target-start clusters, the partitioner selects the newest lockbox block, then assessment, then calibration, and fits on all remaining older eligible rows. A row whose target touches or crosses the next block's first target start is purged: its end must be strictly earlier than that boundary. With overlapping windows, the algorithm searches farther back to fill the held-out cluster budgets. It fails if the minimum training support or required held-out support cannot be met.
+
+| Horizon | Minimum training clusters | Calibration clusters | Assessment clusters | Lockbox clusters |
+| --- | ---: | ---: | ---: | ---: |
+| `1h` | 160 | 40 | 40 | 80 |
+| `4h` | 128 | 32 | 32 | 64 |
+| `1d`, `1w`, each `1w-d1`…`1w-d5` | 252 | 63 | 63 | 126 |
+
+Only training is a minimum: **all older eligible training clusters are retained**, while the later blocks have fixed selected cluster budgets. The nominal 4:1:1:2 minimum configuration is not an actual fixed 50%/12.5%/12.5%/25% allocation, nor a random 80/20 split.
+
+- Estimator fitting and fitted preprocessing statistics (imputation, clipping and scaling) use training rows only.
+- Probability calibration uses the separate calibration window. A single-class calibration window uses identity/no calibration rather than fitting a calibrator.
+- Assessment produces BACKTEST predictions and metrics; it is not used for estimator fitting or probability calibration.
+- The lockbox is marked `CLOSED_UNTOUCHED_UNSCORED`; its outcomes are not used for fitting or ordinary assessment, and rows at its target starts are removed from the published sample table.
+
+**The lockbox is recalculated for each run and can move as eligible history changes.** It is the newest eligible tail at that time, not a permanent set of dates reserved forever. As more data arrives, older lockbox dates can move into assessment, calibration and eventually training unless separately reserved by the prospective-LIVE rule. This path implements one chronological holdout split per horizon/run, not k-fold or a repeated walk-forward evaluation loop. It holds out later dates from the selected symbol pool, not entire unseen symbols. These protections do not by themselves establish predictive skill or eliminate bias from repeatedly choosing models using assessment results.
+
+Source anchors: [partition selection](<C:/dev/ducketz/ml/model_runtime.py:148>), [horizon pooling and LIVE reservation](<C:/dev/ducketz/ml/runtime_pipeline.py:440>), [label completion](<C:/dev/ducketz/ml/rolling_samples.py:277>), [training-only fit](<C:/dev/ducketz/ml/model_runtime.py:465>), [preprocessing pipeline](<C:/dev/ducketz/ml/models/registry.py:157>) and [published lockbox removal](<C:/dev/ducketz/ml/runtime_pipeline.py:2486>). The three core partition/label/pipeline hashes match the October 10 source snapshots; that does not remove the earlier limitation concerning the historical process's different overall source aggregate. [Exact source notes](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/partition-analysis/notes.md>); [captured source inventory](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/source-and-writer-before.json>).
+
+### Actual rows used by the saved fit
+
+The nine saved model manifests record **79,118 estimator-training rows**, **6,987 calibration rows**, **6,991 assessment rows** and **14,002 completed lockbox rows**. The run materialized **360,637 decision/target sample rows** and published **346,557** after lockbox removal. Training therefore used **21.94% of materialized sample-target rows**. This percentage is not a share of all DATASTORE storage or unique market observations, and the nine horizons reuse underlying history.
+
+The first four numeric columns below are recorded model-manifest counts. The training-cluster column is reconstructed from published samples and the saved split boundaries, with the evidence limits described below. Published sample counts include incomplete labels and other rows not used for fitting; lockbox rows are absent from that published count.
+
+| Horizon | Training rows | Calibration rows | Assessment rows | Completed lockbox rows | Training target clusters | Published sample rows |
+| --- | --- | --- | --- | --- | --- | --- |
+| `1h` | 29,336 | 880 | 880 | 1,732 | 1,297 | 203,056 |
+| `4h` | 10,140 | 1,256 | 1,260 | 2,568 | 259 | 91,946 |
+| `1d` | 5,572 | 693 | 693 | 1,386 | 550 | 7,365 |
+| `1w` | 5,506 | 693 | 693 | 1,386 | 544 | 7,365 |
+| `1w-d1` | 5,561 | 693 | 693 | 1,386 | 549 | 7,365 |
+| `1w-d2` | 5,638 | 693 | 693 | 1,386 | 556 | 7,365 |
+| `1w-d3` | 5,715 | 693 | 693 | 1,386 | 563 | 7,365 |
+| `1w-d4` | 5,792 | 693 | 693 | 1,386 | 570 | 7,365 |
+| `1w-d5` | 5,858 | 693 | 693 | 1,386 | 576 | 7,365 |
+| **Total** | **79,118** | **6,987** | **6,991** | **14,002** | Not additive across horizons | **346,557** |
+
+Assessment rows exactly reconcile to the saved run's 6,991 BACKTEST predictions. Calibration and assessment are separate from the estimator fit. The 24,994 evaluation rows elsewhere in this chapter include additional evaluation activity and must not be substituted for a training/test split count.
+
+### Actual date spans and symbol contributions
+
+**Date-only spans below use Pacific calendar dates (`America/Los_Angeles`).** Training, calibration and assessment columns use decision timestamps; lockbox columns use target-start timestamps, as stored in its manifest. These are different clocks. Spans can contain gaps, particularly dates reserved for prior LIVE predictions. Exact UTC timestamps and per-symbol ranges are retained in the linked audit JSON/CSV.
+
+Training starts and calibration spans are reconstructed; training ends, assessment decision endpoints and lockbox endpoints also match the saved metadata. The reconstruction reproduces every recorded partition row count and every saved BACKTEST assessment identity. It does not replace missing original split-membership records.
+
+| Horizon | Training decisions | Calibration decisions | Assessment decisions | Lockbox target starts |
+| --- | --- | --- | --- | --- |
+| `1h` | 2026-05-08 → 2026-09-23 | 2026-09-23 → 2026-09-28 | 2026-09-28 → 2026-10-01 | 2026-10-01 → 2026-10-09 |
+| `4h` | 2026-05-08 → 2026-08-12 | 2026-08-12 → 2026-08-24 | 2026-08-24 → 2026-09-10 | 2026-09-10 → 2026-10-09 |
+| `1d` | 2023-06-07 → 2025-08-15 | 2025-08-18 → 2025-11-13 | 2025-11-14 → 2026-02-17 | 2026-02-19 → 2026-10-09 |
+| `1w` | 2023-06-07 → 2025-08-07 | 2025-08-11 → 2025-11-06 | 2025-11-12 → 2026-02-12 | 2026-02-18 → 2026-08-18 |
+| `1w-d1` | 2023-06-07 → 2025-08-14 | 2025-08-15 → 2025-11-12 | 2025-11-13 → 2026-02-13 | 2026-02-18 → 2026-08-18 |
+| `1w-d2` | 2023-06-07 → 2025-08-25 | 2025-08-26 → 2025-11-21 | 2025-11-24 → 2026-02-25 | 2026-03-02 → 2026-10-05 |
+| `1w-d3` | 2023-06-07 → 2025-09-04 | 2025-09-05 → 2025-12-03 | 2025-12-04 → 2026-03-06 | 2026-03-12 → 2026-10-06 |
+| `1w-d4` | 2023-06-07 → 2025-09-15 | 2025-09-16 → 2025-12-12 | 2025-12-15 → 2026-03-17 | 2026-03-24 → 2026-10-07 |
+| `1w-d5` | 2023-06-07 → 2025-09-23 | 2025-09-24 → 2025-12-22 | 2025-12-23 → 2026-03-25 | 2026-04-02 → 2026-10-08 |
+
+This makes the practical training age visible: the hourly model was fit through September 23, 2026, the four-hour model through August 12, 2026, and daily/weekly models through dates in August–September 2025. Later available history goes to calibration, assessment, lockbox or prospective-LIVE reservation. A nightly new fit is therefore not the same as fitting the classifier on yesterday's outcome. The intraday training decisions on May 8 can target the next eligible session on May 11; they do not require minute prices before the observed minute-history start.
+
+All non-SNDK daily/weekly training histories start June 7, 2023; SNDK starts May 5, 2025. Per-symbol fitted-row contributions below are reconstructed and reconcile to the recorded horizon totals. “Weekly combined” sums the six models `1w` and `1w-d1`…`1w-d5`; repeated underlying dates count once in each model, so it is not a unique-history count.
+
+| Symbol | `1h` training | `4h` training | `1d` training | Weekly combined training |
+| --- | --- | --- | --- | --- |
+| AAPL | 2,518 | 832 | 550 | 3,358 |
+| AMZN | 2,470 | 812 | 550 | 3,358 |
+| GOOG | 2,381 | 777 | 550 | 3,358 |
+| MU | 2,753 | 969 | 550 | 3,358 |
+| NVDA | 2,755 | 970 | 550 | 3,358 |
+| SNDK | 2,711 | 941 | 72 | 490 |
+| COST | 2,743 | 965 | 550 | 3,358 |
+| CROX | 2,743 | 965 | 550 | 3,358 |
+| PATH | 2,754 | 970 | 550 | 3,358 |
+| TWST | 2,753 | 969 | 550 | 3,358 |
+| IONQ | 2,755 | 970 | 550 | 3,358 |
+| **Total** | **29,336** | **10,140** | **5,572** | **34,070** |
+
+[Full per-symbol/horizon/partition counts and date ranges](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/saved-run-analysis/per-symbol-reconstructed-partitions.csv>); [published sample coverage by symbol/horizon](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/saved-run-analysis/per-symbol-sample-coverage.csv>).
+
+### Where the other sample rows went
+
+The saved published sample table has the following mutually exclusive label/usage accounting. Rows marked “reconstructed” are allocations inferred using the recorded split boundaries and compatible LIVE target starts, not additional counters stored by the original run.
+
+| Published sample category | Rows | Meaning |
+| --- | --- | --- |
+| Estimator training | 79,118 | Recorded model totals; membership reconstructed |
+| Calibration | 6,987 | Separate probability-calibration partition |
+| Assessment | 6,991 | Recorded totals and exact saved BACKTEST identities |
+| Reserved prior-LIVE target starts (reconstructed) | 4,504 | Completed labels excluded from offline fitting/holdouts |
+| Other completed rows at split boundaries (reconstructed) | 162 | Purged overlapping/touching target windows |
+| Incomplete: target prices unavailable | 248,531 | 170,817 hourly plus 77,714 four-hour samples |
+| Incomplete: target not yet mature | 264 | Future/in-progress outcomes unavailable at the run cutoff |
+| **Published samples** | **346,557** | Includes all categories above; excludes closed-lockbox rows |
+
+All 248,531 published rows marked `complete_target_prices_unavailable` have target starts before May 11, 2026 UTC, the observed start date of native minute history; none have target starts on or after that date. This directly explains the large intraday gap between stored hourly history and completed training labels in this run. Older hourly feature rows remain materialized, but their intraday outcomes cannot be labeled from the shorter native-minute history. It does not imply older raw hourly bars are never useful to later rolling features.
+
+Separately, materialized minus published rows is **14,080**. Model metadata records **14,002 completed lockbox rows**; the remaining **78** are additional removed rows (50 hourly and 28 four-hour). The inspected publication code removes *all* sample rows sharing a selected lockbox target start, including incomplete rows, whereas model lockbox counts include eligible completed rows. This accounts for why the two counts differ under that implementation; sealed rows/outcomes were not opened or reconstructed. Do not label 14,080 as the model's completed-lockbox count or count it again inside published samples.
+
+### Which feature data actually entered the model contract
+
+The saved sample table's 154-feature union is broader than each fitted model's feature contract. Saved manifests list **69 semantic input features** for `1h`/`4h`, **139** for `1d`, and **132** for each weekly model. All nine excluded the quarantined `opx__` Pricing family. These are selected input-column counts, not proof that every cell had an observed value, and not the transformed estimator dimension after preprocessing.
+
+Only the ordered registered model-value columns enter the estimator. Non-feature identity, provenance, timestamps and audit fields, plus target/outcome columns, are excluded; registered quality/coverage measures can themselves be model features, such as `opt__quote_coverage` and `fdir__component_coverage`. Auxiliary values must pass causal availability/freshness rules. Missing auxiliary values often remain missing for the training-fitted imputer and missingness indicators, rather than causing the whole sample to be dropped. Mandatory source/authority failures can still fail the route. The coverage table below measures selected training-feature cells; it does not inventory unrelated assets/providers across DATASTORE.
+
+### Observed historical feature coverage in training
+
+Coverage was also measured on the **reconstructed training members**, before preprocessing. Each percentage is finite numeric cells divided by all contracted feature cells for that family/horizon; it is not the fraction of raw provider records consumed or a measure of model influence. `—` means the family is outside that model's contract. Weekly values show the range across its six models; exact row-any, row-all and cell counts are in the evidence.
+
+| Feature family | `1h` finite cells | `4h` finite cells | `1d` finite cells | Weekly finite cells |
+| --- | --- | --- | --- | --- |
+| Market regime (`mr__`) | 100.00% | 100.00% | 99.92% | 99.93% |
+| Breakout pressure (`bp__`) | 100.00% | 100.00% | 99.92% | 100.00% |
+| Bar shape (`bar__`) | 88.26% | 86.02% | 100.00% | 100.00% |
+| Weekly context (`weekly__`) | — | — | 62.46% | 62.11%–63.84% |
+| Technical lifecycle (`life__`) | 14.24% | 0.00% | 0.00% | 0.00% |
+| Fundamental direction (`fdir__`) | — | — | 99.23% | 99.10%–99.23% |
+| Fundamental context (`fund__`) | — | — | 0.00% | 0.00% |
+| Fundamental/technical lifecycle (`ftlife__`) | — | — | 99.22% | 99.99% |
+| Quote liquidity (`quote__`) | 3.98% | 0.00% | 0.00% | — |
+| Options-quality snapshots (`opt__`) | 0.00% | 0.00% | 0.00% | 0.00% |
+| Energy context (`energy__`) | 11.29% | 0.00% | 0.00% | — |
+| Vintage macro (`macro__`) | — | — | 100.00% | 100.00% |
+| SEC events (`sec__`) | — | — | 0.00% | 0.00% |
+| Cross-asset futures (`cme__`) | 0.96% | 0.00% | 0.00% | 0.00% |
+
+The distinction is material: `opt__` options-quality features have **zero observed finite training values in all nine models**, independently of the excluded `opx__` Pricing family. The four-hour model has observed training values only in market-regime, breakout-pressure and bar-shape families. Daily/weekly models have observed technical, fundamental-direction, fundamental/technical-lifecycle and vintage-macro values, but their contracted `life__`, `fund__`, `opt__`, `sec__` and `cme__` families have none in these training windows. A zero here means absent observed values before imputation, not zero transformed columns, an absent model pipeline, or measured zero model influence.
+
+These measurements inherit the training-membership reconstruction limitation. They do not establish why every family is missing, whether live rows have the same coverage, or the predictive value of the nonmissing fields. [Exact training feature-family coverage](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/saved-run-analysis/training-feature-family-coverage.json>); [read-only coverage extraction](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/saved-run-analysis/audit_training_feature_coverage.py>).
+
+### Evidence strength, verification and remaining limits
+
+The accepted run manifest and all six output-file sizes/hashes were checked. The nine model directories are identified by the saved predictions' model name/version; each stored model-file size/hash matches its own model manifest. No fitted model was deserialized. **The accepted run manifest does not pin the model-manifest hashes**, so model counts are recorded metadata at those identified directories, corroborated by the saved-output reconciliation. Observed model-manifest hashes are retained in the audit for future stability checks.
+
+Original model metadata stores aggregate split counts, maximum training decision time, assessment endpoints and lockbox target-start endpoints, but not per-symbol training counts or a training-membership fingerprint. Reconstruction starts from the saved BACKTEST target clusters and lockbox boundary, reserves compatible LIVE target starts visible in saved evaluations, and applies the inspected chronological purge rules to published COMPLETE sample identities. All nine recorded train/calibration/assessment counts, training-through timestamps, assessment endpoints and complete assessment identity sets match. This supports the reconstructed breakdown; it is not a cryptographic proof of original training membership. In particular, repartitioning the lockbox-stripped public samples as if they were the original full sample set would give the wrong split.
+
+The code and saved counts establish chronological separation. Remaining limits include the absence of original exact split-membership records and a comprehensive DATASTORE-wide input/availability inventory. No operational or predictive-performance test was performed to produce this documentation.
+
+Private evidence: [saved-run audit and integrity checks](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/saved-run-analysis/saved-run-audit.json>), [reproducible read-only extraction](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/saved-run-analysis/audit_saved_run.py>), [input extraction](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/datastore-analysis/inventory_sources.py>), [ownership/base record](<C:/dev/ducketz/scratch/loop-b-data-audit-20261011/ownership-before.json>). The addendum and its evidence are private local documentation; they were not submitted to the shared-source queue or exported to GitHub.
