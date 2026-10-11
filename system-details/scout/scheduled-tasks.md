@@ -1,3 +1,24 @@
+# October 11, 2026 — verified Scout schedule correction
+
+**Native update and readback:** October 11, 2026, 12:33–12:34 PDT (America/Los_Angeles). This dated revision supersedes earlier **daily** eligibility statements in the preserved observations below. The five existing preparation/display definitions now use **Monday–Friday**. The change adopts the reviewed [Atlas weekday handoff](https://github.com/jeremysecondstate/atlas-scout/blob/480e531e415518aa3d0f3e7c75788d0d547764dc/messages/atlas/2026-10-11-datastore-weekday-eligibility.md) under Scout's standing local human authorization.
+
+| Scout responsibility | Current nominal Pacific schedule | Loop relationship |
+| --- | --- | --- |
+| DATASTORE CATCH-UP | Monday–Friday 21:05; Monday–Friday 04:05 fallback | Owns Loop A and the broader datastore/history prerequisite. |
+| GAMEPLAN STATS | Monday–Friday 21:05 | Completed-session Stats before substantive model review. |
+| MODEL REVIEW, TRAINING & PREDICTING | Monday–Friday 21:05 | Owns review and a numerical segment containing Loop B plus separate downstream evaluation, prediction publication and enrichment training. |
+| GAMEPLAN | Monday–Friday 21:05 | Separate local trade planning after accepted predictions. |
+| DUCKETZ DISPLAY | Monday–Friday 03:00 and 03:35 | Dependency-dispatched verification/export plus dated readiness-risk and missed-confirmation checkpoints. |
+| GAMEPLAN SYNTHESIS and REPO RECONCILIATION | Each: Monday–Friday 21:00–23:40 every 20 minutes, then Tuesday–Saturday 00:00, 00:20, 00:40 | Two logical responsibilities represented by four existing active definitions; synthesis consumes completed packages, reconciliation supervises source/repair. |
+
+All nine active definitions retain their models, effort, state, native identities, contexts, notification settings and memory. The four paused definitions remain paused. Five schedules and narrow superseding prompt prefixes changed; original prompt text remains intact. DISPLAY's prefix also resolves stale references to five-minute synthesis alert coverage: no synthesis launch is scheduled at or after 01:00, and DISPLAY owns the 03:00/03:35 checks.
+
+Friday evening normally prepares Monday; holidays follow the application exchange calendar. The after-midnight companions retain the preceding operating evening. Morning checkpoint eligibility is **Monday–Friday**, not Tuesday–Saturday. The 04:05 fallback preserves the original 04:00 action-date deadline. The separate Windows dispatcher retains its daily 21:05, five-minute and logon triggers and can continue already eligible unfinished work under existing bounds. These are distinct clocks; weekday Codex eligibility does not disable weekend recovery by that dispatcher.
+
+Read the [current loop/task reconciliation](loop-schedule-alignment-2026-10-11.md) for the seven-step/five-owner breakdown, actual versus nominal next launches, verified preservation, and the separate cleanup/runbook limitations. The [Atlas review prompt](atlas-loop-schedule-review-prompt.md) asks Atlas to verify its own definitions and retain its own checkpoint times. The October 10 source and runtime evidence below remains historical; this correction does not rerun or recertify it.
+
+---
+
 # Scout scheduled tasks — current readback, October 11, 2026
 
 **Read-only observation:** October 11, 2026, **01:59:07 PDT / 08:59:07 UTC**. Times below use **America/Los_Angeles**. Saved definitions and read-only native scheduler rows agree. This refresh changes documentation only and preserves both October 10 observations below.
