@@ -10,6 +10,18 @@ Each PC maintains its own observed configuration under its named folder. Keep th
 | --- | --- | --- |
 | Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
 
+## Planned documentation
+
+The nine chapters below are **placeholders, not yet investigated or verified**. Their presence does not establish installed configuration or successful operation. Shared chapters explain common behavior; each PC's companion will provide independently verified local observations.
+
+| Topic | Shared explanation (Atlas owner) | Scout evidence (Scout owner) | Atlas evidence (Atlas owner) |
+| --- | --- | --- | --- |
+| Stats and model feedback | [Shared Stats](stats-and-feedback.md) | [Scout Stats](scout/stats-and-feedback.md) | [Atlas Stats](atlas/stats-and-feedback.md) |
+| Gameplan lifecycle | [Shared Gameplan](gameplan.md) | [Scout Gameplan](scout/gameplan.md) | [Atlas Gameplan](atlas/gameplan.md) |
+| Nightly workflow and recovery | [Shared nightly workflow](nightly-workflow.md) | [Scout nightly workflow](scout/nightly-workflow.md) | [Atlas nightly workflow](atlas/nightly-workflow.md) |
+
+Use the [documentation handoff prompt](documentation-handoff-prompt.md) to complete the existing files on each PC. Retain these paths and update each placeholder's status only after its evidence and review are complete. Loop C curation remains a separate task; preserve its compatible index changes.
+
 ## Folder convention
 
 - `scout/`: Scout's observed system configuration and responsibilities.
