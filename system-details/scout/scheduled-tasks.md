@@ -1,3 +1,51 @@
+# Scout scheduled-task revision — October 10, 2026
+
+**Revision recorded:** October 10, 2026, 1:35:47 p.m. PDT (2026-10-10T13:35:47-07:00)
+
+**Time zone:** America/Los_Angeles, following PST/PDT.
+
+This human-requested revision supersedes the synthesis and reconciliation schedules in the historical inventory preserved below. Native changes used the supported automation tool and Scout's verified installed coordination release and local profile.
+
+Scout retains **two logical responsibilities**, now represented by **four ACTIVE native definitions**, all using **`gpt-6-astra` / `ultra`**. Each original task keeps its native identity and owns the evening segment; one new companion supplies its after-midnight segment. The overall Ducketz Codex inventory is now 13 definitions: nine active and four paused.
+
+| Native display name | Pacific launch window | Exact next native launch at readback |
+| --- | --- | --- |
+| Scout GAMEPLAN SYNTHESIS | Monday–Friday, every 20 minutes from 21:00 through 23:40 | Monday, October 12, 2026, 21:00:00 PDT (UTC−07:00) |
+| Scout GAMEPLAN SYNTHESIS after midnight | Tuesday–Saturday at 00:00, 00:20 and 00:40 | Tuesday, October 13, 2026, 00:00:00 PDT (UTC−07:00) |
+| Scout REPO RECONCILIATION | Monday–Friday, every 20 minutes from 21:00 through 23:40 | Monday, October 12, 2026, 21:00:00 PDT (UTC−07:00) |
+| Scout REPO RECONCILIATION after midnight | Tuesday–Saturday at 00:00, 00:20 and 00:40 | Tuesday, October 13, 2026, 00:00:00 PDT (UTC−07:00) |
+
+Actual and nominal next-launch timestamps agree. Each responsibility has **12 launches per operating evening**: nine before midnight and three afterward. Friday night continues into Saturday morning; Sunday night is excluded. These definitions launch nothing at or after 01:00. This launch window does not terminate active authorized work.
+
+An operating evening is its Pacific calendar date before midnight; a 00:00, 00:20 or 00:40 wake belongs to the preceding evening. The application still selects its own action date through its existing calendar and workflow rules.
+
+Both segments share the original canonical memory, cursor, claims, locks, receipts and completion identities. Scout bindings and notification intent are preserved. Companions honor existing claims and completed receipts to avoid duplicate work. Evidence records each companion's **actual native task ID and exact native thread/turn**, separately from the preserved logical owner.
+
+Routine reconciliation moves from 01:25 to the **first eligible 21:00 wake, once per operating evening**. A missed first launch is handled at the next eligible wake using existing receipts. After-midnight wakes retain the preceding evening's identity and cannot open another routine cycle.
+
+Scout continues numerical synthesis and its exact Gameplan/Stats handoff to Atlas. The already-active **Scout DUCKETZ DISPLAY** owns 03:00 readiness-risk and 03:35 missed-confirmation alerts through its existing wakes and notification ledger. Existing claims and delivery proofs remain authoritative.
+
+Readback verified status, recurrence, model, effort, context, notification settings and exact next launches. Offline checks covered 3,129 recurrence instances across a year, including weekday boundaries and duplicate prevention. Local IANA timezone checks preserve the wall-clock window through DST:
+
+| Operating evening | First launch | Last launch | Count per responsibility |
+| --- | --- | --- | --- |
+| October 30, 2026 | October 30, 21:00 PDT (UTC−07:00) | October 31, 00:40 PDT | 12 |
+| November 2, 2026 | November 2, 21:00 PST (UTC−08:00) | November 3, 00:40 PST | 12 |
+| March 12, 2027 | March 12, 21:00 PST (UTC−08:00) | March 13, 00:40 PST | 12 |
+| March 15, 2027 | March 15, 21:00 PDT (UTC−07:00) | March 16, 00:40 PDT | 12 |
+
+Windows Pacific Standard Time conversions independently match all four IANA examples; checked times are neither ambiguous nor invalid. Sunday transition hours have no launches. These offline checks do not establish future execution. **No production workflow was run to test scheduling.**
+
+Only the two originals changed and two companions were added. Other Codex definitions and Windows registrations were preserved. **No Atlas Trader Representative or trading startup task was created or modified on Scout.** Atlas retains execution; Jeremy retains trader controls. The historical cleanup cadence limitation and allowlist remain unchanged.
+
+The installed release remains `7bd3da6cd674d78a6aafa01e1d4ecf3fbe66384a`; its manifest and all 29 files were verified. Native and continuity readback: 2026-10-10T13:33:29.224170-07:00. Completion-ID: `20261010T203600Z-scout-evening-window-6f15bb37`. Native IDs, paths, memory and receipts remain private.
+
+---
+
+## Preserved earlier inventory — October 10, 2026, 11:30–11:36 a.m. PDT
+
+The complete inventory below is historical. Apply the dated revision above when assessing the current schedules.
+
 # Scout: Codex and Ducketz scheduled tasks
 
 **Inventory date:** October 10, 2026, approximately 11:30–11:36 a.m. PDT
