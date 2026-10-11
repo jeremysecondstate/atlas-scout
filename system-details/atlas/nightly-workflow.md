@@ -1,5 +1,24 @@
 # Atlas: Nightly workflow and recovery
 
+## October 11, 2026 — current loop/schedule alignment
+
+**Fresh native readback: 12:46:17 PDT, America/Los_Angeles.** All 15 full definitions agree with native database rows, with ten ACTIVE and five PAUSED. The existing weekday and overnight-window handoffs are already installed; this audit changes documentation only. The [current reconciliation report](loop-schedule-alignment-2026-10-11.md) records next nominal/assigned launches, Windows registrations, source boundaries, offline checks and the unresolved cleanup eligibility gap. The earlier saved outcomes and source observations below remain historical evidence rather than a new runtime verification.
+
+Five responsibility owners cover seven steps: DATASTORE `datastore_catchup`; STATS `prepare_stats`; MODEL `model_review` and `train_and_plan`; GAMEPLAN `local_gameplan`; DISPLAY `verify_display` and `local_handoff`. [Loop A](loop-a.md) core completion precedes its configured history tail and separate stock-target history. [Loop B](loop-b.md) is directional generation within the numerical segment, followed by separate Gameplan evaluation/publication and enrichment. Local planning, display, Scout synthesis, Atlas exact-result adoption, repository reconciliation and cleanup remain distinct responsibilities.
+
+Atlas's nominal checkpoints remain **Monday–Friday 21:05 Datastore; 03:00 Stats/Model/Local Gameplan; 03:35 Display**. Stats owns the dated 03:00 readiness-risk alert and Display the dated 03:35 missed-confirmation alert. Assigned launch offsets do not alter those due gates. Dependency dispatch can advance the workflow before a successor's nominal checkpoint without duplicating completed work.
+
+The two night supervisors each retain **Monday–Friday 21:00–23:40 every twenty minutes, plus Tuesday–Saturday 00:00/00:20/00:40 companions**. Friday continues through Saturday 00:40; the companion keeps the prior operating evening and its owner/receipts. Routine reconciliation is once at the first eligible 21:00 wake, superseding 01:25. No new supervisor wake is scheduled at or after 01:00, but the final slot is not a turn-termination deadline.
+
+The application calendar still selects source/action sessions, normally Friday preparation for Monday, and keeps the original action-date 04:00 deadline. The 21:00 supervision opening does not advance the 21:05 preparation kickoff. The Windows dispatcher remains enabled with daily 21:05, five-minute and logon triggers; native weekday eligibility does not disable deterministic inspection/recovery outside those times. Existing calendar, fallback, recovery, ownership and terminal-receipt gates continue to apply.
+
+Cleanup remains enabled on its separate five-minute/logon timer, but its exact-five-minute native-cadence predicate excludes both current twenty-minute originals, and its allowlist excludes both companions. Offline checks establish that gap; no cleanup execution or policy expansion was performed. Earlier five-minute native-task wording and paused-state descriptions are preserved below only within their dated historical context. Fresh offline checks cover source boundaries, calendar cases and the installed predicate; future native DST execution, loaded application modules and new production completion were not established.
+
+---
+
+## Preserved earlier observations
+
+
 **Status: completed Atlas inspection, October 11, 2026.** Saved October 12 action-date preparation and later combined planning exchange are complete at their respective evidence layers. This does not establish a running trader or future schedule success. Read the [shared workflow](../nightly-workflow.md), [Stats](stats-and-feedback.md) and [Gameplan](gameplan.md) chapters for their contracts.
 
 Observations: native definitions **October 11 00:33:50 PDT**, source/configuration **00:34–00:36**, saved outcomes **00:37:35**. Local time is America/Los_Angeles (UTC−07:00 on these dates). The verified coordination profile identifies Atlas; pinned manifest and 29 declared release files match. Application HEAD is `90704d21801f60426493bd6cc650a7fac38d4f61`, with 174 pre-existing working changes preserved. This is not a clean application-deployment assertion. [N1–N4]
