@@ -25,7 +25,7 @@ Use the [documentation handoff prompt](documentation-handoff-prompt.md) to compl
 ## Folder convention
 
 - `scout/`: Scout's observed system configuration and responsibilities.
-- `atlas/`: Atlas's observed system configuration and responsibilities.
+- `atlas/`: Atlas's observed system configuration and responsibilities. See the [Atlas Loop A chapter](atlas/loop-a.md) — October 10, 2026 observation.
 - Shared explanations and comparison documents can live directly in `system-details/` and link to the relevant PC-specific evidence.
 
 Use stable, descriptive Markdown filenames so links survive later updates. Retain dated distinctions when configurations change. Compare logical purpose, schedules, model settings, prerequisites, ownership, and actual outcomes instead of assuming that the two PCs are identical.
