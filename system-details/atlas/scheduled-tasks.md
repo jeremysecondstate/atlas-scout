@@ -1,12 +1,43 @@
 # Atlas: Codex and Ducketz scheduled tasks
 
-**Inventory date:** October 10, 2026, approximately 12:00–12:10 p.m. PDT
+**Latest readback:** October 11, 2026, 01:30:18 PDT; dated clarification below.
+
+**Historical inventory date:** October 10, 2026, approximately 12:00–12:10 p.m. PDT
 
 **Machine:** Atlas (`pc-original`)
 
 **Operating time zone:** America/Los_Angeles
 
 This is Atlas's independently observed chapter of the [Codex–Ducketz system details](https://github.com/jeremysecondstate/atlas-scout/blob/main/system-details/README.md). It describes saved Codex schedules and Windows support tasks on this PC. The inventory was read without launching a Ducketz workflow, contacting a broker or provider, training a model, or changing a task. A registered or active schedule is an opportunity to run; it is not evidence that a particular action date completed.
+
+## October 11 schedule and source clarification
+
+Fresh read-only native evidence at **01:30:18 PDT** confirms 15 Codex definitions, ten ACTIVE and five PAUSED, with exact TOML/native-database agreement. All fifteen definitions and three Windows XML definitions/states still match the earlier October 11 00:33 observation. The October 10 noon inventory and 12:58 revision below remain history; their daily checkpoint wording predates the following weekday correction. [F1, F2]
+
+| Preparation responsibility | Earlier recurrence | Current Pacific recurrence | Recorded settings update, October 10 PDT |
+| --- | --- | --- | --- |
+| Atlas Datastore Catch-up | Daily 21:05 | Monday–Friday 21:05 | 22:19:25 |
+| Atlas Gameplan Stats | Daily 03:00 | Monday–Friday 03:00 | 22:20:46 |
+| Atlas Model Review Training and Predictions | Daily 03:00 | Monday–Friday 03:00 | 22:20:46 |
+| Atlas Local Gameplan | Daily 03:00 | Monday–Friday 03:00 | 22:20:46 |
+| Atlas Ducketz Display and Readiness | Daily 03:35 | Monday–Friday 03:35 | 22:20:46 |
+
+Those update times are saved-definition metadata, not launch times. The before/after records show recurrence, a narrow prompt clarification and update timestamp changed; ACTIVE status, `gpt-6-luna` / low and other fields were retained. Their wall times did not move. The separate structured reviewer remains Astra/high. [F1, F3]
+
+Handoff/source supervision retains the 12:58 revision: ACTIVE Astra/ultra, Monday–Friday 21:00–23:40 every twenty minutes, plus Tuesday–Saturday 00:00/00:20/00:40 companions. Trader Representative remains ACTIVE Sol/ultra, Monday–Friday 03:55, then 04:05 hourly through 17:05; its last wake audits the closed session. This readback does not establish guarded-launcher installation or worker execution. Full current relationships are in [Atlas nightly workflow](nightly-workflow.md). [F1]
+
+The installed supervision guide's older **five-minute native-task** wording predates the native revisions. The separate Windows dispatcher still has its five-minute timer, 21:05 and logon triggers; it remains enabled/Ready, as does cleanup. The historical Windows stock-session task remains disabled. A final scheduled wake does not terminate a running turn or extend the workflow deadline. Pacific intent is corroborated by prompts/configuration and native epochs; recurrence strings omit `TZID`. Windows uses its DST-aware Pacific zone. No future DST transition or scheduled launch was tested. [F1, F2]
+
+**Schedule revisions do not explain the two Python-reader hash differences reported earlier.** Those differences match the separate reviewed UI change that preserves accepted Gameplan history while the intended combined plan is pending and exposes Stats' saved no-history coverage reason. A later saved dependency-transition addendum accounts for those exact reader bytes. See the [dated source/verification follow-up](nightly-workflow.md#october-11-follow-up-scheduling-versus-reader-verification) for the verified bindings and unavailable original detailed-review file. The original baseline mismatch remains historical evidence, not an unexplained current schedule fault. [F4]
+
+| Ref | Evidence inspected on October 11 | Scope |
+| --- | --- | --- |
+| F1 | Saved TOMLs and read-only native DB at 01:30:18; comparison at 01:31:14 | Actual task state, recurrence, models and preserved identities; not runtime success |
+| F2 | Three Windows XML/state exports at 01:30:18; comparison at 01:31:14 | Registrations unchanged from 00:33; no invocation |
+| F3 | Retained October 10 weekday before/after records, inspected 01:31 | Exact changed fields and original update clocks; [sanitized weekday notice](../../messages/atlas/2026-10-11-datastore-weekday-eligibility.md) supplies historical context |
+| F4 | Exact reader-source comparison 01:30:03 and saved transition audit 01:31:59 | Separate code/verification evidence, detailed in the linked companion; no fresh supervisor run |
+
+This clarification changes documentation only. Native IDs, original definitions, bindings and detailed receipts remain in Atlas's dated private evidence.
 
 ## October 10 scheduling revision (12:58 p.m. PDT)
 
