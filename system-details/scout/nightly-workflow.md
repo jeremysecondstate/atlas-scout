@@ -1,36 +1,20 @@
-# Scout: Nightly workflow and recovery
+# Scout: Nightly responsibilities
 
-> **Status: Placeholder — not yet investigated or verified.** The folder name is an editorial assignment, not proof of machine identity or operating responsibility.
+Current operating direction: October 13, 2026. Use Scout's existing native schedules, installed Python/runtime paths, private datastore and local symbol profile. Do not copy Atlas's bindings or invent a new schedule.
 
-Content owner: Scout. Start with the [shared explanation](../nightly-workflow.md); document only independently verified Scout observations here.
+| Responsibility | Completed work |
+| --- | --- |
+| Local preparation | Finish the existing data, Stats, model, prediction and local Gameplan work for the intended action date. |
+| Gameplan contribution | Publish Scout's real research output to the existing private Gameplan exchange. |
+| Combined Gameplan | Synthesize Atlas and Scout Gameplans, calculate actual cash/share quantities using the available saved basis, then deliver to Atlas; delivery completes the handoff. |
+| Local 15-minute preparation | Independently prepare Scout's saved local 15-minute binding for a human manual start. Its outcome never gates Gameplan. |
+| Notifications | Report meaningful completion, concrete faults and recovery without duplicate acknowledgments. |
+| Source coordination | Carry out owned source handoffs/publication through the separate reviewed GitHub procedure. |
 
-## Identity, authority and evidence scope
+Every assigned preparation and recovery action above is already authorized. Do not insert a new approval, verification, compatibility or reciprocal-acceptance stage. Use actual calculation inputs and keep real source/action dates and creation times. Continue authorized repair of genuine missing-input or worker failures while preserving usable completed work and healthy workers.
 
-TODO: Record verified actor, observation time/time zone, source revision/working-byte identity and evidence limits. Keep exact bindings, symbols, native IDs and receipt references in a private local report.
+Scout uses its installed broker-local executor and own `intraday/scout` books. `python -B -m ml.intraday.scout_prestart` is an optional offline diagnostic, not a nightly or manual-start approval gate. The existing broker supplies account identity at the human manual start; no Gameplan configuration, peer state or legacy-ledger migration is required.
 
-## Local stage ownership and dependencies
+Jeremy manually starts trading. Nightly responsibilities never start/restart traders, enable controls or place/cancel orders to test readiness. Existing internet, authenticated GitHub and private Drive/CODEXSTORE are sufficient; no VPN, LAN/private gateway or shared broker authority is needed.
 
-TODO: Verify Scout's actual stage order, local/peer prerequisites, calendars, deadlines, dispatchers and supervision responsibilities.
-
-## Installed task relationships
-
-TODO: Add a sanitized table of task purpose, status, recurrence/time zone, model/effort where applicable, entry point and timestamped native evidence. Separate ordinary recurrence, recovery heartbeats and completion follow-ups.
-
-## Saved outcomes, recovery and completion
-
-TODO: Trace existing evidence through stage completion, retries/resume, publication, handoff and downstream readiness. Distinguish a scheduled wake or live worker from a completed workflow; do not launch work to test recovery.
-
-## History, discrepancies and unknowns
-
-TODO: Preserve dated observations, distinguish source/configuration/process/outcome evidence and state unavailable or unverified links.
-
-## Evidence index and review
-
-TODO: Add sanitized citations and review scope. No evidence or publication review has been completed for this chapter.
-
-## Related references
-
-- [Scout scheduled tasks](scheduled-tasks.md)
-- [Scout Stats](stats-and-feedback.md)
-- [Scout Gameplan](gameplan.md)
-- [System details index](../README.md)
+See [shared nightly work](../nightly-workflow.md), [Scout's task responsibilities](scheduled-tasks.md), [notifications](../../coordination/runbooks/nightly-notifications.md) and [historical inventories](../history.md). This page specifies current responsibilities without asserting a fresh native registration or process observation.

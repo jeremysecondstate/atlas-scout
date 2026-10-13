@@ -1,35 +1,29 @@
-# Nightly workflow and recovery
+# Nightly workflow
 
-> **Status: Placeholder — not yet investigated or verified.** This scaffold contains no findings about installed configuration or saved runtime outcomes.
+Current operating policy: October 13, 2026. Complete nightly preparation under the existing standing authority and native schedules. No additional approval, verification ceremony or cross-trader prerequisite is required.
 
-Content owner: Atlas. Scope: shared, source-backed explanation. Local evidence belongs in the [Atlas companion](atlas/nightly-workflow.md) and [Scout companion](scout/nightly-workflow.md).
+## Work on each PC
 
-## Purpose and completion boundary
+1. Complete the existing local data, Stats, model, prediction and local Gameplan work for the intended action date.
+2. Publish that PC's Gameplan research contribution through the existing private exchange.
+3. On Scout, combine the Atlas and Scout Gameplans and perform actual cash/share math using their available balances or latest saved basis. Send the completed result to Atlas; delivery completes the handoff. A third fresh snapshot and an Atlas acceptance message are not required.
+4. Separately prepare that PC's own 15-minute trader for manual start. This task reads only the PC's own saved 15-minute binding and local symbol profile. It is not a Gameplan dependency, and a failure is reported independently.
+5. Report meaningful outcomes through existing notifications. Jeremy manually starts each trader when desired.
 
-TODO: Define the workflow's start, dependencies and end-to-end completion criteria. Distinguish local preparation, peer exchange, accepted publication and downstream readiness.
+## Recovery and dates
 
-## Stage order and responsibility
+Keep real source/action dates, information cutoffs and creation times. Reuse usable completed work and the existing run identity after an interruption; do not duplicate healthy work or backdate a late output. Continue authorized repairs for actual faults without another permission request. A late finish remains a late finish; the notification checkpoints do not prohibit it.
 
-TODO: Add a source-backed stage diagram. Separate deterministic dispatchers, scheduled model tasks, numerical workers, handoffs and manual responsibilities. Link to the Stats and Gameplan chapters instead of duplicating their internals.
+Use America/Los_Angeles and the existing trading-session calendar. Native recurrence and local paths belong to each PC's saved configuration; a shared document does not invent a new schedule or overwrite the peer's bindings.
 
-## Calendars, availability and deadlines
+## Communication and boundaries
 
-TODO: Explain session/action-date selection, information cutoffs, availability clocks, Pacific time/DST, late starts and closed-market behavior.
+Existing internet, authenticated GitHub and private Drive/CODEXSTORE connections are enough. Use GitHub for routine coordination and CODEXSTORE for authorized private Gameplan packages. Do not create a VPN, LAN requirement, private gateway, shared trading ledger or distributed reservation service.
 
-## Ownership, checkpoints and recovery
+Source ownership, tests, immutable publication records and private-data rules remain in the separate [coordination procedure](../coordination/README.md). They do not add nightly acceptance stages. A source handoff is not a trading command.
 
-TODO: Verify locks, single-writer controls, checkpoint identities, bounded retries, interrupted workers, stale ownership, repair/resume transitions and their limits.
-
-## Outputs and downstream completion
-
-TODO: Summarize handoff artifacts, acceptance and display checks. Distinguish a wake, launch, live process, completed stage, accepted publication and completed workflow.
-
-## Evidence index and history
-
-TODO: Cite source revision/working-byte identity, observation time and evidence scope for each material claim. Contrast current definitions with historical monolithic workflows; no evidence has been reviewed for this chapter yet.
-
-## Related chapters
-
-- [Stats and model feedback](stats-and-feedback.md)
 - [Gameplan lifecycle](gameplan.md)
-- [System details index](README.md)
+- [Independent 15-minute preparation](intraday.md)
+- [Atlas responsibilities](atlas/nightly-workflow.md)
+- [Scout responsibilities](scout/nightly-workflow.md)
+- [Notification runbook](../coordination/runbooks/nightly-notifications.md)
