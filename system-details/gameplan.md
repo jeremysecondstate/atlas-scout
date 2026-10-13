@@ -1,35 +1,31 @@
 # Gameplan lifecycle
 
-> **Status: Placeholder — not yet investigated or verified.** This scaffold contains no findings about installed configuration or saved runtime outcomes.
+Operating policy updated October 13, 2026. [The standing human direction](../coordination/independent-traders.md) defines a combined Atlas–Scout Gameplan and three independent traders.
 
-Content owner: Atlas. Scope: shared, source-backed explanation. Local evidence belongs in the [Atlas companion](atlas/gameplan.md) and [Scout companion](scout/gameplan.md).
+## Research and synthesis
 
-## Purpose and boundary
+Atlas and Scout each perform their established local data, Stats, model and prediction work for their own research symbols. Their Gameplan contributions are the only cross-PC trading-plan inputs. Atlas combines those contributions, using its own Gameplan account/planning inputs where required, and publishes the combined Gameplan and associated views.
 
-TODO: Explain forecasts, planning estimates, frozen intents and account-aware planning. Distinguish accepted planning from execution authorization and actual execution.
+The combined Gameplan covers the existing Gameplan symbol universe and horizons. Its forecasts, intended quantities, planning prices and Stats are planning records. Actual orders and fills appear only after Jeremy manually starts Atlas's combined Gameplan trader.
 
-## Accepted inputs and applicability
+## Automatic publication
 
-TODO: Identify upstream dependencies, direct versus indirect lineage, horizons, cutoffs, source identities, hashes, freshness and applicability checks.
+Nightly preparation, exchange and synthesis are permanently authorized. Publish the completed result directly; do not wait for another human approval, reciprocal acceptance, loaded-code attestation, extra verification task, source-PR state or a 15-minute readiness result.
 
-## Preparation, synthesis and adoption
+Both real research contributions are calculation inputs. If either is genuinely unavailable, preserve completed work, identify the missing input and continue the existing authorized recovery. Do not fabricate a contribution or turn missing data into an approval request.
 
-TODO: Add a source-backed stage diagram covering local preparation, producer packages, cross-PC synthesis, publication, acceptance and local adoption. Verify each actor's responsibility rather than inferring it from this scaffold.
+## Independent execution
 
-## Outputs and downstream consumers
+Atlas's Gameplan trader uses only its own plan, control, orders, fills and ledger. It does not inspect either 15-minute trader's process, configuration, data, ledger, reservations or health. The 15-minute systems have no Gameplan synthesis role and no reciprocal execution dependency.
 
-TODO: Summarize artifacts, acceptance rules, Stats links, displays and trader consumers. Keep private account/financial packets out of this shared chapter.
+On a manual start, the Gameplan trader handles current broker capacity, its own exact orders and its own logging. Preparation does not activate it. Existing account connectivity is sufficient; no shared execution service or new network is needed.
 
-## Failure, recovery and limitations
+## Evidence and history
 
-TODO: Verify stale/missing inputs, conflicting publications, duplicate prevention and recovery behavior. Separate a completed component from a completed downstream workflow.
+Source review/tests and source-publication privacy rules remain separate engineering responsibilities. Describe prepared, published, installed and running outcomes accurately; this policy page is not a claim about either PC's current process state.
 
-## Evidence index and history
-
-TODO: Cite source revision/working-byte identity, observation time and evidence scope for each material claim. Preserve prior observations as labeled history; no evidence has been reviewed for this chapter yet.
-
-## Related chapters
-
-- [Stats and model feedback](stats-and-feedback.md)
-- [Nightly workflow and recovery](nightly-workflow.md)
-- [System details index](README.md)
+- [Atlas Gameplan](atlas/gameplan.md)
+- [Scout Gameplan contribution](scout/gameplan.md)
+- [Nightly workflow](nightly-workflow.md)
+- [Independent 15-minute systems](intraday.md)
+- [Historical records](history.md)

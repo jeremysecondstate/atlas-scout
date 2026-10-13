@@ -1,33 +1,24 @@
 # Codex–Ducketz system details
 
-This folder is the shared reference library for Jeremy, Atlas, and Scout. It describes how Codex, scheduled tasks, Ducketz, and the two PCs work together.
+This library describes the permanent October 13, 2026 operating direction and its source/installation evidence. [The standing policy](../coordination/independent-traders.md) is current: Atlas synthesizes the two Gameplan research contributions; Atlas's Gameplan trader and each PC's own 15-minute trader operate independently. Nightly preparation is already authorized. Jeremy manually starts trading.
 
-Each PC maintains its own observed configuration under its named folder. Keep the observation date and time zone visible, distinguish intended behavior from installed state, and identify the evidence behind each claim. A shared document is a reference; it does not change either PC's configuration or establish successful runtime operation.
+## Current operating references
 
-## Current references
-
-| Topic | Scout | Atlas |
-| --- | --- | --- |
-| Ducketz scheduled tasks | [Scout scheduled tasks](scout/scheduled-tasks.md) — October 10, 2026 snapshot | [Atlas scheduled tasks](atlas/scheduled-tasks.md) — October 10, 2026 snapshot |
-
-## Planned documentation
-
-The nine chapters below are **placeholders, not yet investigated or verified**. Their presence does not establish installed configuration or successful operation. Shared chapters explain common behavior; each PC's companion will provide independently verified local observations.
-
-| Topic | Shared explanation (Atlas owner) | Scout evidence (Scout owner) | Atlas evidence (Atlas owner) |
+| Topic | Shared | Atlas | Scout |
 | --- | --- | --- | --- |
-| Stats and model feedback | [Shared Stats](stats-and-feedback.md) | [Scout Stats](scout/stats-and-feedback.md) | [Atlas Stats](atlas/stats-and-feedback.md) |
-| Gameplan lifecycle | [Shared Gameplan](gameplan.md) | [Scout Gameplan](scout/gameplan.md) | [Atlas Gameplan](atlas/gameplan.md) |
-| Nightly workflow and recovery | [Shared nightly workflow](nightly-workflow.md) | [Scout nightly workflow](scout/nightly-workflow.md) | [Atlas nightly workflow](atlas/nightly-workflow.md) |
+| Gameplan | [Lifecycle](gameplan.md) | [Atlas role](atlas/gameplan.md) | [Scout contribution](scout/gameplan.md) |
+| Nightly work | [Workflow](nightly-workflow.md) | [Atlas responsibilities](atlas/nightly-workflow.md) | [Scout responsibilities](scout/nightly-workflow.md) |
+| 15-minute trading | [Independent systems](intraday.md) | [Atlas local trader](atlas/intraday.md) | [Scout local trader](scout/intraday.md) |
+| Scheduled tasks | [Notification behavior](../coordination/runbooks/nightly-notifications.md) | [Atlas tasks](atlas/scheduled-tasks.md) | [Scout tasks](scout/scheduled-tasks.md) |
+| Stats and feedback | [Shared research chapter](stats-and-feedback.md) | [Atlas research chapter](atlas/stats-and-feedback.md) | [Scout research chapter](scout/stats-and-feedback.md) |
+| Loop C | — | [Atlas Loop C](atlas/loop-c.md) | [Scout Loop C](scout/loop-c.md) |
 
-Use the [documentation handoff prompt](documentation-handoff-prompt.md) to complete the existing files on each PC. Retain these paths and update each placeholder's status only after its evidence and review are complete. Loop C curation remains a separate task; preserve its compatible index changes.
+The Stats chapters remain research scaffolds where labeled; they add no new nightly approval requirement. Dated Loop A/Loop B investigations remain source/history references under each PC's folder. [The history index](history.md) identifies their archival scope and retains the previous native schedule observations.
 
-## Folder convention
+## Maintaining this library
 
-- `scout/`: Scout's observed system configuration and responsibilities.
-- `atlas/`: Atlas's observed system configuration and responsibilities.
-- Shared explanations and comparison documents can live directly in `system-details/` and link to the relevant PC-specific evidence.
+Update operative instructions in place when the human changes the architecture. Do not stack a new disclaimer above old contradictory instructions. Preserve dated observations and original messages/receipts as history. Keep current policy, actual installation evidence and actual process outcomes distinct; a shared document is not proof of peer installation or worker liveness.
 
-Use stable, descriptive Markdown filenames so links survive later updates. Retain dated distinctions when configurations change. Compare logical purpose, schedules, model settings, prerequisites, ownership, and actual outcomes instead of assuming that the two PCs are identical.
+Source ownership, relevant tests and privacy/publication review are separate from the nightly business workflow. They must not become cross-trader verification, reciprocal acceptance, network or approval prerequisites. Use existing internet, GitHub and private Drive/CODEXSTORE connections.
 
-Keep credentials, account state, private financial packets, raw data, databases, fitted models, full native task definitions, machine bindings, task memory, and receipts in their existing private locations. Publish a reviewed description or sanitized evidence summary here. See the [coordination operating rules](../coordination/README.md) for ownership and publication boundaries.
+Follow the [documentation maintenance prompt](documentation-handoff-prompt.md) and [coordination rules](../coordination/README.md). Keep private account values, native IDs, exact local bindings, databases and task memory out of this library.

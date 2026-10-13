@@ -1,36 +1,20 @@
-# Atlas: Nightly workflow and recovery
+# Atlas: Nightly responsibilities
 
-> **Status: Placeholder — not yet investigated or verified.** The folder name is an editorial assignment, not proof of machine identity or operating responsibility.
+Current operating direction: October 13, 2026. Use Atlas's existing native schedules, installed Python/runtime paths, private datastore and local symbol profile. Do not copy Scout's bindings or invent a new schedule.
 
-Content owner: Atlas. Start with the [shared explanation](../nightly-workflow.md); document only independently verified Atlas observations here.
+| Responsibility | Completed work |
+| --- | --- |
+| Local preparation | Finish the existing data, Stats, model, prediction and local Gameplan work for the intended action date. |
+| Gameplan contribution | Publish Atlas's real research output to the existing private Gameplan exchange. |
+| Combined Gameplan | Combine Atlas and Scout contributions locally and publish the combined Gameplan immediately when the inputs are available. |
+| Local 15-minute preparation | Independently prepare Atlas's saved local 15-minute binding for a human manual start. Its outcome never gates Gameplan. |
+| Notifications | Report meaningful completion, concrete faults and recovery without duplicate acknowledgments. |
+| Source coordination | Carry out owned source handoffs/publication through the separate reviewed GitHub procedure. |
 
-## Identity, authority and evidence scope
+Every assigned preparation and recovery action above is already authorized. Do not insert a new approval, verification, compatibility or reciprocal-acceptance stage. Use actual calculation inputs and keep real source/action dates and creation times. Continue authorized repair of genuine missing-input or worker failures while preserving usable completed work and healthy workers.
 
-TODO: Record verified actor, observation time/time zone, source revision/working-byte identity and evidence limits. Keep exact bindings, symbols, native IDs and receipt references in a private local report.
+Normal independent 15-minute preparation uses `python -B -m tools.prepare_independent_intraday --nightly` with Atlas's own datastore/profile/watchlist arguments. It uses the existing local binding and does not read Gameplan state, the peer's state or legacy ledgers. Do not run a migration each night.
 
-## Local stage ownership and dependencies
+Jeremy manually starts trading. Nightly responsibilities never start/restart traders, enable controls or place/cancel orders to test readiness. Existing internet, authenticated GitHub and private Drive/CODEXSTORE are sufficient; no VPN, LAN/private gateway or shared broker authority is needed.
 
-TODO: Verify Atlas's actual stage order, local/peer prerequisites, calendars, deadlines, dispatchers and supervision responsibilities.
-
-## Installed task relationships
-
-TODO: Add a sanitized table of task purpose, status, recurrence/time zone, model/effort where applicable, entry point and timestamped native evidence. Separate ordinary recurrence, recovery heartbeats and completion follow-ups.
-
-## Saved outcomes, recovery and completion
-
-TODO: Trace existing evidence through stage completion, retries/resume, publication, handoff and downstream readiness. Distinguish a scheduled wake or live worker from a completed workflow; do not launch work to test recovery.
-
-## History, discrepancies and unknowns
-
-TODO: Preserve dated observations, distinguish source/configuration/process/outcome evidence and state unavailable or unverified links.
-
-## Evidence index and review
-
-TODO: Add sanitized citations and review scope. No evidence or publication review has been completed for this chapter.
-
-## Related references
-
-- [Atlas scheduled tasks](scheduled-tasks.md)
-- [Atlas Stats](stats-and-feedback.md)
-- [Atlas Gameplan](gameplan.md)
-- [System details index](../README.md)
+See [shared nightly work](../nightly-workflow.md), [Atlas's task responsibilities](scheduled-tasks.md), [notifications](../../coordination/runbooks/nightly-notifications.md) and [historical inventories](../history.md). This page specifies current responsibilities without asserting a fresh native registration or process observation.
