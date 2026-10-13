@@ -1,6 +1,6 @@
 # Atlas–Scout coordination operating rules
 
-The [permanent October 13 operating policy](independent-traders.md) governs nightly Gameplan preparation and the three independent traders. Atlas combines both PCs' Gameplan research and runs the combined Gameplan trader. Atlas and Scout each run their own independent 15-minute trader. Jeremy manually starts trading; nightly preparation is already authorized and needs no additional approval or cross-trader verification stage.
+The [permanent October 13 operating policy](independent-traders.md) governs nightly Gameplan preparation and the three independent traders. Scout combines both PCs' Gameplans using the available saved cash/share basis and sends the result to Atlas; delivery completes the handoff. Atlas runs the combined Gameplan trader. Atlas and Scout each run their own independent 15-minute trader. Jeremy manually starts trading; nightly preparation is already authorized and needs no additional approval or cross-trader verification stage.
 
 ## Standing implementation and installation authority
 
@@ -26,7 +26,7 @@ At the existing bounded wakes, act on relevant new failures, owned repairs and s
 
 ## Nightly work and recovery
 
-Run the assigned local preparation work, exchange the two Gameplan contributions and let Atlas synthesize and publish the combined result. Prepare each local 15-minute trader independently. Neither a 15-minute problem nor the lack of a reciprocal validation/acceptance message blocks Gameplan. There is no new human approval, verification ceremony or cross-trader prerequisite.
+Run the assigned local preparation work, exchange the two Gameplan contributions and let Scout synthesize the actual cash/share quantities using the available saved basis and deliver the combined result to Atlas. Prepare each local 15-minute trader independently. Neither a 15-minute problem nor the lack of a reciprocal validation/acceptance message blocks Gameplan. There is no new human approval, verification ceremony or cross-trader prerequisite.
 
 Preserve valid completed stages, real creation times, original information cutoffs and meaningful error evidence. Continue the authorized correction for actual missing inputs or failed work without duplicating a healthy worker. Source/transport idempotence and truthfulness remain ordinary implementation behavior, not additional operating approval stages.
 

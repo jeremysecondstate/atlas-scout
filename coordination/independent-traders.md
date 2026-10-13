@@ -10,13 +10,13 @@ Jeremy's direct October 13, 2026 instruction establishes this architecture and t
 | Atlas 15-minute trader | Atlas generates and executes its own local 15-minute predictions. | Its own local binding, manual session, orders, fills and trading ledger. |
 | Scout 15-minute trader | Scout generates and executes its own local 15-minute predictions. | Its own local binding, manual session, orders, fills and trading ledger. |
 
-The only cross-PC trading-plan synthesis is the combination of Atlas and Scout Gameplan research. Atlas performs that synthesis and publishes the combined result. The 15-minute traders do not participate in it. They do not request distributed grants, reciprocal acceptance, cross-trader reconciliation, loaded-code proofs or another trader's health or readiness.
+The only cross-PC trading-plan synthesis is the combination of Atlas and Scout Gameplan research. Scout performs that synthesis using balances already available with the two plans or their latest saved basis, then sends the combined result to Atlas. Delivery completes the handoff. The 15-minute traders do not participate in it. They do not request distributed grants, reciprocal acceptance, cross-trader reconciliation, loaded-code proofs or another trader's health or readiness.
 
 Gameplan does not inspect or depend on either 15-minute trader's process, configuration, ledger, forecasts, orders, fills or status. Each 15-minute trader likewise works without Gameplan or its peer trader. Reuse of common tested source and the existing broker connection does not create shared execution ownership. Each manually started trader observes current broker capacity and manages its own exact orders and logs.
 
 ## Standing nightly authority
 
-Complete the normal local data, Stats, model, prediction and Gameplan preparation work automatically under the existing schedules. Exchange the Atlas and Scout Gameplan contributions through the existing private channel; synthesize and publish the combined Gameplan on Atlas. Prepare each PC's 15-minute trader separately for a manual start.
+Complete the normal local data, Stats, model, prediction and Gameplan preparation work automatically under the existing schedules. Exchange the Atlas and Scout Gameplan contributions through the existing private channel; Scout synthesizes the combined Gameplan and sends it to Atlas. Use the existing saved balance basis with its original observation time for actual cash/share arithmetic; do not request a third fresh snapshot or wait for an Atlas acceptance receipt. Prepare each PC's 15-minute trader separately for a manual start.
 
 There is no additional human approval, verification task, compatibility roundtrip, acceptance ceremony, migration ceremony or prerequisite checklist before nightly preparation or synthesis proceeds. Do not invent one in a task prompt or turn another trader's status into a gate. A source publication, peer acknowledgment, 15-minute result or optional display/report outcome is not a prerequisite for a completed Gameplan.
 

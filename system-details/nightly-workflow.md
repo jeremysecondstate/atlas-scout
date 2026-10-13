@@ -6,7 +6,7 @@ Current operating policy: October 13, 2026. Complete nightly preparation under t
 
 1. Complete the existing local data, Stats, model, prediction and local Gameplan work for the intended action date.
 2. Publish that PC's Gameplan research contribution through the existing private exchange.
-3. On Atlas, combine the Atlas and Scout Gameplan contributions and publish the combined Gameplan. Scout contributes its research and can display the result; a reciprocal Scout validation or acceptance message is not required.
+3. On Scout, combine the Atlas and Scout Gameplans and perform actual cash/share math using their available balances or latest saved basis. Send the completed result to Atlas; delivery completes the handoff. A third fresh snapshot and an Atlas acceptance message are not required.
 4. Separately prepare that PC's own 15-minute trader for manual start. This task reads only the PC's own saved 15-minute binding and local symbol profile. It is not a Gameplan dependency, and a failure is reported independently.
 5. Report meaningful outcomes through existing notifications. Jeremy manually starts each trader when desired.
 

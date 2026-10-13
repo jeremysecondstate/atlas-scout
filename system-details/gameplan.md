@@ -4,7 +4,7 @@ Operating policy updated October 13, 2026. [The standing human direction](../coo
 
 ## Research and synthesis
 
-Atlas and Scout each perform their established local data, Stats, model and prediction work for their own research symbols. Their Gameplan contributions are the only cross-PC trading-plan inputs. Atlas combines those contributions, using its own Gameplan account/planning inputs where required, and publishes the combined Gameplan and associated views.
+Atlas and Scout each perform their established local data, Stats, model and prediction work for their own research symbols. Their Gameplan contributions are the only cross-PC trading-plan inputs. Scout combines those Gameplans using balances already available with them or their latest saved basis, performs the actual cash/share calculations, and sends the combined Gameplan and associated views to Atlas. Delivery completes the handoff. Preserve the basis observation time without requesting a third fresh snapshot or waiting for Atlas acceptance.
 
 The combined Gameplan covers the existing Gameplan symbol universe and horizons. Its forecasts, intended quantities, planning prices and Stats are planning records. Actual orders and fills appear only after Jeremy manually starts Atlas's combined Gameplan trader.
 

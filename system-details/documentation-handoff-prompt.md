@@ -1,6 +1,6 @@
 # Prompt: maintain the current Ducketz operating documentation
 
-Update applicable operative documentation to the [permanent October 13 direction](../coordination/independent-traders.md). Atlas combines Atlas and Scout Gameplan research and publishes the combined Gameplan. Atlas's combined Gameplan trader, Atlas's local 15-minute trader and Scout's local 15-minute trader execute and log independently. Their processes, ledgers, configurations, acceptance messages and health are not cross-trader prerequisites.
+Update applicable operative documentation to the [permanent October 13 direction](../coordination/independent-traders.md). Scout combines Atlas and Scout Gameplans, performs actual cash/share math using their available balances or latest saved basis, and sends the combined result to Atlas. Delivery completes the handoff, without a third fresh snapshot or Atlas acceptance. Atlas's combined Gameplan trader, Atlas's local 15-minute trader and Scout's local 15-minute trader execute and log independently. Their processes, ledgers, configurations, acceptance messages and health are not cross-trader prerequisites.
 
 Nightly local preparation, exchange, synthesis and independent local 15-minute preparation are already authorized. Do not add an approval, verification ceremony, peer acceptance roundtrip, distributed grant or network requirement. Existing internet, authenticated GitHub and private Drive/CODEXSTORE connections suffice. Jeremy manually starts trading; preparing a system does not activate it.
 
