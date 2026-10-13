@@ -1,6 +1,6 @@
 # Atlas: Gameplan responsibilities
 
-Current operating direction: October 13, 2026. Atlas performs local research, receives Scout's Gameplan contribution, combines both contributions and publishes the combined Gameplan. Atlas also owns the combined Gameplan trader for the established combined universe and horizons.
+Current operating direction: October 13, 2026. Atlas performs local research and sends its Gameplan with the available saved balance basis through the private exchange. Scout combines the Atlas and Scout Gameplans, performs the actual cash/share arithmetic and sends the completed result to Atlas. Scout's delivery completes the handoff; Atlas loads that same result without recomputing the synthesis. Atlas also owns the combined Gameplan trader for the established combined universe and horizons.
 
 Local data, Stats, model and prediction work is permanently authorized. Complete the assigned work and publish its actual outputs without another human approval, verification task, acceptance roundtrip or source-PR prerequisite. Real research data is an input; a genuinely missing input is reported and recovered rather than replaced with invented evidence.
 

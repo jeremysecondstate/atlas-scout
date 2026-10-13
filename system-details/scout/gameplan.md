@@ -1,6 +1,6 @@
 # Scout: Gameplan responsibilities
 
-Current operating direction: October 13, 2026. Scout performs its own local research and publishes its Gameplan contribution through the existing private exchange. Atlas combines that contribution with its own and publishes the combined Gameplan. Scout does not supply execution history, ownership receipts or reciprocal acceptance for Atlas's synthesis.
+Current operating direction: October 13, 2026. Scout performs its own local research and receives Atlas's Gameplan through the existing private exchange. Scout synthesizes both Gameplans, performs actual cash/share math using balances already available with them or their latest saved basis, and sends the completed result to Atlas. Delivery completes the handoff. There is no third fresh snapshot, execution-history check, ownership receipt or Atlas acceptance prerequisite.
 
 Local data, Stats, model and prediction work is permanently authorized. Complete the assigned work and publish its actual outputs without another human approval, verification task, acceptance roundtrip or source-PR prerequisite. Real research data is an input; a genuinely missing input is reported and recovered rather than replaced with invented evidence.
 

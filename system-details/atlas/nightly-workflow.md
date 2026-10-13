@@ -6,7 +6,7 @@ Current operating direction: October 13, 2026. Use Atlas's existing native sched
 | --- | --- |
 | Local preparation | Finish the existing data, Stats, model, prediction and local Gameplan work for the intended action date. |
 | Gameplan contribution | Publish Atlas's real research output to the existing private Gameplan exchange. |
-| Combined Gameplan | Combine Atlas and Scout contributions locally and publish the combined Gameplan immediately when the inputs are available. |
+| Combined Gameplan | Send Atlas's Gameplan and available saved balance basis to Scout; receive and load Scout's completed synthesis without a return acceptance prerequisite. |
 | Local 15-minute preparation | Independently prepare Atlas's saved local 15-minute binding for a human manual start. Its outcome never gates Gameplan. |
 | Notifications | Report meaningful completion, concrete faults and recovery without duplicate acknowledgments. |
 | Source coordination | Carry out owned source handoffs/publication through the separate reviewed GitHub procedure. |

@@ -1,6 +1,6 @@
 # Codex–Ducketz system details
 
-This library describes the permanent October 13, 2026 operating direction and its source/installation evidence. [The standing policy](../coordination/independent-traders.md) is current: Atlas synthesizes the two Gameplan research contributions; Atlas's Gameplan trader and each PC's own 15-minute trader operate independently. Nightly preparation is already authorized. Jeremy manually starts trading.
+This library describes the permanent October 13, 2026 operating direction and its source/installation evidence. [The standing policy](../coordination/independent-traders.md) is current: Scout synthesizes the two Gameplans with their available saved cash/share basis and sends the result to Atlas, completing the handoff; Atlas's Gameplan trader and each PC's own 15-minute trader operate independently. Nightly preparation is already authorized. Jeremy manually starts trading.
 
 ## Current operating references
 

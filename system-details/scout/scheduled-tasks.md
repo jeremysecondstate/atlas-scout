@@ -10,7 +10,7 @@ Operating policy updated October 13, 2026. These are the current responsibilitie
 | GAMEPLAN STATS | Produce the normal local Gameplan evaluation/Stats work from actual saved observations. |
 | MODEL REVIEW / TRAINING / PREDICTING | Complete the assigned normal numerical/model work under standing nightly authority; do not request another approval merely to continue preparation. |
 | Local GAMEPLAN | Produce Scout's Gameplan research contribution for the intended action date. |
-| GAMEPLAN SYNTHESIS / HANDOFF | Publish Scout's research contribution for Atlas's synthesis; do not require Scout execution history, broker state, a distributed order grant or reciprocal acceptance. |
+| GAMEPLAN SYNTHESIS / HANDOFF | Synthesize Atlas and Scout Gameplans with the available saved cash/share basis and deliver the result to Atlas; delivery completes the handoff without another snapshot, cross-trader state or acceptance. |
 | DUCKETZ DISPLAY / OUTCOME REPORTING | Display available completed output and report actual faults; display/reporting is not a new approval or synthesis gate. |
 | Local 15-minute preparation | Prepare Scout's own saved independent 15-minute binding each night. Never make this result a Gameplan prerequisite. |
 | REPO RECONCILIATION / SOURCE COURIER | Preserve source ownership, exact-byte review/tests, durable queues and publication identities separately from nightly trading preparation. |
